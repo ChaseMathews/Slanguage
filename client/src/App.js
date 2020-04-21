@@ -1,11 +1,12 @@
 import React from 'react';
-import AppBar from './components/NavBar'
+import SignInSide from './components/UserLogin'
+
 import './App.css';
 
 function App() {
   return (
     <div>
-      <AppBar />
+      <SignInSide />
     </div>
   );
 }
