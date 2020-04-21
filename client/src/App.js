@@ -2,11 +2,13 @@ import React from 'react';
 import SignInSide from './components/UserLogin'
 
 import './App.css';
+import SignUp from './components/UserSignUp';
 
 function App() {
   return (
     <div>
-      <SignInSide />
+      <AppBar />
+      <SignUp />
     </div>
   );
 }
