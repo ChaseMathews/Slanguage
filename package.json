@@ -11,7 +11,9 @@
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.9.9",
-    "react-bootstrap": "^1.0.1"
+    "react-bootstrap": "^1.0.1",
+    "mic-recorder-to-mp3": "^2.2.1"
+    
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
