@@ -1,12 +1,27 @@
 import React from 'react';
-import { Form } from 'react-bootstrap';
-
+import { ListGroup, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function SelectLangForm() {
 
     return (
-     <Form>
+        <ListGroup as="ul" active>
+            <ListGroup.Item as="li">
+            <Link to="/SpanishPresentation">
+                <Button variant="danger" size="lg" block>
+                    Español
+          </Button>
+          </Link>
+            </ListGroup.Item>
+            <ListGroup.Item as="li">
+                <Link to="/NavajoPresentation">
+                <Button variant="warning" size="lg" block>
+                    Navajo
+                </Button>
+                </Link>
 
-     </Form>
+            </ListGroup.Item>
+
+        </ListGroup>
     )
 }

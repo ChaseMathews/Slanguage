@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
+import { Link } from 'react-router-dom';
 
 
 
@@ -21,9 +22,9 @@ export default function SignUp() {
                   <Col md={{ span: 4, offset: 8 }}>
 
                       <SignUpForm />
-                      <SignUpBtn />
                       
-                       <Link to='/SelectLanguage'><Submit/></Link> 
+                      
+                       <Link to='/SelectLanguage'><SignUpBtn/></Link> 
                       
                   </Col>
               </Row>
