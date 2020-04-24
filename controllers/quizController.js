@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the QuizsController
+// Defining methods for the QuizController
 module.exports = {
   findAll: function(req, res) {
     db.Quiz
