@@ -20,7 +20,7 @@ export default function HomeView() {
                  
                     <Col className="form-container" md={{ span: 4, offset: 8 }}>
                         <SignInForm />
-                        <Submit />
+                        <Link to='/SelectLanguage'><Submit /></Link>
                         <br></br>
                         <Link to='/UserSignUp'><SignUpBtn /></Link>
 
