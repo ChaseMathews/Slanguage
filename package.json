@@ -4,16 +4,10 @@
   "description": "A study aid for language learners",
   "main": "server.js",
   "dependencies": {
-    "@material-ui/core": "^4.9.11",
-    "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mic-recorder-to-mp3": "^2.2.1",
-    "mongoose": "^5.9.9",
-  
-    "react-bootstrap": "^1.0.1"
+    "mongoose": "^5.9.9"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
