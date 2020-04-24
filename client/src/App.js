@@ -1,16 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
-import Audio from './components/AudioRecording';
+
+import HomeView from './components/HomePage/HomeView';
+import SignUp from './components/UserSignUp/SignUpView';
+
 
 function App() {
   return (
-    <div>
- 
-      <Audio />
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomeView} />
+        <Route exact path="/UserSignUp" component={SignUp} />
+        <Route exact path="/SelectLanguage" component={} />
 
-    </div>
+      </Switch>
+    </Router>
   );
 }
 
