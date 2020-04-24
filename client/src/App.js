@@ -7,8 +7,6 @@ import Audio from './components/AudioRecording';
 function App() {
   return (
     <div>
-      <AppBar />
-      <SignUp />
       <Audio />
     </div>
   );
