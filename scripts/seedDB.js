@@ -41,7 +41,7 @@ const presentation = [
         imageUrl: "https://lh5.googleusercontent.com/jcJa9JNMUBA3D9PnA2wnSEk120g35uMcFKisVoF3_HzJBikyBVhRY8JTaDW1b1RBop2-Gk9J2RsBia52DG1IuuSGbvbldzoGFmzCL0nb",
         targetWord: "cinco",
         audioToPlay: "https://soundcloud.com/karen-g-montes-74139791/cinco",
-        phonetic: ""
+        phonetic: "SEEN-ko"
       },
       {
         imageUrl: "https://lh5.googleusercontent.com/XXa44tKsbe5BIgqR33BZZlQL4kGuF4AMmED9L3xWMVYG1jzCa6dFVxWW8uBthx4jQr0NHcYjdK_A7DSGbGyVrJFvR-NlDD4E-MDc9Njr",
