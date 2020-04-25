@@ -4,17 +4,15 @@ import Submit from './submitButton';
 import Image from './image';
 import SignInForm from './SignInForm';
 import SignUpBtn from './signUpButton';
-
 import { Link } from 'react-router-dom';
 
 export default function HomeView() {
-
 
     return (
         <Container>
             <hr></hr>
             <Row>
-                <Col className="image-container" md={{ span: 8}}>
+                <Col className="image-container" md={{ span: 8 }}>
                     <Image />
                 </Col>
                  

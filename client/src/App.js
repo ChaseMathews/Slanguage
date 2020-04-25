@@ -7,7 +7,7 @@ import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
 import SelectLang from './components/SelectLanguage/selectLangView';
-// import MenuContainer from './components/LessonMenu/LessonMenuView';
+import MenuContainer from './components/LessonMenu/LessonMenuView';
 import SpanishPresentation from './components/SpanishPresentation/spaPresView';
 import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
 
@@ -19,10 +19,9 @@ function App() {
         <Route exact path="/" component={HomeView} />
         <Route exact path="/UserSignUp" component={SignUp} />
         <Route exact path="/SelectLanguage" component={SelectLang} />
-        {/* <Route exact path="/LessonMenu" component={LessonMenu} /> */}
-        <Route exact path="/SpanishPresentation" component={SpanishPresentation} />
-        <Route exact path="/NavajoPresentation" component={NavajoPresentation} />
-
+        <Route path="/LessonMenu/:lang" component={MenuContainer} />
+        <Route exact path="/SpanishPresentation/:lesson" component={SpanishPresentation} />
+        <Route exact path="/NavajoPresentation/:lesson" component={NavajoPresentation} />
       </Switch>
     </Router>
   );
