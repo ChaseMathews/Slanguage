@@ -3,6 +3,9 @@
 import axios from "axios";
 
 export default {
+    getPresData: function() {
+        return axios.get("/api/presentation");
+    },
     getQuizQuestions: function () {
         return axios.get("/api/quiz");
     },
@@ -22,9 +25,6 @@ export default {
     //not sure if this is right, it's commented out...
     updateUser: function(id){
         // return axios.put("/api/user/", id)
-    },
-    
-    getLessonPlan: function(){
-
     }
+    
 }
