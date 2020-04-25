@@ -2,28 +2,26 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const presentationSchema = new Schema(
-    {
-      language: {
+  {
+    language: {
+      type: String
+    },
+    content: {
+      imageUrl: {
         type: String
       },
-      content: [
-        {
-          imageUrl: {
-            type: String
-          },
-          targetWord: {
-            type: String
-          },
-          audioToPlay: {
-            type: String
-          },
-          phonetic: {
-            type: String
-          }
-        }
-      ]
+      targetWord: {
+        type: String
+      },
+      audioToPlay: {
+        type: String
+      },
+      phonetic: {
+        type: String
+      }
     }
-  )
+  }
+)
 
 const Presentation = mongoose.model("Presentation", presentationSchema);
 

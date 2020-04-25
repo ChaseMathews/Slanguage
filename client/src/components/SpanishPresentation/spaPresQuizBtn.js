@@ -5,7 +5,7 @@ export default function SpaPresQuizBtn() {
 
     return (
 <Button variant="danger" size="lg" block>
-    Quiz
+    Presentation
 </Button>
 
 
