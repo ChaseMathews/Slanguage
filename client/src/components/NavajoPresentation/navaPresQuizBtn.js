@@ -5,7 +5,7 @@ export default function NavajoPresQuizBtn() {
 
     return (
 <Button variant="warning" size="lg" block>
-    Quiz
+    Presentation
 </Button>
 
 
