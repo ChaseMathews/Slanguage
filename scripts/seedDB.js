@@ -14,7 +14,7 @@ const presentation = [
     language: "Spanish",
     content: [
       {
-        imageUrl: "https://lh4.googleusercontent.com/MyjyB7iT4G_BGrkO7cuJh9PxSEw4STmLeUS1OwEFopj5Gw_M75JrvYWpofZq6AEjXu2zQreBjoS35OCkyEFVL_dxhojfPx9FqK6bQXs",
+        imageUrl: "https://lh4.googleusercontent.com/JGHNuGPjr0Xnxwpvnv0h3tL0YgtllY88PNSeGhZ_lQI2RJhiKBoBehbv-0brtqkpBrwLhti4gkJAAL8d6vwj8nVh_UiqTFN1MIJ075c",
         targetWord: "uno",
         audioToPlay: "https://soundcloud.com/karen-g-montes-74139791/uno",
         phonetic: "OOh-noh"

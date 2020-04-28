@@ -17,7 +17,7 @@ export default function SpanishPresentation() {
             <hr></hr>
             <Jumbotron>
 
-                <Card style={{ width: '18rem' }}>
+                <Card className="cardHolder" style={{ width: '18rem' }}>
                     <PresImage />
                     {/* <Card.Img variant="top" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
                     <Card.Body>

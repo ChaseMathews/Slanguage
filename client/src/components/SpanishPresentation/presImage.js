@@ -4,7 +4,7 @@ import "./style.css"
 
 function PresImage() {
 
-  const [image, setImage] = useState([])
+  const [image, setImage] = useState()
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function PresImage() {
     {console.log(image)}
     {image &&   
     <div>
-        <img src={image[0].content[index].imageUrl}></img>
+        <img id="numberImage" src={image[0].content[index].imageUrl}></img>
     </div> 
     }
     </>

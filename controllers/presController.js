@@ -4,7 +4,7 @@ const db = require("../models");
 // Defining method (find all questions) for the QuizController
 module.exports = {
   findAll: (req, res) => {
-    console.log(req.original_url)
+    console.log(req.originalUrl)
     db.Presentation
       .find(req.query)
       .then(dbModel => {

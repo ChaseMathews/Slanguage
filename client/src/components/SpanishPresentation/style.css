@@ -12,6 +12,8 @@
   
 }
 
-#numberOne{
-    text-align: center;
+.cardHolder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
