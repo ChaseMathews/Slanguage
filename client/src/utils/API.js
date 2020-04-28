@@ -3,7 +3,7 @@
 import axios from "axios";
 
 export default {
-    getPresData: function() {
+    getPresData: async function() {
         return axios.get("/api/presentation");
     },
     getQuizQuestions: function () {
