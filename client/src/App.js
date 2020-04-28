@@ -10,6 +10,7 @@ import SelectLang from './components/SelectLanguage/selectLangView';
 import MenuContainer from './components/LessonMenu/LessonMenuView';
 import SpanishPresentation from './components/SpanishPresentation/spaPresView';
 import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
+import QuizCardBody from './components/QuizCard/QuizCardView';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/LessonMenu/:lang" component={MenuContainer} />
         <Route exact path="/SpanishPresentation/:lesson" component={SpanishPresentation} />
         <Route exact path="/NavajoPresentation/:lesson" component={NavajoPresentation} />
+        <Route exact path="/QuizCard" component={QuizCardBody} />
       </Switch>
     </Router>
   );

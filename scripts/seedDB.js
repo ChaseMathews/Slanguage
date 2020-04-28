@@ -166,7 +166,7 @@ const quizzes = [
       {
         imageUrl: "https://lh4.googleusercontent.com/PXKejlEaBKsw1scP7XrRqdIDr55AP3jbvnPo2eLGfwbS44R3vGkOdlHD-Ngk7D-wMpIALqdk0pS_2oTs8sbFmIPoCqboPfAWvfl8-iwV",
         answerOptions: ["cuatro", "dos", "cinco"],
-        correctAnswer: "dos",
+        correctAnswer: answerOptions[1],
         explanation: ""
       },
       {
