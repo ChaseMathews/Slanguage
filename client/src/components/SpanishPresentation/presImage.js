@@ -4,47 +4,37 @@ import "./style.css"
 
 function PresImage() {
 
-  const [image, setImage] = useState("")
-  // const [index, setIndex] = useState(0);
+  const [image, setImage] = useState()
+  let [index, setIndex] = useState(0);
 
   useEffect(() => {
-    async function loadImages(){
-      API.getPresData()
-        .then(res => {
-          let imageUrl;
-          for (const img in res.data[0].content) {
-            imageUrl = res.data[0].content[img].imageUrl;
-          }
-          // console.log(imageUrl);
-          setImage(imageUrl)
-        })
-        .catch (err => console.log(err));
-    }
     loadImages()
   }, [])
 
-  useEffect(() => {
-    console.log('rendering images', image);
-  }, [image]);
+  function loadImages() {
+    API.getPresData()
+      .then(res => {
+        setImage(res.data[0].content)
+        console.log(res.data[0].content)
+      })
 
+      .catch(err => console.log(err));
+  };
 
-// const nextImageHandler = () => {
-//   this.setImage()
-// }
+  const handleImageChange = () => {
+    setIndex(prev => prev + 1)
+  }
 
-
-
-return (
-  <>
-    {console.log(image)}
-    {image &&
-      <div>
-        {/* <img id="numberImage" src={image[0].content[index].imageUrl} alt="number-image"></img> */}
-        <img id="numberImage" src={image} alt="number-image"></img>
-      </div>
-    }
-  </>
-)
+  return (
+    <>
+      {image &&
+        <div>
+          <button onClick={handleImageChange}>Click</button>
+          <img id="numberImage" src={image[index].imageUrl}></img>
+        </div>
+      }
+    </>
+  )
 }
 
 export default PresImage;
