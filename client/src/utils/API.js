@@ -3,6 +3,9 @@
 import axios from "axios";
 
 export default {
+    getPresData: function() {
+        return axios.get("/api/presentation");
+    },
     getQuizQuestions: function () {
         return axios.get("/api/quiz");
     },
@@ -23,4 +26,5 @@ export default {
     updateUser: function(id){
         // return axios.put("/api/user/", id)
     }
+    
 }
