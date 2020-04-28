@@ -1,39 +1,44 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
 import "./style.css"
 
 function PresImage() {
 
   const [image, setImage] = useState()
-  const [index, setIndex] = useState(0);
+  let [index, setIndex] = useState(0);
 
   useEffect(() => {
     loadImages()
   }, [])
+
   function loadImages() {
     API.getPresData()
       .then(res => {
-        setImage(res.data)
-        console.log(res.data)
+        setImage(res.data[0].content)
+        console.log(res.data[0].content)
       })
 
       .catch(err => console.log(err));
   };
 
-  // const handleImageChange = () => {
-
-  // }
+  const handleImageChange = () => {
+    setIndex(prev => prev + 1)
+  }
+  const handleImageChangeBack = () => {
+    setIndex(prev => prev - 1)
+  }
 
   return (
     <>
-    {console.log(image)}
-    {image &&   
-    <div>
-        <img id="numberImage" src={image[0].content[index].imageUrl}></img>
-    </div> 
-    }
+      {image &&
+        <div>
+          <button onClick={handleImageChangeBack}>Back</button>
+          <button onClick={handleImageChange}>Click</button>
+          <img id="numberImage" src={image[index].imageUrl}></img>
+        </div>
+      }
     </>
   )
 }
 
-export default PresImage
+export default PresImage;
