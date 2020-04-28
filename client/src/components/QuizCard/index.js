@@ -5,6 +5,11 @@ import NavBar from '../NavBar'
 
 
 export default function QuizCard() {
+  
+  
+  
+  
+  
   return (
 
    <div>
