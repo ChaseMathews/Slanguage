@@ -1,57 +1,39 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import API from "../../utils/API"
+import "./style.css"
 
+function PresImage() {
 
-// function PresImage() {
-//     const [image, setImage] = useState([])
-//     // Load image
-//     useEffect(() => {
-//         imageHolder()
-//     }, [])
-    
-//     function imageHolder() {
-//         API.getPresData()
-//           .then(res => 
-//             console.log(),
-//             setImage(res.data)
-            
-//           )
-//           .catch(err => console.log(err));
-//       };
-    
-// }
-// export default PresImage
-// function presData() {
+  const [image, setImage] = useState()
+  const [index, setIndex] = useState(0);
 
-// }
+  useEffect(() => {
+    loadImages()
+  }, [])
+  function loadImages() {
+    API.getPresData()
+      .then(res => {
+        setImage(res.data)
+        console.log(res.data)
+      })
 
-class PresImage extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        isFetchingData: false,
-        data: null
-      };
+      .catch(err => console.log(err));
+  };
+
+  // const handleImageChange = () => {
+
+  // }
+
+  return (
+    <>
+    {console.log(image)}
+    {image &&   
+    <div>
+        <img id="numberImage" src={image[0].content[index].imageUrl}></img>
+    </div> 
     }
-    componentDidMount () {
-      this.setState({ isFetchingData: true });
-      API.getPresData().then((data) => {
-          console.log(data)
-        this.setState({
-          isFetchingData: true,
-          data
-        });
-      });
-    }
-    render () {
-      if (!this.state.data) {
-        return <img src="https://lh4.googleusercontent.com/JGHNuGPjr0Xnxwpvnv0h3tL0YgtllY88PNSeGhZ_lQI2RJhiKBoBehbv-0brtqkpBrwLhti4gkJAAL8d6vwj8nVh_UiqTFN1MIJ075c"></img>;
-      }
-      if (!this.state.isLoading) {
-        return <p>Loading data</p>;
-      }
-      // Render your component with data
-    }
-  }
+    </>
+  )
+}
 
-  export default PresImage
+export default PresImage

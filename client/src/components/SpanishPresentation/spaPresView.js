@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
+import { Container, Jumbotron, Card, Button} from 'react-bootstrap';
 import SpaPresQuizBtn from './spaPresQuizBtn';
 import PresImage from "./presImage"
+import "./style.css"
 
 
 export default function SpanishPresentation() {
@@ -15,31 +16,19 @@ export default function SpanishPresentation() {
         <Container>
             <hr></hr>
             <Jumbotron>
-                <Row>
+
+                <Card className="cardHolder" style={{ width: '18rem' }}>
                     <PresImage />
-                </Row>
-
-                <Row>
-                    <Col sm="9">
-                        uno
-                    </Col>
-                    <Col sm="3">
-                        Audio icon here
-                    </Col>
-
-                </Row>
-                <Row>
-                    <img src="https://img.favpng.com/20/6/2/computer-icons-sound-icon-loudspeaker-audio-png-favpng-E6vC4JcC5AS4fEcFRkKkiMNyx.jpg"></img>
-                </Row>
-                <Row>
-                    Phonetic: 
-                </Row>
-
-                <Row>
-                    <Col>
-                        <SpaPresQuizBtn />
-                    </Col>
-                </Row>
+                    {/* <Card.Img variant="top" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
+                    <Card.Body>
+                        <Card.Title>Uno</Card.Title>
+                        <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+    </Card.Text>
+                        <Button variant="primary">Go to next</Button>
+                    </Card.Body>
+                </Card>
             </Jumbotron>
         </Container>
     );
