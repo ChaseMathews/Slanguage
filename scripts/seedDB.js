@@ -58,7 +58,7 @@ const presentation = [
       {
         imageUrl: "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
         targetWord: "ocho",
-        audioToPlay: "https://cf-media.sndcdn.com/gvZeBwPtcGWy.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vZ3ZaZUJ3UHRjR1d5LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1ODgxMzM1NTJ9fX1dfQ__&Signature=MHr5tslOK7f0NUiBxWKZkz~2wZ5i0ZL78kKxaFCzkoE8PCypI3s8AbGACbaTgn3Wa2E2weoHn0lqZE0f54hvvxO9NzEbVRKW8NSpvSwz3SksXkBtNU8fLAoPDxwACvF0VsgJp2OqwargXsEV4Botpp5nhin0TPEcyM7uiw25hhrHaF8GomXyDl9jcZuE1smdHQAtDixNCRCwDD1AWP81g0TjifKtLLB~EqN8iue6Bt0fwCAGtF7X051U9Xd4zWALMJkDC8YglDCxcSIexv0EKmcmlCcGu4js9ILW~UotBui7kaC8fBabjwSMjvOJZuI0XTm5QBLb2PS2cYlgE0Sakw__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ",
+        audioToPlay: "https://cf-media.sndcdn.com/gvZeBwPtcGWy.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vZ3ZaZUJ3UHRjR1d5LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1ODgxMzM5Njd9fX1dfQ__&Signature=XIhloftTlrj7JAKFm~~Ui1DS7pzfwAJ5NjjNZ6R~~QgR2~ooHs7HBQKTiu7spQ2phOy8BshlbMwEbPEqQ4VsnAe1~Qv6VGJMOQRd0Ay7wmPOegcqUHJbiHkKIXZxsj6mdSq~gm2HurXi4U-~a~tGNBz7FXrw-SxEOrMcbVk8oLonNL3jqlfqOBX0qFaZFfV7phDNl5Uwa~WJlrCPLZyloSbcNdCfEqEthevuKlm7pkIYdv9BhiwwdmAKaP~qUV-jkjbRvVNiqvt3ZdGYW96w--wtsu5lHycNnxiJ3Y6AoiEijVXZ92-ipSCxUVcziV1Ra2KkJITcO-QApj86aWPoiA__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ",
         phonetic: "OH-choh"
       },
       {
