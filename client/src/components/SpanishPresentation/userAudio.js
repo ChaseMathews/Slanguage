@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
 
-class Audio extends Component {
+class UserAudio extends Component {
 
     constructor(props) {
         super(props);
@@ -65,4 +65,4 @@ class Audio extends Component {
     }
 }
 
-export default Audio;
+export default UserAudio;
