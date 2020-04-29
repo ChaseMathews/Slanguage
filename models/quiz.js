@@ -9,9 +9,9 @@ const quizSchema = new Schema(
         imageUrl: {
           type: String
         },
-        answerOptions: {
+        answerOptions: [{
           type: String
-        },
+        }],
         correctAnswer: {
           type: String
         },
