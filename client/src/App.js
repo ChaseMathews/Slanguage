@@ -10,7 +10,7 @@ import SelectLang from './components/SelectLanguage/selectLangView';
 import MenuContainer from './components/LessonMenu/LessonMenuView';
 import SpanishPresentation from './components/SpanishPresentation/spaPresView';
 import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
-import QuizCardBody from './components/QuizCard/QuizCardView';
+import QuizCardBody from './components/QuizCard/QuizCardBody';
 
 
 function App() {

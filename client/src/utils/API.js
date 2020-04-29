@@ -25,15 +25,6 @@ export default {
     //not sure if this is right, it's commented out...
     updateUser: function(id){
         // return axios.put("/api/user/", id)
-<<<<<<< HEAD
-    },
-    
-    getLessonPlan: function(){
-
-    }, 
-
-=======
     }
->>>>>>> e87d1cd3bbb218e0e92c8a1c6f832642376cbe9c
     
 }
