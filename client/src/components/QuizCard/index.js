@@ -6,7 +6,7 @@ import NavBar from '../NavBar'
 
 
 export default function QuizCard() {
-  
+
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
 
@@ -17,8 +17,8 @@ export default function QuizCard() {
   function loadQuiz() {
     API.getQuizQuestions()
       .then(res => {
+        console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
-        console.log(res.data)
       })
 
       .catch(err => console.log(err));
@@ -27,36 +27,37 @@ export default function QuizCard() {
   const handleImageChange = () => {
     setIndex(prev => prev + 1)
   }
-  // const handleImageChangeBack = () => {
-  //   setIndex(prev => prev - 1)
-  // }
-  
-  
+
+
+
   return (
+    <>
+      {quizContent &&
+        <div>
+          <NavBar />
+          <Card>
+            <Row>
+              <Col sm={4}>
+                <Card.Img variant="top" src={quizContent[index].imageUrl} />
+              </Col>
+              <Col sm={4}>
+                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[0]}</Button>
+                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[1]}</Button>
+                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[2]}</Button>
+              </Col>
+              <Col sm={4}>
+                <Row>
 
-   <div>
-     <NavBar />
-     <Card>
-       <Row>
-         <Col sm={4}>
-         {/* <Card.Img variant="top" src={quizContent[index].imageUrl} /> */}
-         </Col>
-         <Col sm={4}>
-  {/* <Button  variant="primary" size="lg" block>{quizContent[index].answerOptions[0]}</Button>
-         <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[1]}</Button>
-         <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[2]}</Button> */}
-         </Col>
-         <Col sm={4}>
-           <Row>
-             
-           <Button onClick={handleImageChange} variant="primary" className="">NEXT</Button>
+                  <Button onClick={handleImageChange} variant="primary" className="">NEXT</Button>
 
-           </Row>
-         </Col>
-       </Row>
-     </Card>
-     
-   </div>
+                </Row>
+              </Col>
+            </Row>
+          </Card>
+
+        </div>
+      }
+    </>
 
   )
 }
