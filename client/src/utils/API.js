@@ -6,8 +6,8 @@ export default {
     getPresData: async function() {
         return axios.get("/api/presentation");
     },
-    getQuizQuestions: async function () {
-        return axios.get("/api/quiz");
+    getQuizQuestions: async function (language) {
+        return axios.get(`/api/quiz/${language}`);
     },
     // Gets the user with the given id upon logging in
     getUser: function (id) {

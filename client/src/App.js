@@ -20,7 +20,7 @@ function App() {
         <Route path="/LessonMenu/:lang" component={MenuContainer} />
         <Route exact path="/SpanishPresentation/:lesson" component={SpanishPresentation} />
         <Route exact path="/NavajoPresentation/:lesson" component={NavajoPresentation} />
-        <Route exact path="/QuizCard" component={QuizCard} />
+        <Route exact path="/QuizCard/:language" component={QuizCard} />
       </Switch>
     </Router>
   );

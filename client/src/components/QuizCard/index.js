@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 
 import NavBar from '../NavBar'
 
@@ -9,13 +10,14 @@ export default function QuizCard() {
 
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
+  const { language } = useParams();
 
   useEffect(() => {
     loadQuiz()
   }, [])
 
   function loadQuiz() {
-    API.getQuizQuestions()
+    API.getQuizQuestions(language)
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
