@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Jumbotron, Card, Button} from 'react-bootstrap';
+import { Container, Jumbotron, Card, Button } from 'react-bootstrap';
 import SpaPresQuizBtn from './spaPresQuizBtn';
 import PresImage from "./presImage"
 import "./style.css"
@@ -25,8 +25,8 @@ export default function SpanishPresentation() {
                         <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
-    </Card.Text>
-                        <Button variant="primary">Go to next</Button>
+                        </Card.Text>
+                        <Button className="buttonNext" variant="primary">Go to next</Button>
                     </Card.Body>
                 </Card>
             </Jumbotron>
