@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import API from "../../utils/API";
 
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
@@ -22,10 +23,28 @@ const useAudio = url => {
   return [playing, toggle];
 };
 
-// const url = "https://soundcloud.com/karen-g-montes-74139791/uno"; 
-
 const Player = ({ url }) => {
   const [playing, toggle] = useAudio(url);
+  // const [audio, setAudio] = useState()
+  // let [index, setIndex] = useState(0);
+
+  // useEffect(() => {
+  //   loadAudios()
+  // }, [])
+
+  // function loadAudios() {
+  //   API.getPresData()
+  //     .then(res => {
+  //       setAudio(res.data[0].content)
+  //       console.log(res.data[0].content)
+  //     })
+
+  //     .catch(err => console.log(err));
+  // };
+
+  // const handleAudioChange = () => {
+  //   setIndex(prev => prev + 1)
+  // }
 
   return (
     <div>

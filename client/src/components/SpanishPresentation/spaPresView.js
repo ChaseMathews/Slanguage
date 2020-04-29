@@ -14,6 +14,7 @@ export default function SpanishPresentation() {
     // audioToPlay: "https://soundcloud.com/karen-g-montes-74139791/uno",
     // phonetic: "OOh-noh"
 
+
     return (
         <Container>
             <hr></hr>
@@ -21,10 +22,10 @@ export default function SpanishPresentation() {
 
                 <Card className="cardHolder" style={{ width: '18rem' }}>
                     <PresImage />
-                    <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" />
                     <Card.Body>
                         <Card.Title>Uno</Card.Title>
                         <PlayAudio url="https://cf-media.sndcdn.com/1JCfsLlYB6oM.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vMUpDZnNMbFlCNm9NLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1ODgwNDAzNzl9fX1dfQ__&Signature=CFZP7~0IND0EQtzk09znAoftiot8ILJkx9CdMzK90SVc3oPweWXuKf5BetOqXriu6N-aWfFhBQUhfIZQ0vFHrOyS473y7lomltELOTExUm9seDgx1TqMTjCVYhijJZcE3sYDt5wDUgkHdPi7oQ-ukGDMaqhPnNgLnXe0vyt5BZQGup2WiGkP388niDmEKJut9OBxiPdpAD8aOANFtmYF-hE8E~AQKhHZzj4-aA1FWrQ5qsFCTTkY7Lk9HbaJCAAxGOmZqd-ZMIzkXBgMnLeazezU0D8otSd03CLki4td7gVdpT2FeS-EcWaKGyNocwgyQfXPX2VsoiGUFXmA~N0UeQ__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" />
+                        <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" />
                         <UserAudio />
                         <Button variant="primary">Go to next</Button>
                     </Card.Body>

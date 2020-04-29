@@ -3,10 +3,10 @@
 import axios from "axios";
 
 export default {
-    getPresData: function() {
+    getPresData: async function() {
         return axios.get("/api/presentation");
     },
-    getQuizQuestions: function () {
+    getQuizQuestions: async function () {
         return axios.get("/api/quiz");
     },
     // Gets the user with the given id upon logging in
