@@ -44,12 +44,12 @@ export default function SpanishPresentation() {
                             <img id="numberImage" src={presContent[index].imageUrl}></img>
                             <Card.Body>
                                 <Card.Title>{presContent[index].targetWord}</Card.Title>
-                                <Card.Title>({presContent[index].phonetic})</Card.Title>
                                 <ReactAudioPlayer
                                     src={presContent[index].audioToPlay}
                                     controls
                                 />
-                                <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" />
+                                <Card.Title>({presContent[index].phonetic})</Card.Title>
+                                {/* <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
                                 <UserAudio />
                                 <Button variant="primary" onClick={handlePresDataChangeBack}>Go to previous</Button>
                                 <Button variant="primary" onClick={handlePresDataChange}>Go to next</Button>

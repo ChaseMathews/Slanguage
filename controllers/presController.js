@@ -1,7 +1,7 @@
 // controller for presentation content
 const db = require("../models");
 
-// Defining method (find all questions) for the QuizController
+// Defining method (find all elements) for the PresController
 module.exports = {
   findAll: (req, res) => {
     console.log(req.originalUrl)

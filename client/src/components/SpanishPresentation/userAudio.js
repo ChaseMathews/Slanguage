@@ -53,6 +53,7 @@ class UserAudio extends Component {
     render() {
         return (
             <div>
+                <p>Now you try! Click "Record."</p>
                 <button onClick={this.start} disabled={this.state.isRecording}>
                     Record
                 </button>
