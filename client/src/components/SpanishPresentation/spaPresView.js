@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Jumbotron, Card, Button, Col, Row} from 'react-bootstrap';
 // import SpaPresQuizBtn from './spaPresQuizBtn';
-// import PresImage from "./presImage";
 import "./style.css";
 import UserAudio from "./userAudio";
-import PlayAudio from "./playAudio";
 import { slideInDown } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
-
 // import PlayAudio from "./playAudio";
 import API from "../../utils/API"
 import ReactAudioPlayer from 'react-audio-player';
