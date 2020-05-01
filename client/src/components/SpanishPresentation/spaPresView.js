@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Jumbotron, Card, Button } from 'react-bootstrap';
+import { Container, Jumbotron, Card, Button, Col, Row} from 'react-bootstrap';
 // import SpaPresQuizBtn from './spaPresQuizBtn';
 // import PresImage from "./presImage";
 import "./style.css";
 import UserAudio from "./userAudio";
 import PlayAudio from "./playAudio";
 import { slideInDown } from 'react-animations';
-import styled, { keyframes }  from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 // import PlayAudio from "./playAudio";
 import API from "../../utils/API"
@@ -46,21 +46,27 @@ export default function SpanishPresentation() {
                     <hr></hr>
                     <Jumbotron>
                         <SlideDown>
-                        <Card className="cardHolder" style={{ width: '18rem' }}>
-                            <img id="numberImage" src={presContent[index].imageUrl}></img>
-                            <Card.Body>
-                                <Card.Title>{presContent[index].targetWord}</Card.Title>
-                                <ReactAudioPlayer
-                                    src={presContent[index].audioToPlay}
-                                    controls
-                                />
-                                <Card.Title>({presContent[index].phonetic})</Card.Title>
-                                {/* <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
-                                <UserAudio />
-                                <Button variant="primary" onClick={handlePresDataChangeBack}>Go to previous</Button>
-                                <Button variant="primary" onClick={handlePresDataChange}>Go to next</Button>
-                            </Card.Body>
-                        </Card>
+                            <Row>
+                                <Col md="6">
+                                    <Card className="cardHolder">
+                                        <img id="numberImage" src={presContent[index].imageUrl}></img>
+                                        <Card.Body>
+                                            <Card.Title>{presContent[index].targetWord}</Card.Title>
+                                            <ReactAudioPlayer
+                                                src={presContent[index].audioToPlay}
+                                                controls
+                                            />
+                                            <Card.Title>({presContent[index].phonetic})</Card.Title>
+                                            {/* <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
+                                            <UserAudio />
+                                            <Row className="justify-content-between" >
+                                            <Button className="button" variant="primary" onClick={handlePresDataChangeBack}>Go to previous</Button>
+                                            <Button className="button" variant="primary" onClick={handlePresDataChange}>Go to next</Button>
+                                            </Row>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row>
                         </SlideDown>
                     </Jumbotron>
                 </Container>

@@ -7,19 +7,15 @@ import CarouselFlags from '../Carousel'
 export default function SelectLang() {
 
     return (
-     <Container>
-         <hr></hr>
-         
-         <Row>
-         <Col md="7">
-         <CarouselFlags />
-             </Col>
-            <Col md="5">
-             <LangHeader />
-             <SelectLangForm />
-             </Col>
-         </Row>
-     </Container>
+        <Container>
+            <hr></hr>
+            <Row className="justify-content-center">
+                <Col sm={10} md={10} lg={10}>
+                    <LangHeader />
+                    <CarouselFlags />
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
