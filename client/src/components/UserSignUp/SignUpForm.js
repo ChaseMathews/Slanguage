@@ -12,7 +12,7 @@ export default function SignUpForm(props) {
           name="username"
           value={props.userObject.username}
           onChange={e => props.handleInputChange(e)}
-          placeholder="username" />
+          placeholder="Username" />
       </Form.Group>
 
       <Form.Group controlId="formBasicPassword">
@@ -21,11 +21,9 @@ export default function SignUpForm(props) {
           name="password"
           value={props.userObject.password}
           onChange={e => props.handleInputChange(e)}
-          placeholder="password" />
+          placeholder="Password" />
       </Form.Group>
-
       
     </Form>
-
   );
 }

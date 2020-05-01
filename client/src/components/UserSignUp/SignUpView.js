@@ -24,15 +24,15 @@ export default function SignUp() {
     };
 
     function handleFormSubmit() {
-        if (!userObject.username) {
-            return setError("Must enter a username!");
+        if (!userObject.username || !userObject.password) {
+            return setError("Please enter a username and a password.");
         } 
         // else if (){
         //     alert that username already exists if that's the case
         // } 
         else if (userObject.password.length < 6) {
             return setError("Password must be at least 6 characters!");
-        } else if (userObject.username.length && userObject.password) {
+        } else if (userObject.username && userObject.password) {
             API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,

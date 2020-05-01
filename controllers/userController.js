@@ -15,16 +15,20 @@ module.exports = {
                 username: body.username
             })
             .then(dbUser => {
+                console.log(dbUser);
                 if (dbUser.password === body.password) {
                     res.json({
                         username: dbUser.username,
                         id: dbUser._id
                     })
                 } else {
-                    res.status(401).json({ err, message: 'Incorrect password. Try again!' });
+                    return res.status(401).json({ message: 'Incorrect password. Try again!' });
                 }
             })
-            .catch(err => res.status(422).json(err));
+            .catch(err => {
+                console.log(err);
+                res.status(500).json(err.message);
+            });
     },
     findById: function ({params}, res) {
         db.User
