@@ -9,9 +9,13 @@ export default {
     getQuizQuestions: async function () {
         return axios.get("/api/quiz");
     },
-    // Gets the user with the given id upon logging in
-    getUser: function (id) {
+    // // Gets the user with the given id upon logging in
+    getUserData: function (id) {
         return axios.get("/api/user/" + id);
+    },
+    // Finds user in db and sends back username and ID
+    findUser: function () {
+        return axios.post("/api/user/login");
     },
     // Deletes the user with the given id if user removes account
     deleteUser: function (id) {

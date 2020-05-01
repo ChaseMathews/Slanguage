@@ -26,6 +26,12 @@ module.exports = {
             })
             .catch(err => res.status(422).json(err));
     },
+    findById: function ({params}, res) {
+        db.User
+            .findById(params.id)
+            .then(dbModel => res.json(dbModel))
+            .catch(err => res.status(422).json(err));
+    },
     // will be used if user wants to update their username/password
     update: function ({ params, body }, res) {
         db.User
