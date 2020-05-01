@@ -8,11 +8,14 @@ import MenuContainer from './components/LessonMenu/LessonMenuView';
 import SpanishPresentation from './components/SpanishPresentation/spaPresView';
 import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
 import QuizCard from './components/QuizCard';
+import NavBar from './components/NavBar';
 
 
 function App() {
   return (
     <Router>
+      {window.location.pathname != "/" ? <NavBar />: "" }
+      
       <Switch>
         <Route exact path="/" component={HomeView} />
         <Route exact path="/UserSignUp" component={SignUp} />
