@@ -39,8 +39,13 @@
 .form-container {
   
   border-left-style: solid;
-
-  
   
 } 
 
+a{
+  color: black;
+}
+
+a:hover{
+  color: red;
+}
