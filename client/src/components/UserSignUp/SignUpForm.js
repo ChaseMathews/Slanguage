@@ -1,30 +1,31 @@
 import React from "react";
 import { Form } from 'react-bootstrap';
 
+export default function SignUpForm(props) {
+  return (
+    <Form>
 
+      <Form.Group controlId="formBasicEmail">
+        <Form.Label>Sign Up Below!</Form.Label>
+        <Form.Control
+          type="username"
+          name="username"
+          value={props.userObject.username}
+          onChange={e => props.handleInputChange(e)}
+          placeholder="username" />
+      </Form.Group>
 
-export default function SignUpForm() {
+      <Form.Group controlId="formBasicPassword">
+        <Form.Control
+          type="password"
+          name="password"
+          value={props.userObject.password}
+          onChange={e => props.handleInputChange(e)}
+          placeholder="password" />
+      </Form.Group>
 
+      
+    </Form>
 
-    return (
-
-<Form>
-<Form.Group controlId="formBasicEmail">
-  <Form.Label>Please Enter a User Name</Form.Label>
-  <Form.Control type="userName" placeholder="Enter a Username" />
-
-</Form.Group>
-
-<Form.Group controlId="formBasicPassword">
-  <Form.Label>Please Enter a Password</Form.Label>
-  <Form.Control type="password" placeholder="Enter a Password" />
-</Form.Group>
-
-
-<Form.Group>
-
-  </Form.Group>
-  </Form>
-
-    );
+  );
 }

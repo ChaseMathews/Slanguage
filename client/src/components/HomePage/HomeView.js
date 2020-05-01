@@ -8,8 +8,11 @@ import { Link } from 'react-router-dom';
 import CarouselFlags from '../Carousel'
 import "./style.css"
 import RingLoader from 'react-spinners/RingLoader'
+import API from "../../utils/API";
 
 export default function HomeView() {
+
+// check Detail page in 21MERN ACT 05
 
     return (
         <Container>
