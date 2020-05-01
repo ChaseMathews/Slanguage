@@ -5,8 +5,11 @@ import Image from './image';
 import SignInForm from './SignInForm';
 import SignUpBtn from './signUpButton';
 import { Link } from 'react-router-dom';
+import API from "../../utils/API";
 
 export default function HomeView() {
+
+// check Detail page in 21MERN ACT 05
 
     return (
         <Container>
