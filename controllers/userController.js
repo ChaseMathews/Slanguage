@@ -9,10 +9,21 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     // will be used for logging in
-    findById: function ({ params }, res) {
+    findOne: function ({ body }, res) {
         db.User
-            .findById(params.id)
-            .then(dbUser => res.json(dbUser))
+            .findOne({
+                username: body.username
+            })
+            .then(dbUser => {
+                if (dbUser.password === body.password) {
+                    res.json({
+                        username: dbUser.username,
+                        id: dbUser._id
+                    })
+                } else {
+                    res.status(401).json({ err, message: 'Incorrect password. Try again!' });
+                }
+            })
             .catch(err => res.status(422).json(err));
     },
     // will be used if user wants to update their username/password
