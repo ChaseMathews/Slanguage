@@ -6,25 +6,26 @@ export default function SignUpForm(props) {
     <Form>
 
       <Form.Group controlId="formBasicEmail">
-        <Form.Label>Please enter a username</Form.Label>
+        <Form.Label>Sign Up Below!</Form.Label>
         <Form.Control
           type="username"
           name="username"
           value={props.userObject.username}
           onChange={e => props.handleInputChange(e)}
-          placeholder="example123" />
+          placeholder="username" />
       </Form.Group>
 
       <Form.Group controlId="formBasicPassword">
-        <Form.Label>Please enter a password</Form.Label>
         <Form.Control
           type="password"
           name="password"
           value={props.userObject.password}
           onChange={e => props.handleInputChange(e)}
-          placeholder="password123" />
+          placeholder="password" />
       </Form.Group>
+
       
     </Form>
+
   );
 }

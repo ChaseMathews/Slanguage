@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import API from "../../utils/API";
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import './style.css';
 
 
 
@@ -13,6 +14,7 @@ export default function SignUp() {
         username: "",
         password: ""
     })
+    const [error, setError] = useState("");
 
     const history = useHistory();
 
@@ -22,7 +24,15 @@ export default function SignUp() {
     };
 
     function handleFormSubmit() {
-        if (userObject.username && userObject.password) {
+        if (!userObject.username) {
+            return setError("Must enter a username!");
+        } 
+        // else if (){
+        //     alert that username already exists if that's the case
+        // } 
+        else if (userObject.password.length < 6) {
+            return setError("Password must be at least 6 characters!");
+        } else if (userObject.username.length && userObject.password) {
             API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
@@ -35,18 +45,22 @@ export default function SignUp() {
     }
 
 
-        return (
-            <Container>
-                <hr></hr>
-                <Row>
-                    <Col md={{ span: 8 }}>
-                        <h1>Image goes here</h1>
-                    </Col>
-                    <Col md={{ span: 4, offset: 8 }}>
-                        <SignUpForm userObject={userObject} handleInputChange={handleInputChange}/>
-                        <SignUpBtn handleFormSubmit={handleFormSubmit}/>
-                    </Col>
-                </Row>
-            </Container>
-        );
-    }
+    return (
+        <Container>
+            <hr></hr>
+            <Row>
+                <Col md={{ span: 8 }}>
+                    <h1>Image goes here</h1>
+                </Col>
+                <Col md={{ span: 4, offset: 8 }}>
+                    <SignUpForm userObject={userObject} handleInputChange={handleInputChange} />
+                    {error &&
+                        <span className='error'>{error}</span>
+                    }
+                    <p></p>
+                    <SignUpBtn handleFormSubmit={handleFormSubmit} />
+                </Col>
+            </Row>
+        </Container>
+    );
+}
