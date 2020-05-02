@@ -38,7 +38,7 @@ export default function SignUp() {
                 password: userObject.password,
             })
                 .then(res => {
-                    if(res.status !== 200){
+                    if(res.status !== 201){
                         setError("Username already exists.");
                     } else {
                         history.push("/SelectLanguage")

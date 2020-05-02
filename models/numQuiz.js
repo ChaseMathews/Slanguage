@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const quizSchema = new Schema(
+const numQuizSchema = new Schema(
   {
     language: { type: String, required: true },
     questions: [
@@ -23,6 +23,6 @@ const quizSchema = new Schema(
   }
 );
 
-const Quiz = mongoose.model("Quiz", quizSchema);
+const NumQuiz = mongoose.model("NumQuiz", numQuizSchema);
 
-module.exports = Quiz;
+module.exports = NumQuiz;
