@@ -23,7 +23,7 @@ export default function SignUp() {
         setUserObject({ ...userObject, [name]: value })
     };
 
-    function handleFormSubmit() {
+    async function handleFormSubmit() {
         if (!userObject.username || !userObject.password) {
             return setError("Please enter a username and a password.");
         } 
@@ -33,12 +33,16 @@ export default function SignUp() {
         else if (userObject.password.length < 6) {
             return setError("Password must be at least 6 characters!");
         } else if (userObject.username && userObject.password) {
-            API.signUpUser({
+            await API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
             })
                 .then(res => {
-                    history.push("/SelectLanguage")
+                    if(res.status !== 200){
+                        setError("Username already exists.");
+                    } else {
+                        history.push("/SelectLanguage")
+                    }
                 })
                 .catch(err => console.log(err));
         }

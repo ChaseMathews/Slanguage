@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      {window.location.pathname != "/" ? <NavBar />: "" }
+      {window.location.pathname != "/" ? <NavBar /> : "" }
       
       <Switch>
         <Route exact path="/" component={HomeView} />
