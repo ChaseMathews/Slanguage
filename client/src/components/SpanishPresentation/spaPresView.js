@@ -20,7 +20,7 @@ export default function SpanishPresentation() {
     }, [])
 
     function loadPresData() {
-        API.getPresData()
+        API.getNumPresData()
             .then(res => {
                 setPresContent(res.data[0].content)
                 console.log(res.data[0].content)

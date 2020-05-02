@@ -3,11 +3,17 @@
 import axios from "axios";
 
 export default {
-    getPresData: async function() {
-        return axios.get("/api/presentation");
+    getNumPresData: function() {
+        return axios.get("/api/presentation/numbers");
     },
-    getQuizQuestions: async function () {
-        return axios.get("/api/quiz");
+    getSlangPresData: function() {
+        return axios.get("/api/presentation/slang");
+    },
+    getNumQuizData: function () {
+        return axios.get("/api/quiz/numbers");
+    },
+    getSlangQuizData: function () {
+        return axios.get("/api/quiz/slang");
     },
     // // Gets the user with the given id upon logging in
     getUserData: function (id) {
