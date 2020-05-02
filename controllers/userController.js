@@ -18,8 +18,11 @@ module.exports = {
                             username: body.username,
                             password: hash
                         })
-                            .then(dbUser => res.json(dbUser))
-                            .catch(err => res.status(422).json(err));
+                            .then(dbUser => {
+                                res.status(200).json('Success!');
+                                res.json(dbUser);
+                            })
+                            .catch(err => res.status(422).json({ err, message: "Username already exists." }));
                     }
                 });
             }
