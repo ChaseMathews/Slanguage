@@ -7,7 +7,16 @@ import NavBar from '../NavBar'
 
 
 export default function QuizCard() {
+  const [quizContent, setQuizContent] = useState()
+  let [index, setIndex] = useState(0);
+  let [results, setResults] = useState({
+    ButtonOne: true,
+    ButtonTwo: true,
+    ButtonThree: true
+  });
 
+
+const {language} = useParams()
   useEffect(() => {
     loadQuiz()
   }, [])
@@ -23,10 +32,28 @@ export default function QuizCard() {
   };
 
   const handleImageChange = () => {
-    setIndex(prev => prev + 1)
+    setIndex(prev => {
+
+     return prev + 1
+    }) 
   }
 
+  const handleScore = e => {
+    e.preventDefault()
+    console.log(e.target.value)
+    // if(quizContent[index].correctAnswer === e.target.value) {
+    //     score + 3;
+    // } else {
+    //   score - 1;
+    // }
+  }
 
+  const handleResults = e => {
+    setResult({
+      ...results,
+      [e.target.name]: false
+    })
+  }
 
   return (
     <>
@@ -39,9 +66,10 @@ export default function QuizCard() {
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
               </Col>
               <Col sm={4}>
-                <Button onClick={() => dispatch('increment')} variant="primary" size="lg" block>{quizContent[index].answerOptions[0]}</Button>
-                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[1]}</Button>
-                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[2]}</Button>
+                <Button variant={results.ButtonOne ? "primary" : "danger"} size="lg" onClick={handleScore} block name="ButtonOne" value={quizContent[index].answerOptions[0]} />
+                <Button variant={results.ButtonOne ? "primary" : "danger"} size="lg" onClick={handleScore} block name="ButtonOne" value={quizContent[index].answerOptions[1]} />
+                <Button variant={results.ButtonOne ? "primary" : "danger"} size="lg" onClick={handleScore} block name="ButtonOne" value={quizContent[index].answerOptions[2]} />
+                
               </Col>
               <Col sm={4}>
                 <Row>

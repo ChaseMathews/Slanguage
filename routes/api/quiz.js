@@ -7,12 +7,9 @@ router.route("/")
   .get(quizController.findAll)
 
 
-router.get('/:language', (req, res) => {
-  db.Quiz
-      .find({ language: req.params.language })
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-})
+router.route('/:language')  
+  .get(quizController.findBy)
+
 
 
 module.exports = router;

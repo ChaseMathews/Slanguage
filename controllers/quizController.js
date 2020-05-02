@@ -9,9 +9,9 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }, 
-  findBy: language => {
+  findBy: (req, res) => {
     db.Quiz
-      .find({ language: req.query })
+      .find({ language: req.params.language })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }
