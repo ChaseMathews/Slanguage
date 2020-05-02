@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Row, Col } from 'react-bootstrap';
 
 import NavBar from '../NavBar'
 
@@ -41,14 +41,14 @@ export default function QuizCard() {
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
               </Col>
               <Col sm={4}>
-                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[0]}</Button>
-                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[1]}</Button>
-                <Button variant="primary" size="lg" block>{quizContent[index].answerOptions[2]}</Button>
+                <Button variant="danger" size="lg" block>{quizContent[index].answerOptions[0]}</Button>
+                <Button variant="danger" size="lg" block>{quizContent[index].answerOptions[1]}</Button>
+                <Button variant="danger" size="lg" block>{quizContent[index].answerOptions[2]}</Button>
               </Col>
               <Col sm={4}>
                 <Row>
 
-                  <Button onClick={handleImageChange} variant="primary" className="">NEXT</Button>
+                  <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
 
                 </Row>
               </Col>
