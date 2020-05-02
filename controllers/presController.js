@@ -4,6 +4,7 @@ const db = require("../models");
 // Defining method (find all elements) for the PresController
 module.exports = {
   findAllNumPresData: (req, res) => {
+    console.log(req.headers.referer);
     db.NumPres
       .find({})
       .then(dbModel => {
