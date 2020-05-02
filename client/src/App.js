@@ -1,4 +1,4 @@
-import React, { component } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
@@ -12,6 +12,11 @@ import NavBar from './components/NavBar';
 
 
 function App() {
+
+
+// const [loginStatus, setLoginStatus] = useState(false);
+
+
   return (
     <Router>
       {window.location.pathname != "/" ? <NavBar />: "" }
