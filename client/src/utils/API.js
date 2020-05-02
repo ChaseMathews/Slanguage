@@ -9,15 +9,19 @@ export default {
     getQuizQuestions: async function () {
         return axios.get("/api/quiz");
     },
-    // Gets the user with the given id upon logging in
-    getUser: function (id) {
+    // // Gets the user with the given id upon logging in
+    getUserData: function (id) {
         return axios.get("/api/user/" + id);
+    },
+    // Finds user in db and sends back username and ID
+    findUser: function (user) {
+        return axios.post("/api/user/login", user);
     },
     // Deletes the user with the given id if user removes account
     deleteUser: function (id) {
         return axios.delete("/api/user/" + id);
     },
-    // Saves a book to the database
+    // Saves a user to the database
     signUpUser: function (user) {
         return axios.post("/api/user/", user);
     },

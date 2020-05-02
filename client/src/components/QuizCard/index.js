@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
 import { Card, Button, Row, Col } from 'react-bootstrap';
 
-import NavBar from '../NavBar'
 
 
 export default function QuizCard() {
@@ -34,7 +33,6 @@ export default function QuizCard() {
     <>
       {quizContent &&
         <div>
-          <NavBar />
           <Card>
             <Row>
               <Col sm={4}>
