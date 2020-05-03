@@ -3,7 +3,6 @@ const db = require("../models");
 const quizSeeds = require("./quizSeeds.js");
 const presSeeds = require("./presSeeds.js");
 
-// This file empties the Books collection and inserts the books below
 
 console.log(presSeeds[0]);
 
