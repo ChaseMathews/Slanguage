@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 
 export default function SignInForm(props) {
   return (
-    <Form>
+    <Form onSubmit={e => props.handleFormSubmit(e)}>
 
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Welcome Back!</Form.Label>
@@ -25,6 +25,9 @@ export default function SignInForm(props) {
         placeholder="Password" />
       </Form.Group>
 
+      {props.children}
+
     </Form>
+
   );
 }

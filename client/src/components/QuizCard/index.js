@@ -14,7 +14,7 @@ export default function QuizCard() {
   }, [])
 
   function loadQuiz() {
-    API.getQuizQuestions()
+    API.getNumQuizData()
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)

@@ -1,8 +1,7 @@
-[
+module.exports = [
     [
         {
             "language": "Spanish",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -68,7 +67,6 @@
         },
         {
             "language": "Navajo",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -134,7 +132,6 @@
         },
         {
             "language": "French",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -146,7 +143,6 @@
         },
         {
             "language": "German",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -158,7 +154,6 @@
         },
         {
             "language": "Italian",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -171,61 +166,56 @@
     ],
     [
         {
-            "language": "Spanish",
-            "category": "slang",
+            "language": "Spanish",           
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
                     "phonetic": ""
                 }
             ]
         },
         {
-            "language": "Navajo",
-            "category": "slang",
+            "language": "Navajo",           
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
                     "phonetic": ""
                 }
             ]
         },
         {
-            "language": "French",
-            "category": "slang",
+            "language": "French",           
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
                     "phonetic": ""
                 }
             ]
         },
         {
-            "language": "German",
-            "category": "slang",
+            "language": "German",           
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
                     "phonetic": ""
                 }
             ]
         },
         {
-            "language": "Italian",
-            "category": "slang",
+            "language": "Italian",           
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
                     "phonetic": ""
                 }
             ]
