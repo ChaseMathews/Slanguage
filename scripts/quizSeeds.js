@@ -1,4 +1,4 @@
-[
+module.exports = [
     [
         {
             "language": "Spanish",
@@ -525,6 +525,24 @@
                     "correctAnswer": "nove",
                     
                 }
+            ]
+        }
+    ],
+
+    [
+        {
+            "language": "Spanish",
+            "questions": [
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                    "answerOptions": [
+                        "uno",
+                        "dos",
+                        "cinco"
+                    ],
+                    "correctAnswer": "dos",
+                    "explanation": ""
+                },
             ]
         }
     ]

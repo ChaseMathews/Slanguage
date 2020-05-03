@@ -1,9 +1,7 @@
-
-[
+module.exports = [
     [
         {
             "language": "Spanish",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -69,7 +67,6 @@
         },
         {
             "language": "Navajo",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -135,7 +132,6 @@
         },
         {
             "language": "French",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -201,7 +197,6 @@
         },
         {
             "language": "German",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -267,7 +262,6 @@
         },
         {
             "language": "Italian",
-            "category": "numbers",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -335,7 +329,6 @@
     [
         {
             "language": "Spanish",
-            "category": "slang",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -347,7 +340,6 @@
         },
         {
             "language": "Navajo",
-            "category": "slang",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -359,7 +351,6 @@
         },
         {
             "language": "French",
-            "category": "slang",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -371,7 +362,6 @@
         },
         {
             "language": "German",
-            "category": "slang",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -383,7 +373,6 @@
         },
         {
             "language": "Italian",
-            "category": "slang",
             "content": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",

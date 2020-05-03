@@ -28,7 +28,8 @@ export default function HomeView() {
         setUser({ ...user, [name]: value })
     };
 
-    function handleFormSubmit() {
+    function handleFormSubmit(event) {
+        event.preventDefault();
         if (!user.username || !user.password) {
             return setError("Please enter a username and password.")
         } else if (user.username && user.password) {
@@ -44,7 +45,7 @@ export default function HomeView() {
                     history.push("/SelectLanguage");
                 })
                 .catch(err => {
-                    console.log({err});
+                    console.log({ err });
                     setError(err.response.data.message)
                 })
         }
@@ -109,12 +110,13 @@ export default function HomeView() {
                 </Col>
 
                 <Col className="form-container" md="4">
-                    <SignInForm user={user} handleInputChange={handleInputChange} />
-                    {error &&
-                        <span className='error'>{error}</span>
-                    }
-                    <p></p>
-                    <Submit handleFormSubmit={handleFormSubmit} />
+                    <SignInForm handleFormSubmit={handleFormSubmit} user={user} handleInputChange={handleInputChange}>
+                        {error &&
+                            <span className='error'>{error}</span>
+                        }
+                        <br></br>
+                        <Submit handleFormSubmit={handleFormSubmit} />
+                    </SignInForm>
                     <br></br>
                     <Link to='/UserSignUp'><SignUpBtn /></Link>
 

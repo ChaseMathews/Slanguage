@@ -19,7 +19,7 @@ module.exports = {
                             password: hash
                         })
                             .then(dbUser => {
-                                res.status(200).json('Success!');
+                                res.status(201).json('Success!');
                                 res.json(dbUser);
                             })
                             .catch(err => res.status(422).json({ err, message: "Username already exists." }));
