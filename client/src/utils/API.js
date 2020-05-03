@@ -3,21 +3,31 @@
 import axios from "axios";
 
 export default {
-    getPresData: async function() {
-        return axios.get("/api/presentation");
+    getNumPresData: function() {
+        return axios.get("/api/presentation/numbers");
     },
-    getQuizQuestions: async function (language) {
-        return axios.get(`/api/quiz/${language}`);
+    getSlangPresData: function() {
+        return axios.get("/api/presentation/slang");
     },
-    // Gets the user with the given id upon logging in
-    getUser: function (id) {
+    getNumQuizData: function () {
+        return axios.get("/api/quiz/numbers");
+    },
+    getSlangQuizData: function () {
+        return axios.get("/api/quiz/slang");
+    },
+    // // Gets the user with the given id upon logging in
+    getUserData: function (id) {
         return axios.get("/api/user/" + id);
+    },
+    // Finds user in db and sends back username and ID
+    findUser: function (user) {
+        return axios.post("/api/user/login", user);
     },
     // Deletes the user with the given id if user removes account
     deleteUser: function (id) {
         return axios.delete("/api/user/" + id);
     },
-    // Saves a book to the database
+    // Saves a user to the database
     signUpUser: function (user) {
         return axios.post("/api/user/", user);
     },

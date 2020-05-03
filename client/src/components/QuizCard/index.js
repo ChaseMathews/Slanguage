@@ -3,7 +3,6 @@ import API from "../../utils/API"
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
-import NavBar from '../NavBar'
 
 
 export default function QuizCard() {
@@ -25,7 +24,7 @@ const {language} = useParams()
   }, [])
 
   function loadQuiz() {
-    API.getQuizQuestions(language)
+    API.getNumQuizData()
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
@@ -80,9 +79,7 @@ const {value} = e.target
     <>
       {quizContent &&
         <div>
-          {   console.log("score: ", score)}
-          <NavBar />
-          <Card >
+          <Card>
             <Row>
               <Col sm={4}>
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
@@ -100,7 +97,7 @@ const {value} = e.target
               <Col sm={4}>
                 <Row>
 
-                  <Button onClick={handleImageChange} variant="primary" className="">NEXT</Button>
+                  <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
 
                 </Row>
               </Col>

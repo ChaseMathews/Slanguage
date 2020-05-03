@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const presentationSchema = new Schema(
+const numPresSchema = new Schema(
   {
     language: {
       type: String
@@ -23,6 +23,6 @@ const presentationSchema = new Schema(
   }
 )
 
-const Presentation = mongoose.model("Presentation", presentationSchema);
+const NumPres = mongoose.model("NumPres", numPresSchema);
 
-module.exports = Presentation;
+module.exports = NumPres;

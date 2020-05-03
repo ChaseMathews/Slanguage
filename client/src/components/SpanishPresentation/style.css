@@ -1,15 +1,21 @@
 #audioIcon{
-    width: 140px;
-    height: 100px;
+    width: 60px;
+    height: 50px;
 }
 
 #numberImage{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 160px;
-    height: 200px;
-  
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 250px;
+    padding-top: 10px;
+}
+
+.button{
+    margin: 5px;
+
+
 }
 
 .cardHolder{
@@ -17,3 +23,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* .jumbotron{
+    background-color: #006341;
+} */
