@@ -14,6 +14,9 @@ export default function QuizCard() {
     ButtonTwo: true,
     ButtonThree: true
   });
+const [display, setDisplay] =useState(false)
+const [score, setScore] = useState(0)
+
 
 
 const {language} = useParams()
@@ -41,17 +44,35 @@ const {language} = useParams()
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
-    // if(quizContent[index].correctAnswer === e.target.value) {
-    //     score + 3;
-    // } else {
-    //   score - 1;
-    // }
+
+const {value} = e.target
+
+
+    console.log(quizContent)
+  console.log(quizContent[index].answerOptions)
+    
+    
+    
+    
+    if(quizContent[index].correctAnswer === value) {
+      
+      setDisplay(true)
+      setScore(score + 3) 
+        
+    } else {
+      
+      setScore(score -1)
+    
+    }
+
+ 
   }
 
   const handleResults = e => {
-    setResult({
+    const {name} = e.target
+    setResults({
       ...results,
-      [e.target.name]: false
+      [ name]: false
     })
   }
 
@@ -59,6 +80,7 @@ const {language} = useParams()
     <>
       {quizContent &&
         <div>
+          {   console.log("score: ", score)}
           <NavBar />
           <Card >
             <Row>
@@ -66,9 +88,13 @@ const {language} = useParams()
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
               </Col>
               <Col sm={4}>
-                <Button variant={results.ButtonOne ? "primary" : "danger"} size="lg" onClick={handleScore} block name="ButtonOne" value={quizContent[index].answerOptions[0]} />
-                <Button variant={results.ButtonOne ? "primary" : "danger"} size="lg" onClick={handleScore} block name="ButtonOne" value={quizContent[index].answerOptions[1]} />
-                <Button variant={results.ButtonOne ? "primary" : "danger"} size="lg" onClick={handleScore} block name="ButtonOne" value={quizContent[index].answerOptions[2]} />
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[0] && display  ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                
+                
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[1] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+                
+                
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[2] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[0]}</Button>
                 
               </Col>
               <Col sm={4}>
