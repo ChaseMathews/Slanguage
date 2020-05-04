@@ -6,18 +6,19 @@ import { slideInDown } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import "./style.css"
 import Gradient from "../Gradient"
+import LangCategory from "./lessonLangHeader"
+
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
 
 function LessonMenu() {
-    const { lang } = useParams();
+    // const { lang } = useParams();
 
     return (
         <Container>
-            <Jumbotron className="tron">
+            <Jumbotron>
                 <Gradient />
                     <SlideDown>
-                        <Row><h1>{lang}</h1></Row>
                         <Row>
                             <Col>
                                 <LessonCards />
