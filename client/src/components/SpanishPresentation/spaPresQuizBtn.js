@@ -1,0 +1,17 @@
+import React from 'react';
+import { Button } from 'react-bootstrap';
+
+export default function SpaPresQuizBtn() {
+
+    return (
+<Button variant="danger" size="lg" block>
+    Presentation
+</Button>
+
+
+
+
+
+
+    )
+}

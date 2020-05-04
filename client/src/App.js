@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import HomeView from './components/HomePage/HomeView';
+import SignUp from './components/UserSignUp/SignUpView';
+import SelectLang from './components/SelectLanguage/selectLangView'; 
+import MenuContainer from './components/LessonMenu/LessonMenuView';
+import SpanishPresentation from './components/SpanishPresentation/spaPresView';
+import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
+import QuizCard from './components/QuizCard';
+import NavBar from './components/NavBar';
+
 
 function App() {
+
+
+// const [loginStatus, setLoginStatus] = useState(false);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {window.location.pathname != "/" ? <NavBar /> : "" }
+      
+      <Switch>
+        <Route exact path="/" component={HomeView} />
+        <Route exact path="/UserSignUp" component={SignUp} />
+        <Route exact path="/SelectLanguage" component={SelectLang} />
+        <Route path="/LessonMenu/:lang" component={MenuContainer} />
+        <Route exact path="/SpanishPresentation/:lesson" component={SpanishPresentation} />
+        <Route exact path="/NavajoPresentation/:lesson" component={NavajoPresentation} />
+        <Route exact path="/QuizCard" component={QuizCard} />
+      </Switch>
+    </Router>
   );
 }
 

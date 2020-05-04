@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.form-container {
+  
+  border-left-style: solid;
+  
+} 
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: red;
+}
