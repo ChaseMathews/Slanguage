@@ -24,7 +24,7 @@ const {language} = useParams()
   }, [])
 
   function loadQuiz() {
-    API.getNumQuizData()
+    API.getNumQuizData(language)
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
@@ -63,6 +63,7 @@ const {value} = e.target
       setScore(score -1)
     
     }
+    console.log(score)
 
  
   }
@@ -91,7 +92,7 @@ const {value} = e.target
                 <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[1] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
                 
                 
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[2] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[0]}</Button>
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[2] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
                 
               </Col>
               <Col sm={4}>
