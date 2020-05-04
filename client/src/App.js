@@ -9,7 +9,8 @@ import SpanishPresentation from './components/SpanishPresentation/spaPresView';
 import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
 import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
-
+import Carousel from './views/carousel'
+import Gradient from './components/Gradient';
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
         <Route exact path="/SpanishPresentation/:lesson" component={SpanishPresentation} />
         <Route exact path="/NavajoPresentation/:lesson" component={NavajoPresentation} />
         <Route exact path="/QuizCard" component={QuizCard} />
+        <Route exact path="/Carousel" component={Carousel} />
+        <Route exact path="/Gradient" component={Gradient} />
       </Switch>
     </Router>
   );
