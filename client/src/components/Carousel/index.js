@@ -25,7 +25,6 @@ export default function CarouselFlags() {
                     src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/flag-of-navajo-nation-world-art-prints-and-designs.jpg"
                     alt="Navajo Nation flag"
                 />
-
                 <Carousel.Caption className="carouselText">
                     <Link to="/LessonMenu/Navajo">
                         <h3>Diné</h3>
@@ -39,7 +38,6 @@ export default function CarouselFlags() {
                     src="https://i.pinimg.com/originals/67/fe/a7/67fea724434b5d8a1afea597e31cb467.jpg"
                     alt="Italy flag"
                 />
-
                 <Carousel.Caption className="carouselText">
                     <Link to="/LessonMenu/Italian">
                         <h3>Italiano</h3>
