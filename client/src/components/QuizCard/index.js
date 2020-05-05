@@ -13,8 +13,9 @@ export default function QuizCard() {
     ButtonTwo: true,
     ButtonThree: true
   });
-const [display, setDisplay] =useState(false)
+// const [display, setDisplay] =useState(false)
 const [score, setScore] = useState(0)
+const [display, setDisplay] = useState(false)
 
 
 
@@ -58,10 +59,13 @@ const {value} = e.target
       
       setDisplay(true)
       setScore(score + 3) 
+      
         
     } else {
       
       setScore(score -1)
+      
+      
     
     }
     console.log(score)
@@ -87,13 +91,13 @@ const {value} = e.target
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
               </Col>
               <Col sm={4}>
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[0] && display  ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[0] && display ? "success" : "danger" } size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
                 
                 
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[1] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[1] && display ? "success" : "danger" } size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
                 
                 
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[2] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[2] && display ? "success" : "danger" } size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
                 
               </Col>
               <Col sm={4}>
