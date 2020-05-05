@@ -8,12 +8,11 @@ import "./style.css"
 import RingLoader from 'react-spinners/RingLoader'
 import API from "../../utils/API";
 
-export default function HomeView() {
+export default function HomeView({setUser}) {
 
     // check Detail page in 21MERN ACT 05
 
-
-    const [user, setUser] = useState({
+    const [userForm, setUserForm] = useState({
         username: "",
         password: "",
         id: ""
@@ -25,22 +24,23 @@ export default function HomeView() {
 
     function handleInputChange(event) {
         const { name, value } = event.target;
-        setUser({ ...user, [name]: value })
+        setUserForm({ ...userForm, [name]: value })
     };
 
     function handleFormSubmit(event) {
         event.preventDefault();
-        if (!user.username || !user.password) {
+        if (!userForm.username || !userForm.password) {
             return setError("Please enter a username and password.")
-        } else if (user.username && user.password) {
+        } else if (userForm.username && userForm.password) {
             API.findUser(
                 {
-                    username: user.username,
-                    password: user.password
+                    username: userForm.username,
+                    password: userForm.password
                 }
             )
                 .then(userObj => {
                     console.log(userObj.data);
+                    setUser(userObj.data);
                     // loadUserData();
                     history.push("/SelectLanguage");
                 })
@@ -56,7 +56,7 @@ export default function HomeView() {
         API.getUserData()
             .then(res => {
                 console.log()
-                setUser(res.data[0].content)
+                setUserForm(res.data[0].content)
                 console.log(res.data[0].content)
             })
 
@@ -110,7 +110,7 @@ export default function HomeView() {
                 </Col>
 
                 <Col className="form-container" md="4">
-                    <SignInForm handleFormSubmit={handleFormSubmit} user={user} handleInputChange={handleInputChange}>
+                    <SignInForm handleFormSubmit={handleFormSubmit} user={userForm} handleInputChange={handleInputChange}>
                         {error &&
                             <span className='error'>{error}</span>
                         }

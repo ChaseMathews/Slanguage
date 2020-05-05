@@ -17,7 +17,18 @@ const userSchema = new Schema({
   userCreated: {
     type: Date,
     default: Date.now
-  }
+  },
+  results: [
+    {
+      language: String,
+      lesson: [{
+        name: String,
+        score: Number
+      }]
+    }
+  ]
+
+
 });
 
 const User = mongoose.model("User", userSchema);

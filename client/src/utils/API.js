@@ -3,11 +3,11 @@
 import axios from "axios";
 
 export default {
-    getNumPresData: function() {
-        return axios.get("/api/presentation/numbers");
+    getNumPresData: function(lang) {
+        return axios.get("/api/presentation/numbers/" + lang);
     },
-    getSlangPresData: function() {
-        return axios.get("/api/presentation/slang");
+    getSlangPresData: function(lang) {
+        return axios.get("/api/presentation/slang/" + lang);
     },
     getNumQuizData: function () {
         return axios.get("/api/quiz/numbers");
@@ -31,10 +31,9 @@ export default {
     signUpUser: function (user) {
         return axios.post("/api/user/", user);
     },
-    // Update user info
-    //not sure if this is right, it's commented out...
-    updateUser: function(id){
-        // return axios.put("/api/user/", id)
+    // Update user info with scores
+    updateUser: function(data){
+        return axios.put("/api/user/", data)
     }
     
 }
