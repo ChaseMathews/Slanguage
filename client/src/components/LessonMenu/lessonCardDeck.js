@@ -12,9 +12,9 @@ export default function LessonCards() {
         
 
         <CardDeck>
-            <Row>
+            
             <LangCategory />
-            </Row>
+
             <Row>
             <Card>
                 {/* We want to seed the card Image/Title/Info from the database */}

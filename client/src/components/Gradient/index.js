@@ -4,15 +4,12 @@ import { Container, Jumbotron } from 'react-bootstrap'
 
 
 
-export default function Gradient() {
+export default function Gradient(props) {
 
     return (
-        <Container>
             <Jumbotron className="back-gradient justify-content-center text-center">
-                {/* // <div className="back-gradient ">
-
-            // </div> */}
+                {props.children}
             </Jumbotron>
-        </Container>
+
     )
 }

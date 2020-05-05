@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 export default function CarouselFlags(){
 
     return (
-        <Carousel>
+        <Carousel interval={3000}>
+
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"

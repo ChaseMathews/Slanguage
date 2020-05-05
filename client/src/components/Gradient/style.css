@@ -5,7 +5,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  position: absolute;
+  /* position: absolute; */
   
   	background: linear-gradient(90deg, #e60073, #e60000, #ff9966, #ffff66, #1affd1, #6600ff, #cc00ff, #e60073);
 	background-size: 1000% 600%;
@@ -13,13 +13,6 @@
 	-moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
 
-}
-
-p{
-    height: 100%;
-    font-size: 50px;
-    color: white;
-    margin-top: 5%;
 }
 
 

@@ -16,8 +16,7 @@ function LessonMenu() {
 
     return (
         <Container>
-            <Jumbotron>
-                <Gradient />
+                <Gradient>
                     <SlideDown>
                         <Row>
                             <Col>
@@ -25,8 +24,7 @@ function LessonMenu() {
                             </Col>
                         </Row>
                     </SlideDown>
-                {/* </Gradient> */}
-            </Jumbotron>
+                </Gradient>
         </Container>
     )
 }
