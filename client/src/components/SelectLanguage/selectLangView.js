@@ -3,15 +3,33 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SelectLangForm from './selectLangForm';
 import LangHeader from './selectLangHeader';
 import CarouselFlags from '../Carousel'
+import Carousel from '../3dcarousel'
 
 export default function SelectLang() {
 
     return (
         <Container>
-            <hr></hr>
+            
             <Row className="justify-content-center">
-                <Col sm={10} md={10} lg={10}>
+                
+                <Col>
                     <LangHeader />
+                    <hr></hr>
+                    <Carousel />
+                </Col>
+            </Row>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Row className="justify-content-center">
+                <Col sm={7} md={7} lg={7}>
                     <CarouselFlags />
                 </Col>
             </Row>

@@ -1,3 +1,7 @@
 .text.navbar{
     color: teal;
 }
+
+.navbar{
+    z-index: 50;
+}
