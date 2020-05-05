@@ -3,8 +3,6 @@ const db = require("../models");
 // Defining method (find all questions) for the QuizController
 module.exports = {
   findAllNumQuizData: (req, res) => {
-    // to deal with different languages
-    console.log(req.originalUrl);
     db.NumQuiz
       .find({language: req.params.language})
       .then(dbModel => {
