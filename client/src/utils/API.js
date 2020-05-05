@@ -9,8 +9,8 @@ export default {
     getSlangPresData: function() {
         return axios.get("/api/presentation/slang");
     },
-    getNumQuizData: function () {
-        return axios.get("/api/quiz/numbers");
+    getNumQuizData: function (language) {
+        return axios.get("/api/quiz/numbers/" + language);
     },
     getSlangQuizData: function () {
         return axios.get("/api/quiz/slang");

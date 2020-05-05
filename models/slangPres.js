@@ -16,7 +16,7 @@ const slangPresSchema = new Schema(
         audioToPlay: {
           type: String
         },
-        phonetic: {
+        explanation: {
           type: String
         }
       }

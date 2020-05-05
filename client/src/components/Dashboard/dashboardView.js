@@ -1,57 +1,106 @@
-import React from 'react';
-import { useParams, Link } from "react-router-dom";
-import { CardDeck, Card, Button } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import { Row, Col } from 'react-bootstrap';
+import API from "../../utils/API"
+import NavBar from '../../components/NavBar';
+import DashboardMenu from "./dashboardMenu";
+
+
+// HomeView form submit will send existing users to their dashboard
+// selectlangView will send newly registered users to their dashboard
+
+// Need to save the languages being studied by the user to the db 
+// Need to save scores to the db
+
+// Need a dynamic menu that will either load the quizzes or presentations based on the users choice
+
+// Need to be able to change the users language they are studying in the db
+// Ask, "are you sure you want to change languages?"
+
+
+// need to create methods in the API.js for...
+// getUserdashboard= will get the data for the username and the language they are studying
+// getUserProgress= will get last quiz score for each module the user has started
+
+
+
+
 
 export default function Dashboard() {
-    const { lang } = useParams();
-    
+
+    const [userDashboard, setUserDashboard] = useState();
+
+
+    const { user } = useParams();
+    useEffect(() => {
+        userName()
+    }, [])
+
+    function userName() {
+        API.findUser(user)
+            .then(res => {
+                console.log(res.data[0].username)
+                setUserDashboard(res.data[0].username)
+            })
+
+            .catch(err => console.log(err));
+    };
+
+    //     const {language} = useParams()
+    //   useEffect(() => {
+    //     userLanguage()
+    //   }, [])
+
+    //   function userLanguage() {
+    //     API.getUserLanguage(language)
+    //       .then(res => {
+    //         console.log(res.data[0].) //Language they study will pe called here
+    //         setQuizContent(res.data[0].questions)
+    //       })
+
+    //       .catch(err => console.log(err));
+    //   };
+
+
 
     return (
+        <>
+            {userDashboard &&
+                <>
+                    <NavBar />
 
-        <CardDeck>
-            <SlideDown>
-            <Card>
-                {/* We want to seed the card Image/Title/Info from the database */}
-                <Card.Img variant="top" src="" />
-                <Card.Body>
-                    <Card.Title>Numbers</Card.Title>
-                    <Card.Text>
-                        Learn numbers 1 - 10!{' '}
-                    </Card.Text>
-                    <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
-            </SlideDown>
+                    <Row>
+                        <Col sm={4}>
+                            <h1>Hello {user.username}, Welcome back!" </h1>
+                        </Col>
+                    </Row>
 
-            <SlideDown>
-            <Card>
-                {/* We want to seed the card Image/Title/Info from the database */}
-                <Card.Img variant="top" src="" />
-                <Card.Body>
-                    <Card.Title>Slang</Card.Title>
-                    <Card.Text>
-                        Learn some slang words and phrases!{' '}
-                    </Card.Text>
-                    <Link to={url + "slang"}><Button disabled>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
-            </SlideDown>
+                   
+                        <Row>
+                            <Col sm={4}>
+                                {/* <p value={"Currently Studying " + { language }}> </p> */}
+                            </Col>
+                        </Row>
 
-            <SlideDown>
-            <Card>
-                {/* We want to seed the card Image/Title/Info from the database */}
-                <Card.Img variant="top" src="" />
-                <Card.Body>
-                    <Card.Title>Basic Travel Phrases</Card.Title>
-                    <Card.Text>
-                        Going on a trip? Learn some basic travel vocabulary!{' '}
-                    </Card.Text>
-                    <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
-            </SlideDown>
+                        <Row>
+                            <Col sm={6}>
+                                <h1>What would you like to do?</h1>
+                            </Col>
+                        </Row>
 
-        </CardDeck>
+                        <Row>
+                            <Col sm={6}>
+                                <DashboardMenu />
+                            </Col>
+                        </Row>
+
+
+                        
+
+
+                </>
+            }
+        </>
 
     )
 }

@@ -6,8 +6,11 @@ module.exports = {
     // to deal with different languages
     console.log(req.originalUrl);
     db.NumQuiz
-      .find({})
-      .then(dbModel => res.json(dbModel))
+      .find({language: req.params.language})
+      .then(dbModel => {
+        console.log(req.params.language);
+        res.json(dbModel);
+      })
       .catch(err => res.status(422).json(err));
   },
   findAllSlangQuizData: (req, res) => {
@@ -16,4 +19,5 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }
+  
 };
