@@ -1,2 +1,2 @@
-# Project_3
-A language app for travelers.
+# Slanguage
+A language app for travelers that would like to learn the local slang.

@@ -5,6 +5,7 @@ import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
 import { useHistory } from 'react-router-dom';
 import './style.css';
+import RingLoader from 'react-spinners/RingLoader'
 
 export default function SignUp() {
 
@@ -51,10 +52,11 @@ return (
     <Container>
         <hr></hr>
         <Row>
-            <Col md={{ span: 8 }}>
-                <h1>Image goes here</h1>
-            </Col>
-            <Col md={{ span: 4, offset: 8 }}>
+        <Col className="spinner" md={{ size: 6, offset: 2 }} >
+                    <RingLoader loading={true} size={350} color="#39a6c1" />
+
+                </Col>
+            <Col md="4">
                 <SignUpForm userObject={userObject} handleInputChange={handleInputChange} />
                 {error &&
                     <span className='error'>{error}</span>

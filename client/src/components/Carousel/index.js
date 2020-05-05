@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function CarouselFlags() {
 
     return (
-        <Carousel>
+        <Carousel interval={3000}>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -15,11 +15,10 @@ export default function CarouselFlags() {
                     alt="Mexico flag"
                 />
                 <Carousel.Caption className="carouselText">
+                    {/* <h3>Español</h3> */}
                     <Link to="/LessonMenu/Spanish"><h3>Español</h3></Link>
                 </Carousel.Caption>
             </Carousel.Item>
-
-
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -30,10 +29,9 @@ export default function CarouselFlags() {
                     <Link to="/LessonMenu/Navajo">
                         <h3>Diné</h3>
                     </Link>
+
                 </Carousel.Caption>
             </Carousel.Item>
-
-
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -46,8 +44,6 @@ export default function CarouselFlags() {
                     </Link>
                 </Carousel.Caption>
             </Carousel.Item>
-
-
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -55,13 +51,11 @@ export default function CarouselFlags() {
                     alt="German flag"
                 />
                 <Carousel.Caption className="carouselText">
-                <Link to="/LessonMenu/German">
-                        <h3>Deutsch</h3>
+                    <Link to="/LessonMenu/German">
+                    <h3>Deutsch</h3>
                     </Link>
                 </Carousel.Caption>
             </Carousel.Item>
-
-
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -69,8 +63,8 @@ export default function CarouselFlags() {
                     alt="French"
                 />
                 <Carousel.Caption className="carouselText">
-                <Link to="/LessonMenu/French">
-                        <h3>Français</h3>
+                    <Link to ="/LessonMenu/French">
+                    <h3>Français</h3>
                     </Link>
                 </Carousel.Caption>
             </Carousel.Item>
