@@ -19,6 +19,7 @@ const [score, setScore] = useState(0)
 
 
 const {language} = useParams()
+
   useEffect(() => {
     loadQuiz()
   }, [])

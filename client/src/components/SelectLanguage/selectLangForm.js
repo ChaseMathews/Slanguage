@@ -8,7 +8,7 @@ export default function SelectLangForm() {
         <ListGroup as="ul" active>
 
             <ListGroup.Item as="li">
-            <Link to="/LessonMenu/spanish">
+            <Link to="/LessonMenu/Spanish">
                 <Button variant="danger" size="lg" block>
                     Español
           </Button>
@@ -16,7 +16,7 @@ export default function SelectLangForm() {
             </ListGroup.Item>
 
             <ListGroup.Item as="li">
-                <Link to="/LessonMenu/navajo">
+                <Link to="/LessonMenu/Navajo">
                 <Button variant="warning" size="lg" block>
                     Navajo
                 </Button>

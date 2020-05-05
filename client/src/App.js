@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/Progress" component={ProgressPage} />
           <Route path="/LessonMenu/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
-          <Route exact path="/QuizCard" component={QuizCard} />
+          <Route exact path="/QuizCard/:language" component={QuizCard} />
           <Route exact path="/Carousel" component={Carousel} />
         <Route exact path="/Gradient" component={Gradient} />
         </Switch>
