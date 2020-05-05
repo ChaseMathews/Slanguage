@@ -9,7 +9,18 @@ const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
 export default function LessonCards() {
     const { lang } = useParams();
-    const url = lang === "Spanish" ? "/SpanishPresentation/" : "/NavajoPresentation/";
+    let url = "";
+    if (lang === "Spanish") {
+        url = "/Spanish/presentation/"
+    } else if (lang === "Navajo") {
+        url = "/Navajo/presentation/"
+    } else if (lang === "French") {
+        url = "/French/presentation/"
+    } else if (lang === "German") {
+        url = "/German/presentation/"
+    } else if (lang === "Italian") {
+        url = "/Italian/presentation/"
+    }
 
     return (
 

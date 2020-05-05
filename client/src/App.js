@@ -3,33 +3,35 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
-import SelectLang from './components/SelectLanguage/selectLangView'; 
+import SelectLang from './components/SelectLanguage/selectLangView';
 import MenuContainer from './components/LessonMenu/LessonMenuView';
-import SpanishPresentation from './components/SpanishPresentation/spaPresView';
-import NavajoPresentation from './components/NavajoPresentation/navajoPresView';
+import Presentation from './components/Presentation/index';
 import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
+import { UserContext } from './utils/Context';
 
 
 function App() {
 
 
-// const [loginStatus, setLoginStatus] = useState(false);
+  const [user, setUser] = useState();
 
 
   return (
     <Router>
-      {window.location.pathname != "/" ? <NavBar /> : "" }
-      
-      <Switch>
-        <Route exact path="/" component={HomeView} />
-        <Route exact path="/UserSignUp" component={SignUp} />
-        <Route exact path="/SelectLanguage" component={SelectLang} />
-        <Route path="/LessonMenu/:lang" component={MenuContainer} />
-        <Route exact path="/SpanishPresentation/:lesson" component={SpanishPresentation} />
-        <Route exact path="/NavajoPresentation/:lesson" component={NavajoPresentation} />
-        <Route exact path="/QuizCard/:language" component={QuizCard} />
-      </Switch>
+      <UserContext.Provider value={user}>
+        {window.location.pathname != "/" ? <NavBar /> : ""}
+        <Switch>
+          <Route exact path="/">
+            <HomeView setUser={setUser}/>
+          </Route>
+          <Route exact path="/UserSignUp" component={SignUp} />
+          <Route exact path="/SelectLanguage" component={SelectLang} />
+          <Route path="/LessonMenu/:lang" component={MenuContainer} />
+          <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
+          <Route exact path="/QuizCard" component={QuizCard} />
+        </Switch>
+      </UserContext.Provider>
     </Router>
   );
 }
