@@ -1,6 +1,7 @@
 import MicRecorder from 'mic-recorder-to-mp3';
 import React, { Component } from 'react';
-
+import { Container, Row} from 'react-bootstrap';
+import "./style.css";
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
 
@@ -53,14 +54,17 @@ class UserAudio extends Component {
     render() {
         return (
             <div>
-                <p>Now you try! Click "Record."</p>
-                <button onClick={this.start} disabled={this.state.isRecording}>
+                <p className="youtry">Now you try! Click "Record."</p>
+                <button className="recordbutton" onClick={this.start} disabled={this.state.isRecording}>
                     Record
                 </button>
-                <button onClick={this.stop} disabled={!this.state.isRecording}>
+                <button className="stopbutton" onClick={this.stop} disabled={!this.state.isRecording}>
                     Stop
                 </button>
-                <audio src={this.state.blobURL} controls="controls" />
+
+                <Row>
+                <audio className="audio" src={this.state.blobURL} controls="controls" />
+                </Row>
             </div>
         )
     }

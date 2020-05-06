@@ -7,6 +7,7 @@ import { Link, useParams, useHistory } from 'react-router-dom';
 import "./style.css"
 import RingLoader from 'react-spinners/RingLoader'
 import API from "../../utils/API";
+import Image from 'react-bootstrap/Image'
 import { UserContext } from '../../utils/Context';
 
 export default function HomeView() {
@@ -65,51 +66,17 @@ export default function HomeView() {
 
 
 
-    // const { id } = useParams()
-
-    // useEffect(() => {
-    //     API.getUserData(id)
-    //         .then(res => {
-    //             console.log(res.data);
-    //             setUser(res.data)
-    //         })
-    //         .catch(err => console.log(err));
-    // }, [])
-
-    // API.findUser
-
-
-    // send user info to backend and send username and id back to frontend (findOne)
-    // set user id to the url??
-    // router.route("/login")
-    //     .post(userController.findOne)
-
-    // load user data based on id in params
-
-    // function handleFormSubmit(event) {
-    //     event.preventDefault();
-    //     if (formObject.title && formObject.author) {
-    //         API.findUser({
-    //             title: formObject.title,
-    //             author: formObject.author,
-    //             synopsis: formObject.synopsis
-    //         })
-    //             .then(res => loadBooks())
-    //             .catch(err => console.log(err));
-    //     }
-    // };
-
-
     return (
         <Container>
             <hr></hr>
             <Row>
-                <Col className="spinner" md={{ size: 6, offset: 2 }} >
-                    <RingLoader loading={true} size={350} color="#39a6c1" />
+                <Col>
+                    {/* <RingLoader loading={true} size={350} color="#39a6c1" /> */}
+                    <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" fluid />
 
                 </Col>
 
-                <Col className="form-container" md="4">
+                <Col className="form-container" md="3">
                     <SignInForm handleFormSubmit={handleFormSubmit} user={userForm} handleInputChange={handleInputChange}>
                         {error &&
                             <span className='error'>{error}</span>
