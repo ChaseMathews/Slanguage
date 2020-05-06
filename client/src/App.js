@@ -1,34 +1,39 @@
-import React, { useState } from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import React, { useContext, useEffect } from 'react';
+import { Route, Switch, useLocation, useHistory } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
-import SelectLang from './components/SelectLanguage/selectLangView'; 
+import SelectLang from './components/SelectLanguage/selectLangView';
 import Dashboard from './components/Dashboard/dashboardView';
 import ProgressPage from './components/Progress/progressView.js';
 import MenuContainer from './components/LessonMenu/LessonMenuView';
 import Presentation from './components/Presentation/index';
 import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
-import Carousel from './views/carousel'
 import Gradient from './components/Gradient';
-import { UserContext } from './utils/Context';
-
+import UserProvider, { UserContext } from './utils/Context';
 
 function App() {
   const location = useLocation();
 
+  const { user } = useContext(UserContext);
 
-  const [user, setUser] = useState();
+  const history = useHistory();
 
+  useEffect(() => {
+    if (location.pathname !== "/" && user === undefined) {
+      history.push("/")
+    }
+  }, [user])
 
   return (
     <>
-      <UserContext.Provider value={user}>
-      {location.pathname != "/" ? <NavBar /> : ""}
+      {console.log(user)};
+      <UserProvider>
+        {location.pathname != "/" ? <NavBar /> : ""}
         <Switch>
           <Route exact path="/">
-            <HomeView setUser={setUser}/>
+            <HomeView />
           </Route>
           <Route exact path="/UserSignUp" component={SignUp} />
           <Route exact path="/SelectLanguage" component={SelectLang} />
@@ -37,10 +42,9 @@ function App() {
           <Route path="/LessonMenu/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
           <Route exact path="/QuizCard/:language" component={QuizCard} />
-          <Route exact path="/Carousel" component={Carousel} />
-        <Route exact path="/Gradient" component={Gradient} />
+          <Route exact path="/Gradient" component={Gradient} />
         </Switch>
-      </UserContext.Provider>
+      </UserProvider>
     </>
   );
 }
