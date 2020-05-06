@@ -20,15 +20,15 @@ function App() {
 
   const history = useHistory();
 
-  useEffect(() => {
-    if (location.pathname !== "/" && user === undefined) {
-      history.push("/")
-    }
-  }, [user])
+  // useEffect(() => {
+  //   if (location.pathname !== "/" && user === undefined) {
+  //     history.push("/")
+  //   }
+  // }, [user])
 
   return (
     <>
-      {console.log(user)};
+      {console.log(user)}
       <UserProvider>
         {location.pathname != "/" ? <NavBar /> : ""}
         <Switch>
