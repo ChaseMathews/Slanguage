@@ -16,7 +16,8 @@ export default function CarouselFlags() {
                 />
                 <Carousel.Caption className="carouselText">
                     {/* <h3>Español</h3> */}
-                    <Link to="/LessonMenu/Spanish"><h3>Español</h3></Link>
+                    {/* <Link to="/LessonMenu/Spanish"><h3>Español</h3></Link> */}
+                    <Link to="/Dashboard/Spanish"><h3>Español</h3></Link>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -26,7 +27,8 @@ export default function CarouselFlags() {
                     alt="Navajo Nation flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    <Link to="/LessonMenu/Navajo">
+                    {/* <Link to="/LessonMenu/Navajo"> */}
+                    <Link to="/Dashboard/Navajo">
                         <h3>Diné</h3>
                     </Link>
 
@@ -39,7 +41,8 @@ export default function CarouselFlags() {
                     alt="Italy flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    <Link to="/LessonMenu/Italian">
+                    {/* <Link to="/LessonMenu/Italian"> */}
+                    <Link to="/Dashboard/Italian">
                         <h3>Italiano</h3>
                     </Link>
                 </Carousel.Caption>
@@ -51,7 +54,8 @@ export default function CarouselFlags() {
                     alt="German flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    <Link to="/LessonMenu/German">
+                    {/* <Link to="/LessonMenu/German"> */}
+                    <Link to="/Dashboard/German">
                     <h3>Deutsch</h3>
                     </Link>
                 </Carousel.Caption>
@@ -63,7 +67,8 @@ export default function CarouselFlags() {
                     alt="French"
                 />
                 <Carousel.Caption className="carouselText">
-                    <Link to ="/LessonMenu/French">
+                    {/* <Link to ="/LessonMenu/French"> */}
+                    <Link to ="/Dashboard/French">
                     <h3>Français</h3>
                     </Link>
                 </Carousel.Caption>

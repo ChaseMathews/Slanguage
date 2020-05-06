@@ -1,9 +1,12 @@
 import React from 'react';
-import { Container, Row, Col, Button, ListGroup, } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col, Button, ListGroup } from 'react-bootstrap';
+import { Link, useParams } from 'react-router-dom';
 
 
 export default function DashboardMenu() {
+    
+    const { lang } = useParams();
+
 
     return (
         <>
@@ -14,13 +17,13 @@ export default function DashboardMenu() {
                         <ListGroup as="ul" active>
 
                             <ListGroup.Item as="li">
-                                <Link to="/LessonMenu/:language">
+                                <Link to={"/LessonMenu/pres/" + lang}>
                                     <Button variant="primary" size="lg" block>Learn</Button>
                                 </Link>
                             </ListGroup.Item>
 
                             <ListGroup.Item as="li">
-                                <Link to="/QuizMenu/:language">
+                                <Link to={"/LessonMenu/quiz/" + lang}>
                                     <Button variant="primary" size="lg" block>Practice</Button>
                                 </Link>
                             </ListGroup.Item>
