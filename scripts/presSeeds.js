@@ -6,61 +6,61 @@ module.exports = [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "targetWord": "uno",
-                    "audioToPlay": "/audio/uno.m4a",
+                    "audioToPlay": "/audio/spanish/uno.m4a",
                     "phonetic": "OOh-noh"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
                     "targetWord": "dos",
-                    "audioToPlay": "/audio/dos.m4a",
+                    "audioToPlay": "/audio/spanish/dos.m4a",
                     "phonetic": "dohs"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
                     "targetWord": "tres",
-                    "audioToPlay": "/audio/tres.m4a",
+                    "audioToPlay": "/audio/spanish/tres.m4a",
                     "phonetic": "trehs"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
                     "targetWord": "cuatro",
-                    "audioToPlay": "/audio/cuatro.m4a",
+                    "audioToPlay": "/audio/spanish/cuatro.m4a",
                     "phonetic": "KWAH-troh"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
                     "targetWord": "cinco",
-                    "audioToPlay": "/audio/cinco.m4a",
+                    "audioToPlay": "/audio/spanish/cinco.m4a",
                     "phonetic": "SEEN-ko"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
                     "targetWord": "seis",
-                    "audioToPlay": "/audio/seis.m4a",
+                    "audioToPlay": "/audio/spanish/seis.m4a",
                     "phonetic": "sayss"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
                     "targetWord": "siete",
-                    "audioToPlay": "/audio/siete.m4a",
+                    "audioToPlay": "/audio/spanish/siete.m4a",
                     "phonetic": "SYEH-teh"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
                     "targetWord": "ocho",
-                    "audioToPlay": "/audio/ocho.m4a",
+                    "audioToPlay": "/audio/spanish/ocho.m4a",
                     "phonetic": "OH-choh"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
                     "targetWord": "nueve",
-                    "audioToPlay": "/audio/nueve.m4a",
+                    "audioToPlay": "/audio/spanish/nueve.m4a",
                     "phonetic": "NWEH-bay"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
                     "targetWord": "diez",
-                    "audioToPlay": "/audio/diez.m4a",
+                    "audioToPlay": "/audio/spanish/diez.m4a",
                     "phonetic": "dyess"
                 }
             ]
