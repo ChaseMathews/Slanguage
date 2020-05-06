@@ -72,37 +72,37 @@ module.exports = [
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "targetWord": "tʼááłáʼí",
                     "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
-                    "phonetic": ""
+                    "phonetic": "t'aah łah ih"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
                     "targetWord": "naaki",
                     "audioToPlay": "https://soundcloud.com/dinehpodcast/naaki",
-                    "phonetic": ""
+                    "phonetic": "naw key"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
                     "targetWord": "táá'",
                     "audioToPlay": "https://soundcloud.com/dinehpodcast/taa",
-                    "phonetic": ""
+                    "phonetic": "tāā'"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
                     "targetWord": "dį́į́ʼ",
                     "audioToPlay": "https://soundcloud.com/dinehpodcast/dii",
-                    "phonetic": ""
+                    "phonetic": "dii:"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
                     "targetWord": "ashdla'",
                     "audioToPlay": "https://soundcloud.com/dinehpodcast/ashdla",
-                    "phonetic": ""
+                    "phonetic": "ah shd lah"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
                     "targetWord": "hastą́ą́",
                     "audioToPlay": "https://soundcloud.com/dinehpodcast/hastaa",
-                    "phonetic": ""
+                    "phonetic": "haas tāā'"
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",

@@ -23,8 +23,6 @@ export default function LessonCards() {
         
 
         <CardDeck>
-            
-            <LangCategory />
 
             <Row>
             <Card>
@@ -36,19 +34,6 @@ export default function LessonCards() {
                         Learn numbers 1 - 10!{' '}
                     </Card.Text>
                     <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
-            
-
-            <Card>
-                
-                <Card.Img variant="top" src="" />
-                <Card.Body>
-                    <Card.Title>Slang</Card.Title>
-                    <Card.Text>
-                        Learn some slang words and phrases!{' '}
-                    </Card.Text>
-                    {/* <Link to={url + "slang"}><Button disabled>Click Here!</Button></Link> */}
                 </Card.Body>
             </Card>
 

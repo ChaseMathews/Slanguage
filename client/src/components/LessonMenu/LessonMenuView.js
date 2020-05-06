@@ -7,6 +7,7 @@ import styled, { keyframes } from 'styled-components';
 import "./style.css"
 import Gradient from "../Gradient"
 import LangCategory from "./lessonLangHeader"
+import SlangCard from "./lessonCardSlang"
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -16,15 +17,24 @@ function LessonMenu() {
 
     return (
         <Container>
+            <LangCategory />
+            <hr />
                 <Gradient>
                     <SlideDown>
                         <Row>
                             <Col>
-                                <LessonCards />
+                                <SlangCard />
                             </Col>
                         </Row>
                     </SlideDown>
                 </Gradient>
+                <SlideDown>
+                        <Row>
+                            <Col md={{ span: 8, offset: 2 }}>
+                                <LessonCards />
+                            </Col>
+                        </Row>
+                    </SlideDown>
         </Container>
     )
 }

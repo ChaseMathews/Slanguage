@@ -6,9 +6,7 @@ h1{
     color: black;
 }
 
-.card-text{
-  color: black;
-  font-size: initial;
-  
-}
 
+.lang{
+  text-align: center;
+}
