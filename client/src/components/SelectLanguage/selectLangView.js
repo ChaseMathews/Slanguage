@@ -18,19 +18,8 @@ export default function SelectLang() {
                 <Col>
                     <LangHeader />
                     <hr></hr>
-                    <Carousel />
                 </Col>
             </Row>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <Row className="justify-content-center">
                 <Col sm={7} md={7} lg={7}>
                     <CarouselFlags />

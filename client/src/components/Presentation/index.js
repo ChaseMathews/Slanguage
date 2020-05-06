@@ -7,6 +7,7 @@ import { slideInDown } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import API from "../../utils/API"
 import ReactAudioPlayer from 'react-audio-player';
+import LangCategory from "../LessonMenu/lessonLangHeader"
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -53,25 +54,29 @@ export default function Presentation() {
         <>
             {presContent &&
                 <Container>
+                    <LangCategory />
                     <hr></hr>
-                    <Jumbotron>
+                    <Jumbotron className="justify-content-center text-center">
                         <SlideDown>
                             <Row>
-                                <Col md="6">
-                                    <Card className="cardHolder">
+                                <Col>
+                                    <Card className="card">
                                         <img id="numberImage" src={presContent[itemIndex].imageUrl}></img>
-                                        <Card.Body>
-                                            <Card.Title>{presContent[itemIndex].targetWord}</Card.Title>
+                                        <Card.Body className="justify-content-center text-center">
+                                            <Card.Title className="word"><h2>{presContent[itemIndex].targetWord}</h2></Card.Title>
+                                            <hr></hr>
                                             <ReactAudioPlayer
                                                 src={presContent[itemIndex].audioToPlay}
                                                 controls
                                             />
                                             <Card.Title>({presContent[itemIndex].phonetic})</Card.Title>
                                             {/* <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
+                                            <hr />
                                             <UserAudio />
+                                            <hr />
                                             <Row className="justify-content-between" >
-                                                <Button className="button" variant="primary" onClick={handlePresDataChangeBack}>Go to previous</Button>
-                                                <Button className="button" variant="primary" onClick={handlePresDataChange}>Go to next</Button>
+                                                <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
+                                                <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
                                             </Row>
                                         </Card.Body>
                                     </Card>
