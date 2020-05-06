@@ -59,12 +59,11 @@ return (
                 </Col>
             <Col md="4">
                 <SignUpForm userObject={userObject} handleInputChange={handleInputChange} />
-                <p></p>
-                <SignUpBtn handleFormSubmit={handleFormSubmit}>
                 {error &&
                     <span className='error'>{error}</span>
                 }
-                </SignUpBtn>
+                <p></p>
+                <SignUpBtn handleFormSubmit={handleFormSubmit} />
             </Col>
         </Row>
     </Container>
