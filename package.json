@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A study aid for language learners",
   "main": "server.js",
+  "engines": {
+    "node": "v12.11.1"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
