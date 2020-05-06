@@ -37,7 +37,7 @@ const {language} = useParams()
 
   const handleImageChange = () => {
     setIndex(prev => {
-
+      setDisplay(false)
      return prev + 1
     }) 
   }
@@ -85,6 +85,7 @@ const {value} = e.target
     <>
       {quizContent &&
         <div>
+          score:{score}
           <Card>
             <Row>
               <Col sm={4}>
