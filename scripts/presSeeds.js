@@ -331,55 +331,327 @@ module.exports = [
             "language": "Spanish",
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
-                    "phonetic": ""
-                }
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
             ]
         },
         {
             "language": "Navajo",
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
-                    "phonetic": ""
-                }
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
             ]
         },
         {
             "language": "French",
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
-                    "phonetic": ""
-                }
+                    "imageUrl": " ",
+                    "targetWord": "Blé",
+                    "audioToPlay": " ",
+                    "explanation": " Money, Cash."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Cul Sec",
+                    "audioToPlay": " ",
+                    "explanation": "(Dry ass), a term of encouragement, like bottoms up." 
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Beuf",
+                    "audioToPlay": " ",
+                    "explanation": "A jerk. "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Chelou",
+                    "audioToPlay": " ",
+                    "explanation": "Suspicous, or sketchy."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Bombe",
+                    "audioToPlay": " ",
+                    "explanation": "A beautiful woman."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Beau Gosse",
+                    "audioToPlay": " ",
+                    "explanation": "A hot guy, often abbreviated BG. "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Bolosse",
+                    "audioToPlay": " ",
+                    "explanation": "A loser."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Bobo",
+                    "audioToPlay": " ",
+                    "explanation": "A term used for a child's skinned knee, or a yuppie."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Thon",
+                    "audioToPlay": " ",
+                    "explanation": "Ugly man or woman "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Bête comme ses pieds",
+                    "audioToPlay": " ",
+                    "explanation": "This means, as stupid as his feet. "
+                },
             ]
         },
         {
             "language": "German",
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
-                    "phonetic": ""
-                }
+                    "imageUrl": " ",
+                    "targetWord": "Prost!",
+                    "audioToPlay": " ",
+                    "explanation": "Cheers!"
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Mach’s Gut!",
+                    "audioToPlay": " ",
+                    "explanation": "A way to say goodbye."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Alter",
+                    "audioToPlay": " ",
+                    "explanation": "Elder, or Dude between friends."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Assi ",
+                    "audioToPlay": " ",
+                    "explanation": "An insult to talk about someone who you perceive as uneducated and without manners."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Breit",
+                    "audioToPlay": " ",
+                    "explanation": "To be really intoxicated."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Besserwisser",
+                    "audioToPlay": " ",
+                    "explanation": "An insult similar to know-it-all."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Kohle",
+                    "audioToPlay": " ",
+                    "explanation": "Coal, slang for cash."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Kummerspeck",
+                    "audioToPlay": " ",
+                    "explanation": "Literally, mourning bacon, it's the weight you gain through emotional eating."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Kater",
+                    "audioToPlay": " ",
+                    "explanation": "A hangover."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Fahr zur Hölle! ",
+                    "audioToPlay": " ",
+                    "explanation": "Go to hell! "
+                },
+             
+             
             ]
         },
         {
             "language": "Italian",
             "content": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
-                    "targetWord": "tʼááłáʼí",
-                    "audioToPlay": "https://soundcloud.com/dinehpodcast/taalai",
-                    "phonetic": ""
-                }
+                    "imageUrl": " ",
+                    "targetWord": "Figurati ",
+                    "audioToPlay": " ",
+                    "explanation": "No Worries! "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "A fanabla! ",
+                    "audioToPlay": " ",
+                    "explanation": "Go to hell! "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": "Segone ",
+                    "audioToPlay": " ",
+                    "explanation": "A loser."
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
             ]
         }
     ]
