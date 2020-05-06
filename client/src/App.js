@@ -10,7 +10,6 @@ import MenuContainer from './components/LessonMenu/LessonMenuView';
 import Presentation from './components/Presentation/index';
 import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
-import Carousel from './views/carousel'
 import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
 
@@ -43,7 +42,6 @@ function App() {
           <Route path="/LessonMenu/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
           <Route exact path="/QuizCard/:language" component={QuizCard} />
-          <Route exact path="/Carousel" component={Carousel} />
           <Route exact path="/Gradient" component={Gradient} />
         </Switch>
       </UserProvider>
