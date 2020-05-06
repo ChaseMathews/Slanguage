@@ -46,7 +46,7 @@ export default function HomeView() {
                 })
                 .catch(err => {
                     console.log(err);
-                    setError(err.response.data.message)
+                    setError("Username or password is incorrect. Try again!")
                 })
         }
     }

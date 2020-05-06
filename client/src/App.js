@@ -28,7 +28,6 @@ function App() {
 
   return (
     <>
-      {console.log(user)};
       <UserProvider>
         {location.pathname != "/" ? <NavBar /> : ""}
         <Switch>
