@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Submit from './submitButton';
 import SignInForm from './SignInForm';
@@ -8,14 +8,11 @@ import "./style.css"
 import RingLoader from 'react-spinners/RingLoader'
 import API from "../../utils/API";
 import Image from 'react-bootstrap/Image'
+import { UserContext } from '../../utils/Context';
 
+export default function HomeView() {
 
-
-
-
-export default function HomeView({setUser}) {
-
-    // check Detail page in 21MERN ACT 05
+    const { user, setUser } = useContext(UserContext);
 
     const [userForm, setUserForm] = useState({
         username: "",
@@ -46,11 +43,10 @@ export default function HomeView({setUser}) {
                 .then(userObj => {
                     console.log(userObj.data);
                     setUser(userObj.data);
-                    // loadUserData();
                     history.push("/SelectLanguage");
                 })
                 .catch(err => {
-                    console.log({ err });
+                    console.log(err);
                     setError(err.response.data.message)
                 })
         }
@@ -77,7 +73,6 @@ export default function HomeView({setUser}) {
                 <Col>
                     {/* <RingLoader loading={true} size={350} color="#39a6c1" /> */}
                     <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" fluid />
-                    {/* <img src={require("./img/slanguagelogofinal-02.jpg")} /> */}
 
                 </Col>
 
