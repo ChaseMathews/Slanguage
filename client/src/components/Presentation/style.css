@@ -7,10 +7,14 @@
     height: 250px;
     padding-top: 10px;
     box-shadow: 0 8px 6px -6px black;
+    
 }
 
-.button{
-    margin: 5px;
+.previousback{
+    margin: 50px;
+    color: green;
+    background-color: transparent;
+    border: none;
 
 }
 
@@ -19,11 +23,18 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+
 }
 
 .jumbotron{
     display: flex;
-    background-color: white;
+    /* background: linear-gradient(45deg, #d5135a, #f05924); */
     align-items: center;
     justify-content: center;
 }

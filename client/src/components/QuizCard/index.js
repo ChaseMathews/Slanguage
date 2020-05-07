@@ -18,14 +18,14 @@ const [score, setScore] = useState(0)
 
 
 
-const {language} = useParams()
+const {lang} = useParams()
 
   useEffect(() => {
     loadQuiz()
   }, [])
 
   function loadQuiz() {
-    API.getNumQuizData(language)
+    API.getNumQuizData(lang)
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)

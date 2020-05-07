@@ -8,6 +8,8 @@ import styled, { keyframes } from 'styled-components';
 import API from "../../utils/API"
 import ReactAudioPlayer from 'react-audio-player';
 import LangCategory from "../LessonMenu/lessonLangHeader"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -58,6 +60,8 @@ export default function Presentation() {
                     <LangCategory />
                     <hr></hr>
                     <Jumbotron className="justify-content-center text-center">
+                    <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
+                                                
                         <SlideDown>
                             <Row>
                                 <Col>
@@ -74,16 +78,14 @@ export default function Presentation() {
                                             {/* <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
                                             <hr />
                                             <UserAudio />
-                                            <hr />
-                                            <Row className="justify-content-between" >
-                                                <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
-                                                <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
-                                            </Row>
+                                            
                                         </Card.Body>
                                     </Card>
                                 </Col>
                             </Row>
                         </SlideDown>
+                        <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={ faAngleDoubleRight } size="6x" /> </Button>
+                                            
                     </Jumbotron>
                 </Container>
             }

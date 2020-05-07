@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { Route, Switch, useLocation, useHistory } from 'react-router-dom';
+import { Route, Switch, useLocation, useHistory, useParams } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
@@ -15,7 +15,7 @@ import UserProvider, { UserContext } from './utils/Context';
 
 function App() {
   const location = useLocation();
-
+  const {lang} = useParams();
   const { user } = useContext(UserContext);
 
   const history = useHistory();
@@ -26,12 +26,14 @@ function App() {
   //   }
   // }, [user])
 
+
+
   return (
     <>
       {console.log(user)}
       <UserProvider>
         {location.pathname != "/" ? <NavBar /> : ""}
-        <Switch>
+         <Switch>
           <Route exact path="/">
             <HomeView />
           </Route>
@@ -41,7 +43,7 @@ function App() {
           <Route exact path="/Progress" component={ProgressPage} />
           <Route path="/LessonMenu/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
-          <Route exact path="/QuizCard/:language" component={QuizCard} />
+          <Route exact path="/QuizCard/:lang" component={QuizCard} />
           <Route exact path="/Gradient" component={Gradient} />
         </Switch>
       </UserProvider>
