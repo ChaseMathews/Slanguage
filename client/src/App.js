@@ -16,7 +16,7 @@ import UserProvider, { UserContext } from './utils/Context';
 function App() {
   const location = useLocation();
 
-  const { user } = useContext(UserContext);
+  const { user, currentLang } = useContext(UserContext);
 
   const history = useHistory();
 

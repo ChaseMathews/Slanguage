@@ -63,8 +63,9 @@ module.exports = {
     },
     // will be used if user wants to update their username/password, and for storing their progress data
     update: function ({ params, body }, res) {
+        console.log(params.id, body);
         db.User
-            .findOneAndUpdate({ _id: params.id }, body)
+            .findOneAndUpdate({ _id: params.id }, body, {new:true})
             .then(dbUser => res.json(dbUser))
             .catch(err => res.status(422).json(err));
     },

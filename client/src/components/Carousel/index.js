@@ -1,10 +1,43 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+
+import { Link, useHistory } from 'react-router-dom';
+import API from '../../utils/API';
+import { UserContext } from '../../utils/Context';
 
 
 
 export default function CarouselFlags() {
+
+    const { user, currentLang, setCurrentLang } = useContext(UserContext);
+
+    console.log(user.id);
+
+    const history = useHistory();
+
+    const setLanguage = () => {
+        // setCurrentLang({ currentLang });
+        // updateUserCurrentLang();
+        // history.push(`/Dashboard/Spanish`);
+    }
+
+    const updateUserCurrentLang = e => {
+        e.preventDefault();
+        console.log(e.target.value);
+        const { value } = e.target;
+        console.log(value);
+
+        API.updateUser(user.id, { currentLanguage: value })
+            .then(res => {
+                console.log(res.data)
+                setCurrentLang(res.data)
+            })
+            .catch(err => console.log(err));
+
+        history.push(`/Dashboard/${currentLang}`)
+    };
+
 
     return (
         <Carousel interval={3000}>
@@ -17,7 +50,7 @@ export default function CarouselFlags() {
                 <Carousel.Caption className="carouselText">
                     {/* <h3>Español</h3> */}
                     {/* <Link to="/LessonMenu/Spanish"><h3>Español</h3></Link> */}
-                    <Link to="/Dashboard/Spanish"><h3>Español</h3></Link>
+                    <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Spanish" >Español</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -56,7 +89,7 @@ export default function CarouselFlags() {
                 <Carousel.Caption className="carouselText">
                     {/* <Link to="/LessonMenu/German"> */}
                     <Link to="/Dashboard/German">
-                    <h3>Deutsch</h3>
+                        <h3>Deutsch</h3>
                     </Link>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -68,8 +101,8 @@ export default function CarouselFlags() {
                 />
                 <Carousel.Caption className="carouselText">
                     {/* <Link to ="/LessonMenu/French"> */}
-                    <Link to ="/Dashboard/French">
-                    <h3>Français</h3>
+                    <Link to="/Dashboard/French">
+                        <h3>Français</h3>
                     </Link>
                 </Carousel.Caption>
             </Carousel.Item>
