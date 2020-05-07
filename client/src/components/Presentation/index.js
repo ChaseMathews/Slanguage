@@ -15,7 +15,6 @@ const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 export default function Presentation() {
 
     const { lang } = useParams();
-    // console.log(lang);
     const { lesson } = useParams();
 
     const [presContent, setPresContent] = useState()

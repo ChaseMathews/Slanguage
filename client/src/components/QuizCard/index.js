@@ -18,15 +18,25 @@ const [score, setScore] = useState(0)
 const [display, setDisplay] = useState(false)
 
 
-
-const {language} = useParams()
+  const { lang } = useParams();
+  const { lesson } = useParams();
 
   useEffect(() => {
-    loadQuiz()
-  }, [])
+    lesson === "numbers" ? loadNumQuiz() : loadSlangQuiz();
+  }, []);
 
-  function loadQuiz() {
-    API.getNumQuizData(language)
+  function loadNumQuiz() {
+    API.getNumQuizData(lang)
+      .then(res => {
+        console.log(res.data[0].questions)
+        setQuizContent(res.data[0].questions)
+      })
+
+      .catch(err => console.log(err));
+  };
+
+  function loadSlangQuiz() {
+    API.getSlangQuizData(lang)
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
@@ -46,17 +56,17 @@ const {language} = useParams()
     e.preventDefault()
     console.log(e.target.value)
 
-const {value} = e.target
+    const { value } = e.target
 
 
     console.log(quizContent)
-  console.log(quizContent[index].answerOptions)
-    
-    
-    
-    
-    if(quizContent[index].correctAnswer === value) {
-      
+    console.log(quizContent[index].answerOptions)
+
+
+
+
+    if (quizContent[index].correctAnswer === value) {
+
       setDisplay(true)
       setScore(score + 3) 
       
@@ -70,14 +80,14 @@ const {value} = e.target
     }
     console.log(score)
 
- 
+
   }
 
   const handleResults = e => {
-    const {name} = e.target
+    const { name } = e.target
     setResults({
       ...results,
-      [ name]: false
+      [name]: false
     })
   }
 

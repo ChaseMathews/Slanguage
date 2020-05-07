@@ -9,11 +9,11 @@ export default {
     getSlangPresData: function(lang) {
         return axios.get("/api/presentation/slang/" + lang);
     },
-    getNumQuizData: function (language) {
-        return axios.get("/api/quiz/numbers/" + language);
+    getNumQuizData: function (lang) {
+        return axios.get("/api/quiz/numbers/" + lang);
     },
-    getSlangQuizData: function () {
-        return axios.get("/api/quiz/slang");
+    getSlangQuizData: function (lang) {
+        return axios.get("/api/quiz/slang/" + lang);
     },
     // // Gets the user with the given id upon logging in
     getUserData: function (id) {

@@ -6,17 +6,38 @@ import LangCategory from "./lessonLangHeader"
 
 export default function LessonCards() {
     const { lang } = useParams();
+
+    const { type } = useParams();
+
     let url = "";
-    if (lang === "Spanish") {
-        url = "/Spanish/presentation/"
-    } else if (lang === "Navajo") {
-        url = "/Navajo/presentation/"
-    } else if (lang === "French") {
-        url = "/French/presentation/"
-    } else if (lang === "German") {
-        url = "/German/presentation/"
-    } else if (lang === "Italian") {
-        url = "/Italian/presentation/"
+    let cardText = "";
+
+    if (type === "pres") {
+        cardText = "Learn";
+        if (lang === "Spanish") {
+            url = "/Spanish/presentation/"
+        } else if (lang === "Navajo") {
+            url = "/Navajo/presentation/"
+        } else if (lang === "French") {
+            url = "/French/presentation/"
+        } else if (lang === "German") {
+            url = "/German/presentation/"
+        } else if (lang === "Italian") {
+            url = "/Italian/presentation/"
+        }
+    } else if (type === "quiz") {
+        cardText = "Practice";
+        if (lang === "Spanish") {
+            url = "/QuizCard/Spanish/"  
+        } else if (lang === "Navajo") {
+            url = "/QuizCard/Navajo/"
+        } else if (lang === "French") {
+            url = "/QuizCard/French/"
+        } else if (lang === "German") {
+            url = "/QuizCard/German/"
+        } else if (lang === "Italian") {
+            url = "/QuizCard/Italian/"
+        }
     }
 
     return (
@@ -33,7 +54,7 @@ export default function LessonCards() {
                 <Card.Body>
                     <Card.Title>Numbers</Card.Title>
                     <Card.Text className="card-text">
-                        Learn numbers 1 - 10!{' '}
+                        {cardText} numbers 1 - 10!{' '}
                     </Card.Text>
                     <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
                 </Card.Body>
@@ -46,9 +67,9 @@ export default function LessonCards() {
                 <Card.Body>
                     <Card.Title>Slang</Card.Title>
                     <Card.Text>
-                        Learn some slang words and phrases!{' '}
+                        {cardText} some slang words and phrases!{' '}
                     </Card.Text>
-                    {/* <Link to={url + "slang"}><Button disabled>Click Here!</Button></Link> */}
+                    <Link to={url + "slang"}><Button disabled>Click Here!</Button></Link>
                 </Card.Body>
             </Card>
 
@@ -58,9 +79,9 @@ export default function LessonCards() {
                 <Card.Body>
                     <Card.Title>Basic Travel Phrases</Card.Title>
                     <Card.Text>
-                        Going on a trip? Learn some basic travel vocabulary!{' '}
+                        Going on a trip? {cardText} some basic travel vocabulary!{' '}
                     </Card.Text>
-                    {/* <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link> */}
+                    <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link>
                 </Card.Body>
             </Card>
             </Row>
