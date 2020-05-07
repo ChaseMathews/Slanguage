@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link, useHistory } from 'react-router-dom';
 import { Container, Jumbotron, Card, Button, Col, Row } from 'react-bootstrap';
 import "./style.css";
 import UserAudio from "./userAudio";
@@ -16,6 +16,7 @@ export default function Presentation() {
 
     const { lang } = useParams();
     const { lesson } = useParams();
+    const history = useHistory(); 
 
     const [presContent, setPresContent] = useState()
     let [itemIndex, setItemIndex] = useState(0);
@@ -44,10 +45,22 @@ export default function Presentation() {
     };
 
     const handlePresDataChange = () => {
-        setItemIndex(prev => prev + 1)
+        setItemIndex(prev => {
+            if (itemIndex < 10) {
+                return prev + 1
+            }
+        })
     }
     const handlePresDataChangeBack = () => {
-        setItemIndex(prev => prev - 1)
+        setItemIndex(prev => {
+            if (itemIndex > 0) {
+                return prev - 1
+            }
+        })
+    }
+
+    const goToQuiz = () => {
+        history.push(`/QuizCard/${lang}/${lesson}`);
     }
 
     return (
@@ -69,14 +82,19 @@ export default function Presentation() {
                                                 src={presContent[itemIndex].audioToPlay}
                                                 controls
                                             />
-                                            <Card.Title>({presContent[itemIndex].phonetic})</Card.Title>
-                                            {/* <Card.Img variant="top" id="audioIcon" src="https://p7.hiclipart.com/preview/994/690/368/loudspeaker-computer-icons-sound-icon-call-icon.jpg" /> */}
+                                            <Card.Title>{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
                                             <hr />
                                             <UserAudio />
                                             <hr />
                                             <Row className="justify-content-between" >
-                                                <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
-                                                <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
+                                                {itemIndex > 0 &&
+                                                    <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
+                                                }
+                                                {itemIndex !== 9 ?
+                                                    <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
+                                                    :
+                                                    <Button className="button" variant="success" onClick={goToQuiz}>Practice! --></Button>
+                                                }
                                             </Row>
                                         </Card.Body>
                                     </Card>
