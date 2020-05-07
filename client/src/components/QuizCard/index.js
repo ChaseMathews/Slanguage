@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer } from "react";
 import API from "../../utils/API"
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 
 
@@ -13,19 +13,30 @@ export default function QuizCard() {
     ButtonTwo: true,
     ButtonThree: true
   });
-const [display, setDisplay] =useState(false)
-const [score, setScore] = useState(0)
+  // const [display, setDisplay] =useState(false)
+  const [score, setScore] = useState(0)
+  const [display, setDisplay] = useState(false)
 
-
-
-const {lang} = useParams()
+  const history = useHistory();
+  const { lang } = useParams();
+  const { lesson } = useParams();
 
   useEffect(() => {
-    loadQuiz()
-  }, [])
+    lesson === "numbers" ? loadNumQuiz() : loadSlangQuiz();
+  }, []);
 
-  function loadQuiz() {
+  function loadNumQuiz() {
     API.getNumQuizData(lang)
+      .then(res => {
+        console.log(res.data[0].questions)
+        setQuizContent(res.data[0].questions)
+      })
+
+      .catch(err => console.log(err));
+  };
+
+  function loadSlangQuiz() {
+    API.getSlangQuizData(lang)
       .then(res => {
         console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
@@ -36,70 +47,81 @@ const {lang} = useParams()
 
   const handleImageChange = () => {
     setIndex(prev => {
-
-     return prev + 1
-    }) 
+      setDisplay(false)
+      return prev + 1
+    })
   }
 
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
 
-const {value} = e.target
+    const { value } = e.target
 
 
     console.log(quizContent)
-  console.log(quizContent[index].answerOptions)
-    
-    
-    
-    
-    if(quizContent[index].correctAnswer === value) {
-      
+    console.log(quizContent[index].answerOptions)
+
+
+
+
+    if (quizContent[index].correctAnswer === value) {
+
       setDisplay(true)
-      setScore(score + 3) 
-        
+      setScore(score + 3)
+
+
     } else {
-      
-      setScore(score -1)
-    
+
+      setScore(score - 1)
+
+
+
     }
     console.log(score)
 
- 
+
   }
 
   const handleResults = e => {
-    const {name} = e.target
+    const { name } = e.target
     setResults({
       ...results,
-      [ name]: false
+      [name]: false
     })
+  }
+
+  const goToDash = () => {
+    history.push(`/Dashboard/${lang}`);
   }
 
   return (
     <>
       {quizContent &&
         <div>
+          score:{score}
           <Card>
             <Row>
               <Col sm={4}>
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
               </Col>
               <Col sm={4}>
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[0] && display  ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
-                
-                
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[1] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
-                
-                
-                <Button variant={quizContent[index].correctAnswer===quizContent[index].answerOptions[2] && display ? "primary" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
-                
+                <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[0] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+
+
+                <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[1] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+
+
+                <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[2] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+
               </Col>
               <Col sm={4}>
                 <Row>
-
-                  <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
+                  {index !== 9 ?
+                    <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
+                    :
+                    <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
+                  }
 
                 </Row>
               </Col>
