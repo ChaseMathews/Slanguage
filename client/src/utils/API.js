@@ -31,9 +31,9 @@ export default {
     signUpUser: function (user) {
         return axios.post("/api/user/", user);
     },
-    // Update user info with scores
-    updateUser: function(data){
-        return axios.put("/api/user/", data)
+    // Update user info with scores and current language
+    updateUser: function(id, data){
+        return axios.put(`/api/user/${id}`, data)
     }
     
 }

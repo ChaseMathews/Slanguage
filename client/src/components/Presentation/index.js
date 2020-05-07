@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useHistory } from 'react-router-dom';
 import { Container, Jumbotron, Card, Button, Col, Row } from 'react-bootstrap';
 import "./style.css";
 import UserAudio from "./userAudio";
@@ -16,6 +16,7 @@ export default function Presentation() {
 
     const { lang } = useParams();
     const { lesson } = useParams();
+    const history = useHistory(); 
 
     const [presContent, setPresContent] = useState()
     let [itemIndex, setItemIndex] = useState(0);
@@ -58,7 +59,9 @@ export default function Presentation() {
         })
     }
 
-    const quizHref = "/QuizCard/" + lang + "/" + lesson;
+    const goToQuiz = () => {
+        history.push(`/QuizCard/${lang}/${lesson}`);
+    }
 
     return (
         <>
@@ -84,11 +87,13 @@ export default function Presentation() {
                                             <UserAudio />
                                             <hr />
                                             <Row className="justify-content-between" >
-                                                <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
+                                                {itemIndex > 0 &&
+                                                    <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
+                                                }
                                                 {itemIndex !== 9 ?
                                                     <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
                                                     :
-                                                    <Button className="button" variant="success" href={quizHref}>Practice! --></Button>
+                                                    <Button className="button" variant="success" onClick={goToQuiz}>Practice! --></Button>
                                                 }
                                             </Row>
                                         </Card.Body>
