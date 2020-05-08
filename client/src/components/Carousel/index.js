@@ -35,7 +35,7 @@ export default function CarouselFlags() {
             })
             .catch(err => console.log(err));
 
-        history.push(`/Dashboard/${currentLang}`)
+        // history.push(`/Dashboard/${currentLang}`)
     };
 
 
@@ -49,8 +49,8 @@ export default function CarouselFlags() {
                 />
                 <Carousel.Caption className="carouselText">
                     {/* <h3>Español</h3> */}
-                    {/* <Link to="/LessonMenu/Spanish"><h3>Español</h3></Link> */}
-                    <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Spanish" >Español</Button>
+                    <Link to="/Dashboard/Spanish"><h3>Español</h3></Link>
+                    {/* <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Spanish" >Español</Button> */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
