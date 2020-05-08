@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { Route, Switch, useLocation, useHistory } from 'react-router-dom';
+import { Route, Switch, useLocation, useHistory, useParams } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
@@ -12,9 +12,15 @@ import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
 import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
+import CardGradient from './components/CardGradient'
+import About from './components/About'
+import DashboardCards from './components/Dashboard/dashboardCards'
+import DashboardCard from './components/Dashboard/dashboardCards';
 
 function App() {
   const location = useLocation();
+  const {lang} = useParams();
+
 
   // const { user, currentLang } = useContext(UserContext);
 
@@ -26,11 +32,12 @@ function App() {
   //   }
   // }, [user])
 
+
   return (
     <>
       <UserProvider>
         {location.pathname != "/" ? <NavBar /> : ""}
-        <Switch>
+         <Switch>
           <Route exact path="/">
             <HomeView />
           </Route>
@@ -43,6 +50,9 @@ function App() {
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
           <Route exact path="/QuizCard/:lang/:lesson" component={QuizCard} />
           <Route exact path="/Gradient" component={Gradient} />
+          <Route exact path="/CardGradient" component={CardGradient} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/DashboardCards" component={DashboardCard} />
         </Switch>
       </UserProvider>
     </>

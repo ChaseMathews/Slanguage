@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from "react-router-dom";
 import { CardDeck, Card, Button, Row } from 'react-bootstrap';
-import LangCategory from "./lessonLangHeader"
+
 
 
 export default function LessonCards() {
@@ -44,8 +44,6 @@ export default function LessonCards() {
         
 
         <CardDeck>
-            
-            <LangCategory />
 
             <Row>
             <Card>
@@ -59,19 +57,7 @@ export default function LessonCards() {
                     <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
                 </Card.Body>
             </Card>
-            
 
-            <Card>
-                
-                <Card.Img variant="top" src="" />
-                <Card.Body>
-                    <Card.Title>Slang</Card.Title>
-                    <Card.Text>
-                        {cardText} some slang words and phrases!{' '}
-                    </Card.Text>
-                    <Link to={url + "slang"}><Button disabled>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
 
             <Card>
                 
@@ -85,6 +71,7 @@ export default function LessonCards() {
                 </Card.Body>
             </Card>
             </Row>
+            
 
         </CardDeck>
 

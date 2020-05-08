@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
-
+import "./style.css";
 
 
 export default function QuizCard() {
@@ -133,54 +133,70 @@ export default function QuizCard() {
   return (
     <>
       {quizContent &&
-        <div>
-          score:{score}
-          <Card>
-            <Row>
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Card.Img variant="top" src={quizContent[index].imageUrl} />
-              </Col>
-              {lesson !== "numbers" ? (
-                <Col sm={3}>
-                  <div>
-                    What does {quizContent[index].phrase} mean?
+        <Container>
+          <Col sm="4">
+            <Card className="score">
+              Score: {score}
+            </Card>
+          </Col>
+          <Jumbotron>
+            <Card.Body>
+              <Row>
+                <Card>
+                  <Col sm={lesson !== "numbers" ? 3 : 4}>
+
+                    <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
+
+                  </Col>
+                </Card>
+                {lesson !== "numbers" ? (
+                  <Col sm={3}>
+                    <div>
+                      What does {quizContent[index].phrase} mean?
                    </div>
-                  <br></br>
-                  <div>
-                    Example: {quizContent[index].explanation}
-                  </div>
+                    <br></br>
+                    <div>
+                      Example: {quizContent[index].explanation}
+                    </div>
+                  </Col>
+                ) : ""}
+
+
+                <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
+                  <Button variant={btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+
+
+                  <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+
+
+                  <Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+
                 </Col>
-              ) : ""}
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Button variant={btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+              </Row>
+
+              <Row>
+                <Col sm={lesson !== "numbers" ? 3 : 4}>
+                  <Row>
+                    {index !== 9 ?
+                      <Button onClick={handleImageChange} variant="danger" className="" value="next" name="next">NEXT</Button>
+                      :
+                      <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
+                    }
+
+                  </Row>
+                </Col>
+              </Row>
+
+            </Card.Body>
+          </Jumbotron>
 
 
-                <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
-
-
-                <Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
-
-              </Col>
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Row>
-                  {index !== 9 ?
-                    <Button onClick={handleImageChange} variant="danger" className="" value="next" name="next">NEXT</Button>
-                    :
-                    <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                  }
-
-                </Row>
-              </Col>
-            </Row>
-          </Card>
-
-        </div>
+        </Container>
       }
     </>
 
   )
 }
-
 
 
 

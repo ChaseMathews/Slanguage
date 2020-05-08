@@ -1,35 +1,45 @@
-#audioIcon{
-    width: 60px;
-    height: 50px;
-}
-
-#numberImage{
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+.numberImage{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     padding-top: 10px;
     box-shadow: 0 8px 6px -6px black;
+    
 }
 
-.button{
-    margin: 5px;
-
+.previousback{
+    margin: 50px;
+    color: green;
+    background-color: transparent;
+    border: none;
 
 }
 
-.card{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
     box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
 }
 
+/* #card {
+    display: flex;
+    
+    width: 400px;
+    height: 200px;
+
+  } */
+
+
+
 .jumbotron{
     display: flex;
-    background-color: white;
-    
+    /* background: linear-gradient(45deg, #d5135a, #f05924); */
     align-items: center;
     justify-content: center;
 }
@@ -52,10 +62,6 @@
     margin: 15px 35px;
     backface-visibility: hidden;
     transition: all .3s;
-    
-    hover {
-        box-shadow: 0px 7px 30px rgba(19, 127, 212, 0.75);
-      }
 }
 
 .stopbutton{

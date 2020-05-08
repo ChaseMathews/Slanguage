@@ -12,7 +12,7 @@ export default function CarouselFlags() {
 
     const { user, currentLang, setCurrentLang } = useContext(UserContext);
 
-    console.log(user.id);
+    // console.log(user.id);
 
     const history = useHistory();
 
