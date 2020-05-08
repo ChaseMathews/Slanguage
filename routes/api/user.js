@@ -15,8 +15,8 @@ router.route("/:id")
   .put(userController.update)
   .delete(userController.remove);
 
-  // Matches with "/api/user/:id/lesson/:lessonId"
-router.route("/:id/lesson/:lessonId")
+  // Matches with "/api/user/:lessonId"
+router.route("/:lessonId")
   .put(userController.updateLesson);
 
 module.exports = router;
