@@ -14,6 +14,8 @@ import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
 import CardGradient from './components/CardGradient'
 import About from './components/About'
+import DashboardCards from './components/Dashboard/dashboardCards'
+import DashboardCard from './components/Dashboard/dashboardCards';
 
 function App() {
   const location = useLocation();
@@ -49,7 +51,8 @@ function App() {
           <Route exact path="/QuizCard/:lang/:lesson" component={QuizCard} />
           <Route exact path="/Gradient" component={Gradient} />
           <Route exact path="/CardGradient" component={CardGradient} />
-          <Route exact path="/About" component={About}/>
+          <Route exact path="/About" component={About} />
+          <Route exact path="/DashboardCards" component={DashboardCard} />
         </Switch>
       </UserProvider>
     </>
