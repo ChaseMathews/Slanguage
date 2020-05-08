@@ -15,12 +15,14 @@ const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 function LessonMenu() {
     const { lang } = useParams();
     console.log(lang);
-    // {lang && <img src={"https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/" + {lang} + ".png"} />}
+    
        
 
     return (
         <Container>
+            <>
             <LangCategory />
+            </>
             <hr />
                 <Gradient>
                     <SlideDown>

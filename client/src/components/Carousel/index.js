@@ -12,7 +12,7 @@ export default function CarouselFlags() {
 
     const { user, currentLang, setCurrentLang } = useContext(UserContext);
 
-    console.log(user.id);
+    // console.log(user.id);
 
     const history = useHistory();
 
@@ -35,7 +35,7 @@ export default function CarouselFlags() {
             })
             .catch(err => console.log(err));
 
-        history.push(`/Dashboard/${currentLang}`)
+        // history.push(`/Dashboard/${currentLang}`)
     };
 
 

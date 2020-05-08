@@ -12,6 +12,7 @@ import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
 import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
+import CardGradient from './components/CardGradient'
 
 function App() {
   const location = useLocation();
@@ -22,11 +23,11 @@ function App() {
 
   const history = useHistory();
 
-  useEffect(() => {
-    if (location.pathname !== "/" && user === undefined) {
-      history.push("/")
-    }
-  }, [user])
+  // useEffect(() => {
+  //   if (location.pathname !== "/" && user === undefined) {
+  //     history.push("/")
+  //   }
+  // }, [user])
 
 
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
           <Route exact path="/QuizCard/:lang/:lesson" component={QuizCard} />
           <Route exact path="/Gradient" component={Gradient} />
+          <Route exact path="/CardGradient" component={CardGradient} />
         </Switch>
       </UserProvider>
     </>

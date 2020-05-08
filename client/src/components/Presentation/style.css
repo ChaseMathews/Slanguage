@@ -1,10 +1,10 @@
-
-#numberImage{
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+.numberImage{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     padding-top: 10px;
     box-shadow: 0 8px 6px -6px black;
     
@@ -18,18 +18,53 @@
 
 }
 
-.card{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
     box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+}
 
+/* #card {
+    display: flex;
+    
+    width: 400px;
+    height: 200px;
+
+  } */
+
+.gradient-border {
+    --borderWidth: 10px;
+    /* background: #1D1F20; */
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 10s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+  @keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .jumbotron{

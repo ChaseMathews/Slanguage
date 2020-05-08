@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from "react-router-dom";
-import { CardDeck, Card, Button, Row } from 'react-bootstrap';
+import { CardDeck, Card, Button, Row, Img } from 'react-bootstrap';
 
 
 
@@ -27,7 +27,7 @@ export default function SlangCard() {
             <Row>
             <Card>
                 
-                <Card.Img variant="top" src="https://lh3.googleusercontent.com/proxy/-z4R1Io7oW__YbroftlssvzIOv3ZEsm9DJraxDcIj-HqgYUevRLwpvmUiYFY4xV9VTKXwSA4Dxj2aci9woh6v50WzOeepfa0JNtnmuUQBgz5K1k" />
+                <Card variant="top" img src="https://lh3.googleusercontent.com/proxy/-z4R1Io7oW__YbroftlssvzIOv3ZEsm9DJraxDcIj-HqgYUevRLwpvmUiYFY4xV9VTKXwSA4Dxj2aci9woh6v50WzOeepfa0JNtnmuUQBgz5K1k" />
                 <Card.Body>
                     <Card.Title><h2>Slang</h2></Card.Title>
                     <hr />

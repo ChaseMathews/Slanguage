@@ -10,6 +10,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import LangCategory from "../LessonMenu/lessonLangHeader"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
+import CardGradient from '../CardGradient'
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -77,8 +78,10 @@ export default function Presentation() {
                         <SlideDown>
                             <Row>
                                 <Col>
-                                    <Card className="card">
-                                        <img id="numberImage" src={presContent[itemIndex].imageUrl}></img>
+                                
+                                    <Card>
+                                        <Card.Img className="numberImage" variant ="top" src={presContent[itemIndex].imageUrl} />
+                                        
                                         <Card.Body className="justify-content-center text-center">
                                             <Card.Title className="word"><h2>{presContent[itemIndex].targetWord}</h2></Card.Title>
                                             <hr></hr>
@@ -94,18 +97,21 @@ export default function Presentation() {
                                                 {itemIndex > 0 &&
                                                     <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
                                                 }
-                                                {itemIndex !== 9 ?
-                                                    <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
-                                                    :
-                                                    <Button className="button" variant="success" onClick={goToQuiz}>Practice! --></Button>
-                                                }
+                                                
                                             </Row>
                                         </Card.Body>
                                     </Card>
+                                    
                                 </Col>
                             </Row>
                         </SlideDown>
-                        <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={ faAngleDoubleRight } size="6x" /> </Button>
+                        {/* <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={ faAngleDoubleRight } size="6x" /> </Button> */}
+                    
+                         {itemIndex !== 9 ?
+                                                    <Button className="previousback" variant="success" onClick={handlePresDataChange} FontAwesomeIcon icon={ faAngleDoubleRight } size="6x">Go to next</Button>
+                                                    :
+                                                    <Button className="previousback" variant="success" onClick={goToQuiz}>Practice! --></Button>
+                                                }
                                             
                     </Jumbotron>
                 </Container>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useReducer } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
-
+import "./style.css";
 
 
 export default function QuizCard() {
@@ -98,37 +98,48 @@ export default function QuizCard() {
   return (
     <>
       {quizContent &&
-        <div>
-          score:{score}
-          <Card>
-            <Row>
-              <Col sm={4}>
-                <Card.Img variant="top" src={quizContent[index].imageUrl} />
-              </Col>
-              <Col sm={4}>
-                <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[0] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
-
-
-                <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[1] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
-
-
-                <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[2] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
-
-              </Col>
-              <Col sm={4}>
-                <Row>
-                  {index !== 9 ?
-                    <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
-                    :
-                    <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                  }
-
-                </Row>
-              </Col>
-            </Row>
+        <Container>
+          <Col sm="4">
+          <Card className="score">
+          Score: {score}
           </Card>
+          </Col>
+          <Jumbotron>
+            <Card.Body>
+              <Row>
+              <Card>
+                <Col sm="4">
+                  
+                  <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
+                  
+                </Col>
+                </Card>
 
-        </div>
+                <Col className="choices" sm="6">
+                  <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[0] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+
+
+                  <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[1] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+
+
+                  <Button variant={quizContent[index].correctAnswer === quizContent[index].answerOptions[2] && display ? "success" : "danger"} size="lg" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                </Col>
+              </Row>
+
+              <Row>
+                {index !== 9 ?
+                  <Button onClick={handleImageChange} variant="danger" className="nextbutton" md={{ span: 3, offset: 3 }}>NEXT</Button>
+                  :
+                  <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
+                }
+
+              </Row>
+
+            </Card.Body>
+          </Jumbotron>
+
+
+        </Container>
       }
     </>
 
