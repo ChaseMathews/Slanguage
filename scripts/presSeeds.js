@@ -535,7 +535,7 @@ module.exports = [
                     "imageUrl": "https://blog.lingoda.com/wp-content/uploads/2020/01/bigstock-Young-People-Man-And-Woman-Gr-327730912-1024x532.jpg",
                     "targetWord": "Mach’s Gut!",
                     "audioToPlay": " ",
-                    "explanation": "A way to say goodbye."
+                    "explanation": "A slang way to say goodbye."
                 },
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/smiling-friends-greeting-each-other-nature_23-2148179933.jpg",
@@ -650,7 +650,7 @@ module.exports = [
                     "imageUrl": "https://cdn.clipart.email/187891c3b379107a91f55da92045a2f1_boy-and-girl-kissing-silhouette-at-getdrawingscom-free-for-_300-300.png",
                     "targetWord": "Limonare",
                     "audioToPlay": " ",
-                    "explanation": "To kiss with toungue."
+                    "explanation": "To kiss with tongue."
                 },
             ]
         }
