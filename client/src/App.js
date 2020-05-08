@@ -16,9 +16,9 @@ import UserProvider, { UserContext } from './utils/Context';
 function App() {
   const location = useLocation();
 
-  const { user, currentLang } = useContext(UserContext);
+  // const { user, currentLang } = useContext(UserContext);
 
-  const history = useHistory();
+  // const history = useHistory();
 
   // useEffect(() => {
   //   if (location.pathname !== "/" && user === undefined) {

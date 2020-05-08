@@ -57,6 +57,35 @@ export default function QuizCard() {
     })
   }
 
+//   const updateUserResults = e => {
+//     e.preventDefault();
+//     console.log(e.target.value);
+//     const { value } = e.target;
+//     console.log(value);
+
+//     API.updateUser(user.id, { 
+//       results: [
+//         {
+//             language: "Spanish",
+//             lesson: [
+//               {
+//                 name: "Numbers",
+//                 score: 7
+//               }
+//             ]
+//         } 
+//     })
+//         .then(res => {
+//             console.log(res.data);
+//             setCurrentLang(res.data.currentLanguage);
+//             history.push(`/Dashboard/${res.data.currentLanguage}`);
+//         }) 
+//         .catch(err => console.log(err));
+
+// };
+
+
+
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
