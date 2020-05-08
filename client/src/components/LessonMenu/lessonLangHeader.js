@@ -4,10 +4,14 @@ import "./style.css";
 
 export default function LangCategory() {
     const { lang } = useParams();
-    const url = lang === "Spanish" ? "/SpanishPresentation/" : "/NavajoPresentation/";
+    const { type } = useParams();
+
+    const title = type === "quiz" ? "Practice " + lang : "Learn " + lang
+
+    // const url = lang === "Spanish" ? "/SpanishPresentation/" : "/NavajoPresentation/";
     return (
         <>
-        <h1 className="lang">{lang}</h1>
+        <h1 className="lang">{title}</h1>
         </>
     );
 }

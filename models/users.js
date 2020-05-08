@@ -21,12 +21,18 @@ const userSchema = new Schema({
   results: [
     {
       language: String,
-      lesson: [{
-        name: String,
-        score: Number
-      }]
+      lesson: [
+        {
+          name: String,
+          score: Number
+        }
+      ]
     }
-  ]
+  ],
+  currentLanguage: {
+    type: String,
+    default: ""
+  }
 
 
 });

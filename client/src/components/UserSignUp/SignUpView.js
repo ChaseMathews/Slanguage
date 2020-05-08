@@ -32,7 +32,8 @@ export default function SignUp() {
             }
         });
 
-        if (userObject.username && userObject.password) {
+        // if (userObject.username && userObject.password && error === "") {
+        if (userObject.username && userObject.password && userObject.password.length >= 6) {
             await API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
