@@ -10,7 +10,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import LangCategory from "../LessonMenu/lessonLangHeader"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
-// import CardGradient from '../CardGradient'
+import CardGradient from '../CardGradient'
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -78,7 +78,7 @@ export default function Presentation() {
                         <SlideDown>
                             <Row>
                                 <Col>
-                                
+                                <CardGradient>
                                     <Card>
                                         <Card.Img className="numberImage" variant ="top" src={presContent[itemIndex].imageUrl} />
                                         
@@ -105,7 +105,7 @@ export default function Presentation() {
                                             </Row>
                                         </Card.Body>
                                     </Card>
-                                    
+                                    </CardGradient>
                                 </Col>
                             </Row>
                         </SlideDown>
