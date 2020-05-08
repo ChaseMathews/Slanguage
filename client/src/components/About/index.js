@@ -1,16 +1,18 @@
 import React from 'react'
 import "./style.css"
-import { Card } from 'react-bootstrap'
+import { Jumbotron, Card } from 'react-bootstrap'
 
 
 
 export default function About() {
 
     return (
-            <Card className="about">
+        <Jumbotron>
+            <Card.Body className="about">
                 <h1>About</h1>
                 <p>This is our about page. Welcome!</p>
-            </Card>
+            </Card.Body>
+            </Jumbotron>
 
     )
 }
