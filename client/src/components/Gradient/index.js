@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import { Container, Jumbotron } from 'react-bootstrap'
+import { Jumbotron } from 'react-bootstrap'
 
 
 

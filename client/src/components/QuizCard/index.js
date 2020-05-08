@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
-
+import "./style.css";
 
 
 export default function QuizCard() {
@@ -57,6 +57,35 @@ export default function QuizCard() {
     })
   }
 
+//   const updateUserResults = e => {
+//     e.preventDefault();
+//     console.log(e.target.value);
+//     const { value } = e.target;
+//     console.log(value);
+
+//     API.updateUser(user.id, { 
+//       results: [
+//         {
+//             language: "Spanish",
+//             lesson: [
+//               {
+//                 name: "Numbers",
+//                 score: 7
+//               }
+//             ]
+//         } 
+//     })
+//         .then(res => {
+//             console.log(res.data);
+//             setCurrentLang(res.data.currentLanguage);
+//             history.push(`/Dashboard/${res.data.currentLanguage}`);
+//         }) 
+//         .catch(err => console.log(err));
+
+// };
+
+
+
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
@@ -108,14 +137,23 @@ export default function QuizCard() {
   return (
     <>
       {quizContent &&
-        <div>
-          score:{score}
-          <Card>
-            <Row>
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Card.Img variant="top" src={quizContent[index].imageUrl} />
-              </Col>
-              {lesson !== "numbers" ? (
+        <Container>
+          <Col sm="4">
+          <Card className="score">
+          Score: {score}
+          </Card>
+          </Col>
+          <Jumbotron>
+            <Card.Body>
+              <Row>
+              <Card>
+                <Col sm={lesson !== "numbers" ? 3 : 4}>
+                  
+                  <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
+                  
+                </Col>
+                </Card>
+                {lesson !== "numbers" ? (
                   <Col sm={3}>
                    <div>
                      What does {quizContent[index].phrase} mean? 
@@ -126,16 +164,21 @@ export default function QuizCard() {
                    </div>
                   </Col>
               ) : ""} 
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
+                
+
+                <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
                 <Button variant= {btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
-                <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+<Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
 
 
-                <Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+<Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
-              </Col>
+                  </Col>
+              </Row>
+
+              <Row>
               <Col sm={lesson !== "numbers" ? 3 : 4}>
                 <Row>
                   {index !== 9 ?
@@ -146,16 +189,18 @@ export default function QuizCard() {
 
                 </Row>
               </Col>
-            </Row>
-          </Card>
+              </Row>
 
-        </div>
+            </Card.Body>
+          </Jumbotron>
+
+
+        </Container>
       }
     </>
 
   )
 }
-
 
 
 

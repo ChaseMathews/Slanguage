@@ -42,7 +42,8 @@ module.exports = {
                         if (result) {
                             res.json({
                                 username: dbUser.username,
-                                id: dbUser._id
+                                id: dbUser._id,
+                                results: dbUser.results
                             });
                         } else {
                             res.status(401).json({ message: 'Incorrect password. Try again!' });
@@ -51,9 +52,9 @@ module.exports = {
                 }
             })
             .catch(err => {
-                    console.log(err);
-                    res.status(500).json(err.message);
-                });
+                console.log(err);
+                res.status(500).json(err.message);
+            });
     },
     findById: function ({ params }, res) {
         db.User
@@ -61,12 +62,35 @@ module.exports = {
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
-    // will be used if user wants to update their username/password, and for storing their progress data
+    // will be used if user wants to update their username/password
     update: function ({ params, body }, res) {
         console.log(params.id, body);
         db.User
-            .findOneAndUpdate({ _id: params.id }, body, {new:true})
+            .findOneAndUpdate({ _id: params.id }, body, { new: true })
             .then(dbUser => res.json(dbUser))
+            .catch(err => res.status(422).json(err));
+    },
+    // // used for storing user progress data
+    updateLesson: function ({ params, body }, res) {
+        console.log(params.id, body);
+        db.User
+            .find( { _id: params.id }, { results: [ { _id: params.lessonId } ] } )
+            // .update({$lesson: body})
+            .then(dbUser => {
+                console.log(dbUser);
+                res.json(dbUser)
+            })
+            .catch(err => res.status(422).json(err));
+    },
+
+    updateResults: function ({ params, body }, res) {
+        console.log(params.id, body);
+        db.User
+            .findOneAndUpdate({ _id: params.id }, { $push: { results: body } }, { new: true })
+            .then(dbUser => {
+                console.log(dbUser);
+                res.json(dbUser)
+            })
             .catch(err => res.status(422).json(err));
     },
     // will be used if user wants to delete their account

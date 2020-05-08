@@ -4,22 +4,20 @@ module.exports = [
             "language": "Spanish",
             "questions": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
-                   
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "answerOptions": [
-                        "siete",
-                        "nueve",
-                        "dos"
+                        "dos",
+                        "cuatro",
+                        "diez"
                     ],
                     "correctAnswer": "dos",
-                   
                     
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "answerOptions": [
                         "uno",
-                        "tres",
+                        "nueve",
                         "dos"
                     ],
                     "correctAnswer": "uno",
@@ -30,7 +28,7 @@ module.exports = [
                     "answerOptions": [
                         "cinco",
                         "cuatro",
-                        "uno"
+                        "diez"
                     ],
                     "correctAnswer": "cuatro",
                     
@@ -39,7 +37,7 @@ module.exports = [
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
                     "answerOptions": [
                         "dos",
-                        "cuatro",
+                        "siete",
                         "tres"
                     ],
                     "correctAnswer": "tres",
@@ -49,7 +47,7 @@ module.exports = [
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
                     "answerOptions": [
                         "cinco",
-                        "tres",
+                        "seis",
                         "uno"
                     ],
                     "correctAnswer": "cinco",
@@ -58,7 +56,7 @@ module.exports = [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
                     "answerOptions": [
-                        "nueve",
+                        "dos",
                         "seis",
                         "ocho"
                     ],
@@ -69,7 +67,7 @@ module.exports = [
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
                     "answerOptions": [
                         "seis",
-                        "diez",
+                        "tres",
                         "siete"
                     ],
                     "correctAnswer": "seis",
@@ -79,7 +77,7 @@ module.exports = [
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
                     "answerOptions": [
                         "siete",
-                        "nueve",
+                        "cinco",
                         "diez"
                     ],
                     "correctAnswer": "diez",
@@ -88,7 +86,7 @@ module.exports = [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
                     "answerOptions": [
-                        "ocho",
+                        "uno",
                         "siete",
                         "seis"
                     ],
@@ -99,7 +97,7 @@ module.exports = [
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
                     "answerOptions": [
                         "nueve",
-                        "ocho",
+                        "cuatro",
                         "diez"
                     ],
                     "correctAnswer": "nueve",
@@ -537,14 +535,383 @@ module.exports = [
             "questions": [
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                    "phrase": "",
                     "answerOptions": [
                         "uno",
                         "dos",
                         "cinco"
                     ],
                     "correctAnswer": "dos",
-                    "explanation": ""
+                    "example:": ""
                 },
+            ]
+        },
+
+        {
+            "language": "French",
+            "questions": [
+                {
+                    "imageUrl": "https://founterior.com/wp-content/uploads/2014/09/Cafe-in-Paris-with-tables-and-chairs-outside.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Café",
+                        "Chez",
+                        "Féca"
+                    ],
+                    "correctAnswer":  "Féca",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://www.clipartkey.com/mpngs/m/76-763534_silhouette-man-walking-free-picture-man-silhouette-png.png",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Beau",
+                        "Keum",
+                        "Flic"
+                    ],
+                    "correctAnswer":  "Keum",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://4570book.info/wp-content/uploads/2020/02/rudeness-clipart-of-children-free-rude-girl-cliparts-download-free-clip-art-free-clip-children-rudeness-of-clipart-.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Beuf",
+                        "Mec",
+                        "Homme"
+                    ],
+                    "correctAnswer":  "Beuf",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Vache",
+                        "Chelou",
+                        "Fromage"
+                    ],
+                    "correctAnswer":  "Chelou",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/06/06/17/05/model-1439909__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Bombe",
+                        "Femme",
+                        "Fille"
+                    ],
+                    "correctAnswer":  "Bombe",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/01/10/14/35/old-man-1969215__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Chien",
+                        "Cravate",
+                        "Beau Gosse"
+                    ],
+                    "correctAnswer":  "Beau Gosse",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.clipart.email/a3e1e6194491e4efe50e5dac6edafd73_business-lady-silhouette-at-getdrawingscom-free-for-personal-_1445-1920.jpeg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Souris",
+                        "Clavier",
+                        "Meuf"
+                    ],
+                    "correctAnswer":  "Meuf",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/09/13/07/58/paris-2744657_960_720.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Tromé",
+                        "Jeu",
+                        "Oncle"
+                    ],
+                    "correctAnswer":  "Tromé",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://image.freepik.com/free-photo/smiling-multiethnic-friends-talking-looking-phone_23-2148222584.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Banc",
+                        "Cimer",
+                        "Cahier"
+                    ],
+                    "correctAnswer":  "Cimer",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://images.8tracks.com/cover/i/002/642/585/tumblr_static_adidas_house_party-9055.jpg?rect=128,0,768,768&q=98&fm=jpg&fit=max&w=640&h=640",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Mer",
+                        "Voyage",
+                        "Teuf"
+                    ],
+                    "correctAnswer":  "Teuf",
+                    "example:": ""
+                },
+            ]
+        },
+
+        {
+            "language": "German",
+            "questions": [
+                {
+                    "imageUrl": "https://www.amny.com/wp-content/uploads/2015/03/image-1-740x415.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Prost!",
+                        "etwas",
+                        "Frau"
+                    ],
+                    "correctAnswer":  "Prost!",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://blog.lingoda.com/wp-content/uploads/2020/01/bigstock-Young-People-Man-And-Woman-Gr-327730912-1024x532.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Mann",
+                        "Kalt",
+                        "Mach's Gut!"
+                    ],
+                    "correctAnswer":  "Mach's Gut!",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://image.freepik.com/free-photo/smiling-friends-greeting-each-other-nature_23-2148179933.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Badezimmer",
+                        "Alter",
+                        "Kopf"
+                    ],
+                    "correctAnswer":  "Alter",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://thumbs.dreamstime.com/b/shrugging-european-woman-wearing-blue-shirt-doubt-doing-shrug-shrugging-european-woman-wearing-blue-shirt-doubt-doing-shrug-123692380.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Lankarte",
+                        "Naja",
+                        "Obst"
+                    ],
+                    "correctAnswer":  "Naja",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.theatlantic.com/thumbor/SITni909H72zFDpgAMJro76bKcY=/900x588/media/img/photo/2014/09/opening-weekend-of-oktoberfest-2014/o01_14560857/original.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Jahr",
+                        "Mittag",
+                        "Breit"
+                    ],
+                    "correctAnswer":  "Breit",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://thumbs.dreamstime.com/b/arrogant-self-important-stuck-up-man-egoist-bold-napoleon-complex-short-syndrome-isolated-gray-background-human-emotion-79589967.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Besserwisser",
+                        "Hemd",
+                        "Fleisch"
+                    ],
+                    "correctAnswer":  "Besserwisser",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.ramseysolutions.net/media/article-images/good-bad-cash-l.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Gepäck",
+                        "Kohle",
+                        "Zahl"
+                    ],
+                    "correctAnswer":  "Kohle",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://image.freepik.com/free-photo/sad-woman-eating-pizza-holding-phone-laying-sofa-home-blue-tone_130111-269.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Kummerspeck",
+                        "Hund",
+                        "Unterschied"
+                    ],
+                    "correctAnswer":  "Kummerspeck",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://cdn.shopify.com/s/files/1/0015/7594/4243/files/istockphoto-875230454-612x612_grande.jpg?v=1557423899",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Kater",
+                        "Kuchen",
+                        "Blume"
+                    ],
+                    "correctAnswer":  "Kater",
+                    "example:": ""
+                },
+
+                {
+                    "imageUrl": "https://s3.amazonaws.com/thumbnails.illustrationsource.com/huge.9.45562.JPG",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Bild",
+                        "Freund",
+                        "Krass!"
+                    ],
+                    "correctAnswer":  "Krass!",
+                    "example:": ""
+                },
+            ]
+        },
+
+        {
+            "language": "Italian",
+            "questions": [
+                {
+                    "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Donna",
+                        "Cartello",
+                        "Figurati"
+                    ],
+                    "correctAnswer":  "Figurati",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://assets3.thrillist.com/v1/image/2861432/381x254/crop;jpeg_quality=65.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Figo",
+                        "Collana",
+                        "Bevanda"
+                    ],
+                    "correctAnswer":  "Figo",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://image.freepik.com/free-photo/portrait-angry-driver-yelling-his-car_53419-6478.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Palla",
+                        "Dai!",
+                        "Scavo"
+                    ],
+                    "correctAnswer":  "Dai!",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://qph.fs.quoracdn.net/main-qimg-1f0e0a04ef5f3bc79e6f4d8331a48b50.webp",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Sole",
+                        "Testa",
+                        "Boh!"
+                    ],
+                    "correctAnswer":  "Boh!",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://image.freepik.com/free-photo/man-crossing-fingers-both-hands_1187-2913.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "In bocca al lupo!",
+                        "Soffio",
+                        "Doccia"
+                    ],
+                    "correctAnswer":  "In bocca al lupo!",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://image.freepik.com/free-photo/smiling-multiethnic-friends-talking-looking-phone_23-2148222584.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Crepi",
+                        "Boh!",
+                        "Dai!"
+                    ],
+                    "correctAnswer":  "Crepi",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://media.istockphoto.com/photos/african-american-man-with-beard-feeling-disgusted-with-tongue-out-picture-id1042412136?k=6&m=1042412136&s=612x612&w=0&h=6hPZfQXNlEx4HjrV_Tfy1e9j4zzFLehsDsdHisnHe_8=",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Magari",
+                        "Che Schifo!",
+                        "Palla"
+                    ],
+                    "correctAnswer":  "Che Schifo!",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://janeheller.com/wp-content/uploads/2017/09/appearancecomments-feature.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Dai!",
+                        "Crepi",
+                        "Cavalo!"
+                    ],
+                    "correctAnswer":  "Cavalo!",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://i.stack.imgur.com/eQ20E.jp",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Fascino",
+                        "Cavallo",
+                        "Magari"
+                    ],
+                    "correctAnswer":  "Magari",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.clipart.email/187891c3b379107a91f55da92045a2f1_boy-and-girl-kissing-silhouette-at-getdrawingscom-free-for-_300-300.png",
+                    "phrase": "",
+                    "answerOptions": [
+                        "Limonare",
+                        "Chitarra",
+                        "Scarpa"
+                    ],
+                    "correctAnswer":  "Limonare",
+                    "example:": ""
+                },
+
+                
             ]
         }
     ]

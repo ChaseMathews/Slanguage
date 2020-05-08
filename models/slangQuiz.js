@@ -9,6 +9,9 @@ const slangQuizSchema = new Schema(
                 imageUrl: {
                     type: String
                 },
+                phrase: {
+                    type: String
+                },
                 answerOptions: [{
                     type: String
                 }],

@@ -33,7 +33,7 @@ export default function Dashboard() {
     const [userDashboard, setUserDashboard] = useState();
 
     const { user, currentLang } = useContext(UserContext);
-    console.log(currentLang);
+    console.log(user);
 
     // const { user } = useParams();
 
@@ -78,14 +78,14 @@ export default function Dashboard() {
                     <Row>
                         <Col sm={4}>
                             {/* <h1>Hello {user.username}, Welcome back!" </h1> */}
-                            <h1>Hello user, Welcome back!</h1>
+                            <h1>Hello {user.username}, Welcome back!</h1>
                         </Col>
                     </Row>
 
                    
                         <Row>
                             <Col sm={4}>
-                                <p>Currently Studying currentLang!</p>
+                                <p>Currently Studying {currentLang}!</p>
                                 {/* <p>Currently Studying [Spanish]</p> */}
                             </Col>
                         </Row>

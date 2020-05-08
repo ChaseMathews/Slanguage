@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { Container, Jumbotron, Card, Button, Col, Row } from 'react-bootstrap';
 import "./style.css";
 import UserAudio from "./userAudio";
@@ -8,6 +8,9 @@ import styled, { keyframes } from 'styled-components';
 import API from "../../utils/API"
 import ReactAudioPlayer from 'react-audio-player';
 import LangCategory from "../LessonMenu/lessonLangHeader"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
+import CardGradient from '../CardGradient'
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -70,11 +73,15 @@ export default function Presentation() {
                     <LangCategory />
                     <hr></hr>
                     <Jumbotron className="justify-content-center text-center">
+                    <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
+                                                
                         <SlideDown>
                             <Row>
                                 <Col>
-                                    <Card className="card">
-                                        <img id="numberImage" src={presContent[itemIndex].imageUrl}></img>
+                                <CardGradient>
+                                    <Card>
+                                        <Card.Img className="numberImage" variant ="top" src={presContent[itemIndex].imageUrl} />
+                                        
                                         <Card.Body className="justify-content-center text-center">
                                             <Card.Title className="word"><h2>{presContent[itemIndex].targetWord}</h2></Card.Title>
                                             <hr></hr>
@@ -98,9 +105,12 @@ export default function Presentation() {
                                             </Row>
                                         </Card.Body>
                                     </Card>
+                                    </CardGradient>
                                 </Col>
                             </Row>
                         </SlideDown>
+                        <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={ faAngleDoubleRight } size="6x" /> </Button>
+                                            
                     </Jumbotron>
                 </Container>
             }
