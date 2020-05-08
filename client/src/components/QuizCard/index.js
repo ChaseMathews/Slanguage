@@ -13,7 +13,7 @@ export default function QuizCard() {
     ButtonTwo: true,
     ButtonThree: true
   });
-  
+
   const [score, setScore] = useState(0)
   const [display, setDisplay] = useState(false)
   const history = useHistory();
@@ -24,7 +24,7 @@ export default function QuizCard() {
     button_3: "primary"
 
   })
-  
+
 
   useEffect(() => {
     lesson === "numbers" ? loadNumQuiz() : loadSlangQuiz();
@@ -50,76 +50,72 @@ export default function QuizCard() {
       .catch(err => console.log(err));
   };
 
+  const btnsPrimary = () => {
+    setBtnVarient({
+      ...btnVarient,
+      button_1: "primary",
+      button_2: "primary",
+      button_3: "primary"
+    })
+  }
+
   const handleImageChange = () => {
     setIndex(prev => {
       setDisplay(false)
       return prev + 1
     })
+    btnsPrimary();
   }
 
-//   const updateUserResults = e => {
-//     e.preventDefault();
-//     console.log(e.target.value);
-//     const { value } = e.target;
-//     console.log(value);
+  //   const updateUserResults = e => {
+  //     e.preventDefault();
+  //     console.log(e.target.value);
+  //     const { value } = e.target;
+  //     console.log(value);
 
-//     API.updateUser(user.id, { 
-//       results: [
-//         {
-//             language: "Spanish",
-//             lesson: [
-//               {
-//                 name: "Numbers",
-//                 score: 7
-//               }
-//             ]
-//         } 
-//     })
-//         .then(res => {
-//             console.log(res.data);
-//             setCurrentLang(res.data.currentLanguage);
-//             history.push(`/Dashboard/${res.data.currentLanguage}`);
-//         }) 
-//         .catch(err => console.log(err));
+  //     API.updateUser(user.id, { 
+  //       results: [
+  //         {
+  //             language: "Spanish",
+  //             lesson: [
+  //               {
+  //                 name: "Numbers",
+  //                 score: 7
+  //               }
+  //             ]
+  //         } 
+  //     })
+  //         .then(res => {
+  //             console.log(res.data);
+  //             setCurrentLang(res.data.currentLanguage);
+  //             history.push(`/Dashboard/${res.data.currentLanguage}`);
+  //         }) 
+  //         .catch(err => console.log(err));
 
-// };
-
-
+  // };
 
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
 
     const { value } = e.target
-    const {name} = e.target
+    const { name } = e.target
     console.log(name)
     console.log(quizContent[index].answerOptions)
 
-
-      if (quizContent[index].correctAnswer === value) {
-
+    if (quizContent[index].correctAnswer === value) {
       setBtnVarient({
         ...btnVarient,
-          [name]: "success"
-
-      })
+        [name]: "success",
+      });
       setScore(score + 3)
-
-
     } else {
       setBtnVarient({
         ...btnVarient,
         [name]: "danger"
-
       })
-
       setScore(score - 1)
-
     }
-
-
-    
-
   }
 
   const handleResults = e => {
@@ -133,7 +129,7 @@ export default function QuizCard() {
   const goToDash = () => {
     history.push(`/Dashboard/${lang}`);
   }
- 
+
   return (
     <>
       {quizContent &&
@@ -145,18 +141,18 @@ export default function QuizCard() {
                 <Card.Img variant="top" src={quizContent[index].imageUrl} />
               </Col>
               {lesson !== "numbers" ? (
-                  <Col sm={3}>
-                   <div>
-                     What does {quizContent[index].phrase} mean? 
+                <Col sm={3}>
+                  <div>
+                    What does {quizContent[index].phrase} mean?
                    </div>
-                   <br></br>
-                   <div>
-                     Example: {quizContent[index].explanation}
-                   </div>
-                  </Col>
-              ) : ""} 
+                  <br></br>
+                  <div>
+                    Example: {quizContent[index].explanation}
+                  </div>
+                </Col>
+              ) : ""}
               <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Button variant= {btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                <Button variant={btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
                 <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
@@ -168,7 +164,7 @@ export default function QuizCard() {
               <Col sm={lesson !== "numbers" ? 3 : 4}>
                 <Row>
                   {index !== 9 ?
-                    <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
+                    <Button onClick={handleImageChange} variant="danger" className="" value="next" name="next">NEXT</Button>
                     :
                     <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
                   }

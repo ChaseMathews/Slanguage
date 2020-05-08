@@ -4,7 +4,7 @@ module.exports = [
             "language": "Spanish",
             "questions": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
                     "answerOptions": [
                         "dos",
                         "cuatro",
