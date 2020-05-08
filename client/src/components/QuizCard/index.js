@@ -197,8 +197,3 @@ export default function QuizCard() {
 
   )
 }
-
-
-
-
-

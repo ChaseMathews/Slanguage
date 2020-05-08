@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./style.css"
-import { Jumbotron, Card } from 'react-bootstrap';
+import { Jumbotron, Card, Row, Col } from 'react-bootstrap';
+import { UserContext } from '../../utils/Context';
 
 
 
 
 
 export default function DashboardCard() {
-
+    const { user } = useContext(UserContext);
+    console.log(user);
     return (
         <Jumbotron>
+            <Row>
+                <Col sm={4}>
+                    <h1>Hello {user.username}, Welcome back!</h1>
+                </Col>
+            </Row>
             <Card.Body className="card_s">
                 <article className="cardz card--1">
                     <div className="card__info-hover">

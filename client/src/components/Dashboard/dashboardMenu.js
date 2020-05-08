@@ -7,7 +7,6 @@ export default function DashboardMenu() {
     
     const { lang } = useParams();
 
-
     return (
         <>
 
@@ -29,7 +28,7 @@ export default function DashboardMenu() {
                             </ListGroup.Item>
 
                             <ListGroup.Item as="li">
-                                <Link to="/ProgressCard/:user">
+                                <Link to="/Progress">
                                     <Button variant="primary" size="lg" block>Check Progress</Button>
                                 </Link>
                             </ListGroup.Item>
