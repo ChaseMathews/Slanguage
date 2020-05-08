@@ -85,7 +85,7 @@ export default function Dashboard() {
                    
                         <Row>
                             <Col sm={4}>
-                                <p>Currently Studying {currentLang}!</p>
+                                <p>Currently Studying currentLang!</p>
                                 {/* <p>Currently Studying [Spanish]</p> */}
                             </Col>
                         </Row>
