@@ -34,6 +34,9 @@ export default {
     // Update user info with scores and current language
     updateUser: function(id, data){
         return axios.put(`/api/user/${id}`, data)
+    },
+    updateUserScore: function(id, resultsLesson, data){
+        return axios.put(`/api/user/${id}/${resultsLesson}`, data)
     }
     
 }

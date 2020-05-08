@@ -16,11 +16,10 @@ export default function CarouselFlags() {
 
     const history = useHistory();
 
-    const setLanguage = () => {
-        // setCurrentLang({ currentLang });
-        // updateUserCurrentLang();
-        // history.push(`/Dashboard/Spanish`);
-    }
+    // const setLanguage = async (e) => {
+    //     await updateUserCurrentLang(e);
+    //     history.push(`/Dashboard/${currentLang}`);
+    // }
 
     const updateUserCurrentLang = e => {
         e.preventDefault();
@@ -30,12 +29,12 @@ export default function CarouselFlags() {
 
         API.updateUser(user.id, { currentLanguage: value })
             .then(res => {
-                console.log(res.data)
-                setCurrentLang(res.data)
-            })
+                console.log(res.data);
+                setCurrentLang(res.data.currentLanguage);
+                history.push(`/Dashboard/${res.data.currentLanguage}`);
+            }) 
             .catch(err => console.log(err));
 
-        history.push(`/Dashboard/${currentLang}`)
     };
 
 
