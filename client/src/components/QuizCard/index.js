@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect } from "react";
 import API from "../../utils/API"
 import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';

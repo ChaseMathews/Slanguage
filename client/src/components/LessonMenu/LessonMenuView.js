@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import LessonCards from './lessonCardDeck';
 import { slideInDown } from 'react-animations';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import "./style.css";
 
@@ -9,7 +9,6 @@ export default function LangCategory() {
 
     const title = type === "quiz" ? "Practice " + lang : "Learn " + lang
 
-    // const url = lang === "Spanish" ? "/SpanishPresentation/" : "/NavajoPresentation/";
     return (
         <Row>
             <Col sm="1">

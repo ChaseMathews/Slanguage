@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { Container, Jumbotron, Card, Button, Col, Row } from 'react-bootstrap';
 import "./style.css";
 import UserAudio from "./userAudio";
@@ -10,7 +10,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import LangCategory from "../LessonMenu/lessonLangHeader"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
-import CardGradient from '../CardGradient'
+// import CardGradient from '../CardGradient'
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 

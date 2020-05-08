@@ -1,6 +1,6 @@
 import React from 'react';
-import { useParams, Link } from "react-router-dom";
-import { CardDeck, Card, Button, Row, Img } from 'react-bootstrap';
+import { useParams, } from "react-router-dom";
+import { CardDeck, Card, Row } from 'react-bootstrap';
 
 
 

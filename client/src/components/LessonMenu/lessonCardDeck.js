@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from "react-router-dom";
 import { CardDeck, Card, Button, Row } from 'react-bootstrap';
-import LangCategory from "./lessonLangHeader"
+
 
 
 export default function LessonCards() {
