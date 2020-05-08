@@ -17,8 +17,8 @@ module.exports = {
   findAllSlangPresData: (req, res) => {
     db.SlangPres
       .find({language: req.params.lang})
-      .then(dbModel => {
-        res.json(dbModel)
+      .then(([dbModel]) => {
+        res.json(dbModel.content)
       })
       .catch(err => res.status(422).json(err));
   }

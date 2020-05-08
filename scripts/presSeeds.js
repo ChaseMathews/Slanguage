@@ -461,64 +461,64 @@ module.exports = [
             "language": "French",
             "content": [
                 {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/56/packs-163497__480.jpg",
-                    "targetWord": "Blé",
+                    "imageUrl": "https://founterior.com/wp-content/uploads/2014/09/Cafe-in-Paris-with-tables-and-chairs-outside.jpg",
+                    "targetWord": "Féca ",
                     "audioToPlay": " ",
-                    "explanation": " Money, Cash."
+                    "explanation": "A Café. In French, young people invert syllablles for slang and it's known as verlan."
                 },
                 {
-                    "imageUrl": "https://image.shutterstock.com/image-photo/young-friends-celebrating-dinner-sunset-260nw-1381553837.jpg",
-                    "targetWord": "Cul Sec",
-                    "audioToPlay": " ",
-                    "explanation": "(Dry ass), a term of encouragement, like bottoms up." 
+                    "imageUrl": "https://www.clipartkey.com/mpngs/m/76-763534_silhouette-man-walking-free-picture-man-silhouette-png.png",
+                    "targetWord": "Keum ",
+                    "audioToPlay": "",
+                    "explanation": "Guy. A verlan play on the slang word for guy, mec." 
                 },
                 {
-                    "imageUrl": "https://image.shutterstock.com/image-photo/rude-man-driving-his-car-260nw-608141093.jpg",
+                    "imageUrl": "https://4570book.info/wp-content/uploads/2020/02/rudeness-clipart-of-children-free-rude-girl-cliparts-download-free-clip-art-free-clip-children-rudeness-of-clipart-.jpg",
                     "targetWord": "Beuf",
                     "audioToPlay": " ",
                     "explanation": "A jerk. "
                 },
                 {
-                    "imageUrl": "https://image.shutterstock.com/image-photo/mans-legs-on-old-wooden-260nw-371905453.jpg",
+                    "imageUrl": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
                     "targetWord": "Chelou",
                     "audioToPlay": " ",
-                    "explanation": "Suspicous, or sketchy."
+                    "explanation": "Shady. A verlan play on the word for shady, louche."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/06/06/17/05/model-1439909__480.jpg",
                     "targetWord": "Bombe",
                     "audioToPlay": " ",
                     "explanation": "A beautiful woman."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/01/10/14/35/old-man-1969215__480.jpg",
                     "targetWord": "Beau Gosse",
                     "audioToPlay": " ",
                     "explanation": "A hot guy, often abbreviated BG. "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Bolosse",
+                    "imageUrl": "https://cdn.clipart.email/a3e1e6194491e4efe50e5dac6edafd73_business-lady-silhouette-at-getdrawingscom-free-for-personal-_1445-1920.jpeg",
+                    "targetWord": "Meuf",
                     "audioToPlay": " ",
-                    "explanation": "A loser."
+                    "explanation": "Woman. A verlan play on the word for woman, femme. Careful, this one can have negative connatations to some."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Bobo",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/09/13/07/58/paris-2744657_960_720.jpg",
+                    "targetWord": "Tromé",
                     "audioToPlay": " ",
-                    "explanation": "A term used for a child's skinned knee, or a yuppie."
+                    "explanation": "Metro. A verlan play on the word for the subway, métro."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Thon",
+                    "imageUrl": "https://image.freepik.com/free-photo/smiling-multiethnic-friends-talking-looking-phone_23-2148222584.jpg",
+                    "targetWord": "Cimer",
                     "audioToPlay": " ",
-                    "explanation": "Ugly man or woman "
+                    "explanation": "Thank you. A verlan play on the word for thank you, merci."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Bête comme ses pieds",
+                    "imageUrl": "https://images.8tracks.com/cover/i/002/642/585/tumblr_static_adidas_house_party-9055.jpg?rect=128,0,768,768&q=98&fm=jpg&fit=max&w=640&h=640",
+                    "targetWord": "Teuf",
                     "audioToPlay": " ",
-                    "explanation": "This means, as stupid as his feet. "
+                    "explanation": "Party. A verlan play on the word for party, fête."
                 },
             ]
         },
@@ -526,64 +526,64 @@ module.exports = [
             "language": "German",
             "content": [
                 {
-                    "imageUrl": "https://image.shutterstock.com/image-photo/young-friends-celebrating-dinner-sunset-260nw-1381553837.jpg",
+                    "imageUrl": "https://www.amny.com/wp-content/uploads/2015/03/image-1-740x415.jpg",
                     "targetWord": "Prost!",
                     "audioToPlay": " ",
                     "explanation": "Cheers!"
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://blog.lingoda.com/wp-content/uploads/2020/01/bigstock-Young-People-Man-And-Woman-Gr-327730912-1024x532.jpg",
                     "targetWord": "Mach’s Gut!",
                     "audioToPlay": " ",
                     "explanation": "A way to say goodbye."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://image.freepik.com/free-photo/smiling-friends-greeting-each-other-nature_23-2148179933.jpg",
                     "targetWord": "Alter",
                     "audioToPlay": " ",
                     "explanation": "Elder, or Dude between friends."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Assi ",
+                    "imageUrl": "https://thumbs.dreamstime.com/b/shrugging-european-woman-wearing-blue-shirt-doubt-doing-shrug-shrugging-european-woman-wearing-blue-shirt-doubt-doing-shrug-123692380.jpg",
+                    "targetWord": "Naja",
                     "audioToPlay": " ",
-                    "explanation": "An insult to talk about someone who you perceive as uneducated and without manners."
+                    "explanation": "Oh well."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://cdn.theatlantic.com/thumbor/SITni909H72zFDpgAMJro76bKcY=/900x588/media/img/photo/2014/09/opening-weekend-of-oktoberfest-2014/o01_14560857/original.jpg",
                     "targetWord": "Breit",
                     "audioToPlay": " ",
                     "explanation": "To be really intoxicated."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://thumbs.dreamstime.com/b/arrogant-self-important-stuck-up-man-egoist-bold-napoleon-complex-short-syndrome-isolated-gray-background-human-emotion-79589967.jpg",
                     "targetWord": "Besserwisser",
                     "audioToPlay": " ",
                     "explanation": "An insult similar to know-it-all."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://cdn.ramseysolutions.net/media/article-images/good-bad-cash-l.jpg",
                     "targetWord": "Kohle",
                     "audioToPlay": " ",
                     "explanation": "Coal, slang for cash."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://image.freepik.com/free-photo/sad-woman-eating-pizza-holding-phone-laying-sofa-home-blue-tone_130111-269.jpg",
                     "targetWord": "Kummerspeck",
                     "audioToPlay": " ",
                     "explanation": "Literally, mourning bacon, it's the weight you gain through emotional eating."
                 },
                 {
-                    "imageUrl": " ",
+                    "imageUrl": "https://cdn.shopify.com/s/files/1/0015/7594/4243/files/istockphoto-875230454-612x612_grande.jpg?v=1557423899",
                     "targetWord": "Kater",
                     "audioToPlay": " ",
                     "explanation": "A hangover."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Fahr zur Hölle! ",
+                    "imageUrl": "https://s3.amazonaws.com/thumbnails.illustrationsource.com/huge.9.45562.JPG",
+                    "targetWord": "Krass!",
                     "audioToPlay": " ",
-                    "explanation": "Go to hell! "
+                    "explanation": "A very positive or very negative word. It can mean something like awesome, or it can be a negative expletive."
                 },
              
              
@@ -593,64 +593,64 @@ module.exports = [
             "language": "Italian",
             "content": [
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Figurati ",
+                    "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",
+                    "targetWord": "Figurati",
                     "audioToPlay": " ",
-                    "explanation": "No Worries! "
+                    "explanation": "No Worries!"
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "A fanabla! ",
+                    "imageUrl": "https://assets3.thrillist.com/v1/image/2861432/381x254/crop;jpeg_quality=65.jpg",
+                    "targetWord": "Figo",
                     "audioToPlay": " ",
-                    "explanation": "Go to hell! "
+                    "explanation": "Cool!"
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": "Segone ",
+                    "imageUrl": "https://image.freepik.com/free-photo/portrait-angry-driver-yelling-his-car_53419-6478.jpg",
+                    "targetWord": "Dai!",
                     "audioToPlay": " ",
-                    "explanation": "A loser."
+                    "explanation": "Come on, Hurry up "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://qph.fs.quoracdn.net/main-qimg-1f0e0a04ef5f3bc79e6f4d8331a48b50.webp",
+                    "targetWord": "Boh!",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "A very casual way to say I don't know."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://image.freepik.com/free-photo/man-crossing-fingers-both-hands_1187-2913.jpg",
+                    "targetWord": "In bocca al lupo!",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "Good luck. It literally means, in the mouth of the wolf."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://image.freepik.com/free-photo/smiling-multiethnic-friends-talking-looking-phone_23-2148222584.jpg",
+                    "targetWord": "Crepi",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "The response to, In bocca al lupo. It means may the wolf die."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://media.istockphoto.com/photos/african-american-man-with-beard-feeling-disgusted-with-tongue-out-picture-id1042412136?k=6&m=1042412136&s=612x612&w=0&h=6hPZfQXNlEx4HjrV_Tfy1e9j4zzFLehsDsdHisnHe_8=",
+                    "targetWord": "Che Schifo!",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "Gross! It sucks!"
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://janeheller.com/wp-content/uploads/2017/09/appearancecomments-feature.jpg",
+                    "targetWord": "Cavalo!",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "Damn! It literally means cabbage, but it's used as an expletive."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://i.stack.imgur.com/eQ20E.jpg",
+                    "targetWord": "Magari",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "Maybe. I wish."
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.clipart.email/187891c3b379107a91f55da92045a2f1_boy-and-girl-kissing-silhouette-at-getdrawingscom-free-for-_300-300.png",
+                    "targetWord": "Limonare",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "To kiss with toungue."
                 },
             ]
         }
