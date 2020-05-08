@@ -97,7 +97,11 @@ export default function Presentation() {
                                                 {itemIndex > 0 &&
                                                     <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
                                                 }
-                                                
+                                                {itemIndex !== 9 ?
+                                                    <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
+                                                    :
+                                                    <Button className="button" variant="success" onClick={goToQuiz}>Practice! --></Button>
+                                                }
                                             </Row>
                                         </Card.Body>
                                     </Card>
@@ -105,13 +109,7 @@ export default function Presentation() {
                                 </Col>
                             </Row>
                         </SlideDown>
-                        {/* <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={ faAngleDoubleRight } size="6x" /> </Button> */}
-                    
-                         {itemIndex !== 9 ?
-                                                    <Button className="previousback" variant="success" onClick={handlePresDataChange} FontAwesomeIcon icon={ faAngleDoubleRight } size="6x">Go to next</Button>
-                                                    :
-                                                    <Button className="previousback" variant="success" onClick={goToQuiz}>Practice! --></Button>
-                                                }
+                        <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={ faAngleDoubleRight } size="6x" /> </Button>
                                             
                     </Jumbotron>
                 </Container>

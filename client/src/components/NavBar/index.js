@@ -16,6 +16,7 @@ export default function NavBar() {
     <Nav className="mr-auto">
       <Nav.Link href="/Dashboard/Spanish">My Dashboard</Nav.Link>
       <Nav.Link href="link-1">Account Settings</Nav.Link>
+      <Nav.Link href="/About">About</Nav.Link>
       <Nav.Link href="/">Sign Out</Nav.Link>
     </Nav>
   </Navbar>

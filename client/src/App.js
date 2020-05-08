@@ -13,6 +13,7 @@ import NavBar from './components/NavBar';
 import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
 import CardGradient from './components/CardGradient'
+import About from './components/About'
 
 function App() {
   const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/QuizCard/:lang/:lesson" component={QuizCard} />
           <Route exact path="/Gradient" component={Gradient} />
           <Route exact path="/CardGradient" component={CardGradient} />
+          <Route exact path="/About" component={About}/>
         </Switch>
       </UserProvider>
     </>
