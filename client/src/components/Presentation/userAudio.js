@@ -1,6 +1,6 @@
 import MicRecorder from 'mic-recorder-to-mp3';
 import React, { Component } from 'react';
-import { Container, Row} from 'react-bootstrap';
+import { Row} from 'react-bootstrap';
 import "./style.css";
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
