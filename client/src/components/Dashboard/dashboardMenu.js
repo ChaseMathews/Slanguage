@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Row, Col, Button, ListGroup } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
+import { UserContext } from '../../utils/Context';
 
 
 export default function DashboardMenu() {
-    
+
     const { lang } = useParams();
+    // const { currentLang } = useContext(UserContext);
+
+    // const language = lang || currentLang
 
     return (
         <>

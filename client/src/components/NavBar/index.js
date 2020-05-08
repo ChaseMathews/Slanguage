@@ -1,14 +1,18 @@
 import React, { useContext, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import API from '../../utils/API';
 import { UserContext } from '../../utils/Context';
 import Modal from '../Modal/index';
 
 
 export default function NavBar() {
-  const { user } = useContext(UserContext);
-  // console.log('navbar user', user.id);
+
+  const { user, currentLang } = useContext(UserContext);
+
+  const { lang } = useParams();
+
+  const language = lang || currentLang
 
   const history = useHistory();
 
@@ -41,7 +45,7 @@ export default function NavBar() {
           />
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link><Link to="/DashboardCards">My Dashboard</Link></Nav.Link>
+          <Nav.Link><Link to={"/DashboardCards/" + language}>My Dashboard</Link></Nav.Link>
           <NavDropdown title="Account Settings" id="basic-nav-dropdown">
             <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
           </NavDropdown>

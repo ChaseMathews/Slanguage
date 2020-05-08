@@ -1,21 +1,24 @@
 import React, { useContext } from 'react'
+import { Link, useParams } from 'react-router-dom';
 import "./style.css"
 import { Jumbotron, Card, Row, Col } from 'react-bootstrap';
 import { UserContext } from '../../utils/Context';
 
 
-
-
-
 export default function DashboardCard() {
-    const { user } = useContext(UserContext);
-    // console.log(user);
+    const { user, currentLang } = useContext(UserContext);
+
+    const { lang } = useParams();
+
+    const language = lang || currentLang
+
     return (
         <>
             <Row>
                 <Col>
-                    {/* <h1>Hello {user.username}, welcome back!</h1> */}
-                    <h1>Hello username, welcome back!</h1>
+                    {/* <h1>Hello username, welcome back!</h1> */}
+                    <h1>Hello {user.username}, welcome back!</h1>
+                    <h2>You're currently studying {language}.</h2>
                 </Col>
             </Row>
             <Jumbotron>
@@ -32,9 +35,11 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <a href="#" className="card_link">
-                            <div className="card__img--hover"></div>
-                        </a>
+                        <Link to={"/LessonMenu/pres/" + language}>
+                            <a className="card_link">
+                                <div className="card__img--hover"></div>
+                            </a>
+                        </Link>
                         <div className="card__info">
                             <span className="card__category"> Presentation</span>
                             <h3 className="card__title">Learn</h3>
@@ -55,9 +60,11 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <a href="#" className="card_link">
-                            <div className="card__img--hover"></div>
-                        </a>
+                        <Link to={"/LessonMenu/quiz/" + language}>
+                            <a className="card_link">
+                                <div className="card__img--hover"></div>
+                            </a>
+                        </Link>
                         <div className="card__info">
                             <span className="card__category"> Quiz</span>
                             <h3 className="card__title">Practice</h3>
@@ -78,9 +85,11 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <a href="#" className="card_link">
-                            <div className="card__img--hover"></div>
-                        </a>
+                        <Link to="/Progress">
+                            <a className="card_link">
+                                <div className="card__img--hover"></div>
+                            </a>
+                        </Link>
                         <div className="card__info">
                             <span className="card__category"> Progress</span>
                             <h3 className="card__title">Check Your Progress</h3>
@@ -101,9 +110,11 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <a href="#" className="card_link">
-                            <div className="card__img--hover"></div>
-                        </a>
+                        <Link to="/SelectLanguage">
+                            <a className="card_link">
+                                <div className="card__img--hover"></div>
+                            </a>
+                        </Link>
                         <div className="card__info">
                             <span className="card__category"> Category</span>
                             <h3 className="card__title">Change Language</h3>

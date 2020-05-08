@@ -43,7 +43,7 @@ function App() {
           </Route>
           <Route exact path="/UserSignUp" component={SignUp} />
           <Route exact path="/SelectLanguage" component={SelectLang} />
-          <Route exact path="/Dashboard/:lang" component={Dashboard} />
+          {/* <Route exact path="/Dashboard/:lang" component={Dashboard} /> */}
           {/* <Route exact path="/Dashboard/:user" component={Dashboard} /> */}
           <Route exact path="/Progress" component={ProgressPage} />
           <Route path="/LessonMenu/:type/:lang" component={MenuContainer} />
@@ -52,7 +52,7 @@ function App() {
           <Route exact path="/Gradient" component={Gradient} />
           <Route exact path="/CardGradient" component={CardGradient} />
           <Route exact path="/About" component={About} />
-          <Route exact path="/DashboardCards" component={DashboardCard} />
+          <Route exact path="/DashboardCards/:lang" component={DashboardCard} />
         </Switch>
       </UserProvider>
     </>
