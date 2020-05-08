@@ -4,15 +4,15 @@ module.exports = [
             "language": "Spanish",
             "questions": [
                 {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
-                    "phrase": "Guey",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                   
                     "answerOptions": [
-                        "dude",
-                        "mom",
-                        "uncle"
+                        "siete",
+                        "nueve",
+                        "dos"
                     ],
                     "correctAnswer": "dos",
-                    "example": "hola guey",
+                   
                     
                 },
                 {
