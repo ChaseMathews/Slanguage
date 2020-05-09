@@ -75,6 +75,7 @@ export default function Presentation() {
                     <Jumbotron className="justify-content-center text-center">
                         {itemIndex > 0 &&
                             <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
+        
                         }
 
                         <SlideDown>
@@ -112,6 +113,7 @@ export default function Presentation() {
                             </Row>
                         </SlideDown>
                             <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>< FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> </Button>
+                            <p>{itemIndex + 1}/10</p>
                     </Jumbotron>
                 </Container>
             }
