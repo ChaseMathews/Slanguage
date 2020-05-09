@@ -10,9 +10,10 @@ export default function NavBar() {
 
   const { user, currentLang } = useContext(UserContext);
 
-  const { lang } = useParams();
+  // const { lang } = useParams();
+  console.log("navbar", currentLang);
 
-  const language = lang || currentLang
+  // const language = lang || currentLang
 
   const history = useHistory();
 
@@ -45,12 +46,12 @@ export default function NavBar() {
           />
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link><Link to={"/DashboardCards/" + language}>My Dashboard</Link></Nav.Link>
+          <Nav.Link><Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link></Nav.Link>
           <NavDropdown title="Account Settings" id="basic-nav-dropdown">
             <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/About">About</Nav.Link>
-          <Nav.Link href="/">Sign Out</Nav.Link>
+          <Nav.Link><Link to="/About">About</Link></Nav.Link>
+          <Nav.Link><Link to="/">Sign Out</Link></Nav.Link>
         </Nav>
       </Navbar>
     </>

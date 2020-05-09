@@ -36,7 +36,7 @@ function App() {
   return (
     <>
       <UserProvider>
-        {(location.pathname !== "/" && location.pathname !== "/UserSignUp") ? <NavBar /> : ""}
+        {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage" ) ? <NavBar /> : ""}
          <Switch>
           <Route exact path="/">
             <HomeView />
