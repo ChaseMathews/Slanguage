@@ -1,24 +1,26 @@
 import React, { useState, useEffect, useContext } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron, Modal } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
+// import ModalBox from '../Modal/index';
 import { UserContext } from '../../utils/Context';
 
 
 export default function QuizCard() {
-  const { user, currentLang } = useContext(UserContext);
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
-  const [disabled, setDisabled] = useState(false);
   let [results, setResults] = useState({
     ButtonOne: true,
     ButtonTwo: true,
     ButtonThree: true
   });
 
+  const { user, currentLang } = useContext(UserContext);
   const [score, setScore] = useState(0)
+  const [disabled, setDisabled] = useState(false);
   const [display, setDisplay] = useState(false)
+  const [modal, setModal] = useState(true);
   const history = useHistory();
   const { lang, lesson } = useParams();
   const language = lang || currentLang;
@@ -98,8 +100,6 @@ export default function QuizCard() {
 
   // };
 
-
-
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
@@ -137,9 +137,31 @@ export default function QuizCard() {
     history.push(`/DashboardCards/${language}`);
   }
 
+  console.log(modal);
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
   return (
     <>
-      {quizContent &&
+
+      {modal &&
+
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Ready to practice what you've learned?</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Correct answers are worth 3 points and wrong answers are -1. Good Luck!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="primary" onClick={() => setModal(false)}>Let's Go!</Button>
+          </Modal.Footer>
+        </Modal>
+      }
+
+
+      {quizContent && !modal &&
         <Container>
           <Col sm="4">
             <Card className="score">
@@ -181,22 +203,32 @@ export default function QuizCard() {
                 </Col>
               </Row>
 
-              <Row>
-                <Col sm={lesson !== "numbers" ? 3 : 4}>
-                  <Row>
+
+
+            </Card.Body>
+
+            <Row>
+              <Col sm={lesson !== "numbers" ? 3 : 4}>
+                <Row>
+                  <Col sm={6}>
+
+                  </Col>
+                  <Col sm={6}>
                     {index !== 9 && disabled &&
-                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="" value="next" name="next">NEXT</Button>
+
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                     }
                     {
                       index === 9 && disabled &&
                       <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
                     }
+                  </Col>
 
-                  </Row>
-                </Col>
-              </Row>
 
-            </Card.Body>
+
+                </Row>
+              </Col>
+            </Row>
           </Jumbotron>
 
 

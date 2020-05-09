@@ -4,7 +4,7 @@ import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
 import SelectLang from './components/SelectLanguage/selectLangView';
-import Dashboard from './components/Dashboard/dashboardView';
+// import Dashboard from './components/Dashboard/dashboardView';
 import ProgressPage from './components/Progress/progressView.js';
 import MenuContainer from './components/LessonMenu/LessonMenuView';
 import Presentation from './components/Presentation/index';

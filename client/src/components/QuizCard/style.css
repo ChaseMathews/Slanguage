@@ -11,12 +11,9 @@ margin-top: 10px;
     padding-top: 10px;
 }
 
-.nextbutton{
-    margin-top: 5rem;
-    justify-content: ;
-}
 
 .choices{
+    padding-top: 94px;
     padding-left: 7rem;
     align-content: center;
     vertical-align: 10vh;
@@ -27,6 +24,18 @@ margin-top: 10px;
     background-color: blue;
     font-size: 30px;
 
+}
+.modal {
+    align-content: center;
+    margin-top: 12px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0 0 0 .8px 0 rgba(0, 0, 0, .8);
 }
 
 #quizButton1, #quizButton2, #quizButton3 {
