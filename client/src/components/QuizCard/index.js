@@ -17,8 +17,8 @@ export default function QuizCard() {
   });
 
   const { user, currentLang } = useContext(UserContext);
-
   const [score, setScore] = useState(0)
+  const [disabled, setDisabled] = useState(false);
   const [display, setDisplay] = useState(false)
   const [modal, setModal] = useState(true);
   const history = useHistory();
@@ -71,6 +71,7 @@ export default function QuizCard() {
       return prev + 1
     })
     btnsPrimary();
+    setDisabled(false);
   }
 
   //   const updateUserResults = e => {
@@ -203,36 +204,36 @@ export default function QuizCard() {
                 </Col>
               </Row>
 
-             
+
 
             </Card.Body>
 
             <Row>
-                <Col sm={lesson !== "numbers" ? 3 : 4}>
-                  <Row>
-                    <Col sm={6}>
-                     
-                    </Col>
-                    <Col sm={6}>
-                      {index !== 9 && disabled &&
-                     
+              <Col sm={lesson !== "numbers" ? 3 : 4}>
+                <Row>
+                  <Col sm={6}>
+
+                  </Col>
+                  <Col sm={6}>
+                    {index !== 9 && disabled &&
+
                       <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                     }
                     {
                       index === 9 && disabled &&
                       <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
                     }
-                    </Col>
+                  </Col>
 
-                   
 
-                  </Row>
-                </Col>
-              </Row>
+
+                </Row>
+              </Col>
+            </Row>
           </Jumbotron>
 
 
-        </Container >
+        </Container>
       }
     </>
 
