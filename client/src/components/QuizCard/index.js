@@ -191,35 +191,43 @@ export default function QuizCard() {
 
 
                 <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
-                  <Button variant={btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                  <Button variant={btnVarient.button_1} id="quizButton1" size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
-                  <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+                  <Button variant={btnVarient.button_2} id="quizButton2" size="lg" disabled={disabled} name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
 
 
-                  <Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                  <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
                 </Col>
               </Row>
 
-              <Row>
-                <Col sm={lesson !== "numbers" ? 3 : 4} />
-              </Row>
-              <br></br>
-
-              <Row>
-                <Col>
-                  {index !== 9 ?
-                    <Button onClick={handleImageChange} variant="danger" className="float-right" value="next" name="next">NEXT</Button>
-                    :
-                    <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                  }
-                </Col>
-              </Row>
-
-
+             
 
             </Card.Body>
+
+            <Row>
+                <Col sm={lesson !== "numbers" ? 3 : 4}>
+                  <Row>
+                    <Col sm={6}>
+                     
+                    </Col>
+                    <Col sm={6}>
+                      {index !== 9 && disabled &&
+                     
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
+                    }
+                    {
+                      index === 9 && disabled &&
+                      <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
+                    }
+                    </Col>
+
+                   
+
+                  </Row>
+                </Col>
+              </Row>
           </Jumbotron>
 
 

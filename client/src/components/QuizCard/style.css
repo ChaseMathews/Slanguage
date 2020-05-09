@@ -11,12 +11,9 @@ margin-top: 10px;
     padding-top: 10px;
 }
 
-.nextbutton{
-    margin-top: 5rem;
-    justify-content: ;
-}
 
 .choices{
+    padding-top: 94px;
     padding-left: 7rem;
     align-content: center;
     vertical-align: 10vh;
@@ -41,4 +38,6 @@ margin-top: 10px;
     box-shadow: 0 0 0 .8px 0 rgba(0, 0, 0, .8);
 }
 
-
+#quizButton1, #quizButton2, #quizButton3 {
+    width: 300px;
+}
