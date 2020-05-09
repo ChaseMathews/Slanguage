@@ -534,16 +534,117 @@ module.exports = [
             "language": "Spanish",
             "questions": [
                 {
-                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
+                    "phrase": "Güey",
                     "answerOptions": [
-                        "uno",
-                        "dos",
-                        "cinco"
+                        "Dude",
+                        "Mom",
+                        "Cousin"
                     ],
-                    "correctAnswer": "dos",
-                    "example:": ""
+                    "correctAnswer": "Dude",
+                    "example:": "Que onda güey?"
                 },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/07/02/trust-4321881__340.jpg",
+                    "phrase": "Neta",
+                    "answerOptions": [
+                        "Beer",
+                        "Ugly",
+                        "Truth"
+                    ],
+                    "correctAnswer": "Truth",
+                    "example:": "Do you promise?"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/11/19/24/headache-2058476__340.png",
+                    "phrase": "Crudo",
+                    "answerOptions": [
+                        "Poop",
+                        "Hungover",
+                        "Tacos"
+                    ],
+                    "correctAnswer": "Hungover",
+                    "example:": "Last night was fun."
+                },
+                {
+                    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
+                    "phrase": "Que Onda?",
+                    "answerOptions": [
+                        "What's up?",
+                        "Wanna get tacos?",
+                        "How's your mom?"
+                    ],
+                    "correctAnswer": "What's up?",
+                    "example:": "Greeting"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/08/20/15/35/thumb-422558__340.jpg",
+                    "phrase": "Órale",
+                    "answerOptions": [
+                        "Car",
+                        "Agreed",
+                        "House"
+                    ],
+                    "correctAnswer": "Agreed",
+                    "example:": "Can also mean to hurry up."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
+                    "phrase": "Que pedo?",
+                    "answerOptions": [
+                        "Wanna marry me?",
+                        "How old are you?",
+                        "What's your problem?"
+                    ],
+                    "correctAnswer": "What's your problem?",
+                    "example:": "Fight!"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
+                    "phrase": "Chido",
+                    "answerOptions": [
+                        "Beach",
+                        "Cool",
+                        "Horse"
+                    ],
+                    "correctAnswer": "Cool",
+                    "example:": "Rhymes with tool."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.pngg",
+                    "phrase": "Gacho",
+                    "answerOptions": [
+                        "Bad",
+                        "Pretty",
+                        "Tasty"
+                    ],
+                    "correctAnswer": "Bad",
+                    "example:": "Opposite of chido."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/09/14/11/35/beer-1669273__340.png",
+                    "phrase": "Cheve\Chela",
+                    "answerOptions": [
+                        "Pool",
+                        "Siblings",
+                        "Beer"
+                    ],
+                    "correctAnswer": "Beer",
+                    "example:": "Opposite of chido."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
+                    "phrase": "Aguas!",
+                    "answerOptions": [
+                        "Watch out!",
+                        "Help me!",
+                        "Im scared!"
+                    ],
+                    "correctAnswer": "Aguas!",
+                    "example:": "Listen to the kids bro."
+                },
+                
+                
             ]
         },
 
