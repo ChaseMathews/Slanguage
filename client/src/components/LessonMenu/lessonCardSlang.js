@@ -27,7 +27,7 @@ export default function SlangCard() {
             <Row>
             <Card>
                 
-                <Card.Img variant="top" img src="https://lh3.googleusercontent.com/proxy/8S2__TsMoNm-rsnAxTXmuXUOL7uOD21rJjDjNzxAg9rOZBNE2RVrNqV5bbG_sJCHJCbErLldhfdoqEm9j_adDzy644jy37Wniei8RueVGyqUcr4" />
+                <Card.Img variant="top" img src="" />
                 <Card.Body>
                     <Card.Title><h2>Slang</h2></Card.Title>
                     <hr />

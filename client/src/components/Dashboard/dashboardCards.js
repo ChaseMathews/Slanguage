@@ -35,10 +35,8 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <Link to={"/LessonMenu/pres/" + language}>
-                            <a className="card_link">
+                        <Link to={"/LessonMenu/pres/" + language} className="card_link">
                                 <div className="card__img--hover"></div>
-                            </a>
                         </Link>
                         <div className="card__info">
                             <span className="card__category"> Presentation</span>
@@ -60,10 +58,8 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <Link to={"/LessonMenu/quiz/" + language}>
-                            <a className="card_link">
+                        <Link to={"/LessonMenu/quiz/" + language} className="card_link">
                                 <div className="card__img--hover"></div>
-                            </a>
                         </Link>
                         <div className="card__info">
                             <span className="card__category"> Quiz</span>
@@ -85,10 +81,8 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <Link to="/Progress">
-                            <a className="card_link">
+                        <Link to="/Progress" className="card_link">
                                 <div className="card__img--hover"></div>
-                            </a>
                         </Link>
                         <div className="card__info">
                             <span className="card__category"> Progress</span>
@@ -110,10 +104,8 @@ export default function DashboardCard() {
 
                         </div>
                         <div className="card__img"></div>
-                        <Link to="/SelectLanguage">
-                            <a className="card_link">
+                        <Link to="/SelectLanguage" className="card_link">
                                 <div className="card__img--hover"></div>
-                            </a>
                         </Link>
                         <div className="card__info">
                             <span className="card__category"> Category</span>

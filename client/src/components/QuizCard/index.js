@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import API from "../../utils/API"
 import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
+import { UserContext } from '../../utils/Context';
 
 
 export default function QuizCard() {
+  const { user, currentLang } = useContext(UserContext);
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
   const [disabled, setDisabled] = useState(false);
@@ -19,6 +21,7 @@ export default function QuizCard() {
   const [display, setDisplay] = useState(false)
   const history = useHistory();
   const { lang, lesson } = useParams();
+  const language = lang || currentLang;
   const [btnVarient, setBtnVarient] = useState({
     button_1: "primary",
     button_2: "primary",
@@ -62,7 +65,6 @@ export default function QuizCard() {
 
   const handleImageChange = () => {
     setIndex(prev => {
-      setDisplay(false)
       return prev + 1
     })
     btnsPrimary();
@@ -132,7 +134,7 @@ export default function QuizCard() {
   }
 
   const goToDash = () => {
-    history.push(`/Dashboard/${lang}`);
+    history.push(`/DashboardCards/${language}`);
   }
 
   return (
@@ -182,9 +184,12 @@ export default function QuizCard() {
               <Row>
                 <Col sm={lesson !== "numbers" ? 3 : 4}>
                   <Row>
-                    {index !== 9 || disabled ?
-                      <Button onClick={handleImageChange} variant="danger" className="" value="next" name="next">NEXT</Button>
-                      :
+                    {/* {index !== 9 && disabled && */}
+                    {index !== 9 &&
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="" value="next" name="next">NEXT</Button>
+                    }
+                    {
+                      index === 9 && disabled &&
                       <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
                     }
 
