@@ -95,17 +95,6 @@ export default function Presentation() {
                                                 <Card.Title>{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
                                                 <hr />
                                                 <UserAudio />
-                                                <hr />
-                                                <Row className="justify-content-between" >
-                                                    {itemIndex > 0 &&
-                                                        <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
-                                                    }
-                                                    {itemIndex !== 9 ?
-                                                        <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
-                                                        :
-                                                        <Button className="button" variant="success" onClick={goToQuiz}>Practice! --></Button>
-                                                    }
-                                                </Row>
                                             </Card.Body>
                                         </Card>
                                     </CardGradient>
