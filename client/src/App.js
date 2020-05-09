@@ -19,15 +19,15 @@ function App() {
   const {lang} = useParams();
 
 
-  // const { user, currentLang } = useContext(UserContext);
+  const { user, currentLang } = useContext(UserContext);
 
-  // const history = useHistory();
+  const history = useHistory();
 
-  // useEffect(() => {
-  //   if (location.pathname !== "/" && user === undefined) {
-  //     history.push("/")
-  //   }
-  // }, [user])
+  useEffect(() => {
+    if (location.pathname !== "/" && user === undefined) {
+      history.push("/")
+    }
+  }, [user])
 
 
   return (
