@@ -181,11 +181,11 @@ export default function QuizCard() {
                 {lesson !== "numbers" ? (
                   <Col sm={3}>
                     <div>
-                      {quizContent[index].phrase} 
-                   </div>
+                      {quizContent[index].phrase}
+                    </div>
                     <br></br>
                     <div>
-                      Example: {quizContent[index].explanation}
+                      Example: {quizContent[index].example}
                     </div>
                   </Col>
                 ) : ""}
@@ -200,6 +200,15 @@ export default function QuizCard() {
 
                   <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
+
+                    {index !== 9 && disabled &&
+
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
+                    }
+                    {
+                      index === 9 && disabled &&
+                      <Button onClick={goToDash} variant="danger" className="nextBtn">Back to Dashboard</Button>
+                    }
                 </Col>
               </Row>
 
@@ -207,28 +216,10 @@ export default function QuizCard() {
 
             </Card.Body>
 
-            <Row>
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Row>
-                  <Col sm={6}>
-
-                  </Col>
-                  <Col sm={6}>
-                    {index !== 9 && disabled &&
-
-                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
-                    }
-                    {
-                      index === 9 && disabled &&
-                      <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                    }
-                  </Col>
-
-
-
-                </Row>
-              </Col>
-            </Row>
+            {/* <Row> */}
+              {/* <Col sm={lesson !== "numbers" ? 3 : 4}> */}
+              {/* </Col> */}
+            {/* </Row> */}
           </Jumbotron>
 
 

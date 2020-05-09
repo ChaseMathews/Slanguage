@@ -14,7 +14,6 @@ import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
 import CardGradient from './components/CardGradient'
 import About from './components/About'
-// import DashboardCards from './components/Dashboard/dashboardCards'
 import DashboardCard from './components/Dashboard/dashboardCards';
 
 function App() {

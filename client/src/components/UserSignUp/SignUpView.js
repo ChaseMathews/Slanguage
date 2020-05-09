@@ -1,11 +1,12 @@
 import React, { useState, useContext } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron, Card } from 'react-bootstrap';
 import API from "../../utils/API";
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
 import { useHistory } from 'react-router-dom';
 import './style.css';
-import RingLoader from 'react-spinners/RingLoader';
+import Image from 'react-bootstrap/Image'
+// import Polaroid from '../Polaroid'
 import { UserContext } from '../../utils/Context';
 
 export default function SignUp() {
@@ -62,14 +63,20 @@ export default function SignUp() {
     }
 
 
-    return (
-        <Container>
-            <hr></hr>
-            <Row>
-                <Col className="spinner" md={{ size: 6, offset: 2 }} >
-                    <RingLoader loading={true} size={350} color="#39a6c1" />
+return (
+    <Jumbotron>
+        
+        <hr></hr>
+        <Card.Body>
+        <Row>
+            
+        <Col md={{ size: 6, offset: 2 }} >
+                    {/* <Polaroid /> */}
+                    <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
+
 
                 </Col>
+                
                 <Col md="4">
                     <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
                         {error &&
@@ -79,7 +86,9 @@ export default function SignUp() {
                         <SignUpBtn handleFormSubmit={handleFormSubmit} />
                     </SignUpForm>
                 </Col>
+                
             </Row>
-        </Container>
+            </Card.Body>
+        </Jumbotron>
     );
 }
