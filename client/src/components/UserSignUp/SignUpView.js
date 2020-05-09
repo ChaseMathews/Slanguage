@@ -5,7 +5,7 @@ import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
 import { useHistory } from 'react-router-dom';
 import './style.css';
-import RingLoader from 'react-spinners/RingLoader'
+// import RingLoader from 'react-spinners/RingLoader'
 import Polaroid from '../Polaroid'
 import RingLoader from 'react-spinners/RingLoader';
 import { UserContext } from '../../utils/Context';
