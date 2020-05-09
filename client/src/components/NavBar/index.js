@@ -38,12 +38,14 @@ export default function NavBar() {
         </Modal>
       }
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand className="text" href="/">
+        <Navbar.Brand className="text">
+          <Link to={"/DashboardCards/" + currentLang}>
           <img src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png"
             width="120"
             height="40"
             alt="Slanguage logo"
           />
+          </Link>
         </Navbar.Brand>
         <Nav className="mr-auto">
           <Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link>

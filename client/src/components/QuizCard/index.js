@@ -8,8 +8,10 @@ import { UserContext } from '../../utils/Context';
 
 
 export default function QuizCard() {
+  const { user, currentLang } = useContext(UserContext);
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
+  const [disabled, setDisabled] = useState(false);
   let [results, setResults] = useState({
     ButtonOne: true,
     ButtonTwo: true,
@@ -66,10 +68,10 @@ export default function QuizCard() {
 
   const handleImageChange = () => {
     setIndex(prev => {
-      setDisplay(false)
       return prev + 1
     })
     btnsPrimary();
+    setDisabled(false);
   }
 
   //   const updateUserResults = e => {
@@ -99,6 +101,8 @@ export default function QuizCard() {
 
   // };
 
+
+
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
@@ -114,6 +118,7 @@ export default function QuizCard() {
         [name]: "success",
       });
       setScore(score + 3)
+      setDisabled(!disabled);
     } else {
       setBtnVarient({
         ...btnVarient,
@@ -132,7 +137,7 @@ export default function QuizCard() {
   }
 
   const goToDash = () => {
-    history.push(`/dashboardCards/${language}`);
+    history.push(`/DashboardCards/${language}`);
   }
 
   const [modal, setModal] = useState(true);
@@ -185,13 +190,13 @@ export default function QuizCard() {
 
 
                 <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
-                  <Button variant={btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                  <Button variant={btnVarient.button_1} size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
-                  <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+                  <Button variant={btnVarient.button_2} size="lg" disabled={disabled} name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
 
 
-                  <Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                  <Button variant={btnVarient.button_3} size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
                 </Col>
               </Row>
@@ -199,9 +204,12 @@ export default function QuizCard() {
               <Row>
                 <Col sm={lesson !== "numbers" ? 3 : 4}>
                   <Row>
-                    {index !== 9 ?
-                      <Button onClick={handleImageChange} variant="danger" className="" value="next" name="next">NEXT</Button>
-                      :
+                    {/* {index !== 9 && disabled && */}
+                    {index !== 9 &&
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="" value="next" name="next">NEXT</Button>
+                    }
+                    {
+                      index === 9 && disabled &&
                       <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
                     }
 
