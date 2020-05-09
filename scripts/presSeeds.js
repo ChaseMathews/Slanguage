@@ -386,7 +386,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
-                    "targetWord": "Aguas",
+                    "targetWord": "Aguas!",
                     "audioToPlay": "/audio/spanish/aguas.m4a",
                     "explanation": "This is an expression that means: watch out!"
                 }

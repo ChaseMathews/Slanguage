@@ -897,7 +897,7 @@ module.exports = [
         },
 
         {
-            "language": "Italian",
+            "language": "Navajo",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/10/26/11/14/tv-3774381__340.jpg",
@@ -908,7 +908,7 @@ module.exports = [
                         "Biyaa niséłt'i"
                     ],
                     "correctAnswer": "Binááł na'alkid",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png",
@@ -919,7 +919,7 @@ module.exports = [
                         "Sáanii t'óó yitah yilwoł"
                     ],
                     "correctAnswer":  "Tsxíiłgo bił oohsxał",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg",
@@ -930,7 +930,7 @@ module.exports = [
                         "Sáanii t'óó yitah yilwoł"
                     ],
                     "correctAnswer":  "Sáanii t'óó yitah yilwoł",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/05/13/07/people-2583444__340.jpg",
@@ -941,7 +941,7 @@ module.exports = [
                         "Biyaa niséłt'i"
                     ],
                     "correctAnswer":  "Bił diech'iish",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/46/upset-2681502__340.jpg",
@@ -952,7 +952,7 @@ module.exports = [
                         "Bá yoolééł"
                     ],
                     "correctAnswer": "Bá yoolééł",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915__340.jpg",
@@ -963,7 +963,7 @@ module.exports = [
                         "bił naak'ai'"
                     ],
                     "correctAnswer":  "Dah naashch'aał",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/04/12/16/19/fat-3313923__340.png",
@@ -974,7 +974,7 @@ module.exports = [
                         "Biyaa niséłt'i'"
                     ],
                     "correctAnswer": "Biyaa niséłt'i'",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/02/06/21/55/valentines-day-3135789__340.jpg",
@@ -985,7 +985,7 @@ module.exports = [
                         "Bił diech'iish"
                     ],
                     "correctAnswer":  "Yich'i' yił pop",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg",
@@ -996,7 +996,7 @@ module.exports = [
                         "Dah naashch'aał"
                     ],
                     "correctAnswer":  "bił naak'ai'",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg",
@@ -1007,7 +1007,7 @@ module.exports = [
                         "ʼÁh nístsʼííd"
                     ],
                     "correctAnswer":  "Yiik'ih dah sizí",
-                    "example:": ""
+                    "example": ""
                 } 
             ]
         },
