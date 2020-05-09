@@ -611,7 +611,7 @@ module.exports = [
                     "example": "Rhymes with tool."
                 },
                 {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.pngg",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.png",
                     "phrase": "Gacho",
                     "answerOptions": [
                         "Bad",
@@ -630,7 +630,7 @@ module.exports = [
                         "Beer"
                     ],
                     "correctAnswer": "Beer",
-                    "example": "Opposite of chido."
+                    "example": "A cold one."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
@@ -640,7 +640,7 @@ module.exports = [
                         "Help me!",
                         "Im scared!"
                     ],
-                    "correctAnswer": "Aguas!",
+                    "correctAnswer": "Watch out!",
                     "example": "Listen to the kids bro."
                 }
             ]
