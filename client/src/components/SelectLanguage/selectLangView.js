@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Jumbotron, Row, Col, Card } from 'react-bootstrap';
 import LangHeader from './selectLangHeader';
 import CarouselFlags from '../Carousel'
-import Carousel from '../3dcarousel'
+
 
 
 export default function SelectLang() {
@@ -10,19 +10,22 @@ export default function SelectLang() {
 
     return (
         <Container>
+            <Jumbotron>
+                <Card.Body>
+                <Row className="justify-content-center">
 
-            <Row className="justify-content-center">
-
-                <Col>
-                    <LangHeader />
-                    <hr></hr>
-                </Col>
-            </Row>
-            <Row className="justify-content-center">
-                <Col sm={7} md={7} lg={7}>
-                    <CarouselFlags />
-                </Col>
-            </Row>
+                    <Col>
+                        <LangHeader />
+                        <hr></hr>
+                    </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    <Col sm={7} md={7} lg={7}>
+                        <CarouselFlags />
+                    </Col>
+                </Row>
+                </Card.Body>
+            </Jumbotron>
         </Container>
     );
 }

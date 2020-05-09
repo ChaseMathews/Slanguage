@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import { Container, Button, Jumbotron } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import API from '../../utils/API';
 import { UserContext } from '../../utils/Context';
 
@@ -39,8 +39,7 @@ export default function CarouselFlags() {
 
 
     return (
-        
-            <Jumbotron>
+    
                 <Carousel interval={3000}>
                     <Carousel.Item>
                         <img
@@ -94,8 +93,6 @@ export default function CarouselFlags() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-            </Jumbotron>
-       
 
     )
 }

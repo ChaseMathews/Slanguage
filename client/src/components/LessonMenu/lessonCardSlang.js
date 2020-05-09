@@ -48,7 +48,7 @@ export default function SlangCard() {
             <Row>
                 <Card>
 
-                    <Card.Img variant="top" img src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
+                    <Card.Img img src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
                     <Card.Body>
                         <Card.Title><h2>Slang</h2></Card.Title>
                         <hr />
