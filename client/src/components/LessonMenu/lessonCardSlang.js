@@ -32,7 +32,7 @@ export default function SlangCard() {
             <Row>
             <Card>
                 
-                <Card.Img variant="top" img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTiucP08BRZtP5IZr-otof0flykG4HtO8s9VLD0lDUkL6OowbX-&usqp=CAU" />
+                <Card.Img variant="top" img src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
                 <Card.Body>
                     <Card.Title><h2>Slang</h2></Card.Title>
                     <hr />

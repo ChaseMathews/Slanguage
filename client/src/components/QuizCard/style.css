@@ -17,6 +17,7 @@ margin-top: 10px;
 }
 
 .choices{
+    padding-top: 94px;
     padding-left: 7rem;
     align-content: center;
     vertical-align: 10vh;
@@ -28,5 +29,6 @@ margin-top: 10px;
     font-size: 30px;
 
 }
+
 
 

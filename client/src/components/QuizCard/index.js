@@ -181,23 +181,32 @@ export default function QuizCard() {
                 </Col>
               </Row>
 
-              <Row>
+             
+
+            </Card.Body>
+
+            <Row>
                 <Col sm={lesson !== "numbers" ? 3 : 4}>
                   <Row>
-                    {/* {index !== 9 && disabled && */}
-                    {index !== 9 &&
-                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="" value="next" name="next">NEXT</Button>
+                    <Col sm={6}>
+                     
+                    </Col>
+                    <Col sm={6}>
+                      {/* {index !== 9 && disabled && */}
+                     {index !== 9 &&
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                     }
                     {
                       index === 9 && disabled &&
                       <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
                     }
+                    </Col>
+
+                   
 
                   </Row>
                 </Col>
               </Row>
-
-            </Card.Body>
           </Jumbotron>
 
 
