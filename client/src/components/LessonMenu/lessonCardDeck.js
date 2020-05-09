@@ -28,7 +28,7 @@ export default function LessonCards() {
     } else if (type === "quiz") {
         cardText = "Practice";
         if (lang === "Spanish") {
-            url = "/QuizCard/Spanish/"  
+            url = "/QuizCard/Spanish/"
         } else if (lang === "Navajo") {
             url = "/QuizCard/Navajo/"
         } else if (lang === "French") {
@@ -41,37 +41,37 @@ export default function LessonCards() {
     }
 
     return (
-        
+
 
         <CardDeck>
 
             <Row>
-            <Card>
-                {/* We want to seed the card Image/Title/Info from the database */}
-                <Card.Img variant="top" src="https://i.pinimg.com/originals/4c/ea/e7/4ceae7ca22156bb1996f384a34afeab9.gif" />
-                <Card.Body>
-                    <Card.Title>Numbers</Card.Title>
-                    <Card.Text className="card-text">
-                        {cardText} numbers 1 - 10!{' '}
-                    </Card.Text>
-                    <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
+                <Card>
+                    {/* We want to seed the card Image/Title/Info from the database */}
+                    <Card.Img variant="top" src="https://i.pinimg.com/originals/4c/ea/e7/4ceae7ca22156bb1996f384a34afeab9.gif" />
+                    <Card.Body>
+                        <Card.Title>Numbers</Card.Title>
+                        <Card.Text className="card-text">
+                            {cardText} numbers 1 - 10!{' '}
+                        </Card.Text>
+                        <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
+                    </Card.Body>
+                </Card>
 
 
-            <Card>
-                
-                <Card.Img variant="top" src="" />
-                <Card.Body>
-                    <Card.Title>Basic Travel Phrases</Card.Title>
-                    <Card.Text>
-                        Going on a trip? {cardText} some basic travel vocabulary!{' '}
-                    </Card.Text>
-                    <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
+                <Card>
+
+                    <Card.Img variant="top" src="" />
+                    <Card.Body>
+                        <Card.Title>Basic Travel Phrases</Card.Title>
+                        <Card.Text>
+                            Going on a trip? {cardText} some basic travel vocabulary!{' '}
+                        </Card.Text>
+                        <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link>
+                    </Card.Body>
+                </Card>
             </Row>
-            
+
 
         </CardDeck>
 

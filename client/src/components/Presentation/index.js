@@ -92,7 +92,7 @@ export default function Presentation() {
                                                     src={presContent[itemIndex].audioToPlay}
                                                     controls
                                                 />
-                                                <Card.Title>{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
+                                                <Card.Title className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
                                                 <hr />
                                                 <UserAudio />
                                             </Card.Body>
