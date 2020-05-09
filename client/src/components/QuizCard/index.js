@@ -67,7 +67,6 @@ export default function QuizCard() {
 
   const handleImageChange = () => {
     setIndex(prev => {
-      setDisplay(false)
       return prev + 1
     })
     btnsPrimary();
