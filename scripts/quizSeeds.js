@@ -535,7 +535,7 @@ module.exports = [
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
-                    "phrase": "Güey",
+                    "phrase": "What does the slang word Güey mean?",
                     "answerOptions": [
                         "Dude",
                         "Mom",
@@ -546,7 +546,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/07/02/trust-4321881__340.jpg",
-                    "phrase": "Neta",
+                    "phrase": "What does the slang word Neta mean?",
                     "answerOptions": [
                         "Beer",
                         "Ugly",
@@ -557,7 +557,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/11/19/24/headache-2058476__340.png",
-                    "phrase": "Crudo",
+                    "phrase": "What does the slang word Crudo mean?",
                     "answerOptions": [
                         "Poop",
                         "Hungover",
@@ -568,7 +568,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
-                    "phrase": "Que Onda?",
+                    "phrase": "What does the slang prhase ¿Qué onda? mean?",
                     "answerOptions": [
                         "What's up?",
                         "Wanna get tacos?",
@@ -579,7 +579,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/20/15/35/thumb-422558__340.jpg",
-                    "phrase": "Órale",
+                    "phrase": "What does the slang word Órale mean?",
                     "answerOptions": [
                         "Car",
                         "Agreed",
@@ -590,7 +590,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
-                    "phrase": "Que pedo?",
+                    "phrase": "What does the slang phrase ¿Que pedo? mean?",
                     "answerOptions": [
                         "Wanna marry me?",
                         "How old are you?",
@@ -601,7 +601,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
-                    "phrase": "Chido",
+                    "phrase": "What does the slang word Chido mean?",
                     "answerOptions": [
                         "Beach",
                         "Cool",
@@ -612,7 +612,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.png",
-                    "phrase": "Gacho",
+                    "phrase": "What does the slang word Gacho mean?",
                     "answerOptions": [
                         "Bad",
                         "Pretty",
@@ -623,7 +623,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/09/14/11/35/beer-1669273__340.png",
-                    "phrase": "Cheve\Chela",
+                    "phrase": "What does the slang word Cheve/Chela mean?",
                     "answerOptions": [
                         "Pool",
                         "Siblings",
@@ -634,7 +634,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
-                    "phrase": "Aguas!",
+                    "phrase": "What does the slang word Aguas! mean?",
                     "answerOptions": [
                         "Watch out!",
                         "Help me!",
