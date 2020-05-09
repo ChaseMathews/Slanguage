@@ -14,14 +14,14 @@ export default function DashboardCard() {
 
     return (
         <>
-            <Row>
-                <Col>
-                    {/* <h1>Hello username, welcome back!</h1> */}
-                    <h1>Hello {user.username}, welcome back!</h1>
-                    <h2>You're currently studying {language}.</h2>
-                </Col>
-            </Row>
             <Jumbotron>
+                <div>
+                    <h1>Hello {user.username}, welcome back!</h1>
+                    <br></br>
+                    <p>You're currently studying {language}.</p>
+                    <br></br>
+                    <h1>What would you like to do?</h1>
+                </div>
                 <Card.Body className="card_s">
                     <article className="cardz card--1">
                         <div className="card__info-hover">
