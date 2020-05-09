@@ -900,6 +900,121 @@ module.exports = [
             "language": "Italian",
             "questions": [
                 {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/10/26/11/14/tv-3774381__340.jpg",
+                    "phrase": "Which is the slang term for watching a movie?",
+                    "answerOptions": [
+                        "Binááł na'alkid",
+                        "Yiik'ih dah sizí",
+                        "Biyaa niséłt'i"
+                    ],
+                    "correctAnswer": "Binááł na'alkid",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png",
+                    "phrase": "Which is the slang term for speeding?",
+                    "answerOptions": [
+                        "Bá yoolééł",
+                        "Tsxíiłgo bił oohsxał",
+                        "Sáanii t'óó yitah yilwoł"
+                    ],
+                    "correctAnswer":  "Tsxíiłgo bił oohsxał",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg",
+                    "phrase": "Which is the slang term for a player or pimp?",
+                    "answerOptions": [
+                        "Bił diech'iish",
+                        "Yich'i' yił pop",
+                        "Sáanii t'óó yitah yilwoł"
+                    ],
+                    "correctAnswer":  "Sáanii t'óó yitah yilwoł",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/05/13/07/people-2583444__340.jpg",
+                    "phrase": "Which is the slang term for listening to music?",
+                    "answerOptions": [
+                        "Bił diech'iish",
+                        "Yiik'ih dah sizí",
+                        "Biyaa niséłt'i"
+                    ],
+                    "correctAnswer":  "Bił diech'iish",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/46/upset-2681502__340.jpg",
+                    "phrase": "Which is the slang expression for being hungover?",
+                    "answerOptions": [
+                        "Dah naashch'aał",
+                        "Yiik'ih dah sizí",
+                        "Bá yoolééł"
+                    ],
+                    "correctAnswer": "Bá yoolééł",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915__340.jpg",
+                    "phrase": "Which is the response for the slang expression for hanging out?",
+                    "answerOptions": [
+                        "Dah naashch'aał",
+                        "Biyaa niséłt'i'",
+                        "bił naak'ai'"
+                    ],
+                    "correctAnswer":  "Dah naashch'aał",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/04/12/16/19/fat-3313923__340.png",
+                    "phrase": "Which is the slang term for feeling full?",
+                    "answerOptions": [
+                        "Yá'át'ééh abíní",
+                        "ʼÁh nístsʼííd",
+                        "Biyaa niséłt'i'"
+                    ],
+                    "correctAnswer": "Biyaa niséłt'i'",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/02/06/21/55/valentines-day-3135789__340.jpg",
+                    "phrase": "Which is the slang term for flirting?",
+                    "answerOptions": [
+                        "Yich'i' yił pop",
+                        "bił naak'ai",
+                        "Bił diech'iish"
+                    ],
+                    "correctAnswer":  "Yich'i' yił pop",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg",
+                    "phrase": "Which is the slang term for being drunk?",
+                    "answerOptions": [
+                        "Bá yoolééł",
+                        "bił naak'ai'",
+                        "Dah naashch'aał"
+                    ],
+                    "correctAnswer":  "bił naak'ai'",
+                    "example:": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg",
+                    "phrase": "Which is the slang term for being in deep sleep? ",
+                    "answerOptions": [
+                        "Yiik'ih dah sizí",
+                        "Bił diech'iish",
+                        "ʼÁh nístsʼííd"
+                    ],
+                    "correctAnswer":  "Yiik'ih dah sizí",
+                    "example:": ""
+                } 
+            ]
+        },
+        {
+            "language": "Italian",
+            "questions": [
+                {
                     "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",
                     "phrase": "Which is the slang term for no worries?",
                     "answerOptions": [
@@ -1011,5 +1126,8 @@ module.exports = [
                 } 
             ]
         }
+
+
+        
     ]
 ]

@@ -403,7 +403,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg ",
-                    "targetWord": "bił naak'ai' ",
+                    "targetWord": "bił naak'ai'",
                     "audioToPlay": " ",
                     "explanation": "This mean to be drunk "
                 },
