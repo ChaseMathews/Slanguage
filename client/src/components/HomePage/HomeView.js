@@ -1,18 +1,17 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Submit from './submitButton';
 import SignInForm from './SignInForm';
 import SignUpBtn from './signUpButton';
-import { Link, useParams, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import "./style.css"
-import RingLoader from 'react-spinners/RingLoader'
 import API from "../../utils/API";
 import Image from 'react-bootstrap/Image'
 import { UserContext } from '../../utils/Context';
 
 export default function HomeView() {
 
-    const { user, setUser } = useContext(UserContext);
+    const { setUser } = useContext(UserContext);
 
     const [userForm, setUserForm] = useState({
         username: "",
@@ -51,20 +50,6 @@ export default function HomeView() {
                 })
         }
     }
-
-
-    function loadUserData() {
-        API.getUserData()
-            .then(res => {
-                console.log()
-                setUserForm(res.data[0].content)
-                console.log(res.data[0].content)
-            })
-
-            .catch(err => console.log(err));
-    };
-
-
 
     return (
         <Container>

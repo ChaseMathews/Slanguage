@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Row, Col, Button, ListGroup } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
+import { UserContext } from '../../utils/Context';
 
 
 export default function DashboardMenu() {
-    
-    const { lang } = useParams();
 
+    const { lang } = useParams();
+    // const { currentLang } = useContext(UserContext);
+
+    // const language = lang || currentLang
 
     return (
         <>
@@ -29,7 +32,7 @@ export default function DashboardMenu() {
                             </ListGroup.Item>
 
                             <ListGroup.Item as="li">
-                                <Link to="/ProgressCard/:user">
+                                <Link to="/Progress">
                                     <Button variant="primary" size="lg" block>Check Progress</Button>
                                 </Link>
                             </ListGroup.Item>
