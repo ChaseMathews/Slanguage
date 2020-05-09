@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container, Jumbotron, Row, Col, Card } from 'react-bootstrap';
 import LangHeader from './selectLangHeader';
 import CarouselFlags from '../Carousel'

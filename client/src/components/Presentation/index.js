@@ -75,14 +75,14 @@ export default function Presentation() {
                     <Jumbotron className="justify-content-center text-center">
                         {itemIndex > 0 &&
                             <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
-        
+
                         }
 
                         <SlideDown>
                             <Row>
                                 <Col>
                                     <CardGradient>
-                                        <Card>
+                                        <Card className="myCard">
                                             <Card.Img className="numberImage" variant="top" src={presContent[itemIndex].imageUrl} />
 
                                             <Card.Body className="justify-content-center text-center">
@@ -92,7 +92,7 @@ export default function Presentation() {
                                                     src={presContent[itemIndex].audioToPlay}
                                                     controls
                                                 />
-                                                <Card.Title>{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
+                                                <Card.Title className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
                                                 <hr />
                                                 <UserAudio />
                                             </Card.Body>
@@ -101,8 +101,9 @@ export default function Presentation() {
                                 </Col>
                             </Row>
                         </SlideDown>
-                            <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>< FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> </Button>
-                            <p>{itemIndex + 1}/10</p>
+                        <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>< FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> </Button>
+                        <p>{itemIndex + 1}/10</p>
+                        
                     </Jumbotron>
                 </Container>
             }

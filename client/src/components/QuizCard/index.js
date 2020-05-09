@@ -125,14 +125,6 @@ export default function QuizCard() {
     }
   }
 
-  const handleResults = e => {
-    const { name } = e.target
-    setResults({
-      ...results,
-      [name]: false
-    })
-  }
-
   const goToDash = () => {
     history.push(`/DashboardCards/${language}`);
   }
@@ -140,22 +132,26 @@ export default function QuizCard() {
   console.log(modal);
   const [show, setShow] = useState(true);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+  const handleClose = () => {
+    setShow(false);
+    setModal(false);
+  };
 
   return (
     <>
 
       {modal &&
 
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
           <Modal.Header closeButton>
-            <Modal.Title>Ready to practice what you've learned?</Modal.Title>
+            <Modal.Title id="modalTitle">Ready to practice what you've learned?</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Correct answers are worth 3 points and wrong answers are -1. Good Luck!</Modal.Body>
+          <Modal.Body id="modalBody">Correct answers = <strong>+3 points</strong></Modal.Body>
+          <Modal.Body id="modalBody2">Wrong answers= <strong>-1 points</strong></Modal.Body>
+          <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
+
           <Modal.Footer>
-            <Button variant="primary" onClick={() => setModal(false)}>Let's Go!</Button>
+            <Button variant="success" onClick={() => setModal(false)}><strong>Let's Do  This! --></strong></Button>
           </Modal.Footer>
         </Modal>
       }
@@ -163,11 +159,15 @@ export default function QuizCard() {
 
       {quizContent && !modal &&
         <Container>
-          <Col sm="4">
+          {index < 9 && !disabled ?
             <Card className="score">
               Score: {score}
             </Card>
-          </Col>
+            :
+            <Card className="score">
+              Total Score: {score}
+            </Card>
+          }
           <Jumbotron>
             <Card.Body>
               <Row>
@@ -181,11 +181,11 @@ export default function QuizCard() {
                 {lesson !== "numbers" ? (
                   <Col sm={3}>
                     <div>
-                      {quizContent[index].phrase}
-                   </div>
+                      <h2>{quizContent[index].phrase}</h2>
+                    </div>
                     <br></br>
                     <div>
-                      Example: {quizContent[index].explanation}
+                      <i>Example</i>: <strong>{quizContent[index].example}</strong>
                     </div>
                   </Col>
                 ) : ""}
@@ -200,38 +200,19 @@ export default function QuizCard() {
 
                   <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
+
+                  {index !== 9 && disabled &&
+
+                    <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
+                  }
+                  {
+                    index === 9 && disabled &&
+                    <Button onClick={goToDash} variant="danger" className="nextBtn">Back to Dashboard</Button>
+                  }
                 </Col>
               </Row>
-
-
-
             </Card.Body>
-
-            <Row>
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Row>
-                  <Col sm={6}>
-
-                  </Col>
-                  <Col sm={6}>
-                    {index !== 9 && disabled &&
-
-                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
-                    }
-                    {
-                      index === 9 && disabled &&
-                      <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                    }
-                  </Col>
-
-
-
-                </Row>
-              </Col>
-            </Row>
           </Jumbotron>
-
-
         </Container>
       }
     </>

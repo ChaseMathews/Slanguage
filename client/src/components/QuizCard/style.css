@@ -11,6 +11,13 @@ margin-top: 10px;
     padding-top: 10px;
 }
 
+#modalBody, #modalBody2, #modalBody3{
+    font-size: 30px;
+}
+
+#modalTitle{
+    font-size: 50px;
+}
 
 .choices{
     padding-top: 94px;
@@ -21,8 +28,9 @@ margin-top: 10px;
 
 .score{
     color: white;
-    background-color: blue;
+    background-color: #5A0096;
     font-size: 30px;
+    text-align: center;
 
 }
 .modal {
@@ -39,5 +47,10 @@ margin-top: 10px;
 }
 
 #quizButton1, #quizButton2, #quizButton3 {
-    width: 300px;
+    width: 15rem;
+}
+
+.nextBtn {
+    margin-top: 5rem;
+    margin-left: 65%;
 }
