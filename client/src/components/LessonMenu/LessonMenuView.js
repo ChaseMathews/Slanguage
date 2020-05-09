@@ -5,7 +5,7 @@ import LessonCards from './lessonCardDeck';
 import { slideInDown } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import "./style.css";
-import Gradient from "../Gradient";
+import GradientBorder from '../CardGradient';
 import LangCategory from "./lessonLangHeader";
 import SlangCard from "./lessonCardSlang";
 
@@ -22,7 +22,7 @@ function LessonMenu() {
                 <LangCategory />
             </>
             <hr />
-            <Gradient>
+            <GradientBorder>
                 <SlideDown>
                     <Row>
                         <Col>
@@ -30,7 +30,7 @@ function LessonMenu() {
                         </Col>
                     </Row>
                 </SlideDown>
-            </Gradient>
+            </GradientBorder>
             <SlideDown>
                 <Row>
                     <Col md={{ span: 8, offset: 2 }}>
