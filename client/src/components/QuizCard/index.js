@@ -185,7 +185,7 @@ export default function QuizCard() {
                     </div>
                     <br></br>
                     <div>
-                      <i>Example</i>: <strong>{quizContent[index].example}</strong>
+                      <i>{quizContent[index].example}</i>
                     </div>
                   </Col>
                 ) : ""}
