@@ -368,7 +368,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
-                    "targetWord": "",
+                    "targetWord": "Chido",
                     "audioToPlay": "/audio/spanish/chido.m4a",
                     "explanation": "This word means cool or rad."
                 },
