@@ -115,6 +115,7 @@ export default function QuizCard() {
         [name]: "success",
       });
       setScore(score + 3)
+      setDisabled(!disabled);
     } else {
       setBtnVarient({
         ...btnVarient,
