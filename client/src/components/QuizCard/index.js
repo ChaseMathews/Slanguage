@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron,  } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
+import Modal from '../Modal/index';
+import { UserContext } from '../../utils/Context';
 
 
 export default function QuizCard() {
@@ -14,10 +16,13 @@ export default function QuizCard() {
     ButtonThree: true
   });
 
+  const {user, currentLang} = useContext(UserContext);
+
   const [score, setScore] = useState(0)
   const [display, setDisplay] = useState(false)
   const history = useHistory();
   const { lang, lesson } = useParams();
+  const language = lang || currentLang;
   const [btnVarient, setBtnVarient] = useState({
     button_1: "primary",
     button_2: "primary",
@@ -127,12 +132,29 @@ export default function QuizCard() {
   }
 
   const goToDash = () => {
-    history.push(`/Dashboard/${lang}`);
+    history.push(`/dashboardCards/${language}`);
   }
+
+  const [modal, setModal] = useState(true);
+ 
+
+
+
+
 
   return (
     <>
-      {quizContent &&
+   
+      {modal && 
+        <Modal>
+          <p>Want to take a quiz?</p> 
+          <p>Correct answers are 3 points and wrong answers are -1</p>
+          <Button onClick={() => setModal(false)}>Let's Go!</Button>
+        </Modal>
+      }
+
+
+      {quizContent && !modal &&
         <Container>
           <Col sm="4">
             <Card className="score">

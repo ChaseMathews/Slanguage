@@ -46,12 +46,12 @@ export default function NavBar() {
           />
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link><Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link></Nav.Link>
+          <Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link>
           <NavDropdown title="Account Settings" id="basic-nav-dropdown">
             <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link><Link to="/About">About</Link></Nav.Link>
-          <Nav.Link><Link to="/">Sign Out</Link></Nav.Link>
+          <Link to="/About">About</Link>
+          <Link to="/">Sign Out</Link>
         </Nav>
       </Navbar>
     </>
