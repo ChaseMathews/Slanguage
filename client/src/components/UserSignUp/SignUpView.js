@@ -26,8 +26,8 @@ export default function SignUp() {
         setUserObject({ ...userObject, [name]: value })
     };
 
-    async function handleFormSubmit() {
-
+    function handleFormSubmit(event) {
+        event.preventDefault();
         setError(() => {
             if (!userObject.username || !userObject.password) {
                 return "Please enter both a username and a password."
@@ -37,7 +37,7 @@ export default function SignUp() {
         });
 
         if (userObject.username && userObject.password && userObject.password.length >= 6) {
-            await API.signUpUser({
+            API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
             })
@@ -78,12 +78,13 @@ return (
                 </Col>
                 
                 <Col md="4">
-                    <SignUpForm userObject={userObject} handleInputChange={handleInputChange} />
-                    {error &&
-                        <span className='error'>{error}</span>
-                    }
-                    <p></p>
-                    <SignUpBtn handleFormSubmit={handleFormSubmit} />
+                    <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
+                        {error &&
+                            <span className='error'>{error}</span>
+                        }
+                        <br></br>
+                        <SignUpBtn handleFormSubmit={handleFormSubmit} />
+                    </SignUpForm>
                 </Col>
                 
             </Row>

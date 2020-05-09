@@ -139,3 +139,16 @@ border-bottom-right-radius: 12px;
 .cardz:hover .card__info-hover {
     opacity: 1;
 }
+
+.Greeting {
+  margin-top: 12px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+  font-family:'Raleway', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  box-shadow: 0 0 0 .8px 0 rgba(0, 0, 0, .8);
+  ;
+}
