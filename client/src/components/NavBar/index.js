@@ -3,6 +3,8 @@ import { Navbar, Nav, NavDropdown, Button, Modal } from 'react-bootstrap';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import API from '../../utils/API';
 import { UserContext } from '../../utils/Context';
+import './style.css'
+// import Modal from '../Modal/index';
 
 
 export default function NavBar() {
@@ -60,20 +62,22 @@ export default function NavBar() {
             />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Link to={"/DashboardCards/" + language}>My Dashboard</Link>
-            <NavDropdown title="Account Settings" id="collasible-nav-dropdown">
-              <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Link to="/About">About</Link>
-            <Link to="/">Sign Out</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+    <Link to={"/DashboardCards/" + language} className="navbartext">My Dashboard</Link>
+    <Link to="/About" className="navbartext">About</Link>
+      <Link to="/" className="navbartext">Sign Out</Link>
+    </Nav>
+    <Nav>
+      
+      <NavDropdown title="Account Settings" id="collasible-nav-dropdown" className="navbartext">
+        <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+
+  </Navbar.Collapse>
+</Navbar>
     </>
   )
 }

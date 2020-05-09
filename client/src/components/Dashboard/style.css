@@ -1,3 +1,13 @@
+.flag{
+  width: 100px;
+  margin-left: 30px;
+}
+
+.studying{
+  color: red;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 
 .card_s {
     width: 100%;
