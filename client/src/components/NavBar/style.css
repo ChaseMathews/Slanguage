@@ -1,7 +1,3 @@
-.text.navbar{
-    color: teal;
-}
-
-.navbar{
-    z-index: 50;
+.nav.navbar{
+    margin-top: 0;
 }

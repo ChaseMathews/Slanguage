@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from "react-router-dom";
 import { Row, Col } from 'react-bootstrap';
 import API from "../../utils/API"
 import NavBar from '../../components/NavBar';
 import DashboardMenu from "./dashboardMenu";
+import { UserContext } from '../../utils/Context';
 
 
 // HomeView form submit will send existing users to their dashboard
@@ -24,27 +25,29 @@ import DashboardMenu from "./dashboardMenu";
 
 
 
-
-
 export default function Dashboard() {
 
     const [userDashboard, setUserDashboard] = useState();
 
+    const { user, currentLang } = useContext(UserContext);
+    console.log(user);
 
-    const { user } = useParams();
-    useEffect(() => {
-        userName()
-    }, [])
+    // const { user } = useParams();
 
-    function userName() {
-        API.findUser(user)
-            .then(res => {
-                console.log(res.data[0].username)
-                setUserDashboard(res.data[0].username)
-            })
 
-            .catch(err => console.log(err));
-    };
+    // useEffect(() => {
+    //     userName()
+    // }, [])
+
+    // function userName() {
+    //     API.findUser(user)
+    //         .then(res => {
+    //             console.log(res.data[0].username)
+    //             setUserDashboard(res.data[0].username)
+    //         })
+
+    //         .catch(err => console.log(err));
+    // };
 
     //     const {language} = useParams()
     //   useEffect(() => {
@@ -65,20 +68,22 @@ export default function Dashboard() {
 
     return (
         <>
-            {userDashboard &&
+            {/* {userDashboard && */}
                 <>
-                    <NavBar />
+                    {/* <NavBar /> */}
 
                     <Row>
                         <Col sm={4}>
-                            <h1>Hello {user.username}, Welcome back!" </h1>
+                            {/* <h1>Hello {user.username}, Welcome back!" </h1> */}
+                            <h1>Hello {user.username}, Welcome back!</h1>
                         </Col>
                     </Row>
 
                    
                         <Row>
                             <Col sm={4}>
-                                {/* <p value={"Currently Studying " + { language }}> </p> */}
+                                <p>Currently Studying {currentLang}!</p>
+                                {/* <p>Currently Studying [Spanish]</p> */}
                             </Col>
                         </Row>
 

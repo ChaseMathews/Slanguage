@@ -1,29 +1,79 @@
-#audioIcon{
-    width: 60px;
-    height: 50px;
-}
-
-#numberImage{
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+.numberImage{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     padding-top: 10px;
+    box-shadow: 0 8px 6px -6px black;
+    
 }
 
-.button{
-    margin: 5px;
-
+.previousback{
+    margin: 50px;
+    color: green;
+    background-color: transparent;
+    border: none;
 
 }
 
-.cardHolder{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
 }
 
-/* .jumbotron{
-    background-color: #006341;
-} */
+/* #card {
+    display: flex;
+    
+    width: 400px;
+    height: 200px;
+
+  } */
+
+
+
+.jumbotron{
+    display: flex;
+    /* background: linear-gradient(45deg, #d5135a, #f05924); */
+    align-items: center;
+    justify-content: center;
+}
+
+.word{
+    text-size-adjust: 10px;
+}
+
+.youtry{
+    color: gray;
+}
+
+.recordbutton{
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 15px 35px;
+    backface-visibility: hidden;
+    transition: all .3s;
+}
+
+.stopbutton{
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px 35px;
+}
+
+.audio{
+    margin: auto;
+}

@@ -30,7 +30,8 @@ const userSchema = new Schema({
     }
   ],
   currentLanguage: {
-    type: String
+    type: String,
+    default: ""
   }
 
 

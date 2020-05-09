@@ -1,3 +1,32 @@
-.next-row {
+/* .next-row {
 margin-top: 10px;
+} */
+
+.numberImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 350px;
+    padding-top: 10px;
 }
+
+.nextbutton{
+    margin-top: 5rem;
+    justify-content: ;
+}
+
+.choices{
+    padding-left: 7rem;
+    align-content: center;
+    vertical-align: 10vh;
+}
+
+.score{
+    color: white;
+    background-color: blue;
+    font-size: 30px;
+
+}
+
+
