@@ -1,12 +1,12 @@
-.back-gradient {
+/* .back-gradient {
 	height: 100%;
   width: 100%;
   left:0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
   /* position: absolute; */
-  
+/*   
   	background: linear-gradient(90deg, #e60073, #e60000, #ff9966, #ffff66, #1affd1, #6600ff, #cc00ff, #e60073);
 	background-size: 1000% 600%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -193,7 +193,7 @@
   
    
     
-    }
+    } */
 
     
 

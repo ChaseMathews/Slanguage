@@ -73,13 +73,16 @@ export default function Presentation() {
                     <LangCategory />
                     <hr></hr>
                     <Jumbotron className="justify-content-center text-center">
-                        <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
+                        {itemIndex > 0 &&
+                            <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
+
+                        }
 
                         <SlideDown>
                             <Row>
                                 <Col>
                                     <CardGradient>
-                                        <Card>
+                                        <Card className="myCard">
                                             <Card.Img className="numberImage" variant="top" src={presContent[itemIndex].imageUrl} />
 
                                             <Card.Body className="justify-content-center text-center">
@@ -89,28 +92,18 @@ export default function Presentation() {
                                                     src={presContent[itemIndex].audioToPlay}
                                                     controls
                                                 />
-                                                <Card.Title>{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
+                                                <Card.Title className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
                                                 <hr />
                                                 <UserAudio />
-                                                <hr />
-                                                <Row className="justify-content-between" >
-                                                    {itemIndex > 0 &&
-                                                        <Button className="button" variant="secondary" onClick={handlePresDataChangeBack}>Go to previous</Button>
-                                                    }
-                                                    {itemIndex !== 9 ?
-                                                        <Button className="button" variant="success" onClick={handlePresDataChange}>Go to next</Button>
-                                                        :
-                                                        <Button className="button" variant="success" onClick={goToQuiz}>Practice! --></Button>
-                                                    }
-                                                </Row>
                                             </Card.Body>
                                         </Card>
                                     </CardGradient>
                                 </Col>
                             </Row>
                         </SlideDown>
-                        <Button className="previousback" onClick={handlePresDataChange}>< FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> </Button>
-
+                        <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>< FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> </Button>
+                        <p>{itemIndex + 1}/10</p>
+                        
                     </Jumbotron>
                 </Container>
             }

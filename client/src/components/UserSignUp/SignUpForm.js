@@ -3,11 +3,12 @@ import { Form } from 'react-bootstrap';
 
 export default function SignUpForm(props) {
   return (
-    <Form>
+    <Form onSubmit={e => props.handleFormSubmit(e)}>
 
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Sign Up Below!</Form.Label>
         <Form.Control
+          autoFocus
           type="username"
           name="username"
           value={props.userObject.username}
@@ -24,6 +25,8 @@ export default function SignUpForm(props) {
           placeholder="Password" />
       </Form.Group>
       
+      {props.children}
+
     </Form>
   );
 }

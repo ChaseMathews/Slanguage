@@ -1,24 +1,26 @@
 import React, { useState, useEffect, useContext } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col, Jumbotron } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron, Modal } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
+// import ModalBox from '../Modal/index';
 import { UserContext } from '../../utils/Context';
 
 
 export default function QuizCard() {
-  const { user, currentLang } = useContext(UserContext);
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
-  const [disabled, setDisabled] = useState(false);
   let [results, setResults] = useState({
     ButtonOne: true,
     ButtonTwo: true,
     ButtonThree: true
   });
 
+  const { user, currentLang } = useContext(UserContext);
   const [score, setScore] = useState(0)
+  const [disabled, setDisabled] = useState(false);
   const [display, setDisplay] = useState(false)
+  const [modal, setModal] = useState(true);
   const history = useHistory();
   const { lang, lesson } = useParams();
   const language = lang || currentLang;
@@ -98,8 +100,6 @@ export default function QuizCard() {
 
   // };
 
-
-
   const handleScore = e => {
     e.preventDefault()
     console.log(e.target.value)
@@ -125,27 +125,49 @@ export default function QuizCard() {
     }
   }
 
-  const handleResults = e => {
-    const { name } = e.target
-    setResults({
-      ...results,
-      [name]: false
-    })
-  }
-
   const goToDash = () => {
     history.push(`/DashboardCards/${language}`);
   }
 
+  console.log(modal);
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => {
+    setShow(false);
+    setModal(false);
+  };
+
   return (
     <>
-      {quizContent &&
+
+      {modal &&
+
+        <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
+          <Modal.Header closeButton>
+            <Modal.Title id="modalTitle">Ready to practice what you've learned?</Modal.Title>
+          </Modal.Header>
+          <Modal.Body id="modalBody">Correct answers = <strong>+3 points</strong></Modal.Body>
+          <Modal.Body id="modalBody2">Wrong answers= <strong>-1 points</strong></Modal.Body>
+          <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
+
+          <Modal.Footer>
+            <Button variant="success" onClick={() => setModal(false)}><strong>Let's Do  This! --></strong></Button>
+          </Modal.Footer>
+        </Modal>
+      }
+
+
+      {quizContent && !modal &&
         <Container>
-          <Col sm="4">
+          {index < 9 && !disabled ?
             <Card className="score">
               Score: {score}
             </Card>
-          </Col>
+            :
+            <Card className="score">
+              Total Score: {score}
+            </Card>
+          }
           <Jumbotron>
             <Card.Body>
               <Row>
@@ -159,48 +181,38 @@ export default function QuizCard() {
                 {lesson !== "numbers" ? (
                   <Col sm={3}>
                     <div>
-                      What does {quizContent[index].phrase} mean?
-                   </div>
+                      <h2>{quizContent[index].phrase}</h2>
+                    </div>
                     <br></br>
                     <div>
-                      Example: {quizContent[index].explanation}
+                      <i>{quizContent[index].example}</i>
                     </div>
                   </Col>
                 ) : ""}
 
 
                 <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
-                  <Button variant={btnVarient.button_1} size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                  <Button variant={btnVarient.button_1} id="quizButton1" size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
-                  <Button variant={btnVarient.button_2} size="lg" disabled={disabled} name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+                  <Button variant={btnVarient.button_2} id="quizButton2" size="lg" disabled={disabled} name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
 
 
-                  <Button variant={btnVarient.button_3} size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                  <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
+
+                  {index !== 9 && disabled &&
+
+                    <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
+                  }
+                  {
+                    index === 9 && disabled &&
+                    <Button onClick={goToDash} variant="danger" className="nextBtn">Back to Dashboard</Button>
+                  }
                 </Col>
               </Row>
-
-              <Row>
-                <Col sm={lesson !== "numbers" ? 3 : 4}>
-                  <Row>
-                    {/* {index !== 9 && disabled && */}
-                    {index !== 9 &&
-                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="" value="next" name="next">NEXT</Button>
-                    }
-                    {
-                      index === 9 && disabled &&
-                      <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                    }
-
-                  </Row>
-                </Col>
-              </Row>
-
             </Card.Body>
           </Jumbotron>
-
-
         </Container>
       }
     </>

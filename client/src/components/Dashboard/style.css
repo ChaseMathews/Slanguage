@@ -1,3 +1,13 @@
+.flag{
+  width: 100px;
+  margin-left: 30px;
+}
+
+.studying{
+  color: red;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 
 .card_s {
     width: 100%;
@@ -86,7 +96,7 @@ top: 0;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
-.card:hover {
+.cardz:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
 }
@@ -138,4 +148,17 @@ border-bottom-right-radius: 12px;
 
 .cardz:hover .card__info-hover {
     opacity: 1;
+}
+
+.Greeting {
+  margin-top: 12px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+  font-family:'Raleway', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  box-shadow: 0 0 0 .8px 0 rgba(0, 0, 0, .8);
+  ;
 }

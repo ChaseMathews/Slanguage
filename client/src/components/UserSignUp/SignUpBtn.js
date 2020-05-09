@@ -5,7 +5,7 @@ export default function SignUpBtn(props) {
 
   return (
     <>
-      <Button variant="primary" size="lg" onClick={props.handleFormSubmit} block>Sign Up</Button>
+      <Button variant="primary" type="submit" size="lg" onClick={props.handleFormSubmit} block>Sign Up</Button>
       {props.children}
     </>
 

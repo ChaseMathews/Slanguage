@@ -1,12 +1,13 @@
 import React, { useState, useContext } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col, Jumbotron, Card } from 'react-bootstrap';
 import API from "../../utils/API";
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
 import { useHistory } from 'react-router-dom';
 import './style.css';
-import RingLoader from 'react-spinners/RingLoader';
+import Image from 'react-bootstrap/Image'
 import { UserContext } from '../../utils/Context';
+
 
 export default function SignUp() {
 
@@ -25,8 +26,8 @@ export default function SignUp() {
         setUserObject({ ...userObject, [name]: value })
     };
 
-    async function handleFormSubmit() {
-
+    function handleFormSubmit(event) {
+        event.preventDefault();
         setError(() => {
             if (!userObject.username || !userObject.password) {
                 return "Please enter both a username and a password."
@@ -36,7 +37,7 @@ export default function SignUp() {
         });
 
         if (userObject.username && userObject.password && userObject.password.length >= 6) {
-            await API.signUpUser({
+            API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
             })
@@ -62,23 +63,29 @@ export default function SignUp() {
     }
 
 
-    return (
-        <Container>
-            <hr></hr>
-            <Row>
-                <Col className="spinner" md={{ size: 6, offset: 2 }} >
-                    <RingLoader loading={true} size={350} color="#39a6c1" />
-
+return (
+    <Jumbotron>
+        
+        <hr></hr>
+        <Card.Body>
+        <Row>
+        <Card>
+        <Col md={{ size: 10, offset: 1 }} >
+                    <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
+                    </Col>
+                    </Card>
+                <Col md="3">
+                    <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
+                        {error &&
+                            <span className='error'>{error}</span>
+                        }
+                        <br></br>
+                        <SignUpBtn handleFormSubmit={handleFormSubmit} />
+                    </SignUpForm>
                 </Col>
-                <Col md="4">
-                    <SignUpForm userObject={userObject} handleInputChange={handleInputChange} />
-                    {error &&
-                        <span className='error'>{error}</span>
-                    }
-                    <p></p>
-                    <SignUpBtn handleFormSubmit={handleFormSubmit} />
-                </Col>
+                
             </Row>
-        </Container>
+            </Card.Body>
+        </Jumbotron>
     );
 }

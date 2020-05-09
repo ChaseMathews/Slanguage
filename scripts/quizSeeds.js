@@ -535,116 +535,114 @@ module.exports = [
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
-                    "phrase": "Güey",
+                    "phrase": "What does the slang word Güey mean?",
                     "answerOptions": [
                         "Dude",
                         "Mom",
                         "Cousin"
                     ],
                     "correctAnswer": "Dude",
-                    "example:": "Que onda güey?"
+                    "example": "¿Qué onda güey?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/07/02/trust-4321881__340.jpg",
-                    "phrase": "Neta",
+                    "phrase": "What does the slang word Neta mean?",
                     "answerOptions": [
                         "Beer",
                         "Ugly",
                         "Truth"
                     ],
                     "correctAnswer": "Truth",
-                    "example:": "Do you promise?"
+                    "example": "Do you promise?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/11/19/24/headache-2058476__340.png",
-                    "phrase": "Crudo",
+                    "phrase": "What does the slang word Crudo mean?",
                     "answerOptions": [
                         "Poop",
                         "Hungover",
                         "Tacos"
                     ],
                     "correctAnswer": "Hungover",
-                    "example:": "Last night was fun."
+                    "example": "Last night was fun."
                 },
                 {
                     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
-                    "phrase": "Que Onda?",
+                    "phrase": "What does the slang phrase ¿Qué onda? mean?",
                     "answerOptions": [
                         "What's up?",
                         "Wanna get tacos?",
                         "How's your mom?"
                     ],
                     "correctAnswer": "What's up?",
-                    "example:": "Greeting"
+                    "example": "Greeting"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/20/15/35/thumb-422558__340.jpg",
-                    "phrase": "Órale",
+                    "phrase": "What does the slang word Órale mean?",
                     "answerOptions": [
                         "Car",
                         "Agreed",
                         "House"
                     ],
                     "correctAnswer": "Agreed",
-                    "example:": "Can also mean to hurry up."
+                    "example": "Can also mean to hurry up."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
-                    "phrase": "Que pedo?",
+                    "phrase": "What does the slang phrase ¿Qué pedo? mean?",
                     "answerOptions": [
                         "Wanna marry me?",
                         "How old are you?",
                         "What's your problem?"
                     ],
                     "correctAnswer": "What's your problem?",
-                    "example:": "Fight!"
+                    "example": "Fight!"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
-                    "phrase": "Chido",
+                    "phrase": "What does the slang word Chido mean?",
                     "answerOptions": [
                         "Beach",
                         "Cool",
                         "Horse"
                     ],
                     "correctAnswer": "Cool",
-                    "example:": "Rhymes with tool."
+                    "example": "Rhymes with tool."
                 },
                 {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.pngg",
-                    "phrase": "Gacho",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.png",
+                    "phrase": "What does the slang word Gacho mean?",
                     "answerOptions": [
                         "Bad",
                         "Pretty",
                         "Tasty"
                     ],
                     "correctAnswer": "Bad",
-                    "example:": "Opposite of chido."
+                    "example": "Opposite of chido."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/09/14/11/35/beer-1669273__340.png",
-                    "phrase": "Cheve\Chela",
+                    "phrase": "What does the slang word Cheve/Chela mean?",
                     "answerOptions": [
                         "Pool",
                         "Siblings",
                         "Beer"
                     ],
                     "correctAnswer": "Beer",
-                    "example:": "Opposite of chido."
+                    "example": "A cold one."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
-                    "phrase": "Aguas!",
+                    "phrase": "What does the slang word Aguas! mean?",
                     "answerOptions": [
                         "Watch out!",
                         "Help me!",
                         "Im scared!"
                     ],
-                    "correctAnswer": "Aguas!",
-                    "example:": "Listen to the kids bro."
-                },
-                
-                
+                    "correctAnswer": "Watch out!",
+                    "example": "Listen to the kids bro."
+                }
             ]
         },
 
@@ -660,7 +658,7 @@ module.exports = [
                         "Féca"
                     ],
                     "correctAnswer":  "Féca",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -672,7 +670,7 @@ module.exports = [
                         "Flic"
                     ],
                     "correctAnswer":  "Keum",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -684,7 +682,7 @@ module.exports = [
                         "Homme"
                     ],
                     "correctAnswer":  "Beuf",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -696,7 +694,7 @@ module.exports = [
                         "Fromage"
                     ],
                     "correctAnswer":  "Chelou",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -708,7 +706,7 @@ module.exports = [
                         "Fille"
                     ],
                     "correctAnswer":  "Bombe",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -720,7 +718,7 @@ module.exports = [
                         "Beau Gosse"
                     ],
                     "correctAnswer":  "Beau Gosse",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -732,7 +730,7 @@ module.exports = [
                         "Meuf"
                     ],
                     "correctAnswer":  "Meuf",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -744,7 +742,7 @@ module.exports = [
                         "Oncle"
                     ],
                     "correctAnswer":  "Tromé",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -756,7 +754,7 @@ module.exports = [
                         "Cahier"
                     ],
                     "correctAnswer":  "Cimer",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -768,8 +766,8 @@ module.exports = [
                         "Teuf"
                     ],
                     "correctAnswer":  "Teuf",
-                    "example:": ""
-                },
+                    "example": ""
+                }
             ]
         },
 
@@ -785,7 +783,7 @@ module.exports = [
                         "Frau"
                     ],
                     "correctAnswer":  "Prost!",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -797,7 +795,7 @@ module.exports = [
                         "Mach's Gut!"
                     ],
                     "correctAnswer":  "Mach's Gut!",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -809,7 +807,7 @@ module.exports = [
                         "Kopf"
                     ],
                     "correctAnswer":  "Alter",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -821,7 +819,7 @@ module.exports = [
                         "Obst"
                     ],
                     "correctAnswer":  "Naja",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -833,7 +831,7 @@ module.exports = [
                         "Breit"
                     ],
                     "correctAnswer":  "Breit",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -845,7 +843,7 @@ module.exports = [
                         "Fleisch"
                     ],
                     "correctAnswer":  "Besserwisser",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -857,7 +855,7 @@ module.exports = [
                         "Zahl"
                     ],
                     "correctAnswer":  "Kohle",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -869,7 +867,7 @@ module.exports = [
                         "Unterschied"
                     ],
                     "correctAnswer":  "Kummerspeck",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -881,7 +879,7 @@ module.exports = [
                         "Blume"
                     ],
                     "correctAnswer":  "Kater",
-                    "example:": ""
+                    "example": ""
                 },
 
                 {
@@ -893,11 +891,126 @@ module.exports = [
                         "Krass!"
                     ],
                     "correctAnswer":  "Krass!",
-                    "example:": ""
-                },
+                    "example": ""
+                }
             ]
         },
 
+        {
+            "language": "Navajo",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/10/26/11/14/tv-3774381__340.jpg",
+                    "phrase": "Which is the slang term for watching a movie?",
+                    "answerOptions": [
+                        "Binááł na'alkid",
+                        "Yiik'ih dah sizí",
+                        "Biyaa niséłt'i"
+                    ],
+                    "correctAnswer": "Binááł na'alkid",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png",
+                    "phrase": "Which is the slang term for speeding?",
+                    "answerOptions": [
+                        "Bá yoolééł",
+                        "Tsxíiłgo bił oohsxał",
+                        "Sáanii t'óó yitah yilwoł"
+                    ],
+                    "correctAnswer":  "Tsxíiłgo bił oohsxał",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg",
+                    "phrase": "Which is the slang term for a player or pimp?",
+                    "answerOptions": [
+                        "Bił diech'iish",
+                        "Yich'i' yił pop",
+                        "Sáanii t'óó yitah yilwoł"
+                    ],
+                    "correctAnswer":  "Sáanii t'óó yitah yilwoł",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/05/13/07/people-2583444__340.jpg",
+                    "phrase": "Which is the slang term for listening to music?",
+                    "answerOptions": [
+                        "Bił diech'iish",
+                        "Yiik'ih dah sizí",
+                        "Biyaa niséłt'i"
+                    ],
+                    "correctAnswer":  "Bił diech'iish",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/46/upset-2681502__340.jpg",
+                    "phrase": "Which is the slang expression for being hungover?",
+                    "answerOptions": [
+                        "Dah naashch'aał",
+                        "Yiik'ih dah sizí",
+                        "Bá yoolééł"
+                    ],
+                    "correctAnswer": "Bá yoolééł",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915__340.jpg",
+                    "phrase": "Which is the response for the slang expression for hanging out?",
+                    "answerOptions": [
+                        "Dah naashch'aał",
+                        "Biyaa niséłt'i'",
+                        "bił naak'ai'"
+                    ],
+                    "correctAnswer":  "Dah naashch'aał",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/04/12/16/19/fat-3313923__340.png",
+                    "phrase": "Which is the slang term for feeling full?",
+                    "answerOptions": [
+                        "Yá'át'ééh abíní",
+                        "ʼÁh nístsʼííd",
+                        "Biyaa niséłt'i'"
+                    ],
+                    "correctAnswer": "Biyaa niséłt'i'",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/02/06/21/55/valentines-day-3135789__340.jpg",
+                    "phrase": "Which is the slang term for flirting?",
+                    "answerOptions": [
+                        "Yich'i' yił pop",
+                        "bił naak'ai",
+                        "Bił diech'iish"
+                    ],
+                    "correctAnswer":  "Yich'i' yił pop",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg",
+                    "phrase": "Which is the slang term for being drunk?",
+                    "answerOptions": [
+                        "Bá yoolééł",
+                        "bił naak'ai'",
+                        "Dah naashch'aał"
+                    ],
+                    "correctAnswer":  "bił naak'ai'",
+                    "example": ""
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg",
+                    "phrase": "Which is the slang term for being in deep sleep? ",
+                    "answerOptions": [
+                        "Yiik'ih dah sizí",
+                        "Bił diech'iish",
+                        "ʼÁh nístsʼííd"
+                    ],
+                    "correctAnswer":  "Yiik'ih dah sizí",
+                    "example": ""
+                } 
+            ]
+        },
         {
             "language": "Italian",
             "questions": [
@@ -910,7 +1023,7 @@ module.exports = [
                         "Figurati"
                     ],
                     "correctAnswer":  "Figurati",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://assets3.thrillist.com/v1/image/2861432/381x254/crop;jpeg_quality=65.jpg",
@@ -921,7 +1034,7 @@ module.exports = [
                         "Bevanda"
                     ],
                     "correctAnswer":  "Figo",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/portrait-angry-driver-yelling-his-car_53419-6478.jpg",
@@ -932,7 +1045,7 @@ module.exports = [
                         "Scavo"
                     ],
                     "correctAnswer":  "Dai!",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://qph.fs.quoracdn.net/main-qimg-1f0e0a04ef5f3bc79e6f4d8331a48b50.webp",
@@ -943,7 +1056,7 @@ module.exports = [
                         "Boh!"
                     ],
                     "correctAnswer":  "Boh!",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/man-crossing-fingers-both-hands_1187-2913.jpg",
@@ -954,7 +1067,7 @@ module.exports = [
                         "Doccia"
                     ],
                     "correctAnswer":  "In bocca al lupo!",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/smiling-multiethnic-friends-talking-looking-phone_23-2148222584.jpg",
@@ -965,7 +1078,7 @@ module.exports = [
                         "Dai!"
                     ],
                     "correctAnswer":  "Crepi",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://media.istockphoto.com/photos/african-american-man-with-beard-feeling-disgusted-with-tongue-out-picture-id1042412136?k=6&m=1042412136&s=612x612&w=0&h=6hPZfQXNlEx4HjrV_Tfy1e9j4zzFLehsDsdHisnHe_8=",
@@ -976,7 +1089,7 @@ module.exports = [
                         "Palla"
                     ],
                     "correctAnswer":  "Che Schifo!",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://janeheller.com/wp-content/uploads/2017/09/appearancecomments-feature.jpg",
@@ -987,7 +1100,7 @@ module.exports = [
                         "Cavalo!"
                     ],
                     "correctAnswer":  "Cavalo!",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://i.stack.imgur.com/eQ20E.jp",
@@ -998,7 +1111,7 @@ module.exports = [
                         "Magari"
                     ],
                     "correctAnswer":  "Magari",
-                    "example:": ""
+                    "example": ""
                 },
                 {
                     "imageUrl": "https://cdn.clipart.email/187891c3b379107a91f55da92045a2f1_boy-and-girl-kissing-silhouette-at-getdrawingscom-free-for-_300-300.png",
@@ -1009,11 +1122,12 @@ module.exports = [
                         "Scarpa"
                     ],
                     "correctAnswer":  "Limonare",
-                    "example:": ""
-                },
-
-                
+                    "example": ""
+                } 
             ]
         }
+
+
+        
     ]
 ]
