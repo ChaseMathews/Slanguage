@@ -61,7 +61,7 @@ export default function LessonCards() {
 
             <Card>
                 
-                <Card.Img variant="top" src="" />
+                <Card.Img variant="top" src="https://media.tenor.com/images/ee40bd0af209d48bb1dff138041a9bad/tenor.gif" />
                 <Card.Body>
                     <Card.Title>Basic Travel Phrases</Card.Title>
                     <Card.Text>

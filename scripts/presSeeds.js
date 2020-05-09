@@ -396,64 +396,64 @@ module.exports = [
             "language": "Navajo",
             "content": [
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg ",
+                    "targetWord": "Yiik'ih dah sizí ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "This mean to be in deep sleep. "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg ",
+                    "targetWord": "bił naak'ai'",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "This mean to be drunk "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/02/06/21/55/valentines-day-3135789__340.jpg ",
+                    "targetWord": "Yich'i' yił pop",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "To flirt. "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/04/12/16/19/fat-3313923__340.png ",
+                    "targetWord": "Biyaa niséłt'i' ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "To be full or stuffed "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915__340.jpg ",
+                    "targetWord": "Dah naashch'aał ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "Hang out or hang around "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/46/upset-2681502__340.jpg",
+                    "targetWord": "Bá yoolééł ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "Hung-over "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/05/13/07/people-2583444__340.jpg ",
+                    "targetWord": "Bił diech'iish ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "To listen to music. "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg ",
+                    "targetWord": "Sáanii t'óó yitah yilwoł ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "A player or pimp "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png ",
+                    "targetWord": "Tsxíiłgo bił oohsxał ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "To speed "
                 },
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/10/26/11/14/tv-3774381__340.jpg ",
+                    "targetWord": "Binááł na'alkid ",
                     "audioToPlay": " ",
-                    "explanation": " "
+                    "explanation": "To watch a movie "
                 }
             ]
         },
