@@ -542,7 +542,7 @@ module.exports = [
                         "Cousin"
                     ],
                     "correctAnswer": "Dude",
-                    "example": "Que onda güey?"
+                    "example": "¿Qué onda güey?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/07/02/trust-4321881__340.jpg",
@@ -568,7 +568,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
-                    "phrase": "What does the slang prhase ¿Qué onda? mean?",
+                    "phrase": "What does the slang phrase ¿Qué onda? mean?",
                     "answerOptions": [
                         "What's up?",
                         "Wanna get tacos?",
@@ -590,7 +590,7 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
-                    "phrase": "What does the slang phrase ¿Que pedo? mean?",
+                    "phrase": "What does the slang phrase ¿Qué pedo? mean?",
                     "answerOptions": [
                         "Wanna marry me?",
                         "How old are you?",

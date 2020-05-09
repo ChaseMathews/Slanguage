@@ -48,6 +48,14 @@
     text-size-adjust: 10px;
 }
 
+.myCard{
+    overflow: hidden;
+}
+
+.words{
+    word-wrap: break-word;
+}
+
 .youtry{
     color: gray;
 }

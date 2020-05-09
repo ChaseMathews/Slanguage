@@ -358,13 +358,13 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/20/15/35/thumb-422558__340.jpg",
                     "targetWord": "Órale",
                     "audioToPlay": "/audio/spanish/orale.m4a",
-                    "explanation": "You would say orale if you agree with something. It can also be used to tell someone to hurry up."
+                    "explanation": "You would say órale if you agree with something. It can also be used to tell someone to hurry up."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
-                    "targetWord": "¿Que pedo?",
+                    "targetWord": "¿Qué pedo?",
                     "audioToPlay": "/audio/spanish/pedo.m4a",
-                    "explanation": "Pedo means fart, but in slang it means: problem. You would ask: ¿Que pedo?, when something is bothering you or not right. Be careful because it is confrontational."
+                    "explanation": "Pedo means fart, but in slang it means: problem. You would ask: ¿Qué pedo?, when something is bothering you or not right. Be careful because it is confrontational."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
@@ -399,13 +399,13 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg ",
                     "targetWord": "Yiik'ih dah sizí ",
                     "audioToPlay": " ",
-                    "explanation": "This mean to be in deep sleep. "
+                    "explanation": "This means to be in deep sleep. "
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg ",
                     "targetWord": "bił naak'ai'",
                     "audioToPlay": " ",
-                    "explanation": "This mean to be drunk "
+                    "explanation": "This means to be drunk "
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/02/06/21/55/valentines-day-3135789__340.jpg ",
