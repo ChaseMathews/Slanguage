@@ -65,7 +65,7 @@ export default function NavBar() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-    <Link to={"/DashboardCards/" + currentLang} className="navbartext">My Dashboard</Link>
+    <Link to={"/DashboardCards/" + language} className="navbartext">My Dashboard</Link>
     <Link to="/About" className="navbartext">About</Link>
       <Link to="/" className="navbartext">Sign Out</Link>
     </Nav>
