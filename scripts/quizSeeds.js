@@ -642,9 +642,7 @@ module.exports = [
                     ],
                     "correctAnswer": "Aguas!",
                     "example:": "Listen to the kids bro."
-                },
-                
-                
+                }
             ]
         },
 
@@ -769,7 +767,7 @@ module.exports = [
                     ],
                     "correctAnswer":  "Teuf",
                     "example:": ""
-                },
+                }
             ]
         },
 
@@ -894,7 +892,7 @@ module.exports = [
                     ],
                     "correctAnswer":  "Krass!",
                     "example:": ""
-                },
+                }
             ]
         },
 
@@ -1010,9 +1008,7 @@ module.exports = [
                     ],
                     "correctAnswer":  "Limonare",
                     "example:": ""
-                },
-
-                
+                } 
             ]
         }
     ]
