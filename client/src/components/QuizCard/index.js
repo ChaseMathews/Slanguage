@@ -13,7 +13,7 @@ export default function QuizCard() {
     ButtonTwo: true,
     ButtonThree: true
   });
-  
+
   const [score, setScore] = useState(0)
   const [display, setDisplay] = useState(false)
   const history = useHistory();
@@ -24,7 +24,7 @@ export default function QuizCard() {
     button_3: "primary"
 
   })
-  
+
 
   useEffect(() => {
     lesson === "numbers" ? loadNumQuiz() : loadSlangQuiz();
@@ -57,32 +57,32 @@ export default function QuizCard() {
     })
   }
 
-//   const updateUserResults = e => {
-//     e.preventDefault();
-//     console.log(e.target.value);
-//     const { value } = e.target;
-//     console.log(value);
+  //   const updateUserResults = e => {
+  //     e.preventDefault();
+  //     console.log(e.target.value);
+  //     const { value } = e.target;
+  //     console.log(value);
 
-//     API.updateUser(user.id, { 
-//       results: [
-//         {
-//             language: "Spanish",
-//             lesson: [
-//               {
-//                 name: "Numbers",
-//                 score: 7
-//               }
-//             ]
-//         } 
-//     })
-//         .then(res => {
-//             console.log(res.data);
-//             setCurrentLang(res.data.currentLanguage);
-//             history.push(`/Dashboard/${res.data.currentLanguage}`);
-//         }) 
-//         .catch(err => console.log(err));
+  //     API.updateUser(user.id, { 
+  //       results: [
+  //         {
+  //             language: "Spanish",
+  //             lesson: [
+  //               {
+  //                 name: "Numbers",
+  //                 score: 7
+  //               }
+  //             ]
+  //         } 
+  //     })
+  //         .then(res => {
+  //             console.log(res.data);
+  //             setCurrentLang(res.data.currentLanguage);
+  //             history.push(`/Dashboard/${res.data.currentLanguage}`);
+  //         }) 
+  //         .catch(err => console.log(err));
 
-// };
+  // };
 
 
 
@@ -91,16 +91,16 @@ export default function QuizCard() {
     console.log(e.target.value)
 
     const { value } = e.target
-    const {name} = e.target
+    const { name } = e.target
     console.log(name)
     console.log(quizContent[index].answerOptions)
 
 
-      if (quizContent[index].correctAnswer === value) {
+    if (quizContent[index].correctAnswer === value) {
 
       setBtnVarient({
         ...btnVarient,
-          [name]: "success"
+        [name]: "success"
 
       })
       setScore(score + 3)
@@ -118,7 +118,7 @@ export default function QuizCard() {
     }
 
 
-    
+
 
   }
 
@@ -133,62 +133,62 @@ export default function QuizCard() {
   const goToDash = () => {
     history.push(`/Dashboard/${lang}`);
   }
- 
+
   return (
     <>
       {quizContent &&
         <Container>
           <Col sm="4">
-          <Card className="score">
-          Score: {score}
-          </Card>
+            <Card className="score">
+              Score: {score}
+            </Card>
           </Col>
           <Jumbotron>
             <Card.Body>
               <Row>
-              <Card>
-                <Col sm={lesson !== "numbers" ? 3 : 4}>
-                  
-                  <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
-                  
-                </Col>
+                <Card>
+                  <Col sm={lesson !== "numbers" ? 3 : 4}>
+
+                    <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
+
+                  </Col>
                 </Card>
                 {lesson !== "numbers" ? (
                   <Col sm={3}>
-                   <div>
-                     What does {quizContent[index].phrase} mean? 
+                    <div>
+                      What does {quizContent[index].phrase} mean?
                    </div>
-                   <br></br>
-                   <div>
-                     Example: {quizContent[index].explanation}
-                   </div>
+                    <br></br>
+                    <div>
+                      Example: {quizContent[index].explanation}
+                    </div>
                   </Col>
-              ) : ""} 
-                
+                ) : ""}
+
 
                 <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
-                <Button variant= {btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+                  <Button variant={btnVarient.button_1} size="lg" name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
-<Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+                  <Button variant={btnVarient.button_2} size="lg" name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
 
 
-<Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                  <Button variant={btnVarient.button_3} size="lg" name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
-                  </Col>
+                </Col>
               </Row>
 
               <Row>
-              <Col sm={lesson !== "numbers" ? 3 : 4}>
-                <Row>
-                  {index !== 9 ?
-                    <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
-                    :
-                    <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
-                  }
+                <Col sm={lesson !== "numbers" ? 3 : 4}>
+                  <Row>
+                    {index !== 9 ?
+                      <Button onClick={handleImageChange} variant="danger" className="">NEXT</Button>
+                      :
+                      <Button onClick={goToDash} variant="danger" className="">Back to Dashboard</Button>
+                    }
 
-                </Row>
-              </Col>
+                  </Row>
+                </Col>
               </Row>
 
             </Card.Body>

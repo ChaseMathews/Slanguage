@@ -6,6 +6,7 @@ import SignUpBtn from './SignUpBtn';
 import { useHistory } from 'react-router-dom';
 import './style.css';
 import RingLoader from 'react-spinners/RingLoader'
+import Polaroid from '../Polaroid'
 
 export default function SignUp() {
 
@@ -54,7 +55,9 @@ return (
         <hr></hr>
         <Row>
         <Col className="spinner" md={{ size: 6, offset: 2 }} >
-                    <RingLoader loading={true} size={350} color="#39a6c1" />
+                    {/* <RingLoader loading={true} size={350} color="#39a6c1" /> */}
+                    <Polaroid />
+
 
                 </Col>
             <Col md="4">
