@@ -41,3 +41,8 @@ margin-top: 10px;
 #quizButton1, #quizButton2, #quizButton3 {
     width: 300px;
 }
+
+.nextBtn {
+    margin-top: 5rem;
+    margin-left: 85%;
+}

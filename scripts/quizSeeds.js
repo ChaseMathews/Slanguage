@@ -682,7 +682,7 @@ module.exports = [
                         "Homme"
                     ],
                     "correctAnswer":  "Beuf",
-                    "example ""
+                    "example": ""
                 },
 
                 {
