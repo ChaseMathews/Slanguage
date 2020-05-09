@@ -133,7 +133,7 @@ export default function QuizCard() {
   }
 
   const goToDash = () => {
-    history.push(`/dashboardCards/${language}`);
+    history.push(`/DashboardCards/${language}`);
   }
 
   console.log(modal);
