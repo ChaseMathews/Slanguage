@@ -25,7 +25,7 @@ export default {
     },
     // Deletes the user with the given id if user removes account
     deleteUser: function (id) {
-        return axios.delete("/api/user/" + id);
+        return axios.delete(`/api/user/${id}`);
     },
     // Saves a user to the database
     signUpUser: function (user) {

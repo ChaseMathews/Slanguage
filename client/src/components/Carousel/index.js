@@ -10,9 +10,9 @@ import { UserContext } from '../../utils/Context';
 
 export default function CarouselFlags() {
 
-    const { user, currentLang, setCurrentLang } = useContext(UserContext);
+    const { user, setCurrentLang } = useContext(UserContext);
 
-    // console.log(user.id);
+    console.log(user);
 
     const history = useHistory();
 
@@ -31,8 +31,8 @@ export default function CarouselFlags() {
             .then(res => {
                 console.log(res.data);
                 setCurrentLang(res.data.currentLanguage);
-                history.push(`/Dashboard/${res.data.currentLanguage}`);
-            }) 
+                history.push(`/DashboardCards/${res.data.currentLanguage}`);
+            })
             .catch(err => console.log(err));
 
     };
@@ -47,8 +47,6 @@ export default function CarouselFlags() {
                     alt="Mexico flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    {/* <h3>Español</h3> */}
-                    {/* <Link to="/Dashboard/Spanish"><h3>Español</h3></Link> */}
                     <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Spanish" >Español</Button>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -59,10 +57,7 @@ export default function CarouselFlags() {
                     alt="Navajo Nation flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    {/* <Link to="/LessonMenu/Navajo"> */}
-                    <Link to="/Dashboard/Navajo">
-                        <h3>Diné</h3>
-                    </Link>
+                    <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Navajo" >Diné</Button>
 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -73,10 +68,7 @@ export default function CarouselFlags() {
                     alt="Italy flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    {/* <Link to="/LessonMenu/Italian"> */}
-                    <Link to="/Dashboard/Italian">
-                        <h3>Italiano</h3>
-                    </Link>
+                    <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Italian" >Italiano</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -86,10 +78,7 @@ export default function CarouselFlags() {
                     alt="German flag"
                 />
                 <Carousel.Caption className="carouselText">
-                    {/* <Link to="/LessonMenu/German"> */}
-                    <Link to="/Dashboard/German">
-                        <h3>Deutsch</h3>
-                    </Link>
+                    <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="German" >Deutsch</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -99,10 +88,7 @@ export default function CarouselFlags() {
                     alt="French"
                 />
                 <Carousel.Caption className="carouselText">
-                    {/* <Link to ="/LessonMenu/French"> */}
-                    <Link to="/Dashboard/French">
-                        <h3>Français</h3>
-                    </Link>
+                    <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="French" >Français</Button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
