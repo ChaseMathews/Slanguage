@@ -30,5 +30,6 @@ margin-top: 10px;
 
 }
 
-
-
+#quizButton1, #quizButton2, #quizButton3 {
+    width: 300px;
+}
