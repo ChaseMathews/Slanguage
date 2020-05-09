@@ -61,8 +61,8 @@ export default function NavBar() {
           <Button variant="success" onClick={() => setModal(false)}>ABORT ABORT</Button>
         </Modal>
       }
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand className="text">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand className="text">
           <Link to={"/DashboardCards/" + currentLang}>
             <img src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png"
               width="120"
@@ -71,15 +71,20 @@ export default function NavBar() {
             />
           </Link>
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link>
-          <NavDropdown title="Account Settings" id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
-          </NavDropdown>
-          <Link to="/About">About</Link>
-          <Link to="/">Sign Out</Link>
-        </Nav>
-      </Navbar>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+    <Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link>
+      <NavDropdown title="Account Settings" id="collasible-nav-dropdown">
+        <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+    <Nav>
+      <Link to="/About">About</Link>
+      <Link to="/">Sign Out</Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
     </>
   )
 }
