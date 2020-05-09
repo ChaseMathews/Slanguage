@@ -7,7 +7,6 @@ import DashboardMenu from "./dashboardMenu";
 import { UserContext } from '../../utils/Context';
 
 
-
 // HomeView form submit will send existing users to their dashboard
 // selectlangView will send newly registered users to their dashboard
 
@@ -23,8 +22,6 @@ import { UserContext } from '../../utils/Context';
 // need to create methods in the API.js for...
 // getUserdashboard= will get the data for the username and the language they are studying
 // getUserProgress= will get last quiz score for each module the user has started
-
-
 
 
 

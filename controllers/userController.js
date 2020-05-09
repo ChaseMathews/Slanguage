@@ -74,8 +74,7 @@ module.exports = {
     updateLesson: function ({ params, body }, res) {
         console.log(params.id, body);
         db.User
-            .find( { _id: params.id }, { results: [ { _id: params.lessonId } ] } )
-            // .update({$lesson: body})
+            .findOneAndUpdate({ "results._id": params.lessonId }, { $push: { "results.$.lesson": body } })
             .then(dbUser => {
                 console.log(dbUser);
                 res.json(dbUser)

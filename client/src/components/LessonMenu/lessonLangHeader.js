@@ -12,11 +12,11 @@ export default function LangCategory() {
     return (
         <Row>
             <Col sm="1">
-        {lang && <img className="logo" src={"https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/" + lang.toLowerCase() + ".png"} />}
+                {lang && <img className="logo" src={"https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/" + lang.toLowerCase() + ".png"} />}
             </Col>
-            <Col sm="11">
-        <h1 className="lang">{title}</h1>
-        </Col>
+            <Col sm="10">
+                <h1 className="lang">{title}</h1>
+            </Col>
         </Row>
     );
 }
