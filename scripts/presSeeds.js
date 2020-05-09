@@ -454,7 +454,7 @@ module.exports = [
                     "targetWord": " ",
                     "audioToPlay": " ",
                     "explanation": " "
-                },
+                }
             ]
         },
         {
@@ -519,7 +519,7 @@ module.exports = [
                     "targetWord": "Teuf",
                     "audioToPlay": " ",
                     "explanation": "Party. A verlan play on the word for party, fête."
-                },
+                }
             ]
         },
         {
@@ -584,9 +584,7 @@ module.exports = [
                     "targetWord": "Krass!",
                     "audioToPlay": " ",
                     "explanation": "A very positive or very negative word. It can mean something like awesome, or it can be a negative expletive."
-                },
-             
-             
+                }
             ]
         },
         {
@@ -651,7 +649,7 @@ module.exports = [
                     "targetWord": "Limonare",
                     "audioToPlay": " ",
                     "explanation": "To kiss with tongue."
-                },
+                }
             ]
         }
     ]
