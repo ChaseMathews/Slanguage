@@ -184,8 +184,7 @@ export default function QuizCard() {
               <Row>
                 <Col sm={lesson !== "numbers" ? 3 : 4}>
                   <Row>
-                    {/* {index !== 9 && disabled && */}
-                    {index !== 9 &&
+                    {index !== 9 && disabled &&
                       <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="" value="next" name="next">NEXT</Button>
                     }
                     {
