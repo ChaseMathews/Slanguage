@@ -7,10 +7,10 @@ import { slideInDown } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import API from "../../utils/API"
 import ReactAudioPlayer from 'react-audio-player';
-import LangCategory from "../LessonMenu/lessonLangHeader"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
-import CardGradient from '../CardGradient'
+import LangCategory from "../LessonMenu/lessonLangHeader";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
+import CardGradient from '../CardGradient';
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
