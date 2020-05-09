@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import LangHeader from './selectLangHeader';
 import CarouselFlags from '../Carousel'
-import Carousel from '../3dcarousel'
 
 
 export default function SelectLang() {

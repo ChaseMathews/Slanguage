@@ -67,7 +67,7 @@ export default function LessonCards() {
                         <Card.Text>
                             Going on a trip? {cardText} some basic travel vocabulary!{' '}
                         </Card.Text>
-                        <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link>
+                        <Link to={url + "travel"}><Button disabled>Coming soon!</Button></Link>
                     </Card.Body>
                 </Card>
             </Row>
