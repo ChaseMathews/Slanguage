@@ -181,7 +181,7 @@ export default function QuizCard() {
                 {lesson !== "numbers" ? (
                   <Col sm={3}>
                     <div>
-                      What does {quizContent[index].phrase} mean?
+                      {quizContent[index].phrase} 
                    </div>
                     <br></br>
                     <div>
