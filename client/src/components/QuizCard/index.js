@@ -192,8 +192,8 @@ export default function QuizCard() {
                      
                     </Col>
                     <Col sm={6}>
-                      {/* {index !== 9 && disabled && */}
-                     {index !== 9 &&
+                      {index !== 9 && disabled &&
+                     
                       <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                     }
                     {
