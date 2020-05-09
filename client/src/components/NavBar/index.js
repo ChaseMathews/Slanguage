@@ -1,12 +1,36 @@
 import React, { useContext, useState } from 'react';
-import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Button, Modal } from 'react-bootstrap';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import API from '../../utils/API';
 import { UserContext } from '../../utils/Context';
-import Modal from '../Modal/index';
+// import Modal from '../Modal/index';
 
 
 export default function NavBar() {
+
+  // const [show, setShow] = useState(true);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
+  // return (
+  //   <>
+  //     <Modal show={show} onHide={handleClose}>
+  //       <Modal.Header closeButton>
+  //         <Modal.Title>Delete Account</Modal.Title>
+  //       </Modal.Header>
+  //       <Modal.Body></Modal.Body>
+  //       <Modal.Footer>
+  //         <Button variant="secondary" onClick={handleClose}>
+  //           Close
+  //           </Button>
+  //         <Button variant="primary" onClick={handleClose}>
+  //           Save Changes
+  //           </Button>
+  //       </Modal.Footer>
+  //     </Modal>
+  //   </>
+  // );
 
   const { user, currentLang } = useContext(UserContext);
 
@@ -37,25 +61,30 @@ export default function NavBar() {
           <Button variant="success" onClick={() => setModal(false)}>ABORT ABORT</Button>
         </Modal>
       }
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand className="text">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand className="text">
           <Link to={"/DashboardCards/" + currentLang}>
-          <img src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png"
-            width="120"
-            height="40"
-            alt="Slanguage logo"
-          />
+            <img src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png"
+              width="120"
+              height="40"
+              alt="Slanguage logo"
+            />
           </Link>
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link>
-          <NavDropdown title="Account Settings" id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
-          </NavDropdown>
-          <Link to="/About">About</Link>
-          <Link to="/">Sign Out</Link>
-        </Nav>
-      </Navbar>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+    <Link to={"/DashboardCards/" + currentLang}>My Dashboard</Link>
+      <NavDropdown title="Account Settings" id="collasible-nav-dropdown">
+        <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+    <Nav>
+      <Link to="/About">About</Link>
+      <Link to="/">Sign Out</Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
     </>
   )
 }
