@@ -21,6 +21,7 @@ export default function QuizCard() {
   const [disabled, setDisabled] = useState(false);
   const [display, setDisplay] = useState(false)
   const [modal, setModal] = useState(true);
+  const [modalEnd, setModalEnd] = useState(false);
   const history = useHistory();
   const { lang, lesson } = useParams();
   const language = lang || currentLang;
@@ -71,7 +72,10 @@ export default function QuizCard() {
     })
     btnsPrimary();
     setDisabled(false);
+    console.log(index);
   }
+
+  index > 9 && setModalEnd(true);
 
   //   const updateUserResults = e => {
   //     e.preventDefault();
@@ -126,10 +130,11 @@ export default function QuizCard() {
   }
 
   const goToDash = () => {
+    setModalEnd(false);
     history.push(`/DashboardCards/${language}`);
   }
 
-  console.log(modal);
+  // console.log(modal);
   const [show, setShow] = useState(true);
 
   const handleClose = () => {
@@ -147,7 +152,7 @@ export default function QuizCard() {
             <Modal.Title id="modalTitle">Ready to practice what you've learned?</Modal.Title>
           </Modal.Header>
           <Modal.Body id="modalBody">Correct answers = <strong>+3 points</strong></Modal.Body>
-          <Modal.Body id="modalBody2">Wrong answers= <strong>-1 points</strong></Modal.Body>
+          <Modal.Body id="modalBody2">Wrong answers= <strong>-1 point</strong></Modal.Body>
           <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
 
           <Modal.Footer>
@@ -159,15 +164,11 @@ export default function QuizCard() {
 
       {quizContent && !modal &&
         <Container>
-          {index < 9 && !disabled ?
+          {/* {index <= 9 && */}
             <Card className="score">
               Score: {score}
             </Card>
-            :
-            <Card className="score">
-              Total Score: {score}
-            </Card>
-          }
+          {/* } */}
           <Jumbotron>
             <Card.Body>
               <Row>
@@ -201,14 +202,29 @@ export default function QuizCard() {
                   <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
 
-                  {index !== 9 && disabled &&
+                  {index <= 9 && disabled &&
 
                     <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
+                    
                   }
                   {
-                    index === 9 && disabled &&
-                    <Button onClick={goToDash} variant="danger" className="nextBtn">Back to Dashboard</Button>
-                  }
+                    modalEnd &&
+                      <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
+                        <Modal.Header closeButton>
+                          <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body id="modalBody">Correct answers = <strong>+3 points</strong></Modal.Body>
+                        <Modal.Body id="modalBody2">Wrong answers= <strong>-1 point</strong></Modal.Body>
+                        <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
+              
+                        <Modal.Footer>
+                          <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
+                          <Button variant="danger" onClick={() => setModal(true)}><strong>Take Quiz Again</strong></Button>
+                        </Modal.Footer>
+                      </Modal>
+                    }
+                    {/* // <Button onClick={goToDash} variant="danger" className="nextBtn">Back to Dashboard</Button> */}
+                  
                 </Col>
               </Row>
             </Card.Body>
