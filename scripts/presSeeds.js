@@ -333,7 +333,7 @@ module.exports = [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
                     "targetWord": "Güey",
-                    "audioToPlay": "/audio/spanish/Güey.m4a",
+                    "audioToPlay": "/audio/spanish/guey2.m4a",
                     "explanation": "A word for dude. You can call anyone this in replacement of their name."
                 },
                 {
