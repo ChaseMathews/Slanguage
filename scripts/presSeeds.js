@@ -329,6 +329,7 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "Mexican",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
@@ -393,7 +394,272 @@ module.exports = [
             ]
         },
         {
+            "language": "Spanish",
+            "dialect": "Puerto Rican",
+            "content": [
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Argentinian",
+            "content": [
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Spain",
+            "content": [
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Colombian",
+            "content": [
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                },
+                {
+                    "imageUrl": "",
+                    "targetWord": "",
+                    "audioToPlay": "",
+                    "explanation": ""
+                }
+            ]
+        },
+        {
             "language": "Navajo",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg ",
@@ -459,6 +725,7 @@ module.exports = [
         },
         {
             "language": "French",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://founterior.com/wp-content/uploads/2014/09/Cafe-in-Paris-with-tables-and-chairs-outside.jpg",
@@ -524,6 +791,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://www.amny.com/wp-content/uploads/2015/03/image-1-740x415.jpg",
@@ -589,6 +857,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",
