@@ -75,7 +75,7 @@ export default function QuizCard() {
     console.log(index);
   }
 
-  index > 9 && setModalEnd(true);
+  // index > 9 && setModalEnd(true);
 
   //   const updateUserResults = e => {
   //     e.preventDefault();
@@ -127,6 +127,26 @@ export default function QuizCard() {
       })
       setScore(score - 1)
     }
+
+    if (quizContent[9].correctAnswer === value) {
+      setBtnVarient({
+        ...btnVarient,
+        [name]: "success",
+      });
+      setScore(score + 3)
+      setDisabled(!disabled);
+      setModalEnd(true);
+    }
+
+  }
+
+  const quizReset = () => {
+    setModalEnd(false);
+    setModal(true);
+    setIndex(0);
+    setScore(0);
+    btnsPrimary();
+    setDisabled(false);
   }
 
   const goToDash = () => {
@@ -151,7 +171,7 @@ export default function QuizCard() {
           <Modal.Header closeButton>
             <Modal.Title id="modalTitle">Ready to practice what you've learned?</Modal.Title>
           </Modal.Header>
-          <Modal.Body id="modalBody">Correct answers = <strong>+3 points</strong></Modal.Body>
+          <Modal.Body id="modalBody">Correct answers= <strong>+3 points</strong></Modal.Body>
           <Modal.Body id="modalBody2">Wrong answers= <strong>-1 point</strong></Modal.Body>
           <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
 
@@ -202,29 +222,23 @@ export default function QuizCard() {
                   <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
 
-                  {index <= 9 && disabled &&
-
-                    <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
-                    
-                  }
                   {
-                    modalEnd &&
+                    index !== 9 && disabled &&
+                    <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
+                  }
+
+                  {
+                    modalEnd && disabled && 
                       <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
                         <Modal.Header closeButton>
                           <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body id="modalBody">Correct answers = <strong>+3 points</strong></Modal.Body>
-                        <Modal.Body id="modalBody2">Wrong answers= <strong>-1 point</strong></Modal.Body>
-                        <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
-              
                         <Modal.Footer>
                           <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
-                          <Button variant="danger" onClick={() => setModal(true)}><strong>Take Quiz Again</strong></Button>
+                          <Button variant="danger" onClick={quizReset}><strong>Take Quiz Again</strong></Button>
                         </Modal.Footer>
                       </Modal>
                     }
-                    {/* // <Button onClick={goToDash} variant="danger" className="nextBtn">Back to Dashboard</Button> */}
-                  
                 </Col>
               </Row>
             </Card.Body>
