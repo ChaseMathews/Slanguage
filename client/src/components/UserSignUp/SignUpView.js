@@ -15,7 +15,8 @@ export default function SignUp() {
 
     const [userObject, setUserObject] = useState({
         username: "",
-        password: ""
+        password: "",
+        confirmPassword: ""
     })
     const [error, setError] = useState("");
 
@@ -33,10 +34,12 @@ export default function SignUp() {
                 return "Please enter both a username and a password."
             } else if (userObject.password.length < 6) {
                 return "Password must be at least 6 characters!"
+            } else if (userObject.password !== userObject.confirmPassword) {
+                return ("Passwords don't match!")
             }
         });
 
-        if (userObject.username && userObject.password && userObject.password.length >= 6) {
+        if (userObject.username && userObject.password && userObject.password.length >= 6 && userObject.password === userObject.confirmPassword) {
             API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
