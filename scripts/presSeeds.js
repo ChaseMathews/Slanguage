@@ -398,64 +398,64 @@ module.exports = [
             "dialect": "Puerto Rican",
             "content": [
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://hrexach.files.wordpress.com/2018/11/cutepr.jpg?w=584",
+                    "targetWord": "Boricua",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "The local name for a Puerto Rican."
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://lh3.googleusercontent.com/proxy/kycl-glAFKjFiMhpuoPuJe2H5c0se9X2Lo45NSLV-Y_l6v0QkR1wN_dA7m839TGXPMUdAWQrHfkl6pHs6GLWVtksKDZKi_erIVVDSr1QJ2b2UJ5zFxoIy-hDXZxFoVkBRScFdoFidLWQNeA9jsJX923kSjzWZYHPowd354mxgdkRmYOtzKAt9mL0Vf2LKw8buCXnDKZFRE4iz_xV95QDok13f1Q19a6NfHLC_KtljpYTo7E",
+                    "targetWord": "Corillo",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "Refers to a group of friends"
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
+                    "targetWord": "A mí, plín",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "A slightly vulgar way of saying \"I don't care.\"",
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
+                    "targetWord": "Janguear",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "To hang out"
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/surfing-dog-photo-is-funner-or-funnest-a-real-word-5670-6d512231d0a52079b0c9fbf474f9a6c9@1x.jpg",
+                    "targetWord": "Al garete",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "Really fun and crazy"
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://daily.jstor.org/wp-content/uploads/2017/12/traffic_jam_1050x700.jpg",
+                    "targetWord": "Tapón",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "Traffic"
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/A_mess_of_wires.jpg",
+                    "targetWord": "Revolú",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "A mess"
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://www.dictionary.com/e/wp-content/uploads/2017/11/words_for_gossip3.jpg",
+                    "targetWord": "Bochinche",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "Gossip"
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://akm-img-a-in.tosshub.com/indiatoday/styles/photo_slider_753x543/public/images/photogallery/201404/13_042514045937.jpg?0MjddSYiAj2VlTBXq9A3vbEtGVE6ZI1F",
+                    "targetWord": "Gato/Gata",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "Literally means cat. Used to refer to a very good-looking man/woman."
                 },
                 {
-                    "imageUrl": "",
-                    "targetWord": "",
+                    "imageUrl": "https://pics.me.me/thumb_weeeepaaaa-wepa-23611602.png",
+                    "targetWord": "¡Wepa!",
                     "audioToPlay": "",
-                    "explanation": ""
+                    "explanation": "An exclamation to express joy and utter happiness. Be sure to yell it nasally and hold the \"e\" and \"a\" for a long time."
                 }
             ]
         },
@@ -707,7 +707,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg ",
                     "targetWord": "Sáanii t'óó yitah yilwoł ",
                     "audioToPlay": " ",
-                    "explanation": "A player or pimp "
+                    "explanation": "A player or pimp"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png ",
