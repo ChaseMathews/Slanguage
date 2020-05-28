@@ -75,34 +75,79 @@ export default function QuizCard() {
     console.log(index);
   }
 
-  // index > 9 && setModalEnd(true);
 
-  //   const updateUserResults = e => {
-  //     e.preventDefault();
-  //     console.log(e.target.value);
-  //     const { value } = e.target;
-  //     console.log(value);
 
-  //     API.updateUser(user.id, { 
-  //       results: [
-  //         {
-  //             language: "Spanish",
-  //             lesson: [
-  //               {
-  //                 name: "Numbers",
-  //                 score: 7
-  //               }
-  //             ]
-  //         } 
-  //     })
-  //         .then(res => {
-  //             console.log(res.data);
-  //             setCurrentLang(res.data.currentLanguage);
-  //             history.push(`/Dashboard/${res.data.currentLanguage}`);
-  //         }) 
-  //         .catch(err => console.log(err));
 
-  // };
+  const updateUserResults = () => {
+    let resultsIndex;
+    for (let i = 0; i < user.results.length; i++) {
+      if (user.results[i].language === currentLang) {
+        resultsIndex = i;
+        break
+      }
+    }
+
+    let lessonIndex;
+    for (let i = 0; i < user.results[resultsIndex].lesson.length; i++) {
+      if (user.results[resultsIndex].lesson[i].name === lesson) {
+        lessonIndex = i;
+        break
+      }
+    }
+
+    let resultObject = {};
+
+    if (resultsIndex) {
+      if (lessonIndex) {
+        resultObject = {
+          ...user.results[resultsIndex].lesson[lessonIndex],
+          score
+        }
+      } else {
+        resultObject = {
+          ...user.results
+        }
+        resultObject.results[resultsIndex].lesson.push(
+          {
+            name: lesson,
+            score
+          }
+        )
+      }
+    } else {
+      resultObject = {
+        language: currentLang,
+        lesson: [
+          {
+            name: lesson,
+            score
+          }
+        ]
+      }
+    }
+
+
+    API.updateUser(user.id, {
+      results: [
+        {
+          language: "Spanish",
+          lesson: [
+            {
+              name: "Numbers",
+              score: 7
+            }
+          ]
+        }
+      ]
+    })
+      .then(res => {
+        console.log(res.data);
+        setCurrentLang(res.data.currentLanguage);
+        history.push(`/Dashboard/${res.data.currentLanguage}`);
+      })
+      .catch(err => console.log(err));
+
+  };
 
   const handleScore = e => {
     e.preventDefault()
@@ -149,6 +194,8 @@ export default function QuizCard() {
     setDisabled(false);
   }
 
+
+
   const goToDash = () => {
     setModalEnd(false);
     history.push(`/DashboardCards/${language}`);
@@ -185,9 +232,9 @@ export default function QuizCard() {
       {quizContent && !modal &&
         <Container>
           {/* {index <= 9 && */}
-            <Card className="score">
-              Score: {score}
-            </Card>
+          <Card className="score">
+            Score: {score}
+          </Card>
           {/* } */}
           <Jumbotron>
             <Card.Body>
@@ -228,17 +275,17 @@ export default function QuizCard() {
                   }
 
                   {
-                    modalEnd && disabled && 
-                      <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
-                        <Modal.Header closeButton>
-                          <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Footer>
-                          <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
-                          <Button variant="danger" onClick={quizReset}><strong>Take Quiz Again</strong></Button>
-                        </Modal.Footer>
-                      </Modal>
-                    }
+                    modalEnd && disabled &&
+                    <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
+                      <Modal.Header closeButton>
+                        <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Footer>
+                        <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
+                        <Button variant="danger" onClick={quizReset}><strong>Take Quiz Again</strong></Button>
+                      </Modal.Footer>
+                    </Modal>
+                  }
                 </Col>
               </Row>
             </Card.Body>

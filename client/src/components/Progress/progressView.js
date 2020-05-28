@@ -11,10 +11,10 @@ export default function ProgressPage() {
 
   return (
       <Container>
-        <Jumbotron>
+        {/* <Jumbotron>
           <img src="https://giffiles.alphacoders.com/158/158667.gif" alt="under-construction"></img>
-        </Jumbotron>
-        {/* <br></br>
+        </Jumbotron> */}
+        <br></br>
       <h1 className="text-center">Check your Progress</h1>
       <Row>
         <Col md={{ span: 6, offset: 4 }}>
@@ -27,7 +27,7 @@ export default function ProgressPage() {
         <Col md={{ span: 8, offset: 2 }}>
           <ProgressCards />
         </Col>
-      </Row> */}
+      </Row>
       </Container>
   )
 }

@@ -35,8 +35,8 @@ export default {
     updateUser: function(id, data){
         return axios.put(`/api/user/${id}`, data)
     },
-    updateUserScore: function(id, resultsLesson, data){
-        return axios.put(`/api/user/${id}/${resultsLesson}`, data)
-    }
-    
+    // updateUserScore: function(id, resultsLesson, data){
+    //     return axios.put(`/api/user/${id}/${resultsLesson}`, data)
+    // },
+   
 }

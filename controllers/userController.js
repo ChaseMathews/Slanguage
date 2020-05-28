@@ -63,18 +63,18 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     // will be used if user wants to update their username/password
-    update: function ({ params, body }, res) {
-        console.log(params.id, body);
-        db.User
-            .findOneAndUpdate({ _id: params.id }, body, { new: true })
-            .then(dbUser => res.json(dbUser))
-            .catch(err => res.status(422).json(err));
-    },
-    // // used for storing user progress data
+    // update: function ({ params, body }, res) {
+    //     console.log(params.id, body);
+    //     db.User
+    //         .findOneAndUpdate({ _id: params.id }, body, { new: true })
+    //         .then(dbUser => res.json(dbUser))
+    //         .catch(err => res.status(422).json(err));
+    // },
+    // used for storing user progress data
     updateLesson: function ({ params, body }, res) {
         console.log(params.id, body);
         db.User
-            .findOneAndUpdate({ "results._id": params.lessonId }, { $push: { "results.$.lesson": body } })
+            .findOneAndUpdate({ "results._id": params.lessonId }, { $push: { "results.$.lesson": body } }, { new: true })
             .then(dbUser => {
                 console.log(dbUser);
                 res.json(dbUser)

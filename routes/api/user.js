@@ -12,11 +12,11 @@ router.route("/login")
 // Matches with "/api/user/:id"
 router.route("/:id")
   .get(userController.findById)
-  .put(userController.update)
+  .put(userController.updateResults)
   .delete(userController.remove);
 
-  // Matches with "/api/user/:lessonId"
-router.route("/:lessonId")
+  // Matches with "/api/user/lesson/:lessonId"
+router.route("/lesson/:lessonId")
   .put(userController.updateLesson);
 
 module.exports = router;
