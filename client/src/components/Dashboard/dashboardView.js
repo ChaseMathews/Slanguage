@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from "react-router-dom";
-import { Row, Col } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
 import API from "../../utils/API"
 import NavBar from '../../components/NavBar';
 import DashboardMenu from "./dashboardMenu";
@@ -25,9 +25,11 @@ import { UserContext } from '../../utils/Context';
 
 
 
-export default function Dashboard() {
+export default function Welcome() {
 
     const [userDashboard, setUserDashboard] = useState();
+    const { lang } = useParams();
+    const language = lang || currentLang
 
     const { user, currentLang } = useContext(UserContext);
     console.log(user);
@@ -67,45 +69,14 @@ export default function Dashboard() {
 
 
     return (
-        <>
-            {/* {userDashboard && */}
-                <>
-                    {/* <NavBar /> */}
-
-                    <Row>
-                        <Col sm={4}>
-                            {/* <h1>Hello {user.username}, Welcome back!" </h1> */}
-                            <h1>Hello {user.username}, Welcome back!</h1>
+        <Card>
+                    <Col className="Greeting text-center">
+                            <h1>Hello {user.username}, welcome back!</h1>
+                            <h3 className="studying">You're currently studying {language}.</h3>
+                            <h2>What would you like to do?</h2>
                         </Col>
-                    </Row>
 
-                   
-                        <Row>
-                            <Col sm={4}>
-                                <p>Currently Studying {currentLang}!</p>
-                                {/* <p>Currently Studying [Spanish]</p> */}
-                            </Col>
-                        </Row>
-
-                        <Row>
-                            <Col sm={6}>
-                                <h1>What would you like to do?</h1>
-                            </Col>
-                        </Row>
-
-                        <Row>
-                            <Col sm={6}>
-                                <DashboardMenu />
-                            </Col>
-                        </Row>
-
-
-                        
-
-
-                </>
-            }
-        </>
+        </Card>
 
     )
 }

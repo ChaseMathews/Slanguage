@@ -14,6 +14,7 @@ import CardGradient from './components/CardGradient'
 import About from './components/About'
 import DashboardCard from './components/Dashboard/dashboardCards';
 
+
 function App() {
   const location = useLocation();
   const {lang} = useParams();
