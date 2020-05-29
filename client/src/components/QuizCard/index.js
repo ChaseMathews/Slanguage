@@ -72,6 +72,7 @@ export default function QuizCard() {
     })
     btnsPrimary();
     setDisabled(false);
+    setHint(false)
   }
 
   //   const updateUserResults = e => {
@@ -115,6 +116,7 @@ export default function QuizCard() {
         ...btnVarient,
         [name]: "success",
       });
+
       setScore(score + 3)
       setDisabled(!disabled);
     } else {
@@ -123,6 +125,7 @@ export default function QuizCard() {
         [name]: "danger"
       })
       setScore(score - 1)
+      setHint(true)
     }
   }
 
@@ -185,6 +188,13 @@ export default function QuizCard() {
                       {quizContent[index].phrase}
                     </div>
                     <br></br>
+                    {hint &&
+                     <div>
+                       HINT: {quizContent[index].example}
+                     </div>
+
+                    }
+                    
                     
                   </Col>
                 ) : ""}
