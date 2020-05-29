@@ -16,7 +16,7 @@ export default function QuizCard() {
     ButtonThree: true
   });
 
-  const { user, currentLang } = useContext(UserContext);
+  const { user, setUser, currentLang } = useContext(UserContext);
   const [score, setScore] = useState(0)
   const [disabled, setDisabled] = useState(false);
   const [display, setDisplay] = useState(false)
@@ -75,79 +75,77 @@ export default function QuizCard() {
     console.log(index);
   }
 
-
-
-
   const updateUserResults = () => {
     let resultsIndex;
+    let lessonIndex;
+    let resultObject = {};
+    console.log("user", user);
+
     for (let i = 0; i < user.results.length; i++) {
       if (user.results[i].language === currentLang) {
         resultsIndex = i;
         break
       }
+      console.log('resultsIndex', resultsIndex);
     }
-
-    let lessonIndex;
-    for (let i = 0; i < user.results[resultsIndex].lesson.length; i++) {
-      if (user.results[resultsIndex].lesson[i].name === lesson) {
-        lessonIndex = i;
-        break
-      }
-    }
-
-    let resultObject = {};
-
-    if (resultsIndex) {
-      if (lessonIndex) {
-        resultObject = {
-          ...user.results[resultsIndex].lesson[lessonIndex],
-          score
-        }
-      } else {
-        resultObject = {
-          ...user.results
-        }
-        resultObject.results[resultsIndex].lesson.push(
-          {
-            name: lesson,
-            score
-          }
-        )
-      }
-    } else {
+    if (resultsIndex === undefined) {
+      console.log("no resultsIndex (language hasn't been practiced at all). setting resultObject")
       resultObject = {
         language: currentLang,
         lesson: [
           {
             name: lesson,
-            score
+            score: score
           }
         ]
       }
-    }
-
-
-    API.updateUser(user.id, {
-      results: [
-        {
-          language: "Spanish",
-          lesson: [
-            {
-              name: "Numbers",
-              score: 7
-            }
-          ]
+      API.updateUserResults(user._id, resultObject)
+        .then(res => {
+          console.log(res.data);
+          setUser(res.data);
+        })
+        .catch(err => console.log(err));
+    } else {
+      console.log("resultsIndex exists (language has been practiced). checking if lesson exists in results array")
+      for (let i = 0; i < user.results[resultsIndex].lesson.length; i++) {
+        if (user.results[resultsIndex].lesson[i].name === lesson) {
+          lessonIndex = i;
+          break
         }
-      ]
-    })
-      .then(res => {
-        console.log(res.data);
-        setCurrentLang(res.data.currentLanguage);
-        history.push(`/Dashboard/${res.data.currentLanguage}`);
-      })
-      .catch(err => console.log(err));
-
+      }
+      console.log("lessonIndex", lessonIndex);
+      if (lessonIndex !== undefined) {
+        console.log("lessonIndex exists (lesson in this lang has already been practiced). setting resultObject with new score")
+        resultObject = {
+          ...user.results[resultsIndex].lesson[lessonIndex],
+          score: score
+        }
+        API.updateExistingUserLesson(user._id, { resultsIndex: resultsIndex, lessonIndex: lessonIndex, resultObject })
+          .then(res => {
+            console.log(res);
+          })
+          .catch(err => console.log(err));
+        } else {
+          console.log("no lessonIndex (lesson hasn't been practiced). setting resultObject to push new lesson to results array")
+        resultObject = {
+          name: lesson,
+          score: score
+        }
+        console.log("resultObject", resultObject);
+        console.log("user result obj id", user.results[resultsIndex]._id);
+        API.updateUserLesson(user.results[resultsIndex]._id, resultObject)
+          .then(res => {
+            console.log('res', res);
+            console.log("res.config.data", res.config.data);
+          })
+          .catch(err => console.log(err));
+      }
+    }    
   };
+  
+
+
+
 
   const handleScore = e => {
     e.preventDefault()
@@ -173,7 +171,7 @@ export default function QuizCard() {
       setScore(score - 1)
     }
 
-    if (quizContent[9].correctAnswer === value) {
+    if (index === 9 && quizContent[9].correctAnswer === value) {
       setBtnVarient({
         ...btnVarient,
         [name]: "success",
@@ -192,12 +190,12 @@ export default function QuizCard() {
     setScore(0);
     btnsPrimary();
     setDisabled(false);
+    updateUserResults();
   }
-
-
 
   const goToDash = () => {
     setModalEnd(false);
+    updateUserResults();
     history.push(`/DashboardCards/${language}`);
   }
 

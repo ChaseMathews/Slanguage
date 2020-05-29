@@ -23,7 +23,7 @@ export default function NavBar() {
   const [modal, setModal] = useState(false);
 
   const deleteAccount = () => {
-    API.deleteUser(user.id)
+    API.deleteUser(user._id)
       .then(() => {
         console.log('Successfully deleted!');
         history.push("/");

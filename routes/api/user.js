@@ -3,20 +3,27 @@ const userController = require("../../controllers/userController");
 
 // Matches with "/api/user"
 router.route("/")
-  .post(userController.create)
+  .post(userController.create);
 
 // Matches with "/api/user/login"
 router.route("/login")
-  .post(userController.findOne)
+  .post(userController.findOne);
 
 // Matches with "/api/user/:id"
 router.route("/:id")
-  .get(userController.findById)
-  .put(userController.updateResults)
-  .delete(userController.remove);
+  .put(userController.update)
+  .delete(userController.remove)
+  // .get(userController.getUser);
 
-  // Matches with "/api/user/lesson/:lessonId"
-router.route("/lesson/:lessonId")
+// Matches with "/api/user/results/:userId"
+router.route("/results/:userId")
+  .put(userController.updateResults);
+
+// Matches with "/api/user/lesson/:resultsId"
+router.route("/lesson/:resultsId")
   .put(userController.updateLesson);
+
+router.route("/existingLesson/:userId")
+  .put(userController.updateExistingLesson);
 
 module.exports = router;

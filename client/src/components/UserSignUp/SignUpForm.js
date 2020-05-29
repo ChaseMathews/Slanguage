@@ -25,7 +25,7 @@ export default function SignUpForm(props) {
           placeholder="Password" />
       </Form.Group>
 
-      <Form.Group controlId="formBasicPassword">
+      <Form.Group controlId="formBasicPassword2">
         <Form.Control
           type="password"
           name="confirmPassword"

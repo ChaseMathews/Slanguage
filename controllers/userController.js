@@ -42,7 +42,7 @@ module.exports = {
                         if (result) {
                             res.json({
                                 username: dbUser.username,
-                                id: dbUser._id,
+                                _id: dbUser._id,
                                 results: dbUser.results
                             });
                         } else {
@@ -56,43 +56,46 @@ module.exports = {
                 res.status(500).json(err.message);
             });
     },
-    findById: function ({ params }, res) {
-        db.User
-            .findById(params.id)
-            .then(dbModel => res.json(dbModel))
-            .catch(err => res.status(422).json(err));
-    },
-    // will be used if user wants to update their username/password
-    // update: function ({ params, body }, res) {
-    //     console.log(params.id, body);
+    // getUser: function ({ params }, res) {
+    //     console.log(params.id);
     //     db.User
-    //         .findOneAndUpdate({ _id: params.id }, body, { new: true })
+    //         .findOne({ _id: params.id })
     //         .then(dbUser => res.json(dbUser))
     //         .catch(err => res.status(422).json(err));
     // },
-    // used for storing user progress data
-    updateLesson: function ({ params, body }, res) {
+    // update user's current language or existing lesson score (language AND lesson they've already practiced)
+    update: function ({ params, body }, res) {
         console.log(params.id, body);
         db.User
-            .findOneAndUpdate({ "results._id": params.lessonId }, { $push: { "results.$.lesson": body } }, { new: true })
-            .then(dbUser => {
-                console.log(dbUser);
-                res.json(dbUser)
-            })
+            .findOneAndUpdate({ _id: params.id }, body, { new: true })
+            .then(dbUser => res.json(dbUser))
             .catch(err => res.status(422).json(err));
     },
-
+    // update user results (new language not previously practiced)
     updateResults: function ({ params, body }, res) {
-        console.log(params.id, body);
+        console.log(params.userId, body);
         db.User
-            .findOneAndUpdate({ _id: params.id }, { $push: { results: body } }, { new: true })
-            .then(dbUser => {
-                console.log(dbUser);
-                res.json(dbUser)
-            })
+            .findOneAndUpdate({ _id: params.userId }, { $push: { results: body } }, { new: true })
+            .then(dbUser => res.json(dbUser))
             .catch(err => res.status(422).json(err));
     },
-    // will be used if user wants to delete their account
+    // update user results (language they've already practiced, new lesson)
+    updateLesson: function ({ params, body }, res) {
+        console.log("params.resultsId", params.resultsId, "body", body);
+        db.User
+            .findOneAndUpdate({ "results._id": params.resultsId }, { $push: { "results.$.lesson": body } }, { new: true })
+            .then(dbUser => res.json(dbUser))
+            .catch(err => res.status(422).json(err));
+    },
+    updateExistingLesson: function ({ params, body }, res) {
+        console.log(params.userId, body);
+        const updateStr = "results." + body.resultsIndex + ".lesson." + body.lessonIndex; 
+        db.User
+            .findOneAndUpdate({ _id: params.userId }, {[updateStr]: body.resultObject}, { new: true })
+            .then(dbUser => res.json(dbUser))
+            .catch(err => res.status(422).json(err));
+    }, 
+    // delete user account
     remove: function ({ params }, res) {
         db.User
             .findById({ _id: params.id })

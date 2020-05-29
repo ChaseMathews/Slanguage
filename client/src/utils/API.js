@@ -15,10 +15,10 @@ export default {
     getSlangQuizData: function (lang) {
         return axios.get("/api/quiz/slang/" + lang);
     },
-    // // Gets the user with the given id upon logging in
-    getUserData: function (id) {
-        return axios.get("/api/user/" + id);
-    },
+    // // Gets the user with the given id
+    // getUserData: function (id) {
+    //     return axios.get(`/api/user/${id}`);
+    // },
     // Finds user in db and sends back username and ID
     findUser: function (user) {
         return axios.post("/api/user/login", user);
@@ -31,12 +31,21 @@ export default {
     signUpUser: function (user) {
         return axios.post("/api/user/", user);
     },
-    // Update user info with scores and current language
+    // Update user current language or existing lesson score
     updateUser: function(id, data){
         return axios.put(`/api/user/${id}`, data)
     },
-    // updateUserScore: function(id, resultsLesson, data){
-    //     return axios.put(`/api/user/${id}/${resultsLesson}`, data)
-    // },
-   
+    // Update user results (new language)
+    updateUserResults: function(userId, results){
+        return axios.put(`/api/user/results/${userId}`, results)
+    },
+    // Update user lesson (new lesson in existing language)
+    updateUserLesson: function(resultId, lessonResult){
+        // console.log('lessonResult', lessonResult)
+        return axios.put(`/api/user/lesson/${resultId}`, lessonResult)
+    },
+    updateExistingUserLesson: function(userId, data){
+        console.log('data', data)
+        return axios.put(`/api/user/existingLesson/${userId}`, data)
+    }
 }

@@ -416,7 +416,7 @@ module.exports = [
                         "acht",
                         "zehn"
                     ],
-                    "correctAnswer": "neuf",
+                    "correctAnswer": "neun",
                     
                 }
             ]
