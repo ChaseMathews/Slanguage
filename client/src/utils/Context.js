@@ -5,11 +5,8 @@ export const UserContext = createContext("");
 
 export default ({ children }) => {
 
-    const [user, setUser] = useState({
-        username:"jrstanle", _id:"5ecaf507bc4a93071b3c5c17"
-    });
-    
-    const [currentLang, setCurrentLang] = useState("Navajo");
+    const [user, setUser] = useState()
+    const [currentLang, setCurrentLang] = useState();
 
     return <UserContext.Provider value={{ user, setUser, currentLang, setCurrentLang }}>{children}</UserContext.Provider>
 }
