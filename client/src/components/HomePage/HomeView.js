@@ -56,7 +56,6 @@ export default function HomeView() {
             <hr></hr>
             <Row>
                 <Col>
-                    {/* <RingLoader loading={true} size={350} color="#39a6c1" /> */}
                     <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" fluid />
 
                 </Col>

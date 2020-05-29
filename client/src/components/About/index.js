@@ -12,7 +12,7 @@ export default function About() {
     return (
         <Jumbotron>
             <Card.Body className="about">
-                <h1>About the App:</h1>
+                <h1>About the App</h1>
                 <p>
                     The team at Slanguage is passionate about learning languages! Our goal was to create a language app that had something most language apps are missing… Slang. Lingo. Colloquialisms. In other words, the expressions you may not find in a dictionary or within the classroom. And for those language learners that do want the basics, Slanguage also offers other awesome categories to learn and practice with!
                 </p>
