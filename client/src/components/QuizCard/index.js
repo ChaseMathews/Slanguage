@@ -22,6 +22,7 @@ export default function QuizCard() {
   const [display, setDisplay] = useState(false)
   const [modal, setModal] = useState(true);
   const [modalEnd, setModalEnd] = useState(false);
+  const [hint, setHint] = useState(false)
   const history = useHistory();
   const { lang, lesson } = useParams();
   const language = lang || currentLang;
@@ -73,6 +74,7 @@ export default function QuizCard() {
     btnsPrimary();
     setDisabled(false);
     console.log(index);
+    setHint(false)
   }
 
   const updateUserResults = () => {
@@ -161,6 +163,7 @@ export default function QuizCard() {
         ...btnVarient,
         [name]: "success",
       });
+
       setScore(score + 3)
       setDisabled(!disabled);
     } else {
@@ -169,6 +172,7 @@ export default function QuizCard() {
         [name]: "danger"
       })
       setScore(score - 1)
+      setHint(true)
     }
 
     if (index === 9 && quizContent[9].correctAnswer === value) {
@@ -250,9 +254,14 @@ export default function QuizCard() {
                       <h2>{quizContent[index].phrase}</h2>
                     </div>
                     <br></br>
-                    <div>
-                      <i>{quizContent[index].example}</i>
-                    </div>
+                    {hint &&
+                     <div>
+                       HINT: {quizContent[index].example}
+                     </div>
+
+                    }
+                    
+                    
                   </Col>
                 ) : ""}
 

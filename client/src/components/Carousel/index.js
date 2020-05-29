@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import { Button } from 'react-bootstrap';
-
+import './style.css'
 import { useHistory } from 'react-router-dom';
 import API from '../../utils/API';
 import { UserContext } from '../../utils/Context';
@@ -44,52 +44,52 @@ export default function CarouselFlags() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://imgc.allpostersimages.com/img/print/u-g-PQR7U00.jpg?w=550&h=550&p=0"
+                            src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/spanish.png"
                             alt="Mexico flag"
                         />
                         <Carousel.Caption className="carouselText">
-                            <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Spanish" >Español</Button>
+                            <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="Spanish" >Español <br /> <h5> (Spanish) </h5></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/flag-of-navajo-nation-world-art-prints-and-designs.jpg"
+                            src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/navajo.png"
                             alt="Navajo Nation flag"
                         />
                         <Carousel.Caption className="carouselText">
-                            <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Navajo" >Diné</Button>
+                            <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="Navajo" >Diné <br /> <h5> (Navajo) </h5></Button>
 
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://i.pinimg.com/originals/67/fe/a7/67fea724434b5d8a1afea597e31cb467.jpg"
+                            src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/italian.png"
                             alt="Italy flag"
                         />
                         <Carousel.Caption className="carouselText">
-                            <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="Italian" >Italiano</Button>
+                            <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="Italian" >Italiano <br /> <h5> (Italian) </h5></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://www.germanpulse.com/wp-content/uploads/2011/07/german-flag.jpg"
+                            src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/german.png"
                             alt="German flag"
                         />
                         <Carousel.Caption className="carouselText">
-                            <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="German" >Deutsch</Button>
+                            <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="German" >Deutsch <br /> <h5> (German) </h5></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://hdwallpaperim.com/wp-content/uploads/2017/08/27/141093-France-flag-French-748x468.jpg"
+                            src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/french.png"
                             alt="French"
                         />
                         <Carousel.Caption className="carouselText">
-                            <Button className="button" size="lg" variant="link" onClick={updateUserCurrentLang} value="French" >Français</Button>
+                            <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="French" >Français <br /> <h5> (French) </h5></Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

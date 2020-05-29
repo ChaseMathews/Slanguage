@@ -1,36 +1,59 @@
-.flag{
-  width: 100px;
-  margin-left: 30px;
+
+.chooseLanguage{
+  margin: 20px;
+}
+
+.dashboardBackground{
+  opacity: .75;
+  position: absolute;
+  size: cover;
+}
+
+.jumbotron.grayBox{
+  background-color: rgba(233, 236, 239, .55);
+}
+
+.display-flex{
+  flex-direction: column;
+  padding-top: 1rem;
 }
 
 .studying{
   color: red;
   margin-top: 12px;
   margin-bottom: 12px;
+  font-style: oblique;
+  font-weight: bold;
+  /* background-color: rgba(250, 252, 251, 0.55); */
+}
+
+.heading{
+  color: aquamarine;
+  font-weight: bolder;
 }
 
 .card_s {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
     background-image: url('https://i1.pickpik.com/photos/486/618/528/blackboard-learn-language-language-school-thumb.jpg');
+    
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
     background-image: url('https://www.picpedia.org/handwriting/images/code-of-practice.jpg');
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-4BDexyL2zbg%2FWLBUDTyAh8I%2FAAAAAAAAS2w%2FUm6YZsDyTwATYoe885Uownv_UXoKHOUZACLcB%2Fs320%2Fpre-test-intro.jpg&f=1&nofb=1');
-}
-
-.card--4 .card__img, .card--4 .card__img--hover {
-    background-image: url('https://img.freepik.com/free-vector/illustration-language-concept_53876-20610.jpg?size=626&ext=jpg');
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 .card__like {
@@ -62,7 +85,6 @@
     height: 235px;
   border-top-left-radius: 12px;
 border-top-right-radius: 12px;
-  
 }
 
 .card__info-hover {
@@ -87,10 +109,10 @@ top: 0;
   
 }
 .cardz {
-  margin-right: 25px;
+  /* margin-right: 25px; */
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
-    width: 33.3%;
+    width: 100%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -130,12 +152,6 @@ border-bottom-right-radius: 12px;
     font-weight: 500;
 }
 
-.card__author {
-    font-weight: 600;
-    text-decoration: none;
-    color: #AD7D52;
-}
-
 .cardz:hover .card__img--hover {
     height: 100%;
     opacity: 0.3;
@@ -150,15 +166,12 @@ border-bottom-right-radius: 12px;
     opacity: 1;
 }
 
-.Greeting {
-  margin-top: 12px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-border-bottom-left-radius: 12px;
-border-bottom-right-radius: 12px;
+.greeting {
+  margin-top: 100px;
+  border-radius: 12px;
   font-family:'Raleway', sans-serif;
   font-weight: 500;
-  background-color: white;
+  background-color: rgba(34, 0, 185, .55);
   box-shadow: 0 0 0 .8px 0 rgba(0, 0, 0, .8);
   ;
 }
