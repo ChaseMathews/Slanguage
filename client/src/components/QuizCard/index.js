@@ -125,10 +125,13 @@ export default function QuizCard() {
         API.updateExistingUserLesson(user._id, { resultsIndex: resultsIndex, lessonIndex: lessonIndex, resultObject })
           .then(res => {
             console.log(res);
+            API.getUserData(user._id)
+              .then(userData => setUser(userData.data))
+              .catch(err => console.log(err))
           })
           .catch(err => console.log(err));
-        } else {
-          console.log("no lessonIndex (lesson hasn't been practiced). setting resultObject to push new lesson to results array")
+      } else {
+        console.log("no lessonIndex (lesson hasn't been practiced). setting resultObject to push new lesson to results array")
         resultObject = {
           name: lesson,
           score: score
@@ -139,12 +142,15 @@ export default function QuizCard() {
           .then(res => {
             console.log('res', res);
             console.log("res.config.data", res.config.data);
+            API.getUserData(user._id)
+              .then(userData => setUser(userData.data))
+              .catch(err => console.log(err))
           })
           .catch(err => console.log(err));
       }
-    }    
+    }
   };
-  
+
 
 
 
@@ -255,13 +261,13 @@ export default function QuizCard() {
                     </div>
                     <br></br>
                     {hint &&
-                     <div>
-                       HINT: {quizContent[index].example}
-                     </div>
+                      <div>
+                        HINT: {quizContent[index].example}
+                      </div>
 
                     }
-                    
-                    
+
+
                   </Col>
                 ) : ""}
 
@@ -283,7 +289,7 @@ export default function QuizCard() {
 
                   {
                     modalEnd && disabled &&
-                    <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
+                    <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
                       <Modal.Header closeButton>
                         <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
                       </Modal.Header>

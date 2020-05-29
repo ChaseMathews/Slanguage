@@ -43,7 +43,8 @@ module.exports = {
                             res.json({
                                 username: dbUser.username,
                                 _id: dbUser._id,
-                                results: dbUser.results
+                                results: dbUser.results,
+                                currentLanguage: dbUser.currentLanguage
                             });
                         } else {
                             res.status(401).json({ message: 'Incorrect password. Try again!' });
@@ -56,13 +57,13 @@ module.exports = {
                 res.status(500).json(err.message);
             });
     },
-    // getUser: function ({ params }, res) {
-    //     console.log(params.id);
-    //     db.User
-    //         .findOne({ _id: params.id })
-    //         .then(dbUser => res.json(dbUser))
-    //         .catch(err => res.status(422).json(err));
-    // },
+    getUser: function ({ params }, res) {
+        console.log(params.id);
+        db.User
+            .findOne({ _id: params.id })
+            .then(dbUser => res.json(dbUser))
+            .catch(err => res.status(422).json(err));
+    },
     // update user's current language or existing lesson score (language AND lesson they've already practiced)
     update: function ({ params, body }, res) {
         console.log(params.id, body);

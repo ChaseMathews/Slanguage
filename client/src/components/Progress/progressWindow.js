@@ -7,12 +7,7 @@ import { Card, CardDeck, Button } from 'react-bootstrap';
 
 export default function ProgressCards() {
 
-
-
-
     return (
-
-
         <CardDeck>
 
             <Card>

@@ -16,9 +16,9 @@ export default {
         return axios.get("/api/quiz/slang/" + lang);
     },
     // // Gets the user with the given id
-    // getUserData: function (id) {
-    //     return axios.get(`/api/user/${id}`);
-    // },
+    getUserData: function (id) {
+        return axios.get(`/api/user/${id}`);
+    },
     // Finds user in db and sends back username and ID
     findUser: function (user) {
         return axios.post("/api/user/login", user);

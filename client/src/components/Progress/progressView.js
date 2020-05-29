@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from "react-router-dom";
 import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
 import API from "../../utils/API";
 import ProgressCards from './progressWindow';
-import LanguageProgress from './progressLanguage';
+import LanguageButtons from './progressButtons';
+import { UserContext } from '../../utils/Context';
 
 
 
 export default function ProgressPage() {
-
+  const { user, currentLang } = useContext(UserContext);
   return (
       <Container>
         {/* <Jumbotron>
@@ -18,7 +19,7 @@ export default function ProgressPage() {
       <h1 className="text-center">Check your Progress</h1>
       <Row>
         <Col md={{ span: 6, offset: 4 }}>
-          <LanguageProgress />
+          <LanguageButtons />
         </Col>
       </Row>
       <br></br>

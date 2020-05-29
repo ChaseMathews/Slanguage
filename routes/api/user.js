@@ -13,7 +13,7 @@ router.route("/login")
 router.route("/:id")
   .put(userController.update)
   .delete(userController.remove)
-  // .get(userController.getUser);
+  .get(userController.getUser);
 
 // Matches with "/api/user/results/:userId"
 router.route("/results/:userId")
