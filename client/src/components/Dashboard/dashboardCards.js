@@ -27,7 +27,7 @@ export default function DashboardCard() {
             </Row>
             
             <Jumbotron fluid className="display-flex grayBox">
-            {lang && <img className="dashboardBackground" src={"https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/" + lang.toLowerCase() + ".png"} />}
+            {/* {lang && <img className="dashboardBackground" src={"https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/" + lang.toLowerCase() + ".png"} />} */}
             
                <Row>
                     <Col className="greeting text-center">
