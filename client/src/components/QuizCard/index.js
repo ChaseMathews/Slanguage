@@ -21,6 +21,7 @@ export default function QuizCard() {
   const [disabled, setDisabled] = useState(false);
   const [display, setDisplay] = useState(false)
   const [modal, setModal] = useState(true);
+  const [hint, setHint] = useState(false)
   const history = useHistory();
   const { lang, lesson } = useParams();
   const language = lang || currentLang;
@@ -184,9 +185,7 @@ export default function QuizCard() {
                       {quizContent[index].phrase}
                     </div>
                     <br></br>
-                    <div>
-                      Example: {quizContent[index].example}
-                    </div>
+                    
                   </Col>
                 ) : ""}
 
