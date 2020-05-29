@@ -399,13 +399,13 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg ",
                     "targetWord": "Yiik'ih dah sizí ",
                     "audioToPlay": " ",
-                    "explanation": "This mean to be in deep sleep. "
+                    "explanation": "This means to be in deep sleep. "
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/26/20/08/alcohol-428392__340.jpg ",
                     "targetWord": "bił naak'ai'",
                     "audioToPlay": " ",
-                    "explanation": "This mean to be drunk "
+                    "explanation": "This means to be drunk "
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/02/06/21/55/valentines-day-3135789__340.jpg ",

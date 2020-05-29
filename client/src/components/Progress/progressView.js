@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
 import API from "../../utils/API";
 import ProgressCards from './progressWindow';
 import LanguageProgress from './progressLanguage';
@@ -9,12 +9,12 @@ import LanguageProgress from './progressLanguage';
 
 export default function ProgressPage() {
 
-
-
-
   return (
-    <Container>
-      <br></br>
+      <Container>
+        <Jumbotron>
+          <img src="https://giffiles.alphacoders.com/158/158667.gif" alt="under-construction"></img>
+        </Jumbotron>
+        {/* <br></br>
       <h1 className="text-center">Check your Progress</h1>
       <Row>
         <Col md={{ span: 6, offset: 4 }}>
@@ -27,8 +27,7 @@ export default function ProgressPage() {
         <Col md={{ span: 8, offset: 2 }}>
           <ProgressCards />
         </Col>
-      </Row>
-
-    </Container>
+      </Row> */}
+      </Container>
   )
 }

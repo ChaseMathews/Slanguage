@@ -1,13 +1,13 @@
 import React, { useState, useContext } from 'react';
-import { Container, Row, Col, Jumbotron, Card } from 'react-bootstrap';
+import { Row, Col, Jumbotron, Card } from 'react-bootstrap';
 import API from "../../utils/API";
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
 import { useHistory } from 'react-router-dom';
 import './style.css';
 import Image from 'react-bootstrap/Image'
-// import Polaroid from '../Polaroid'
 import { UserContext } from '../../utils/Context';
+
 
 export default function SignUp() {
 
@@ -69,15 +69,12 @@ return (
         <hr></hr>
         <Card.Body>
         <Row>
-            
-        <Col md={{ size: 6, offset: 2 }} >
-                    {/* <Polaroid /> */}
+        <Card>
+        <Col md={{ size: 10, offset: 1 }} >
                     <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
-
-
-                </Col>
-                
-                <Col md="4">
+                    </Col>
+                    </Card>
+                <Col md="3">
                     <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
                         {error &&
                             <span className='error'>{error}</span>
