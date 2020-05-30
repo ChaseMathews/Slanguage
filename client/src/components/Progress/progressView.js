@@ -1,25 +1,52 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { useParams } from "react-router-dom";
-import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 import API from "../../utils/API";
 import ProgressCards from './progressWindow';
-import LanguageButtons from './progressButtons';
+import LanguageButton from './progressButton';
 import { UserContext } from '../../utils/Context';
 
 
+export default function ProgressView() {
 
-export default function ProgressPage() {
-  const { user, currentLang } = useContext(UserContext);
+  const { user } = useContext(UserContext);
+  const [languageList, setLanguageList] = useState([]);
+  const [notPracticed, setNotPracticed] = useState([]);
+
+  const languages = ["Spanish", "French", "Italian", "German", "Navajo"];
+  const userDbResultArr = user.results;
+  const languagesPracticed = userDbResultArr.map(obj => obj.language);
+  const languagesNotPracticed = languages.filter(diff => !languagesPracticed.includes(diff));
+
+  const checkLanguages = () => {
+    setLanguageList(languagesPracticed);
+    setNotPracticed(languagesNotPracticed);
+  }
+
+  useEffect(() => {
+    checkLanguages();
+  }, [])
+
+
   return (
-      <Container>
-        {/* <Jumbotron>
-          <img src="https://giffiles.alphacoders.com/158/158667.gif" alt="under-construction"></img>
-        </Jumbotron> */}
-        <br></br>
+    <Container>
+      <br></br>
       <h1 className="text-center">Check your Progress</h1>
       <Row>
         <Col md={{ span: 6, offset: 4 }}>
-          <LanguageButtons />
+          {languageList.map(lang => (
+            <LanguageButton
+              language={lang}
+              disabled={false}
+              key={lang}
+            />
+          ))}
+          {notPracticed.map(lang => (
+            <LanguageButton
+              language={lang}
+              disabled={true}
+              key={lang}
+            />
+          ))}
         </Col>
       </Row>
       <br></br>
@@ -29,6 +56,6 @@ export default function ProgressPage() {
           <ProgressCards />
         </Col>
       </Row>
-      </Container>
+    </Container>
   )
 }
