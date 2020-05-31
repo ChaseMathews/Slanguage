@@ -9,6 +9,19 @@ body{
   background-attachment: fixed;
 }
 
+.backgroundImage{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+}
+
+.bigPicture{
+  margin-top: 5px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -48,4 +61,8 @@ body{
   border-left-style: solid;
   
 } 
+
+.container{
+  margin-top: 50px;
+}
 
