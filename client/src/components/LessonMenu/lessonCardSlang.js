@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from "react-router-dom";
 import { CardDeck, Card, Row, Button } from 'react-bootstrap';
+import CardGradient from '../CardGradient';
 
 
 
@@ -41,26 +42,19 @@ export default function SlangCard() {
     }
 
     return (
-
-
-        <CardDeck>
-
-            <Row>
-                <Card>
-
-                    <Card.Img variant="top" className="numberImage" img src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
-                    <Card.Body>
-                        <Card.Title><h2>Slang</h2></Card.Title>
-                        <hr />
-                        <Card.Text>
-                            {cardText} some slang words and phrases in <strong> {lang}</strong>!
+        <Row>
+        <CardGradient>
+            <Card border='danger' style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
+                <Card.Body>
+                    <Card.Title>Slang</Card.Title>
+                    <Card.Text>
+                        {cardText} some slang words and phrases in <strong> {lang}</strong>!
                     </Card.Text>
-                        <Link to={url + "slang"}><Button>Click Here!</Button></Link>
-                    </Card.Body>
-                </Card>
-            </Row>
-
-        </CardDeck>
-
+                    <Link to={url + "slang"}><Button>Click Here!</Button></Link>
+                </Card.Body>
+            </Card>
+        </CardGradient>
+        </Row>
     )
 }
