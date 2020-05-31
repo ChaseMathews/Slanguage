@@ -14,27 +14,23 @@ const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
 function LessonMenu() {
     const { lang } = useParams();
-    console.log(lang);
+    // console.log(lang);
 
     return (
         <Container>
-            <>
                 <LangCategory />
-            </>
             <hr />
-            <Col sm={{ span: 6, offset: 3 }}>
-                <Card className="justify-content-center text-center">
+
                     <SlideDown>
-                        <CardGradient>
+                        {/* <CardGradient> */}
                             <SlangCard />
-                        </CardGradient>
+                        {/* </CardGradient> */}
                     </SlideDown>
-                </Card>
-            </Col>
+
             <hr />
             <SlideDown>
                 <Row>
-                    <Col md={{ span: 8, offset: 2 }}>
+                    <Col>
                         <LessonCards />
                     </Col>
                 </Row>
