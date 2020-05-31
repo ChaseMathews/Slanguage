@@ -1,10 +1,20 @@
-import React, { useState, createContext } from 'react';
+import React, { useState, createContext, useEffect } from 'react';
 
 export const UserContext = createContext("");
 
 
 export default ({ children }) => {
 
+    // let userInfo = ""
+    // useEffect(() => {
+    //     userInfo = JSON.parse(localStorage.getItem("user"))
+    //     console.log(userInfo);
+    // }, [userInfo]);
+    
+    // let userInfo = JSON.parse(localStorage.getItem("user"))
+    // console.log(userInfo);
+
+    // const [user, setUser] = useState(userInfo);
     const [user, setUser] = useState();
     const [currentLang, setCurrentLang] = useState();
 
@@ -25,12 +35,12 @@ export default ({ children }) => {
 //     const [user, setUser] = useState();
 //     const [currentLang, setCurrentLang] = useState();
 
-//     useEffect(() => {
-//         const userInfo = localStorage.getItem("user");
-//         if (userInfo) {
-//             setUser(JSON.parse(userInfo));
-//         }
-//     }, []);
+    // useEffect(() => {
+    //     const userInfo = localStorage.getItem("user");
+    //     if (userInfo) {
+    //         setUser(JSON.parse(userInfo));
+    //     }
+    // }, []);
 
 //     useEffect(() => {
 //         localStorage.setItem("user", JSON.stringify(user));

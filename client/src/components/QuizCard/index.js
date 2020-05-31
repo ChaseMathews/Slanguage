@@ -222,7 +222,7 @@ export default function QuizCard() {
 
       {modal &&
 
-        <Modal show={show} onHide={handleClose} center styles={{ overlay: { background: "#B3F1F8" } }}>
+        <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
           <Modal.Header closeButton>
             <Modal.Title id="modalTitle">Ready to practice what you've learned?</Modal.Title>
           </Modal.Header>

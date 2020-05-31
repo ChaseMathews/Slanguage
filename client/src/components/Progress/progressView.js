@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Container, Button, Row, Col } from 'react-bootstrap';
-import API from "../../utils/API";
-import ProgressCards from './progressWindow';
+import { Container, Row, Col } from 'react-bootstrap';
+import ProgressCard from './progressCard';
 import LanguageButton from './progressButton';
 import { UserContext } from '../../utils/Context';
 
@@ -26,6 +25,9 @@ export default function ProgressView() {
     checkLanguages();
   }, [])
 
+  const [languageClicked, setLanguageClicked] = useState(user.currentLanguage);
+
+  const [resultObject] = user.results.filter(obj => obj.language === languageClicked);
 
   return (
     <Container>
@@ -38,12 +40,16 @@ export default function ProgressView() {
               language={lang}
               disabled={false}
               key={lang}
+              value={lang}
+              setLanguageClicked={setLanguageClicked}
+              variant={languageClicked === lang}
             />
           ))}
           {notPracticed.map(lang => (
             <LanguageButton
               language={lang}
               disabled={true}
+              value={lang}
               key={lang}
             />
           ))}
@@ -53,7 +59,16 @@ export default function ProgressView() {
 
       <Row>
         <Col md={{ span: 8, offset: 2 }}>
-          <ProgressCards />
+          {
+            resultObject.lesson.map(obj => (
+              <ProgressCard
+                language={languageClicked}
+                lesson={obj.name}
+                score={obj.score}
+                key={obj.name}
+              />
+            ))
+          }
         </Col>
       </Row>
     </Container>

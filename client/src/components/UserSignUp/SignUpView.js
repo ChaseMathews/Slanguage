@@ -54,7 +54,11 @@ export default function SignUp() {
                     )
                         .then(userObj => {
                             console.log(userObj.data);
-                            setUser(userObj.data);
+                            localStorage.setItem('user', JSON.stringify(userObj.data));
+                            const user = localStorage.getItem("user");
+                            if (user) {
+                                setUser(JSON.parse(user));
+                            }
                             history.push("/SelectLanguage");
                         })
                 })
@@ -66,28 +70,28 @@ export default function SignUp() {
     }
 
 
-return (
-    <Jumbotron>
-        
-        <hr></hr>
-        <Card.Body>
-        <Row>
-        <Card>
-        <Col md={{ size: 10, offset: 1 }} >
-                    <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
-                    </Col>
+    return (
+        <Jumbotron>
+
+            <hr></hr>
+            <Card.Body>
+                <Row>
+                    <Card>
+                        <Col md={{ size: 10, offset: 1 }} >
+                            <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
+                        </Col>
                     </Card>
-                <Col md="3">
-                    <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
-                        {error &&
-                            <span className='error'>{error}</span>
-                        }
-                        <br></br>
-                        <SignUpBtn handleFormSubmit={handleFormSubmit} />
-                    </SignUpForm>
-                </Col>
-                
-            </Row>
+                    <Col md="3">
+                        <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
+                            {error &&
+                                <span className='error'>{error}</span>
+                            }
+                            <br></br>
+                            <SignUpBtn handleFormSubmit={handleFormSubmit} />
+                        </SignUpForm>
+                    </Col>
+
+                </Row>
             </Card.Body>
         </Jumbotron>
     );

@@ -26,6 +26,7 @@ export default function NavBar() {
     API.deleteUser(user._id)
       .then(() => {
         console.log('Successfully deleted!');
+        localStorage.removeItem('user');
         history.push("/");
       })
 
@@ -67,7 +68,7 @@ export default function NavBar() {
     <Nav className="mr-auto">
     <Link to={"/DashboardCards/" + language} className="navbartext">My Dashboard</Link>
     <Link to="/About" className="navbartext">About</Link>
-      <Link to="/" className="navbartext">Sign Out</Link>
+      <Link to="/" onClick={localStorage.removeItem('user')} className="navbartext">Sign Out</Link>
     </Nav>
     <Nav>
       
