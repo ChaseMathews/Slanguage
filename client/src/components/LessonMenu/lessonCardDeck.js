@@ -43,14 +43,23 @@ export default function LessonCards() {
 
     return (
 
-
-        <CardDeck>
-
             <Row>
-                <CardGradient>
-                    <Card>
-                        {/* We want to seed the card Image/Title/Info from the database */}
+                <CardDeck>
+                {/* <CardGradient> */}
+
+                    <Card border='info' style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="https://i.pinimg.com/originals/4c/ea/e7/4ceae7ca22156bb1996f384a34afeab9.gif" />
+                        <Card.Body>
+                            <Card.Title>Numbers</Card.Title>
+                            <Card.Text>
+                            {cardText} numbers 1 - 10 in <strong> {lang}</strong>!
+                            </Card.Text>
+                            <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
+                        </Card.Body>
+                    </Card>
+
+                    {/* <Card>
+                        <Card.Img variant="top" src="" />
                         <Card.Body>
                             <Card.Title>Numbers</Card.Title>
                             <Card.Text className="card-text">
@@ -58,26 +67,22 @@ export default function LessonCards() {
                             </Card.Text>
                             <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
                         </Card.Body>
-                    </Card>
-                </CardGradient>
+                    </Card> */}
+                {/* </CardGradient> */}
 
-                <CardGradient>
-                    <Card>
-
-                        <Card.Img variant="top" src="https://media.tenor.com/images/ee40bd0af209d48bb1dff138041a9bad/tenor.gif" />
+                <Card border='info' style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif" />
                         <Card.Body>
-                            <Card.Title>Basic Travel Phrases</Card.Title>
+                            <Card.Title>Colors</Card.Title>
                             <Card.Text>
-                                Going on a trip? {cardText} some basic travel vocabulary!{' '}
+                            {cardText} how to say colors in <strong> {lang}</strong>!
                             </Card.Text>
-                            <Link to={url + "travel"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
-                </CardGradient>
+                    </CardDeck>
             </Row>
 
-
-        </CardDeck>
 
     )
 }
