@@ -21,9 +21,6 @@ export default function DashboardCard() {
             }}>
             </div>
             <Container>
-
-
-
                 <Jumbotron fluid className="display-flex grayBox">
                     <Row>
                         <Col>

@@ -1,3 +1,17 @@
-.about{
-    
+.profImages{
+    vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: coral;
 }
+
+.profImages:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .team{
+      color: white;
+  }
