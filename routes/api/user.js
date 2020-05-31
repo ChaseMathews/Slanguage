@@ -9,6 +9,14 @@ router.route("/")
 router.route("/login")
   .post(userController.findOne);
 
+// app.post('/login',
+//   passport.authenticate('local', {
+//     successRedirect: '/',
+//     failureRedirect: '/login',
+//     failureFlash: true
+//   })
+// );
+
 // Matches with "/api/user/:id"
 router.route("/:id")
   .put(userController.update)

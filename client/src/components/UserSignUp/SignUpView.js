@@ -53,12 +53,7 @@ export default function SignUp() {
                         }
                     )
                         .then(userObj => {
-                            console.log(userObj.data);
-                            localStorage.setItem('user', JSON.stringify(userObj.data));
-                            const user = localStorage.getItem("user");
-                            if (user) {
-                                setUser(JSON.parse(user));
-                            }
+                            setUser(userObj.data);
                             history.push("/SelectLanguage");
                         })
                 })

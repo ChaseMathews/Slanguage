@@ -12,13 +12,6 @@ export default function DashboardCard() {
 
     const language = lang || currentLang
 
-    // useEffect(() => {
-    //     const userInfo = localStorage.getItem("user");
-    //     console.log("userInfo", userInfo);
-    //     if (userInfo) {
-    //         setUser(JSON.parse(userInfo));
-    //     }
-    // }, [])
 
     return (
         <Container>

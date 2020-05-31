@@ -40,14 +40,7 @@ export default function HomeView() {
                 }
             )
                 .then(userObj => {
-                    console.log(userObj.data);
-                    localStorage.setItem('user', JSON.stringify(userObj.data));
-                    const user = localStorage.getItem("user");
-                    if (user) {
-                        setUser(JSON.parse(user));
-                    }
-                    console.log("localstorageuser", user);
-                    console.log("userstate", user);
+                    setUser(userObj.data);
                     history.push("/SelectLanguage");
                 })
                 .catch(err => {

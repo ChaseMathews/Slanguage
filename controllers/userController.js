@@ -1,5 +1,7 @@
 const db = require("../models");
 const bcrypt = require('bcryptjs');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
 
 // Defining methods (CRUD) for the UserController
 module.exports = {
@@ -42,9 +44,8 @@ module.exports = {
                         if (result) {
                             res.json({
                                 username: dbUser.username,
-                                _id: dbUser._id,
-                                results: dbUser.results,
-                                currentLanguage: dbUser.currentLanguage
+                                id: dbUser._id,
+                                results: dbUser.results
                             });
                         } else {
                             res.status(401).json({ message: 'Incorrect password. Try again!' });
@@ -57,6 +58,45 @@ module.exports = {
                 res.status(500).json(err.message);
             });
     },
+    // findOne: passport.use(new LocalStrategy(
+    //     function (username, password, done) {
+    //         db.User
+    //             .findOne({
+    //                 username: username
+    //             }),
+    //             function (err, user) {
+    //                 if (err) { return done(err); }
+    //                 if (!user) {
+    //                     return done(null, false, { message: 'Incorrect username.' });
+    //                 }
+    //                 if (!user.validPassword(password)) {
+    //                     return done(null, false, { message: 'Incorrect password.' });
+    //                 }
+    //                 return done(null, user)
+    //                 .then(dbUser => {
+    //                     if (!dbUser) {
+    //                         return res.json(user);
+    //                     } else {
+    //                         bcrypt.compare(body.password, dbUser.password, (err, result) => {
+    //                             if (result) {
+    //                                 res.json({
+    //                                     username: dbUser.username,
+    //                                     _id: dbUser._id,
+    //                                     results: dbUser.results,
+    //                                     currentLanguage: dbUser.currentLanguage
+    //                                 });
+    //                             } else {
+    //                                 res.status(401).json({ message: 'Incorrect password. Try again!' });
+    //                             }
+    //                         })
+    //                     }
+    //                 })
+    //                 .catch(err => {
+    //                     console.log(err);
+    //                     res.status(500).json(err.message);
+    //                 })
+    //             }
+    //     })),
     getUser: function ({ params }, res) {
         console.log(params.id);
         db.User
@@ -90,12 +130,12 @@ module.exports = {
     },
     updateExistingLesson: function ({ params, body }, res) {
         console.log(params.userId, body);
-        const updateStr = "results." + body.resultsIndex + ".lesson." + body.lessonIndex; 
+        const updateStr = "results." + body.resultsIndex + ".lesson." + body.lessonIndex;
         db.User
-            .findOneAndUpdate({ _id: params.userId }, {[updateStr]: body.resultObject}, { new: true })
+            .findOneAndUpdate({ _id: params.userId }, { [updateStr]: body.resultObject }, { new: true })
             .then(dbUser => res.json(dbUser))
             .catch(err => res.status(422).json(err));
-    }, 
+    },
     // delete user account
     remove: function ({ params }, res) {
         db.User

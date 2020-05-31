@@ -30,22 +30,6 @@ function App() {
   //   }
   // }, [user])
 
-  // useEffect(() => {
-  //   const user = localStorage.getItem("user") || "";
-  //   if (user) {
-  //     setUser(JSON.parse(user));
-  //   }
-  // }, [user])
-
-  // const userInfo = localStorage.getItem("user") || "";
-
-  // const setUserFromLocStor = () => {
-  //   if (userInfo) {
-  //     setUser(JSON.parse(userInfo));
-  //   }
-  // }
-  
-
 
   return (
     <>

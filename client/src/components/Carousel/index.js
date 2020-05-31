@@ -11,13 +11,6 @@ import { UserContext } from '../../utils/Context';
 export default function CarouselFlags() {
 
     const { user, setUser, setCurrentLang } = useContext(UserContext);
-
-    // useEffect(() => {
-    //     const userInfo = localStorage.getItem("user");
-    //     if (userInfo) {
-    //         setUser(JSON.parse(userInfo));
-    //     }
-    // }, [])
     
     const history = useHistory();
 

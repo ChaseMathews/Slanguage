@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export default function ProgressCard(props) {
 
     return (
-        // <CardDeck>
             <Card>
                 <Card.Img variant="top" src="" />
                 <Card.Body>
@@ -17,6 +16,5 @@ export default function ProgressCard(props) {
                     <Link to={`/QuizCard/${props.language}/${props.lesson}`}><Button>Retake Quiz</Button></Link>{' '}
                 </Card.Body>
             </Card>
-    //    </CardDeck>
     )
 }
