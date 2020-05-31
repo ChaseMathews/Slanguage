@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Route, Switch, useLocation, useHistory, useParams } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
@@ -18,6 +18,11 @@ import DashboardCard from './components/Dashboard/dashboardCards';
 function App() {
   const location = useLocation();
   const {lang} = useParams();
+  const [ language, setLanguage ] = useState(lang)
+  
+  useEffect(() => {
+    setLanguage(lang)
+  }, [lang])
 
 
   const { user, currentLang } = useContext(UserContext);
@@ -29,20 +34,20 @@ function App() {
       history.push("/")
     }
   }, [user])
-
-
+            
+console.log(useParams());
   return (
     <>
+     
       <UserProvider>
         {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage" ) ? <NavBar /> : ""}
+        <div className="bigPicture">
          <Switch>
           <Route exact path="/">
             <HomeView />
           </Route>
           <Route exact path="/UserSignUp" component={SignUp} />
           <Route exact path="/SelectLanguage" component={SelectLang} />
-          {/* <Route exact path="/Dashboard/:lang" component={Dashboard} /> */}
-          {/* <Route exact path="/Dashboard/:user" component={Dashboard} /> */}
           <Route exact path="/Progress" component={ProgressPage} />
           <Route path="/LessonMenu/:type/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
@@ -51,8 +56,9 @@ function App() {
           <Route exact path="/About" component={About} />
           <Route exact path="/DashboardCards/:lang" component={DashboardCard} />
         </Switch>
+        </div>
       </UserProvider>
-    </>
+    </ >
   );
 }
 
