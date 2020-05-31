@@ -3,23 +3,16 @@ import API from "../../utils/API"
 import { Card, Button, Container, Row, Col, Jumbotron, Modal } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
-// import ModalBox from '../Modal/index';
 import { UserContext } from '../../utils/Context';
 
 
 export default function QuizCard() {
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
-  let [results, setResults] = useState({
-    ButtonOne: true,
-    ButtonTwo: true,
-    ButtonThree: true
-  });
 
   const { user, setUser, currentLang } = useContext(UserContext);
   const [score, setScore] = useState(0)
   const [disabled, setDisabled] = useState(false);
-  const [display, setDisplay] = useState(false)
   const [modal, setModal] = useState(true);
   const [modalEnd, setModalEnd] = useState(false);
   const [hint, setHint] = useState(false)
@@ -30,7 +23,6 @@ export default function QuizCard() {
     button_1: "primary",
     button_2: "primary",
     button_3: "primary"
-
   })
 
 
@@ -41,7 +33,6 @@ export default function QuizCard() {
   function loadNumQuiz() {
     API.getNumQuizData(lang)
       .then(res => {
-        console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
       })
 
@@ -51,7 +42,6 @@ export default function QuizCard() {
   function loadSlangQuiz() {
     API.getSlangQuizData(lang)
       .then(res => {
-        console.log(res.data[0].questions)
         setQuizContent(res.data[0].questions)
       })
 
@@ -73,7 +63,6 @@ export default function QuizCard() {
     })
     btnsPrimary();
     setDisabled(false);
-    console.log(index);
     setHint(false)
   }
 
@@ -81,17 +70,14 @@ export default function QuizCard() {
     let resultsIndex;
     let lessonIndex;
     let resultObject = {};
-    console.log("user", user);
 
     for (let i = 0; i < user.results.length; i++) {
       if (user.results[i].language === currentLang) {
         resultsIndex = i;
         break
       }
-      console.log('resultsIndex', resultsIndex);
     }
     if (resultsIndex === undefined) {
-      console.log("no resultsIndex (language hasn't been practiced at all). setting resultObject")
       resultObject = {
         language: currentLang,
         lesson: [
@@ -103,45 +89,35 @@ export default function QuizCard() {
       }
       API.updateUserResults(user._id, resultObject)
         .then(res => {
-          console.log(res.data);
           setUser(res.data);
         })
         .catch(err => console.log(err));
     } else {
-      console.log("resultsIndex exists (language has been practiced). checking if lesson exists in results array")
       for (let i = 0; i < user.results[resultsIndex].lesson.length; i++) {
         if (user.results[resultsIndex].lesson[i].name === lesson) {
           lessonIndex = i;
           break
         }
       }
-      console.log("lessonIndex", lessonIndex);
       if (lessonIndex !== undefined) {
-        console.log("lessonIndex exists (lesson in this lang has already been practiced). setting resultObject with new score")
         resultObject = {
           ...user.results[resultsIndex].lesson[lessonIndex],
           score: score
         }
         API.updateExistingUserLesson(user._id, { resultsIndex: resultsIndex, lessonIndex: lessonIndex, resultObject })
           .then(res => {
-            console.log(res);
             API.getUserData(user._id)
               .then(userData => setUser(userData.data))
               .catch(err => console.log(err))
           })
           .catch(err => console.log(err));
       } else {
-        console.log("no lessonIndex (lesson hasn't been practiced). setting resultObject to push new lesson to results array")
         resultObject = {
           name: lesson,
           score: score
         }
-        console.log("resultObject", resultObject);
-        console.log("user result obj id", user.results[resultsIndex]._id);
         API.updateUserLesson(user.results[resultsIndex]._id, resultObject)
           .then(res => {
-            console.log('res', res);
-            console.log("res.config.data", res.config.data);
             API.getUserData(user._id)
               .then(userData => setUser(userData.data))
               .catch(err => console.log(err))
@@ -151,18 +127,11 @@ export default function QuizCard() {
     }
   };
 
-
-
-
-
   const handleScore = e => {
     e.preventDefault()
-    console.log(e.target.value)
 
     const { value } = e.target
     const { name } = e.target
-    console.log(name)
-    console.log(quizContent[index].answerOptions)
 
     if (quizContent[index].correctAnswer === value) {
       setBtnVarient({
@@ -209,7 +178,6 @@ export default function QuizCard() {
     history.push(`/DashboardCards/${language}`);
   }
 
-  // console.log(modal);
   const [show, setShow] = useState(true);
 
   const handleClose = () => {

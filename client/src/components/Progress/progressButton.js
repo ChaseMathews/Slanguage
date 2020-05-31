@@ -4,13 +4,13 @@ import { Button } from 'react-bootstrap';
 export default function LanguageButton(props) {
 
   return (
-    <Button 
+    <Button
       variant={props.variant ? "success" : "danger"}
       disabled={props.disabled}
       name={props.language}
       value={props.value}
       onClick={() => props.setLanguageClicked(props.language)}
-      >
+    >
       {props.language}
     </Button>
   )
