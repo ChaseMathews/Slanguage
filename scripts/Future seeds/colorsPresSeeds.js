@@ -39,12 +39,7 @@
                 "audioToPlay": " ",
                 "explanation": "Purple"
             },
-            {
-                "imageUrl": "https://cdn.pixabay.com/photo/2015/12/08/00/28/elephants-1081749__480.jpg",
-                "targetWord": "gris",
-                "audioToPlay": " ",
-                "explanation": "Grey"
-            },
+           
             {
                 "imageUrl": "https://cdn.pixabay.com/photo/2018/02/21/05/17/cat-3169476__480.jpg",
                 "targetWord": "negro",
@@ -70,12 +65,7 @@
                 "audioToPlay": " ",
                 "explanation": "Brown"
             },
-            {
-                "imageUrl": "https://cdn.pixabay.com/photo/2020/05/26/18/48/lily-of-the-nile-5224288__480.jpg",
-                "targetWord": "azul añil",
-                "audioToPlay": " ",
-                "explanation": "Indigo"
-            }
+           
         ]
     },
 
