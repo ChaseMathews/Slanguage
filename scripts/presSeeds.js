@@ -324,11 +324,77 @@ module.exports = [
                     "phonetic": "dee-EH-chee"
                 }
             ]
+        },
+        {
+            "language": "Portuguese",
+            "content": [
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
+                    "targetWord": "um/uma",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                    "targetWord": "dois/duas",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
+                    "targetWord": "três",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
+                    "targetWord": "quatro",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
+                    "targetWord": "cinco",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
+                    "targetWord": "seis",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
+                    "targetWord": "sete",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
+                    "targetWord": "oito",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
+                    "targetWord": "nove",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
+                    "targetWord": "dez",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                }
+            ]
         }
     ],
     [
         {
             "language": "Spanish",
+            "dialect": "Mexican",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
@@ -393,7 +459,272 @@ module.exports = [
             ]
         },
         {
+            "language": "Spanish",
+            "dialect": "Puerto Rican",
+            "content": [
+                {
+                    "imageUrl": "https://hrexach.files.wordpress.com/2018/11/cutepr.jpg?w=584",
+                    "targetWord": "Boricua",
+                    "audioToPlay": "",
+                    "explanation": "The local name for a Puerto Rican."
+                },
+                {
+                    "imageUrl": "https://lh3.googleusercontent.com/proxy/kycl-glAFKjFiMhpuoPuJe2H5c0se9X2Lo45NSLV-Y_l6v0QkR1wN_dA7m839TGXPMUdAWQrHfkl6pHs6GLWVtksKDZKi_erIVVDSr1QJ2b2UJ5zFxoIy-hDXZxFoVkBRScFdoFidLWQNeA9jsJX923kSjzWZYHPowd354mxgdkRmYOtzKAt9mL0Vf2LKw8buCXnDKZFRE4iz_xV95QDok13f1Q19a6NfHLC_KtljpYTo7E",
+                    "targetWord": "Corillo",
+                    "audioToPlay": "",
+                    "explanation": "Refers to a group of friends"
+                },
+                {
+                    "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
+                    "targetWord": "A mí, plín",
+                    "audioToPlay": "",
+                    "explanation": "A slightly vulgar way of saying \"I don't care.\"",
+                },
+                {
+                    "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
+                    "targetWord": "Janguear",
+                    "audioToPlay": "",
+                    "explanation": "To hang out"
+                },
+                {
+                    "imageUrl": "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/surfing-dog-photo-is-funner-or-funnest-a-real-word-5670-6d512231d0a52079b0c9fbf474f9a6c9@1x.jpg",
+                    "targetWord": "Al garete",
+                    "audioToPlay": "",
+                    "explanation": "Really fun and crazy"
+                },
+                {
+                    "imageUrl": "https://daily.jstor.org/wp-content/uploads/2017/12/traffic_jam_1050x700.jpg",
+                    "targetWord": "Tapón",
+                    "audioToPlay": "",
+                    "explanation": "Traffic"
+                },
+                {
+                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/A_mess_of_wires.jpg",
+                    "targetWord": "Revolú",
+                    "audioToPlay": "",
+                    "explanation": "A mess"
+                },
+                {
+                    "imageUrl": "https://www.dictionary.com/e/wp-content/uploads/2017/11/words_for_gossip3.jpg",
+                    "targetWord": "Bochinche",
+                    "audioToPlay": "",
+                    "explanation": "Gossip"
+                },
+                {
+                    "imageUrl": "https://akm-img-a-in.tosshub.com/indiatoday/styles/photo_slider_753x543/public/images/photogallery/201404/13_042514045937.jpg?0MjddSYiAj2VlTBXq9A3vbEtGVE6ZI1F",
+                    "targetWord": "Gato/Gata",
+                    "audioToPlay": "",
+                    "explanation": "Literally means cat. Used to refer to a very good-looking man/woman."
+                },
+                {
+                    "imageUrl": "https://pics.me.me/thumb_weeeepaaaa-wepa-23611602.png",
+                    "targetWord": "¡Wepa!",
+                    "audioToPlay": "",
+                    "explanation": "An exclamation to express joy and utter happiness. Be sure to yell it nasally and hold the \"e\" and \"a\" for a long time."
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Argentinian",
+            "content": [
+                {
+                    "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/575cd59611175.560d6dd950dcc.jpg",
+                    "targetWord": "¡Che, boludo!",
+                    "audioToPlay": "",
+                    "explanation": "Two of the most common words you'll hear in Argentina. \"Che\" is loosely translated as \"hey,\" or a segue into a conversation. \"Boludo\" can mean anything from \"dude\" to \"idiot.\""
+                },
+                {
+                    "imageUrl": "https://cdn.memegenerator.es/imagenes/memes/full/7/3/7038674.jpg",
+                    "targetWord": "¿Cómo andás?",
+                    "audioToPlay": "",
+                    "explanation": "Used as \"what's up?\" or \"¿qué tal?\" (note the use of 'vos' instead of 'tú')"
+                },
+                {
+                    "imageUrl": "https://yt3.ggpht.com/a/AGF-l79NPPz0jUuhQfPtEGW-7SUoNGnxLAxygp_kvQ=s900-c-k-c0xffffffff-no-rj-mo",
+                    "targetWord": "Chabón/chabona",
+                    "audioToPlay": "",
+                    "explanation": "Guy/girl or dude/dudette"
+                },
+                {
+                    "imageUrl": "https://previews.123rf.com/images/noravector/noravector1710/noravector171000033/87490561-super-cool-comic-book-style-word-on-abstract-background-.jpg",
+                    "targetWord": "Re copado",
+                    "audioToPlay": "",
+                    "explanation": "\"Re\" is used frequently to mean \"really/very.\" \"Copado\" means \"cool/awesome.\""
+                },
+                {
+                    "imageUrl": "https://dobienews.scuc.txed.net/wp-content/uploads/2020/04/couch-900x629.jpg",
+                    "targetWord": "Estar al pedo/estar en pedo",
+                    "audioToPlay": "",
+                    "explanation": "Not doing anything. Literally \"being to the fart/being in fart.\""
+                },
+                {
+                    "imageUrl": "https://www.santarosa.gob.ar/storage/2018/01/26219706_1740803469561847_2346210351052712346_n.jpg",
+                    "targetWord": "Ponerse las pilas",
+                    "audioToPlay": "",
+                    "explanation": "Literally \"to put your batteries in.\" Used as \"get some energy! / put in effort!\" It can be used to motivate someone to do something like get out of bed or go to a party: \"¡Ponete las pilas!\" (note the use of 'vos' instead of 'tú')"
+                },
+                {
+                    "imageUrl": "https://previews.123rf.com/images/rukach/rukach1802/rukach180200115/95796784-pop-art-retro-style-comic-book-panel-with-girl-talking-nonsense-small-talk-chatter-in-speech-bubble-.jpg",
+                    "targetWord": "Mandar fruta",
+                    "audioToPlay": "",
+                    "explanation": "To blab on without making much sense. To speak nonsense."
+                },
+                {
+                    "imageUrl": "https://www.inventorsdigest.com/wp-content/uploads/2018/01/lazy-sloth-1080x640.gif",
+                    "targetWord": "Tener fiaca",
+                    "audioToPlay": "",
+                    "explanation": "Being too lazy to do something; probably not acceptable in the workplace."
+                },
+                {
+                    "imageUrl": "https://i0.wp.com/edairynews.com/es/wp-content/uploads/2018/11/remando-en-dulce-de-leche.jpg?fit=750%2C360&ssl=1",
+                    "targetWord": "Estar remando en dulce de leche",
+                    "audioToPlay": "",
+                    "explanation": "Literally \"To be rowing in dulce de leche (a thick caramel-like substance).\" Use it to describe being in a situation that's hard to get out of."
+                },
+                {
+                    "imageUrl": "https://www.attorneyatwork.com/wp-content/uploads/2018/11/Get-to-the-Point-770.jpg",
+                    "targetWord": "Ir a los bifes",
+                    "audioToPlay": "",
+                    "explanation": "Literally \"to go to the steaks,\" it's used to say \"get to the point!\""
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Spain",
+            "content": [
+                {
+                    "imageUrl": "https://www.fluentu.com/blog/spanish/wp-content/uploads/sites/2/2015/05/spanish-slang2.jpg",
+                    "targetWord": "Tío/Tía",
+                    "audioToPlay": "",
+                    "explanation": "Literally means \"uncle/aunt.\" Use it as \"friend, pal, dude.\""
+                },
+                {
+                    "imageUrl": "https://fortroubledteens.com/images/group-friends-hug-smile-happy.jpg",
+                    "targetWord": "Chaval(a)",
+                    "audioToPlay": "",
+                    "explanation": "Kid, youngster"
+                },
+                {
+                    "imageUrl": "https://funkidsguide.com/wp-content/uploads/2018/12/Ned-Flanders-550x330.jpg",
+                    "targetWord": "Ser majo/a",
+                    "audioToPlay": "",
+                    "explanation": "To be nice/friendly"
+                },
+                {
+                    "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--H-dVVSIB--/c_crop,x_10,y_10/c_fit,w_1109/c_crop,g_north_west,h_1260,w_1260,x_-76,y_-94/co_rgb:c62b29,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_1260/fl_layer_apply,g_north_west,x_-76,y_-94/bo_0px_solid_white/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1525249428/production/designs/2647017_0.jpg",
+                    "targetWord": "Vale",
+                    "audioToPlay": "",
+                    "explanation": "Literally means \"It's worth it.\" It's used VERY often to say \"Okay.\" Spaniards often like to say it in multiples: \"Vale, vale, vale.\""
+                },
+                {
+                    "imageUrl": "https://image.slidesharecdn.com/howtosaycoolin13spanishspeakingcountries-150206102725-conversion-gate01/95/how-to-say-cool-in-13-spanish-speakng-countries-2-638.jpg?cb=1423219034",
+                    "targetWord": "Guay",
+                    "audioToPlay": "",
+                    "explanation": "Cool/Great"
+                },
+                {
+                    "imageUrl": "https://memegenerator.net/img/instances/59251756/hey-thats-really-cool.jpg",
+                    "targetWord": "¡Eso mola mucho!",
+                    "audioToPlay": "",
+                    "explanation": "That's really cool!"
+                },
+                {
+                    "imageUrl": "https://memegenerator.net/img/instances/20788827.jpg",
+                    "targetWord": "¡Qué chulo!",
+                    "audioToPlay": "",
+                    "explanation": "How lovely/cool!"
+                },
+                {
+                    "imageUrl": "https://www.dailymoss.com/wp-content/uploads/2019/03/f52011768acad7db1fbcf2224a6fc3609b7c31e8450bffa783c0d3317b0b1724.png",
+                    "targetWord": "Me importa un pimiento",
+                    "audioToPlay": "",
+                    "explanation": "Literally meaning \"It is as important as a pepper,\" use this to say \"I don't care.\""
+                },
+                {
+                    "imageUrl": "https://i.imgflip.com/2022e8.jpg",
+                    "targetWord": "Pijo/a",
+                    "audioToPlay": "",
+                    "explanation": "Snob/bratty/spoiled. Think of Veruca Salt from Charlie and the Chocolate Factory."
+                },
+                {
+                    "imageUrl": "https://blog.fuertehoteles.com/wp-content/uploads/2017/11/tapas.jpg",
+                    "targetWord": "Tapear",
+                    "audioToPlay": "",
+                    "explanation": "To eat tapas. \"Tapas\" are a type of appetizer that’s specific to Spain."
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Colombian",
+            "content": [
+                {
+                    "imageUrl": "https://steemitimages.com/DQmQbki6acfNKT9cX3MWBxsxSTHEEk16PVeqyvGyCXSVu6i/friend.jpg",
+                    "targetWord": "Parce, Parcero/a",
+                    "audioToPlay": "",
+                    "explanation": "Use these to refer to a friend."
+                },
+                {
+                    "imageUrl": "https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/46643978_317010605805170_3565280338416500736_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=J-SnHyN74GAAX8EwHFM&_nc_ht=scontent.fphx1-1.fna&oh=71632f912d24e41a2944449ccfc792bc&oe=5EF345B2",
+                    "targetWord": "¡Qué chévere!",
+                    "audioToPlay": "",
+                    "explanation": "How cool/awesome!"
+                },
+                {
+                    "imageUrl": "https://revistas.elheraldo.co/sites/default/files/2017/03/30/evento/shutterstock_154934858_web_lives.jpg",
+                    "targetWord": "Rumbear",
+                    "audioToPlay": "",
+                    "explanation": "To go out partying. \"Rumba\" means \"party.\""
+                },
+                {
+                    "imageUrl": "https://thoughtcatalog.files.wordpress.com/2013/02/25friendslarge.jpg?w=584&h=388",
+                    "targetWord": "Parche",
+                    "audioToPlay": "",
+                    "explanation": "A group of friends getting together to do something. If you don't have much going on in your social life, you are \"desparchado,\" or without \"parche.\""
+                },
+                {
+                    "imageUrl": "https://www.liberaldictionary.com/wp-content/uploads/2018/11/thingy.png",
+                    "targetWord": "Vaina",
+                    "audioToPlay": "",
+                    "explanation": "Stuff/Thing(y)"
+                },
+                {
+                    "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--SXi-guyk--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1564295312/production/designs/5437911_0.jpg",
+                    "targetWord": "¡De una!",
+                    "audioToPlay": "",
+                    "explanation": "Yes, absolutely! / Let's do it!"
+                },
+                {
+                    "imageUrl": "https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/133/5/133-5-101P/The-Dude-Bruno-Morphet-Poster.jpg",
+                    "targetWord": "Man",
+                    "audioToPlay": "",
+                    "explanation": "Said in a Colombian accent, it's slang for a guy or a dude."
+                },
+                {
+                    "imageUrl": "https://memegenerator.net/img/instances/81284346.jpg",
+                    "targetWord": "¿Qué más?",
+                    "audioToPlay": "",
+                    "explanation": "Used within greetings, \"¡Hola! ¿Qué mas?\" literally means \"Hi! What else?\" But it's actually used as \"Hi! What's up?\" or \"Hi! How's it going?\""
+                },
+                {
+                    "imageUrl": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/10/Thumbs.Up_-503x300.jpg",
+                    "targetWord": "Bacano",
+                    "audioToPlay": "",
+                    "explanation": "Another word for \"chévere,\" or \"really good/cool!\""
+                },
+                {
+                    "imageUrl": "https://i.pinimg.com/originals/d8/b4/71/d8b47130d0d3763fccfacedf7196041f.jpg",
+                    "targetWord": "Guaro",
+                    "audioToPlay": "",
+                    "explanation": "Refers to Colombia's popular aniseed-flavored spirit drink \"aguardiente.\""
+                }
+            ]
+        },
+        {
             "language": "Navajo",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg ",
@@ -441,7 +772,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg ",
                     "targetWord": "Sáanii t'óó yitah yilwoł ",
                     "audioToPlay": " ",
-                    "explanation": "A player or pimp "
+                    "explanation": "A player or pimp"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png ",
@@ -459,6 +790,7 @@ module.exports = [
         },
         {
             "language": "French",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://founterior.com/wp-content/uploads/2014/09/Cafe-in-Paris-with-tables-and-chairs-outside.jpg",
@@ -470,7 +802,7 @@ module.exports = [
                     "imageUrl": "https://www.clipartkey.com/mpngs/m/76-763534_silhouette-man-walking-free-picture-man-silhouette-png.png",
                     "targetWord": "Keum ",
                     "audioToPlay": "",
-                    "explanation": "Guy. A verlan play on the slang word for guy, mec." 
+                    "explanation": "Guy. A verlan play on the slang word for guy, mec."
                 },
                 {
                     "imageUrl": "https://4570book.info/wp-content/uploads/2020/02/rudeness-clipart-of-children-free-rude-girl-cliparts-download-free-clip-art-free-clip-children-rudeness-of-clipart-.jpg",
@@ -524,6 +856,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://www.amny.com/wp-content/uploads/2015/03/image-1-740x415.jpg",
@@ -589,6 +922,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",
@@ -651,6 +985,407 @@ module.exports = [
                     "explanation": "To kiss with tongue."
                 }
             ]
+        },
+        {
+            "language": "Portuguese",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/04/05/23/55/man-2206823__480.jpg",
+                    "targetWord": "Laí bro?",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) A slang way to ask what's up."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/13/01/22/monocle-155626__480.png",
+                    "targetWord": "Coxinha",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) A refernce to a chicken dish, as slang it references an uperrclass person."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/10/01/12/04/hands-2805248__480.png",
+                    "targetWord": "Botar fé",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) This literally means to put faith in, but as slang it means you believe in someone or something."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/04/20/31/sheep-2372148__480.jpg",
+                    "targetWord": "Trocar ideia",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) This phrase literally means to exchange ideas, but as slang it can mean a conversation."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/12/11/20/06/cat-3869583__480.jpg",
+                    "targetWord": "Sangue bom",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Literally meaning good blood, as slang it means somebody is really nice."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/02/19/10/28/thanks-1209247__480.jpg",
+                    "targetWord": "Valeu",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) This phrase equates to, it was worth it. When used as slang, it means thank you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/04/03/11/55/bus-312565__480.png",
+                    "targetWord": "Busão",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Slang for the bus."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/02/02/21/42/bored-3126445__480.jpg",
+                    "targetWord": "Deprê",
+                    "audioToPlay": " ",
+                    "explanation": "An abbreviation for the word depressed, as slang it describes someone or something that is depressing or in some cases decadent."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/05/26/00/48/basketball-784097__480.jpg",
+                    "targetWord": "Gringo",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Unlike other Latin American countries it's a not as negative and is a slang term for foreigner."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/06/15/16/31/girl-1459284__480.png",
+                    "targetWord": "Tipo",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) A bad language habit used the same way Americans would use the word like to generalize."
+                }
+            ]
         }
+    ],
+
+    [
+
+        {
+            "language": "Spanish",
+            "content": [
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                }
+            ]
+        },
+
+        {
+            "language": "French",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Ça m'énerve",
+                    "audioToPlay": " ",
+                    "explanation": "I'm pissed off. Mild swearing."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Merde",
+                    "audioToPlay": " ",
+                    "explanation": "Shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Putain",
+                    "audioToPlay": " ",
+                    "explanation": "Literally means whore, but is interchangeable as the word fuck. This word can be used if you're happy, angry, or sad."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Bordel",
+                    "audioToPlay": " ",
+                    "explanation": "Literally means brothel, and like putain it's simaler to fuck except that it's almost exclusively used in the negative."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Tabernak",
+                    "audioToPlay": " ",
+                    "explanation": "(Quebec) This literally means the tabernacle, but as a swear word it means fuck. Most Canadian French profanity is related to the Catholic church."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Ça me fait chier",
+                    "audioToPlay": " ",
+                    "explanation": "This literally means, it makes me shit. You use this to express anger."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Je me fais chier",
+                    "audioToPlay": " ",
+                    "explanation": "This literally means I make myself shit. This is used to express that you're so bored you'd rather shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Ça casse les couilles",
+                    "audioToPlay": " ",
+                    "explanation": "It breaks my balls."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "J'en ai rien a foutre",
+                    "audioToPlay": " ",
+                    "explanation": "This means I don't have the sperm to give, or as slang, I don't give a fuck."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Enculé",
+                    "audioToPlay": " ",
+                    "explanation": "This is one of the most extreme swear words in French. It literally means to fuck in the ass."
+                }
+            ]
+        },
+
+        {
+            "language": "German",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "scheiße",
+                    "audioToPlay": " ",
+                    "explanation": "Shit, but it can also be used as fuck."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "arschloch",
+                    "audioToPlay": " ",
+                    "explanation": "Asshole."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "arsch",
+                    "audioToPlay": " ",
+                    "explanation": "Ass."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "schlampe",
+                    "audioToPlay": " ",
+                    "explanation": "Slut."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "nutte",
+                    "audioToPlay": " ",
+                    "explanation": "Prostitute."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "wichser",
+                    "audioToPlay": " ",
+                    "explanation": "Jerk off, wanker."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "hurensohn",
+                    "audioToPlay": " ",
+                    "explanation": "Son of a bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "ekelhafter bastard",
+                    "audioToPlay": " ",
+                    "explanation": "Disgusting bastard."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "fick dich",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "fick deine mutter",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck your mother."
+                }
+            ]
+        },
+
+        {
+            "language": "Italian",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Merda",
+                    "audioToPlay": " ",
+                    "explanation": "Shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Pezzo di merda",
+                    "audioToPlay": " ",
+                    "explanation": "Piece of shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Stronza",
+                    "audioToPlay": " ",
+                    "explanation": "Bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cazzo",
+                    "audioToPlay": " ",
+                    "explanation": "Dick, used like shit or fuck. Considered not too bad of a swear word."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Vaffanculo",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck your ass, fuck off, fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Testa di cazzo",
+                    "audioToPlay": " ",
+                    "explanation": "Dickhead."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Fregna",
+                    "audioToPlay": " ",
+                    "explanation": "Cunt (used as, oh shit, in Rome)"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Figlio di puttana",
+                    "audioToPlay": " ",
+                    "explanation": "Son of a bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Coglione",
+                    "audioToPlay": " ",
+                    "explanation": "This literally means a big testicle, but is used to call somebody dumb."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cacacazzo",
+                    "audioToPlay": " ",
+                    "explanation": "You're shitting dicks."
+                }
+
+            ]
+        },
+
+        {
+            "language": "Portuguese",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Merda",
+                    "audioToPlay": " ",
+                    "explanation": "Shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Foda-se!",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Caralho",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Fuck, or penis."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Fudeu",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Fuck."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Deu Merda",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil)  "
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cacête",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Dick."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Boceta",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Pussy."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Filho Da Puta",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Son of a bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Vai tomar no cu",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Go fuck yourself in the ass, fuck off, fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Sua mãe",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Your mother."
+                }
+
+            ]
+        }
+
     ]
 ]

@@ -7,39 +7,7 @@ import CardGradient from '../CardGradient'
 
 export default function LessonCards() {
     const { lang } = useParams();
-
     const { type } = useParams();
-
-    let url = "";
-    let cardText = "";
-
-    if (type === "pres") {
-        cardText = "Learn";
-        if (lang === "Spanish") {
-            url = "/Spanish/presentation/"
-        } else if (lang === "Navajo") {
-            url = "/Navajo/presentation/"
-        } else if (lang === "French") {
-            url = "/French/presentation/"
-        } else if (lang === "German") {
-            url = "/German/presentation/"
-        } else if (lang === "Italian") {
-            url = "/Italian/presentation/"
-        }
-    } else if (type === "quiz") {
-        cardText = "Practice";
-        if (lang === "Spanish") {
-            url = "/QuizCard/Spanish/"
-        } else if (lang === "Navajo") {
-            url = "/QuizCard/Navajo/"
-        } else if (lang === "French") {
-            url = "/QuizCard/French/"
-        } else if (lang === "German") {
-            url = "/QuizCard/German/"
-        } else if (lang === "Italian") {
-            url = "/QuizCard/Italian/"
-        }
-    }
 
     return (
 
@@ -51,10 +19,10 @@ export default function LessonCards() {
                         <Card.Img variant="top" src="https://i.pinimg.com/originals/4c/ea/e7/4ceae7ca22156bb1996f384a34afeab9.gif" />
                         <Card.Body>
                             <Card.Title>Numbers</Card.Title>
-                            <Card.Text>
-                            {cardText} numbers 1 - 10 in <strong> {lang}</strong>!
+                            <Card.Text className="card-text">
+                            {type === 'quiz' ? `Practice ` : `Learn `} numbers 1 - 10 in <strong> {lang}</strong>!{' '}
                             </Card.Text>
-                            <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/numbers` : `/${lang}/presentation/numbers`}><Button>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
 
@@ -75,9 +43,9 @@ export default function LessonCards() {
                         <Card.Body>
                             <Card.Title>Colors</Card.Title>
                             <Card.Text>
-                            {cardText} how to say colors in <strong> {lang}</strong>!
+                                Going on a trip? {type === 'quiz' ? `Practice ` : `Learn `} some basic travel vocabulary!{' '}
                             </Card.Text>
-                            <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel` : `/${lang}/presentation/travel`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                     </CardDeck>

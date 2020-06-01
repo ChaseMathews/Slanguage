@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import "./style.css"
 import { Jumbotron, Card, Row, Col, Container, Button, CardDeck } from 'react-bootstrap';
@@ -6,11 +6,12 @@ import { UserContext } from '../../utils/Context';
 
 
 export default function DashboardCard() {
-    const { user, currentLang } = useContext(UserContext);
+    const { user, setUser, currentLang } = useContext(UserContext);
 
     const { lang } = useParams();
 
     const language = lang || currentLang
+
 
     return (
         <>

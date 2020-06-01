@@ -7,54 +7,24 @@ import CardGradient from '../CardGradient';
 
 export default function SlangCard() {
     const { lang } = useParams();
-
     const { type } = useParams();
-
-    let url = "";
-    let cardText = "";
-
-    if (type === "pres") {
-        cardText = "Learn";
-        if (lang === "Spanish") {
-            url = "/Spanish/presentation/"
-        } else if (lang === "Navajo") {
-            url = "/Navajo/presentation/"
-        } else if (lang === "French") {
-            url = "/French/presentation/"
-        } else if (lang === "German") {
-            url = "/German/presentation/"
-        } else if (lang === "Italian") {
-            url = "/Italian/presentation/"
-        }
-    } else if (type === "quiz") {
-        cardText = "Practice";
-        if (lang === "Spanish") {
-            url = "/QuizCard/Spanish/"
-        } else if (lang === "Navajo") {
-            url = "/QuizCard/Navajo/"
-        } else if (lang === "French") {
-            url = "/QuizCard/French/"
-        } else if (lang === "German") {
-            url = "/QuizCard/German/"
-        } else if (lang === "Italian") {
-            url = "/QuizCard/Italian/"
-        }
-    }
 
     return (
         <Row>
-        <CardGradient>
-            <Card border='danger' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
-                <Card.Body>
-                    <Card.Title>Slang</Card.Title>
-                    <Card.Text>
-                        {cardText} some slang words and phrases in <strong> {lang}</strong>!
-                    </Card.Text>
-                    <Link to={url + "slang"}><Button>Click Here!</Button></Link>
-                </Card.Body>
-            </Card>
-        </CardGradient>
+            <CardGradient>
+                <Card border='danger' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
+                    <Card.Body>
+                        <Card.Title>Slang</Card.Title>
+                        <Card.Text>
+                            {type === 'quiz' ? `Practice ` : `Learn `} some slang words and phrases in <strong> {lang}</strong>!
+                        </Card.Text>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/slang` : `/${lang}/presentation/slang`}>
+                            <Button>Click Here!</Button>
+                        </Link>
+                    </Card.Body>
+                </Card>
+            </CardGradient>
         </Row>
     )
 }

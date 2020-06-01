@@ -45,7 +45,6 @@ export default function HomeView() {
                 }
             )
                 .then(userObj => {
-                    console.log(userObj.data);
                     setUser(userObj.data);
                     history.push("/SelectLanguage");
                 })
