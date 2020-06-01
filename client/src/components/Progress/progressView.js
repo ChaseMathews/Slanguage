@@ -19,58 +19,40 @@ export default function ProgressView() {
   const languagesNotPracticed = languages.filter(diff => !languagesPracticed.includes(diff));
   const [languageClicked, setLanguageClicked] = useState(user.currentLanguage);
   const [resultObject] = user.results.filter(obj => obj.language === languageClicked);
-  // const [modal, setModal] = useState(false);
-  // const [show, setShow] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [show, setShow] = useState(false);
   const history = useHistory();
 
-  
+
   const checkLanguages = () => {
     console.log(resultObject);
     if (resultObject) {
       setLanguageList(languagesPracticed)
       setNotPracticed(languagesNotPracticed)
-    } 
-    // else {
-    //   setModal(true)
-    //   setShow(true)
-    // }
+    }
+    else {
+      setModal(true)
+      setShow(true)
+    }
   }
 
   useEffect(() => {
     checkLanguages();
   }, [])
 
-  // const goToDash = () => {
-  //   setModal(false);
-  //   history.push(`/DashboardCards/${user.currentLanguage}`);
-  // }
+  const goToDash = () => {
+    setModal(false);
+    history.push(`/DashboardCards/${user.currentLanguage}`);
+  }
 
-  // const handleClose = () => {
-  //   setShow(false);
-  //   setModal(false);
-  // };
+  const handleClose = () => {
+    setShow(false);
+    setModal(false);
+  };
 
 
   return (
     <Container>
-      {/* {
-        modal ?
-        <Modal 
-        show={show} 
-        onHide={handleClose} 
-        backdrop="static" 
-        center 
-        styles={{ overlay: { background: "#B3F1F8" } }}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="modalTitle">You haven't taken any practice quizzes yet! Go to My Dashboard to get started!</Modal.Title>
-          </Modal.Header>
-          <Modal.Footer>
-            <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
-          </Modal.Footer>
-        </Modal>
-      : */}
-      <>
       <br></br>
       <h1 className="text-center">Check your Progress</h1>
       <Row>
@@ -112,7 +94,7 @@ export default function ProgressView() {
       <Row>
         <Col md={{ span: 8, offset: 2 }}>
           <CardDeck>
-            {
+            {resultObject ?
               resultObject.lesson.map(obj => (
                 <ProgressCard
                   language={languageClicked}
@@ -121,12 +103,22 @@ export default function ProgressView() {
                   key={obj.name}
                 />
               ))
+              :
+              <Modal
+                show={show}
+                onHide={handleClose}
+                backdrop="static"
+                center
+                style={{ height: "50%", width: "75%", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
+                closeButton
+              >
+                <Modal.Body id="modalBody">You haven't taken any practice quizzes yet! Go to My Dashboard to get started!</Modal.Body>
+                <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
+              </Modal>
             }
           </CardDeck>
         </Col>
       </Row>
-      </>
-      {/* } */}
     </Container >
   )
 }
