@@ -4,6 +4,7 @@ import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
 import API from "../../utils/API";
 import ProgressCards from './progressWindow';
 import LanguageProgress from './progressLanguage';
+import './style.css';
 
 
 
@@ -25,7 +26,7 @@ export default function ProgressPage() {
 
       <Row>
         <Col md={{ span: 8, offset: 2 }}>
-          <ProgressCards />
+          <ProgressCards className="progress"/>
         </Col>
       </Row> */}
       </Container>

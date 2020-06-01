@@ -324,6 +324,71 @@ module.exports = [
                     "phonetic": "dee-EH-chee"
                 }
             ]
+        },
+        {
+            "language": "Portuguese",
+            "content": [
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
+                    "targetWord": "um/uma",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                    "targetWord": "dois/duas",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
+                    "targetWord": "três",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
+                    "targetWord": "quatro",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
+                    "targetWord": "cinco",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
+                    "targetWord": "seis",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
+                    "targetWord": "sete",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
+                    "targetWord": "oito",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
+                    "targetWord": "nove",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
+                    "targetWord": "dez",
+                    "audioToPlay": "",
+                    "phonetic": ""
+                }
+            ]
         }
     ],
     [
@@ -470,7 +535,7 @@ module.exports = [
                     "imageUrl": "https://www.clipartkey.com/mpngs/m/76-763534_silhouette-man-walking-free-picture-man-silhouette-png.png",
                     "targetWord": "Keum ",
                     "audioToPlay": "",
-                    "explanation": "Guy. A verlan play on the slang word for guy, mec." 
+                    "explanation": "Guy. A verlan play on the slang word for guy, mec."
                 },
                 {
                     "imageUrl": "https://4570book.info/wp-content/uploads/2020/02/rudeness-clipart-of-children-free-rude-girl-cliparts-download-free-clip-art-free-clip-children-rudeness-of-clipart-.jpg",
@@ -651,6 +716,407 @@ module.exports = [
                     "explanation": "To kiss with tongue."
                 }
             ]
+        },
+        {
+            "language": "Portuguese",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/04/05/23/55/man-2206823__480.jpg",
+                    "targetWord": "Laí bro?",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) A slang way to ask what's up."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/13/01/22/monocle-155626__480.png",
+                    "targetWord": "Coxinha",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) A refernce to a chicken dish, as slang it references an uperrclass person."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/10/01/12/04/hands-2805248__480.png",
+                    "targetWord": "Botar fé",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) This literally means to put faith in, but as slang it means you believe in someone or something."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/04/20/31/sheep-2372148__480.jpg",
+                    "targetWord": "Trocar ideia",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) This phrase literally means to exchange ideas, but as slang it can mean a conversation."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/12/11/20/06/cat-3869583__480.jpg",
+                    "targetWord": "Sangue bom",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Literally meaning good blood, as slang it means somebody is really nice."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/02/19/10/28/thanks-1209247__480.jpg",
+                    "targetWord": "Valeu",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) This phrase equates to, it was worth it. When used as slang, it means thank you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2014/04/03/11/55/bus-312565__480.png",
+                    "targetWord": "Busão",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Slang for the bus."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/02/02/21/42/bored-3126445__480.jpg",
+                    "targetWord": "Deprê",
+                    "audioToPlay": " ",
+                    "explanation": "An abbreviation for the word depressed, as slang it describes someone or something that is depressing or in some cases decadent."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/05/26/00/48/basketball-784097__480.jpg",
+                    "targetWord": "Gringo",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Unlike other Latin American countries it's a not as negative and is a slang term for foreigner."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/06/15/16/31/girl-1459284__480.png",
+                    "targetWord": "Tipo",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) A bad language habit used the same way Americans would use the word like to generalize."
+                }
+            ]
         }
+    ],
+
+    [
+
+        {
+            "language": "Spanish",
+            "content": [
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                },
+                {
+                    "imageUrl": " ",
+                    "targetWord": " ",
+                    "audioToPlay": " ",
+                    "explanation": " "
+                }
+            ]
+        },
+
+        {
+            "language": "French",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Ça m'énerve",
+                    "audioToPlay": " ",
+                    "explanation": "I'm pissed off. Mild swearing."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Merde",
+                    "audioToPlay": " ",
+                    "explanation": "Shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Putain",
+                    "audioToPlay": " ",
+                    "explanation": "Literally means whore, but is interchangeable as the word fuck. This word can be used if you're happy, angry, or sad."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Bordel",
+                    "audioToPlay": " ",
+                    "explanation": "Literally means brothel, and like putain it's simaler to fuck except that it's almost exclusively used in the negative."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Tabernak",
+                    "audioToPlay": " ",
+                    "explanation": "(Quebec) This literally means the tabernacle, but as a swear word it means fuck. Most Canadian French profanity is related to the Catholic church."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Ça me fait chier",
+                    "audioToPlay": " ",
+                    "explanation": "This literally means, it makes me shit. You use this to express anger."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Je me fais chier",
+                    "audioToPlay": " ",
+                    "explanation": "This literally means I make myself shit. This is used to express that you're so bored you'd rather shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Ça casse les couilles",
+                    "audioToPlay": " ",
+                    "explanation": "It breaks my balls."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "J'en ai rien a foutre",
+                    "audioToPlay": " ",
+                    "explanation": "This means I don't have the sperm to give, or as slang, I don't give a fuck."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Enculé",
+                    "audioToPlay": " ",
+                    "explanation": "This is one of the most extreme swear words in French. It literally means to fuck in the ass."
+                }
+            ]
+        },
+
+        {
+            "language": "German",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "scheiße",
+                    "audioToPlay": " ",
+                    "explanation": "Shit, but it can also be used as fuck."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "arschloch",
+                    "audioToPlay": " ",
+                    "explanation": "Asshole."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "arsch",
+                    "audioToPlay": " ",
+                    "explanation": "Ass."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "schlampe",
+                    "audioToPlay": " ",
+                    "explanation": "Slut."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "nutte",
+                    "audioToPlay": " ",
+                    "explanation": "Prostitute."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "wichser",
+                    "audioToPlay": " ",
+                    "explanation": "Jerk off, wanker."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "hurensohn",
+                    "audioToPlay": " ",
+                    "explanation": "Son of a bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "ekelhafter bastard",
+                    "audioToPlay": " ",
+                    "explanation": "Disgusting bastard."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "fick dich",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "fick deine mutter",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck your mother."
+                }
+            ]
+        },
+
+        {
+            "language": "Italian",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Merda",
+                    "audioToPlay": " ",
+                    "explanation": "Shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Pezzo di merda",
+                    "audioToPlay": " ",
+                    "explanation": "Piece of shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Stronza",
+                    "audioToPlay": " ",
+                    "explanation": "Bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cazzo",
+                    "audioToPlay": " ",
+                    "explanation": "Dick, used like shit or fuck. Considered not too bad of a swear word."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Vaffanculo",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck your ass, fuck off, fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Testa di cazzo",
+                    "audioToPlay": " ",
+                    "explanation": "Dickhead."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Fregna",
+                    "audioToPlay": " ",
+                    "explanation": "Cunt (used as, oh shit, in Rome)"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Figlio di puttana",
+                    "audioToPlay": " ",
+                    "explanation": "Son of a bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Coglione",
+                    "audioToPlay": " ",
+                    "explanation": "This literally means a big testicle, but is used to call somebody dumb."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cacacazzo",
+                    "audioToPlay": " ",
+                    "explanation": "You're shitting dicks."
+                }
+
+            ]
+        },
+
+        {
+            "language": "Portuguese",
+            "content": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Merda",
+                    "audioToPlay": " ",
+                    "explanation": "Shit."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Foda-se!",
+                    "audioToPlay": " ",
+                    "explanation": "Fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Caralho",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Fuck, or penis."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Fudeu",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Fuck."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Deu Merda",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil)  "
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cacête",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Dick."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Boceta",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Pussy."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Filho Da Puta",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Son of a bitch."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Vai tomar no cu",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Go fuck yourself in the ass, fuck off, fuck you."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Sua mãe",
+                    "audioToPlay": " ",
+                    "explanation": "(Brazil) Your mother."
+                }
+
+            ]
+        }
+
     ]
 ]
