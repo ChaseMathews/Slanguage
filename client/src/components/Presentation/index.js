@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-import { Container, Jumbotron, Card, Button, Col, Row } from 'react-bootstrap';
+import { Container, Jumbotron, Card, Button, Col, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
 import "./style.css";
 import UserAudio from "./userAudio";
 import { slideInDown } from 'react-animations';
@@ -70,12 +70,21 @@ export default function Presentation() {
         <>
             {presContent &&
                 <Container>
+                    <Row>
+                    <Col xs={12} md={8}>
                     <LangCategory />
+                    </Col>
+                    <Col xs={6} md={4}>
+                    <h2 className="range" >{itemIndex + 1}/10</h2>
+                    </Col>
+                    </Row>
                     <hr></hr>
                     <Jumbotron className="justify-content-center text-center">
                         {itemIndex > 0 &&
-                            <Button className="previousback" onClick={handlePresDataChangeBack}> < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" /> </Button>
-
+                            <Button className="previousback" onClick={handlePresDataChangeBack}>
+                                 {/* < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" />  */}
+                                 Previous
+                                 </Button>
                         }
 
                         <SlideDown>
@@ -93,7 +102,7 @@ export default function Presentation() {
                                                     controls
                                                 />
                                                 <div>
-                                                <span className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</span>
+                                                    <span className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</span>
                                                 </div>
                                                 <hr />
                                                 <UserAudio />
@@ -103,9 +112,11 @@ export default function Presentation() {
                                 </Col>
                             </Row>
                         </SlideDown>
-                        <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>< FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> </Button>
-                        <p>{itemIndex + 1}/10</p>
-                        
+                        <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>
+                            {/* < FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> */}
+                            Next
+                             </Button>
+
                     </Jumbotron>
                 </Container>
             }

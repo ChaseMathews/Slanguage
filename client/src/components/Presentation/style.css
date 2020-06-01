@@ -18,6 +18,10 @@
 
 }
 
+.previous{
+    margin-right: 50px;
+}
+
 #card{
     display: flex;
     align-items: center;
