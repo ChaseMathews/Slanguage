@@ -4,32 +4,31 @@ import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
 import SelectLang from './components/SelectLanguage/selectLangView';
-// import Dashboard from './components/Dashboard/dashboardView';
 import ProgressPage from './components/Progress/progressView.js';
 import MenuContainer from './components/LessonMenu/LessonMenuView';
 import Presentation from './components/Presentation/index';
 import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
-import Gradient from './components/Gradient';
 import UserProvider, { UserContext } from './utils/Context';
 import CardGradient from './components/CardGradient'
 import About from './components/About'
 import DashboardCard from './components/Dashboard/dashboardCards';
+
 
 function App() {
   const location = useLocation();
   const {lang} = useParams();
 
 
-  // const { user, currentLang } = useContext(UserContext);
+  const { user, currentLang } = useContext(UserContext);
 
-  // const history = useHistory();
+  const history = useHistory();
 
-  // useEffect(() => {
-  //   if (location.pathname !== "/" && user === undefined) {
-  //     history.push("/")
-  //   }
-  // }, [user])
+  useEffect(() => {
+    if (location.pathname !== "/" && user === undefined) {
+      history.push("/")
+    }
+  }, [user])
 
 
   return (
@@ -48,7 +47,6 @@ function App() {
           <Route path="/LessonMenu/:type/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
           <Route exact path="/QuizCard/:lang/:lesson" component={QuizCard} />
-          <Route exact path="/Gradient" component={Gradient} />
           <Route exact path="/CardGradient" component={CardGradient} />
           <Route exact path="/About" component={About} />
           <Route exact path="/DashboardCards/:lang" component={DashboardCard} />

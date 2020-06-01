@@ -82,7 +82,7 @@ export default function Presentation() {
                             <Row>
                                 <Col>
                                     <CardGradient>
-                                        <Card>
+                                        <Card className="myCard">
                                             <Card.Img className="numberImage" variant="top" src={presContent[itemIndex].imageUrl} />
 
                                             <Card.Body className="justify-content-center text-center">
@@ -92,7 +92,9 @@ export default function Presentation() {
                                                     src={presContent[itemIndex].audioToPlay}
                                                     controls
                                                 />
-                                                <Card.Title>{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</Card.Title>
+                                                <div>
+                                                <span className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</span>
+                                                </div>
                                                 <hr />
                                                 <UserAudio />
                                             </Card.Body>
