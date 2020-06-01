@@ -17,25 +17,25 @@ import DashboardCard from './components/Dashboard/dashboardCards';
 
 function App() {
   const location = useLocation();
-  const {lang} = useParams();
+  const { lang } = useParams();
 
 
-  const { user, currentLang } = useContext(UserContext);
+  const { user, setUser, currentLang } = useContext(UserContext);
 
   const history = useHistory();
 
-  useEffect(() => {
-    if (location.pathname !== "/" && user === undefined) {
-      history.push("/")
-    }
-  }, [user])
+  // useEffect(() => {
+  //   if (location.pathname !== "/" && user === undefined) {
+  //     history.push("/")
+  //   }
+  // }, [user])
 
 
   return (
     <>
       <UserProvider>
-        {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage" ) ? <NavBar /> : ""}
-         <Switch>
+        {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage") ? <NavBar /> : ""}
+        <Switch>
           <Route exact path="/">
             <HomeView />
           </Route>

@@ -394,6 +394,7 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "Mexican",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
@@ -458,7 +459,272 @@ module.exports = [
             ]
         },
         {
+            "language": "Spanish",
+            "dialect": "Puerto Rican",
+            "content": [
+                {
+                    "imageUrl": "https://hrexach.files.wordpress.com/2018/11/cutepr.jpg?w=584",
+                    "targetWord": "Boricua",
+                    "audioToPlay": "",
+                    "explanation": "The local name for a Puerto Rican."
+                },
+                {
+                    "imageUrl": "https://lh3.googleusercontent.com/proxy/kycl-glAFKjFiMhpuoPuJe2H5c0se9X2Lo45NSLV-Y_l6v0QkR1wN_dA7m839TGXPMUdAWQrHfkl6pHs6GLWVtksKDZKi_erIVVDSr1QJ2b2UJ5zFxoIy-hDXZxFoVkBRScFdoFidLWQNeA9jsJX923kSjzWZYHPowd354mxgdkRmYOtzKAt9mL0Vf2LKw8buCXnDKZFRE4iz_xV95QDok13f1Q19a6NfHLC_KtljpYTo7E",
+                    "targetWord": "Corillo",
+                    "audioToPlay": "",
+                    "explanation": "Refers to a group of friends"
+                },
+                {
+                    "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
+                    "targetWord": "A mí, plín",
+                    "audioToPlay": "",
+                    "explanation": "A slightly vulgar way of saying \"I don't care.\"",
+                },
+                {
+                    "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
+                    "targetWord": "Janguear",
+                    "audioToPlay": "",
+                    "explanation": "To hang out"
+                },
+                {
+                    "imageUrl": "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/surfing-dog-photo-is-funner-or-funnest-a-real-word-5670-6d512231d0a52079b0c9fbf474f9a6c9@1x.jpg",
+                    "targetWord": "Al garete",
+                    "audioToPlay": "",
+                    "explanation": "Really fun and crazy"
+                },
+                {
+                    "imageUrl": "https://daily.jstor.org/wp-content/uploads/2017/12/traffic_jam_1050x700.jpg",
+                    "targetWord": "Tapón",
+                    "audioToPlay": "",
+                    "explanation": "Traffic"
+                },
+                {
+                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/A_mess_of_wires.jpg",
+                    "targetWord": "Revolú",
+                    "audioToPlay": "",
+                    "explanation": "A mess"
+                },
+                {
+                    "imageUrl": "https://www.dictionary.com/e/wp-content/uploads/2017/11/words_for_gossip3.jpg",
+                    "targetWord": "Bochinche",
+                    "audioToPlay": "",
+                    "explanation": "Gossip"
+                },
+                {
+                    "imageUrl": "https://akm-img-a-in.tosshub.com/indiatoday/styles/photo_slider_753x543/public/images/photogallery/201404/13_042514045937.jpg?0MjddSYiAj2VlTBXq9A3vbEtGVE6ZI1F",
+                    "targetWord": "Gato/Gata",
+                    "audioToPlay": "",
+                    "explanation": "Literally means cat. Used to refer to a very good-looking man/woman."
+                },
+                {
+                    "imageUrl": "https://pics.me.me/thumb_weeeepaaaa-wepa-23611602.png",
+                    "targetWord": "¡Wepa!",
+                    "audioToPlay": "",
+                    "explanation": "An exclamation to express joy and utter happiness. Be sure to yell it nasally and hold the \"e\" and \"a\" for a long time."
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Argentinian",
+            "content": [
+                {
+                    "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/575cd59611175.560d6dd950dcc.jpg",
+                    "targetWord": "¡Che, boludo!",
+                    "audioToPlay": "",
+                    "explanation": "Two of the most common words you'll hear in Argentina. \"Che\" is loosely translated as \"hey,\" or a segue into a conversation. \"Boludo\" can mean anything from \"dude\" to \"idiot.\""
+                },
+                {
+                    "imageUrl": "https://cdn.memegenerator.es/imagenes/memes/full/7/3/7038674.jpg",
+                    "targetWord": "¿Cómo andás?",
+                    "audioToPlay": "",
+                    "explanation": "Used as \"what's up?\" or \"¿qué tal?\" (note the use of 'vos' instead of 'tú')"
+                },
+                {
+                    "imageUrl": "https://yt3.ggpht.com/a/AGF-l79NPPz0jUuhQfPtEGW-7SUoNGnxLAxygp_kvQ=s900-c-k-c0xffffffff-no-rj-mo",
+                    "targetWord": "Chabón/chabona",
+                    "audioToPlay": "",
+                    "explanation": "Guy/girl or dude/dudette"
+                },
+                {
+                    "imageUrl": "https://previews.123rf.com/images/noravector/noravector1710/noravector171000033/87490561-super-cool-comic-book-style-word-on-abstract-background-.jpg",
+                    "targetWord": "Re copado",
+                    "audioToPlay": "",
+                    "explanation": "\"Re\" is used frequently to mean \"really/very.\" \"Copado\" means \"cool/awesome.\""
+                },
+                {
+                    "imageUrl": "https://dobienews.scuc.txed.net/wp-content/uploads/2020/04/couch-900x629.jpg",
+                    "targetWord": "Estar al pedo/estar en pedo",
+                    "audioToPlay": "",
+                    "explanation": "Not doing anything. Literally \"being to the fart/being in fart.\""
+                },
+                {
+                    "imageUrl": "https://www.santarosa.gob.ar/storage/2018/01/26219706_1740803469561847_2346210351052712346_n.jpg",
+                    "targetWord": "Ponerse las pilas",
+                    "audioToPlay": "",
+                    "explanation": "Literally \"to put your batteries in.\" Used as \"get some energy! / put in effort!\" It can be used to motivate someone to do something like get out of bed or go to a party: \"¡Ponete las pilas!\" (note the use of 'vos' instead of 'tú')"
+                },
+                {
+                    "imageUrl": "https://previews.123rf.com/images/rukach/rukach1802/rukach180200115/95796784-pop-art-retro-style-comic-book-panel-with-girl-talking-nonsense-small-talk-chatter-in-speech-bubble-.jpg",
+                    "targetWord": "Mandar fruta",
+                    "audioToPlay": "",
+                    "explanation": "To blab on without making much sense. To speak nonsense."
+                },
+                {
+                    "imageUrl": "https://www.inventorsdigest.com/wp-content/uploads/2018/01/lazy-sloth-1080x640.gif",
+                    "targetWord": "Tener fiaca",
+                    "audioToPlay": "",
+                    "explanation": "Being too lazy to do something; probably not acceptable in the workplace."
+                },
+                {
+                    "imageUrl": "https://i0.wp.com/edairynews.com/es/wp-content/uploads/2018/11/remando-en-dulce-de-leche.jpg?fit=750%2C360&ssl=1",
+                    "targetWord": "Estar remando en dulce de leche",
+                    "audioToPlay": "",
+                    "explanation": "Literally \"To be rowing in dulce de leche (a thick caramel-like substance).\" Use it to describe being in a situation that's hard to get out of."
+                },
+                {
+                    "imageUrl": "https://www.attorneyatwork.com/wp-content/uploads/2018/11/Get-to-the-Point-770.jpg",
+                    "targetWord": "Ir a los bifes",
+                    "audioToPlay": "",
+                    "explanation": "Literally \"to go to the steaks,\" it's used to say \"get to the point!\""
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Spain",
+            "content": [
+                {
+                    "imageUrl": "https://www.fluentu.com/blog/spanish/wp-content/uploads/sites/2/2015/05/spanish-slang2.jpg",
+                    "targetWord": "Tío/Tía",
+                    "audioToPlay": "",
+                    "explanation": "Literally means \"uncle/aunt.\" Use it as \"friend, pal, dude.\""
+                },
+                {
+                    "imageUrl": "https://fortroubledteens.com/images/group-friends-hug-smile-happy.jpg",
+                    "targetWord": "Chaval(a)",
+                    "audioToPlay": "",
+                    "explanation": "Kid, youngster"
+                },
+                {
+                    "imageUrl": "https://funkidsguide.com/wp-content/uploads/2018/12/Ned-Flanders-550x330.jpg",
+                    "targetWord": "Ser majo/a",
+                    "audioToPlay": "",
+                    "explanation": "To be nice/friendly"
+                },
+                {
+                    "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--H-dVVSIB--/c_crop,x_10,y_10/c_fit,w_1109/c_crop,g_north_west,h_1260,w_1260,x_-76,y_-94/co_rgb:c62b29,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_1260/fl_layer_apply,g_north_west,x_-76,y_-94/bo_0px_solid_white/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1525249428/production/designs/2647017_0.jpg",
+                    "targetWord": "Vale",
+                    "audioToPlay": "",
+                    "explanation": "Literally means \"It's worth it.\" It's used VERY often to say \"Okay.\" Spaniards often like to say it in multiples: \"Vale, vale, vale.\""
+                },
+                {
+                    "imageUrl": "https://image.slidesharecdn.com/howtosaycoolin13spanishspeakingcountries-150206102725-conversion-gate01/95/how-to-say-cool-in-13-spanish-speakng-countries-2-638.jpg?cb=1423219034",
+                    "targetWord": "Guay",
+                    "audioToPlay": "",
+                    "explanation": "Cool/Great"
+                },
+                {
+                    "imageUrl": "https://memegenerator.net/img/instances/59251756/hey-thats-really-cool.jpg",
+                    "targetWord": "¡Eso mola mucho!",
+                    "audioToPlay": "",
+                    "explanation": "That's really cool!"
+                },
+                {
+                    "imageUrl": "https://memegenerator.net/img/instances/20788827.jpg",
+                    "targetWord": "¡Qué chulo!",
+                    "audioToPlay": "",
+                    "explanation": "How lovely/cool!"
+                },
+                {
+                    "imageUrl": "https://www.dailymoss.com/wp-content/uploads/2019/03/f52011768acad7db1fbcf2224a6fc3609b7c31e8450bffa783c0d3317b0b1724.png",
+                    "targetWord": "Me importa un pimiento",
+                    "audioToPlay": "",
+                    "explanation": "Literally meaning \"It is as important as a pepper,\" use this to say \"I don't care.\""
+                },
+                {
+                    "imageUrl": "https://i.imgflip.com/2022e8.jpg",
+                    "targetWord": "Pijo/a",
+                    "audioToPlay": "",
+                    "explanation": "Snob/bratty/spoiled. Think of Veruca Salt from Charlie and the Chocolate Factory."
+                },
+                {
+                    "imageUrl": "https://blog.fuertehoteles.com/wp-content/uploads/2017/11/tapas.jpg",
+                    "targetWord": "Tapear",
+                    "audioToPlay": "",
+                    "explanation": "To eat tapas. \"Tapas\" are a type of appetizer that’s specific to Spain."
+                }
+            ]
+        },
+        {
+            "language": "Spanish",
+            "dialect": "Colombian",
+            "content": [
+                {
+                    "imageUrl": "https://steemitimages.com/DQmQbki6acfNKT9cX3MWBxsxSTHEEk16PVeqyvGyCXSVu6i/friend.jpg",
+                    "targetWord": "Parce, Parcero/a",
+                    "audioToPlay": "",
+                    "explanation": "Use these to refer to a friend."
+                },
+                {
+                    "imageUrl": "https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/46643978_317010605805170_3565280338416500736_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=J-SnHyN74GAAX8EwHFM&_nc_ht=scontent.fphx1-1.fna&oh=71632f912d24e41a2944449ccfc792bc&oe=5EF345B2",
+                    "targetWord": "¡Qué chévere!",
+                    "audioToPlay": "",
+                    "explanation": "How cool/awesome!"
+                },
+                {
+                    "imageUrl": "https://revistas.elheraldo.co/sites/default/files/2017/03/30/evento/shutterstock_154934858_web_lives.jpg",
+                    "targetWord": "Rumbear",
+                    "audioToPlay": "",
+                    "explanation": "To go out partying. \"Rumba\" means \"party.\""
+                },
+                {
+                    "imageUrl": "https://thoughtcatalog.files.wordpress.com/2013/02/25friendslarge.jpg?w=584&h=388",
+                    "targetWord": "Parche",
+                    "audioToPlay": "",
+                    "explanation": "A group of friends getting together to do something. If you don't have much going on in your social life, you are \"desparchado,\" or without \"parche.\""
+                },
+                {
+                    "imageUrl": "https://www.liberaldictionary.com/wp-content/uploads/2018/11/thingy.png",
+                    "targetWord": "Vaina",
+                    "audioToPlay": "",
+                    "explanation": "Stuff/Thing(y)"
+                },
+                {
+                    "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--SXi-guyk--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1564295312/production/designs/5437911_0.jpg",
+                    "targetWord": "¡De una!",
+                    "audioToPlay": "",
+                    "explanation": "Yes, absolutely! / Let's do it!"
+                },
+                {
+                    "imageUrl": "https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/133/5/133-5-101P/The-Dude-Bruno-Morphet-Poster.jpg",
+                    "targetWord": "Man",
+                    "audioToPlay": "",
+                    "explanation": "Said in a Colombian accent, it's slang for a guy or a dude."
+                },
+                {
+                    "imageUrl": "https://memegenerator.net/img/instances/81284346.jpg",
+                    "targetWord": "¿Qué más?",
+                    "audioToPlay": "",
+                    "explanation": "Used within greetings, \"¡Hola! ¿Qué mas?\" literally means \"Hi! What else?\" But it's actually used as \"Hi! What's up?\" or \"Hi! How's it going?\""
+                },
+                {
+                    "imageUrl": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/10/Thumbs.Up_-503x300.jpg",
+                    "targetWord": "Bacano",
+                    "audioToPlay": "",
+                    "explanation": "Another word for \"chévere,\" or \"really good/cool!\""
+                },
+                {
+                    "imageUrl": "https://i.pinimg.com/originals/d8/b4/71/d8b47130d0d3763fccfacedf7196041f.jpg",
+                    "targetWord": "Guaro",
+                    "audioToPlay": "",
+                    "explanation": "Refers to Colombia's popular aniseed-flavored spirit drink \"aguardiente.\""
+                }
+            ]
+        },
+        {
             "language": "Navajo",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/01/20/11/11/baby-1151351__340.jpg ",
@@ -506,7 +772,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/18/10/58/love-163690__340.jpg ",
                     "targetWord": "Sáanii t'óó yitah yilwoł ",
                     "audioToPlay": " ",
-                    "explanation": "A player or pimp "
+                    "explanation": "A player or pimp"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2020/02/29/06/36/race-4889240__340.png ",
@@ -524,6 +790,7 @@ module.exports = [
         },
         {
             "language": "French",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://founterior.com/wp-content/uploads/2014/09/Cafe-in-Paris-with-tables-and-chairs-outside.jpg",
@@ -589,6 +856,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://www.amny.com/wp-content/uploads/2015/03/image-1-740x415.jpg",
@@ -654,6 +922,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",

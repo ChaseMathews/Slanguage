@@ -24,6 +24,15 @@ export default function SignUpForm(props) {
           onChange={e => props.handleInputChange(e)}
           placeholder="Password" />
       </Form.Group>
+
+      <Form.Group controlId="formBasicPassword2">
+        <Form.Control
+          type="password"
+          name="confirmPassword"
+          value={props.userObject.confirmPassword}
+          onChange={e => props.handleInputChange(e)}
+          placeholder="Confirm Password" />
+      </Form.Group>
       
       {props.children}
 
