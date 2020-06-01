@@ -33,7 +33,6 @@ function App() {
 
   return (
     <>
-      {/* <UserProvider value={setUserFromLocStor}> */}
       <UserProvider>
         {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage") ? <NavBar /> : ""}
         <Switch>

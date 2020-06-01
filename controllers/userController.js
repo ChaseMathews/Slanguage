@@ -1,7 +1,7 @@
 const db = require("../models");
 const bcrypt = require('bcryptjs');
-const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
+// const passport = require('passport');
+// const LocalStrategy = require('passport-local').Strategy;
 
 // Defining methods (CRUD) for the UserController
 module.exports = {
@@ -44,8 +44,9 @@ module.exports = {
                         if (result) {
                             res.json({
                                 username: dbUser.username,
-                                id: dbUser._id,
-                                results: dbUser.results
+                                _id: dbUser._id,
+                                results: dbUser.results,
+                                currentLanguage: dbUser.currentLanguage
                             });
                         } else {
                             res.status(401).json({ message: 'Incorrect password. Try again!' });
