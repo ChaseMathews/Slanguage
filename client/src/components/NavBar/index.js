@@ -14,7 +14,6 @@ export default function NavBar() {
   const { user, currentLang } = useContext(UserContext);
 
   const { lang } = useParams();
-  console.log("navbar", currentLang);
 
   const language = lang || currentLang
 

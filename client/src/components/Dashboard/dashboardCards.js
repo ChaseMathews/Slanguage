@@ -14,21 +14,10 @@ export default function DashboardCard() {
 
     const language = lang || currentLang
 
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        console.log('whatever');
-        const userId = localStorage.getItem("userId");
-        if (!user && userId) {
-            setLoading(true);
-            API.getUserData(userId)
-                .then(userData => {
-                    console.log(userData);
-                    setUser(userData.data);
-                    setLoading(false);
-                })
-                .catch(err => console.log(err))
-        }
+        setLoading(false);
     }, [])
 
 

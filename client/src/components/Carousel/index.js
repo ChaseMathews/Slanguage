@@ -23,6 +23,7 @@ export default function CarouselFlags() {
         API.updateUser(user._id, { currentLanguage: value })
             .then(res => {
                 console.log(res.data);
+                setUser(res.data);
                 setCurrentLang(value);
                 history.push(`/DashboardCards/${value}`);
             })

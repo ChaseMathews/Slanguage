@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Route, Switch, useLocation, useHistory, useParams } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
@@ -18,13 +18,10 @@ import API from './utils/API';
 
 function App() {
   const location = useLocation();
-  const { lang } = useParams();
 
-  const [loading, setLoading] = useState(false)
+  const { user, setUser } = useContext(UserContext);
 
-  const { user, setUser, currentLang } = useContext(UserContext);
-
-  const history = useHistory();
+  const [loading, setLoading] = useState();
 
   useEffect(() => {
     console.log('whatever');
@@ -33,11 +30,13 @@ function App() {
       setLoading(true);
       API.getUserData(userId)
       .then(userData => {
-        console.log(userData);
+        console.log(userData.data);
         setUser(userData.data);
         setLoading(false);
       })
       .catch(err => console.log(err))
+    } else {
+      setLoading(false);
     }
   }, [])
 
