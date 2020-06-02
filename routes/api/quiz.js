@@ -11,5 +11,11 @@ router.route("/numbers/:lang")
 router.route("/slang/:lang")
   .get(isAuthenticated, quizController.findAllSlangQuizData)
 
+router.route("/body1/:lang")
+  .get(isAuthenticated, quizController.findAllBodyQuiz1Data)
+
+router.route("/profanity/:lang")
+  .get(isAuthenticated, quizController.findAllProfanityQuizData)
+
 
 module.exports = router;

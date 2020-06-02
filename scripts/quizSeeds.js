@@ -636,6 +636,7 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
@@ -751,6 +752,7 @@ module.exports = [
         },
         {
             "language": "French",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://founterior.com/wp-content/uploads/2014/09/Cafe-in-Paris-with-tables-and-chairs-outside.jpg",
@@ -866,6 +868,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://www.amny.com/wp-content/uploads/2015/03/image-1-740x415.jpg",
@@ -981,6 +984,7 @@ module.exports = [
         },
         {
             "language": "Navajo",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/10/26/11/14/tv-3774381__340.jpg",
@@ -1096,6 +1100,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://storage.needpix.com/rsynced_images/person-2385787_1280.jpg",
@@ -1213,6 +1218,8 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1318,6 +1325,7 @@ module.exports = [
         },
         {
             "language": "Navajo",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1423,6 +1431,7 @@ module.exports = [
         },
         {
             "language": "French",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1528,6 +1537,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
@@ -1633,6 +1643,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
@@ -1739,6 +1750,7 @@ module.exports = [
         },
         {
             "language": "Portuguese",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1846,6 +1858,7 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jp",

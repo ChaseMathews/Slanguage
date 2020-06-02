@@ -1055,6 +1055,7 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "",
             "content": [
                         {
                             "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1121,6 +1122,7 @@ module.exports = [
         },
         {
             "language": "French",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1186,6 +1188,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
@@ -1251,6 +1254,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
@@ -1316,6 +1320,7 @@ module.exports = [
         },
         {
             "language": "Portuguese",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
