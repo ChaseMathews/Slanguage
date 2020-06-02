@@ -518,7 +518,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/10/26/11/14/tv-3774381__340.jpg ",
                     "targetWord": "Binááł na'alkid ",
                     "audioToPlay": " ",
-                    "explanation": "To watch a movie "
+                    "explanation": "To watch a movie"
                 }
             ]
         },
@@ -730,37 +730,37 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/13/01/22/monocle-155626__480.png",
                     "targetWord": "Coxinha",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) A refernce to a chicken dish, as slang it references an uperrclass person."
+                    "explanation": "A refernce to a chicken dish, as slang it references an uperrclass person."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/10/01/12/04/hands-2805248__480.png",
                     "targetWord": "Botar fé",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) This literally means to put faith in, but as slang it means you believe in someone or something."
+                    "explanation": "This literally means to put faith in, but as slang it means you believe in someone or something."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/06/04/20/31/sheep-2372148__480.jpg",
                     "targetWord": "Trocar ideia",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) This phrase literally means to exchange ideas, but as slang it can mean a conversation."
+                    "explanation": "This phrase literally means to exchange ideas, but as slang it can mean a conversation."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/12/11/20/06/cat-3869583__480.jpg",
                     "targetWord": "Sangue bom",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Literally meaning good blood, as slang it means somebody is really nice."
+                    "explanation": "Literally meaning good blood, as slang it means somebody is really nice."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/02/19/10/28/thanks-1209247__480.jpg",
                     "targetWord": "Valeu",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) This phrase equates to, it was worth it. When used as slang, it means thank you."
+                    "explanation": "This phrase equates to, it was worth it. When used as slang, it means thank you."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/04/03/11/55/bus-312565__480.png",
                     "targetWord": "Busão",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Slang for the bus."
+                    "explanation": "Slang for the bus."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/02/02/21/42/bored-3126445__480.jpg",
@@ -772,13 +772,13 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/05/26/00/48/basketball-784097__480.jpg",
                     "targetWord": "Gringo",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Unlike other Latin American countries it's a not as negative and is a slang term for foreigner."
+                    "explanation": "Unlike other Latin American countries it's a not as negative and is a slang term for foreigner."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/06/15/16/31/girl-1459284__480.png",
                     "targetWord": "Tipo",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) A bad language habit used the same way Americans would use the word like to generalize."
+                    "explanation": "A bad language habit used the same way Americans would use the word like to generalize."
                 }
             ]
         }
@@ -788,64 +788,68 @@ module.exports = [
             "language": "Spanish",
             "content": [
                 {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
-                },
-                {
-                    "imageUrl": " ",
-                    "targetWord": " ",
-                    "audioToPlay": " ",
-                    "explanation": " "
+                    "language": "Spanish",
+                    "content": [
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Mierda",
+                            "audioToPlay": "",
+                            "explanation": "This word means shit"
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Verga",
+                            "audioToPlay": "",
+                            "explanation": "This word means penis, but it is used in many ways. In an angry context it can mean fuck"
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Puto",
+                            "audioToPlay": "",
+                            "explanation": "This word means homosexual in an offensive way."
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Pendejo",
+                            "audioToPlay": "",
+                            "explanation": "This word is used to describe a person as stupid."
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Chingar",
+                            "audioToPlay": "/audio/spanish/orale2.m4a",
+                            "explanation": "This word means to have sex but can also be used to describe something or someone as annoying"
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Cagar",
+                            "audioToPlay": "",
+                            "explanation": "This word means to poop."
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Mamon",
+                            "audioToPlay": "",
+                            "explanation": "This word is used to describe a stuck up person."
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Culo",
+                            "audioToPlay": "",
+                            "explanation": "This is a bad word for butt."
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Hueva",
+                            "audioToPlay": "",
+                            "explanation": "This word means lazy."
+                        },
+                        {
+                            "imageUrl": "",
+                            "targetWord": "Fregon",
+                            "audioToPlay": "",
+                            "explanation": "This word can be used to describe anything or anyone as cool."
+                        },
                 }
             ]
         },
@@ -1010,7 +1014,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Vaffanculo",
                     "audioToPlay": " ",
-                    "explanation": "Fuck your ass, fuck off, fuck you."
+                    "explanation": "Fuck yourself, fuck off, fuck you."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
@@ -1022,7 +1026,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Fregna",
                     "audioToPlay": " ",
-                    "explanation": "Cunt (used as, oh shit, in Rome)"
+                    "explanation": "Pussy/ Oh shit(Rome)"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1040,7 +1044,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Cacacazzo",
                     "audioToPlay": " ",
-                    "explanation": "You're shitting dicks."
+                    "explanation": "Literally you're shitting dicks, slang for lying, like bullshit in the united states."
                 }
             ]
         },
@@ -1063,49 +1067,49 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Caralho",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Fuck, or penis."
+                    "explanation": "Fuck, or penis."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Fudeu",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Fuck."
+                    "explanation": "Fuck."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "targetWord": "Deu Merda",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil)  "
+                    "explanation": "Went to shit, bullshit"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Cacête",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Dick."
+                    "explanation": "Dick."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Boceta",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Pussy."
+                    "explanation": "Pussy."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                    "targetWord": "Filho Da Puta",
+                    "targetWord": "Filho da puta",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Son of a bitch."
+                    "explanation": "Son of a bitch."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                    "targetWord": "Vai tomar no cu",
+                    "targetWord": "Bunda",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Go fuck yourself in the ass, fuck off, fuck you."
+                    "explanation": "Ass"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Sua mãe",
                     "audioToPlay": " ",
-                    "explanation": "(Brazil) Your mother."
+                    "explanation": "Your mother."
                 }
             ]
         }
