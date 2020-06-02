@@ -44,6 +44,7 @@ function App() {
     <>
         {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage") ? <NavBar /> : ""}
         {!loading ? 
+        <div className="bigPicture">
         <Switch>
           <Route exact path="/">
             <HomeView />
@@ -58,6 +59,8 @@ function App() {
           <Route exact path="/About" component={About} />
           <Route exact path="/DashboardCards/:lang" component={DashboardCard} />
         </Switch>
+        </div>
+      
         :
         <div className="loading-icon"></div>
         }
