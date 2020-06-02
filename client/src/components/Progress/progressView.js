@@ -90,6 +90,7 @@ export default function ProgressView() {
             <CardDeck >
               {resultObject ?
                 resultObject.lesson.map(obj => (
+                  
                   <ProgressCard
                     language={languageClicked}
                     lesson={obj.name.charAt(0).toUpperCase() + obj.name.slice(1)}

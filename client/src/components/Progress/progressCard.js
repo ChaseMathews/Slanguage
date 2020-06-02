@@ -12,7 +12,7 @@ export default function ProgressCard(props) {
                     <Card.Text>
                         {props.score}/30 Points
                     </Card.Text>
-                    <Link to={`/${props.language}/presentation/${props.lesson}`}><Button>Try Again</Button></Link>{' '}
+                    <Link to={`/${props.language}/presentation/${props.lesson}`}><Button>Review {props.lesson}</Button></Link>{' '}
                     <Link to={`/QuizCard/${props.language}/${props.lesson}`}><Button>Retake Quiz</Button></Link>{' '}
                 </Card.Body>
             </Card>
