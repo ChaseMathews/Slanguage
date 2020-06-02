@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import { Route, Switch, useLocation, useHistory, useParams } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import './App.css';
 import HomeView from './components/HomePage/HomeView';
 import SignUp from './components/UserSignUp/SignUpView';
@@ -9,39 +9,48 @@ import MenuContainer from './components/LessonMenu/LessonMenuView';
 import Presentation from './components/Presentation/index';
 import QuizCard from './components/QuizCard';
 import NavBar from './components/NavBar';
-import UserProvider, { UserContext } from './utils/Context';
+import { UserContext } from './utils/Context';
 import CardGradient from './components/CardGradient'
 import About from './components/About'
 import DashboardCard from './components/Dashboard/dashboardCards';
+import API from './utils/API';
+
 
 function App() {
   const location = useLocation();
-  const {lang} = useParams();
 
+  const { user, setUser } = useContext(UserContext);
 
-  const { user, currentLang } = useContext(UserContext);
-
-  const history = useHistory();
+  const [loading, setLoading] = useState();
 
   useEffect(() => {
-    if (location.pathname !== "/" && user === undefined) {
-      history.push("/")
+    console.log('whatever');
+    const userId = localStorage.getItem("userId");
+    if (!user && location.pathname !== "/" && userId) {
+      setLoading(true);
+      API.getUserData(userId)
+      .then(userData => {
+        console.log(userData);
+        setUser(userData.data);
+        setLoading(false);
+      })
+      .catch(err => console.log(err))
+    } else {
+      setLoading(false);
     }
-  }, [user])
-
+  }, [])
 
   return (
     <>
-      <UserProvider>
-        {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage" ) ? <NavBar /> : ""}
-         <Switch>
+        {(location.pathname !== "/" && location.pathname !== "/UserSignUp" && location.pathname !== "/SelectLanguage") ? <NavBar /> : ""}
+        {!loading ? 
+        <div className="bigPicture">
+        <Switch>
           <Route exact path="/">
             <HomeView />
           </Route>
           <Route exact path="/UserSignUp" component={SignUp} />
           <Route exact path="/SelectLanguage" component={SelectLang} />
-          {/* <Route exact path="/Dashboard/:lang" component={Dashboard} /> */}
-          {/* <Route exact path="/Dashboard/:user" component={Dashboard} /> */}
           <Route exact path="/Progress" component={ProgressPage} />
           <Route path="/LessonMenu/:type/:lang" component={MenuContainer} />
           <Route exact path="/:lang/presentation/:lesson" component={Presentation} />
@@ -50,7 +59,11 @@ function App() {
           <Route exact path="/About" component={About} />
           <Route exact path="/DashboardCards/:lang" component={DashboardCard} />
         </Switch>
-      </UserProvider>
+        </div>
+      
+        :
+        <div className="loading-icon"></div>
+        }
     </>
   );
 }

@@ -8,10 +8,15 @@ import "./style.css"
 import API from "../../utils/API";
 import Image from 'react-bootstrap/Image'
 import { UserContext } from '../../utils/Context';
+import slideInLeft from 'react-animations/lib/slide-in-left';
+import styled, { keyframes } from 'styled-components';
+import slideInRight from 'react-animations/lib/slide-in-right';
+
+const SlideRight = styled.div`animation: 2s ${keyframes`${slideInRight}`} 1`;
 
 export default function HomeView() {
 
-    const { setUser } = useContext(UserContext);
+    const { setUser, message, setMessage } = useContext(UserContext);
 
     const [userForm, setUserForm] = useState({
         username: "",
@@ -41,8 +46,14 @@ export default function HomeView() {
             )
                 .then(userObj => {
                     console.log(userObj.data);
+                    localStorage.setItem("userId", userObj.data.id);
                     setUser(userObj.data);
-                    history.push("/SelectLanguage");
+                    if(message === "You've made an account! Sign in to get started." || !userObj.data.currentLanguage){
+                        history.push("/SelectLanguage");
+                    } else {
+                        history.push(`/DashboardCards/${userObj.data.currentLanguage}`);
+                        setMessage("Welcome Back!");
+                    }
                 })
                 .catch(err => {
                     console.log(err);
@@ -56,12 +67,13 @@ export default function HomeView() {
             <hr></hr>
             <Row>
                 <Col>
-                    {/* <RingLoader loading={true} size={350} color="#39a6c1" /> */}
                     <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" fluid />
 
                 </Col>
 
+                
                 <Col className="form-container" md="3">
+                <SlideRight>
                     <SignInForm handleFormSubmit={handleFormSubmit} user={userForm} handleInputChange={handleInputChange}>
                         {error &&
                             <span className='error'>{error}</span>
@@ -71,9 +83,8 @@ export default function HomeView() {
                     </SignInForm>
                     <br></br>
                     <Link to='/UserSignUp'><SignUpBtn /></Link>
-
+                    </SlideRight>
                 </Col>
-
             </Row>
         </Container>
     );

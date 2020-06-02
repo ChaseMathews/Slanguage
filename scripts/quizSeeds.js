@@ -11,7 +11,7 @@ module.exports = [
                         "diez"
                     ],
                     "correctAnswer": "dos",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -21,7 +21,7 @@ module.exports = [
                         "dos"
                     ],
                     "correctAnswer": "uno",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
@@ -31,7 +31,7 @@ module.exports = [
                         "diez"
                     ],
                     "correctAnswer": "cuatro",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
@@ -41,7 +41,7 @@ module.exports = [
                         "tres"
                     ],
                     "correctAnswer": "tres",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
@@ -51,7 +51,7 @@ module.exports = [
                         "uno"
                     ],
                     "correctAnswer": "cinco",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
@@ -61,7 +61,7 @@ module.exports = [
                         "ocho"
                     ],
                     "correctAnswer": "ocho",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
@@ -71,7 +71,7 @@ module.exports = [
                         "siete"
                     ],
                     "correctAnswer": "seis",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
@@ -81,7 +81,7 @@ module.exports = [
                         "diez"
                     ],
                     "correctAnswer": "diez",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
@@ -91,7 +91,7 @@ module.exports = [
                         "seis"
                     ],
                     "correctAnswer": "siete",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
@@ -101,7 +101,7 @@ module.exports = [
                         "diez"
                     ],
                     "correctAnswer": "nueve",
-                    
+
                 }
             ]
         },
@@ -109,104 +109,104 @@ module.exports = [
             "language": "Navajo",
             "questions": [
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/La_RdIfupKPvPwHBm3DCwQ5qhyk985vH2Eo99LjQBiy0N18k78twAK4z1_ubftWQYN6s0hdDWZ2QgThsUYNMTAhSMSyW8yl8b3fexCkn",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
                     "answerOptions": [
                         "tseebíí",
                         "tsostsʼid",
                         "tʼááłáʼí"
                     ],
                     "correctAnswer": "tsostsʼid",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/KgIK5q3bdyWEEi7iDViXpwNa4rcq7nTacGYnz0JBTZNsyE90wJRrlZcbwzlcTT3SGpdz21LHi3RMtRDT5woV4kXxHGsrkIAOES1MFKBg",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
                     "answerOptions": [
                         "táá'",
                         "neeznáá",
                         "naaki"
                     ],
                     "correctAnswer": "táá'",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/w1cZ3asHCKrrWqYTU12Xh87wW9JScKtq5kNn4JH02tgeyg1kJbthasv72xccYososn6cPyQs2WQD9fLSlBqrF9mogjI3qdwJfsUK2HrT",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
                     "answerOptions": [
                         "dį́į́ʼ",
                         "náhástʼéí",
                         "neeznáá"
                     ],
                     "correctAnswer": "neeznáá",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/XXa44tKsbe5BIgqR33BZZlQL4kGuF4AMmED9L3xWMVYG1jzCa6dFVxWW8uBthx4jQr0NHcYjdK_A7DSGbGyVrJFvR-NlDD4E-MDc9Njr",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
                     "answerOptions": [
                         "hastą́ą́",
                         "ashdla'",
                         "tsostsʼid"
                     ],
                     "correctAnswer": "hastą́ą́",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/8dUNdfWbuIzYbOfmi8frXtYcYExK0mgkv6yT5FZ24W2kbebSxCSY81B41RYs8tPei-ZVUGZthbsyVFJSiR4wJhQ5qgQd5KL8BfZKeV4N",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
                     "answerOptions": [
                         "tseebíí",
                         "tʼááłáʼí",
                         "táá'"
                     ],
                     "correctAnswer": "tseebíí",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/PXKejlEaBKsw1scP7XrRqdIDr55AP3jbvnPo2eLGfwbS44R3vGkOdlHD-Ngk7D-wMpIALqdk0pS_2oTs8sbFmIPoCqboPfAWvfl8-iwV",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
                     "answerOptions": [
                         "náhástʼéí",
                         "neeznáá",
                         "naaki"
                     ],
                     "correctAnswer": "naaki",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/EPDgo1hqHiCljjfh4rQCYxmP4S-QcPoze51cA8ln8yuX1Yjcvk2xS7gzImOefmKJS7CdP0EcoXCmHyLp9c0ShX_L9apnSXiS5k1YxvKu",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
                     "answerOptions": [
                         "ashdla'",
                         "dį́į́ʼ",
                         "náhástʼéí"
                     ],
                     "correctAnswer": "náhástʼéí",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/Cqt4xUwCw35h-L7WSIcWy73viHOWS9yi6KT_gDwQZlVOMT4ZuiSjls12d8P_bSfxK6n8hpwl53gfcy8AJY1f1CJLsmW9ytyGj-XUY5DE",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
                     "answerOptions": [
                         "hastą́ą́",
                         "dį́į́ʼ",
                         "tsostsʼid"
                     ],
                     "correctAnswer": "dį́į́ʼ",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/MyjyB7iT4G_BGrkO7cuJh9PxSEw4STmLeUS1OwEFopj5Gw_M75JrvYWpofZq6AEjXu2zQreBjoS35OCkyEFVL_dxhojfPx9FqK6bQXs",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "answerOptions": [
                         "tʼááłáʼí",
                         "táá'",
                         "tseebíí"
                     ],
                     "correctAnswer": "tʼááłáʼí",
-                    
+
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/jcJa9JNMUBA3D9PnA2wnSEk120g35uMcFKisVoF3_HzJBikyBVhRY8JTaDW1b1RBop2-Gk9J2RsBia52DG1IuuSGbvbldzoGFmzCL0nb",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
                     "answerOptions": [
                         "neeznáá",
                         "naaki",
                         "ashdla'"
                     ],
                     "correctAnswer": "ashdla'",
-                    
+
                 }
             ]
         },
@@ -221,7 +221,7 @@ module.exports = [
                         "cinq"
                     ],
                     "correctAnswer": "deux",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -231,7 +231,7 @@ module.exports = [
                         "deux"
                     ],
                     "correctAnswer": "un",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
@@ -241,7 +241,7 @@ module.exports = [
                         "un"
                     ],
                     "correctAnswer": "quatre",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
@@ -251,7 +251,7 @@ module.exports = [
                         "trois"
                     ],
                     "correctAnswer": "trois",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
@@ -261,7 +261,7 @@ module.exports = [
                         "un"
                     ],
                     "correctAnswer": "cinq",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
@@ -271,7 +271,7 @@ module.exports = [
                         "huit"
                     ],
                     "correctAnswer": "huit",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
@@ -281,7 +281,7 @@ module.exports = [
                         "sept"
                     ],
                     "correctAnswer": "six",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
@@ -291,7 +291,7 @@ module.exports = [
                         "dix"
                     ],
                     "correctAnswer": "dix",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
@@ -301,7 +301,7 @@ module.exports = [
                         "six"
                     ],
                     "correctAnswer": "sept",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
@@ -311,7 +311,7 @@ module.exports = [
                         "dix"
                     ],
                     "correctAnswer": "neuf",
-                    
+
                 }
             ]
         },
@@ -327,7 +327,7 @@ module.exports = [
                         "fünf"
                     ],
                     "correctAnswer": "zwei",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -337,7 +337,7 @@ module.exports = [
                         "zwei"
                     ],
                     "correctAnswer": "eins",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
@@ -347,7 +347,7 @@ module.exports = [
                         "eins"
                     ],
                     "correctAnswer": "vier",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
@@ -357,7 +357,7 @@ module.exports = [
                         "drei"
                     ],
                     "correctAnswer": "drei",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
@@ -367,7 +367,7 @@ module.exports = [
                         "eins"
                     ],
                     "correctAnswer": "fünf",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
@@ -377,7 +377,7 @@ module.exports = [
                         "acht"
                     ],
                     "correctAnswer": "acht",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
@@ -387,7 +387,7 @@ module.exports = [
                         "sieben"
                     ],
                     "correctAnswer": "sechs",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
@@ -397,7 +397,7 @@ module.exports = [
                         "zehn"
                     ],
                     "correctAnswer": "zehn",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
@@ -407,7 +407,7 @@ module.exports = [
                         "sechs"
                     ],
                     "correctAnswer": "sieben",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
@@ -416,8 +416,8 @@ module.exports = [
                         "acht",
                         "zehn"
                     ],
-                    "correctAnswer": "neuf",
-                    
+                    "correctAnswer": "neun",
+
                 }
             ]
         },
@@ -433,7 +433,7 @@ module.exports = [
                         "cinque"
                     ],
                     "correctAnswer": "due",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
@@ -443,7 +443,7 @@ module.exports = [
                         "due"
                     ],
                     "correctAnswer": "uno",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
@@ -453,7 +453,7 @@ module.exports = [
                         "uno"
                     ],
                     "correctAnswer": "quattro",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
@@ -463,7 +463,7 @@ module.exports = [
                         "tre"
                     ],
                     "correctAnswer": "tre",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
@@ -473,7 +473,7 @@ module.exports = [
                         "uno"
                     ],
                     "correctAnswer": "cinque",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
@@ -483,7 +483,7 @@ module.exports = [
                         "otto"
                     ],
                     "correctAnswer": "otto",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
@@ -493,7 +493,7 @@ module.exports = [
                         "sette"
                     ],
                     "correctAnswer": "sei",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
@@ -503,7 +503,7 @@ module.exports = [
                         "dieci"
                     ],
                     "correctAnswer": "dieci",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
@@ -513,7 +513,7 @@ module.exports = [
                         "sei"
                     ],
                     "correctAnswer": "sette",
-                    
+
                 },
                 {
                     "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
@@ -523,129 +523,232 @@ module.exports = [
                         "dieci"
                     ],
                     "correctAnswer": "nove",
-                    
+
+                }
+            ]
+        },
+        {
+            "language": "Portuguese",
+            "questions": [
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                    "answerOptions": [
+                        "quatro",
+                        "dois",
+                        "cinco"
+                    ],
+                    "correctAnswer": "dois",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
+                    "answerOptions": [
+                        "um",
+                        "três",
+                        "duas"
+                    ],
+                    "correctAnswer": "um",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
+                    "answerOptions": [
+                        "cinco",
+                        "quatro",
+                        "uma"
+                    ],
+                    "correctAnswer": "quatro",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
+                    "answerOptions": [
+                        "dois",
+                        "quatro",
+                        "três"
+                    ],
+                    "correctAnswer": "três",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
+                    "answerOptions": [
+                        "cinco",
+                        "três",
+                        "um"
+                    ],
+                    "correctAnswer": "cinco",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
+                    "answerOptions": [
+                        "nove",
+                        "seis",
+                        "oito"
+                    ],
+                    "correctAnswer": "oito",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
+                    "answerOptions": [
+                        "seis",
+                        "dez",
+                        "sete"
+                    ],
+                    "correctAnswer": "seis",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
+                    "answerOptions": [
+                        "sete",
+                        "nove",
+                        "dez"
+                    ],
+                    "correctAnswer": "dez",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
+                    "answerOptions": [
+                        "oito",
+                        "sete",
+                        "seis"
+                    ],
+                    "correctAnswer": "sete",
+
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
+                    "answerOptions": [
+                        "nove",
+                        "oito",
+                        "dez"
+                    ],
+                    "correctAnswer": "nove",
+
                 }
             ]
         }
     ],
-
     [
         {
             "language": "Spanish",
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
-                    "phrase": "What does the slang word Güey mean?",
+                    "phrase": "Which is the slang term for dude?",
                     "answerOptions": [
-                        "Dude",
-                        "Mom",
-                        "Cousin"
+                        "Chido",
+                        "Güey",
+                        "Crudo"
                     ],
-                    "correctAnswer": "Dude",
-                    "example": "¿Qué onda güey?"
+                    "correctAnswer": "Güey",
+                    "example": "¿Sup dude?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/07/02/trust-4321881__340.jpg",
-                    "phrase": "What does the slang word Neta mean?",
+                    "phrase": "Which is the slang term for truth?",
                     "answerOptions": [
-                        "Beer",
-                        "Ugly",
-                        "Truth"
+                        "Cheve",
+                        "Chela",
+                        "Neta"
                     ],
-                    "correctAnswer": "Truth",
+                    "correctAnswer": "Neta",
                     "example": "Do you promise?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/11/19/24/headache-2058476__340.png",
-                    "phrase": "What does the slang word Crudo mean?",
+                    "phrase": "Which is the slang term for hungover?",
                     "answerOptions": [
-                        "Poop",
-                        "Hungover",
+                        "Neta",
+                        "Crudo",
                         "Tacos"
                     ],
-                    "correctAnswer": "Hungover",
+                    "correctAnswer": "Crudo",
                     "example": "Last night was fun."
                 },
                 {
                     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
-                    "phrase": "What does the slang phrase ¿Qué onda? mean?",
+                    "phrase": "Which is the slang term for What's up?",
                     "answerOptions": [
-                        "What's up?",
-                        "Wanna get tacos?",
-                        "How's your mom?"
+                        "¿Qué onda?",
+                        "¿Qué chido?",
+                        "¿Qué pedo?"
                     ],
-                    "correctAnswer": "What's up?",
+                    "correctAnswer": "¿Qué onda?",
                     "example": "Greeting"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/20/15/35/thumb-422558__340.jpg",
-                    "phrase": "What does the slang word Órale mean?",
+                    "phrase": "Which is the slang term for agreed?",
                     "answerOptions": [
-                        "Car",
-                        "Agreed",
-                        "House"
+                        "Crudo",
+                        "Órale",
+                        "Chela"
                     ],
-                    "correctAnswer": "Agreed",
+                    "correctAnswer": "Órale",
                     "example": "Can also mean to hurry up."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
-                    "phrase": "What does the slang phrase ¿Qué pedo? mean?",
+                    "phrase": "Which is the slang term for what's your problem?",
                     "answerOptions": [
-                        "Wanna marry me?",
-                        "How old are you?",
-                        "What's your problem?"
+                        "¿Qué pedo?",
+                        "¿Qué onda?",
+                        "¿Qué chido?"
                     ],
-                    "correctAnswer": "What's your problem?",
+                    "correctAnswer": "¿Qué pedo?",
                     "example": "Fight!"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
-                    "phrase": "What does the slang word Chido mean?",
+                    "phrase": "Which is the slang term for cool?",
                     "answerOptions": [
-                        "Beach",
-                        "Cool",
-                        "Horse"
+                        "Gacho",
+                        "Chido",
+                        "Cheve"
                     ],
-                    "correctAnswer": "Cool",
-                    "example": "Rhymes with tool."
+                    "correctAnswer": "Chido",
+                    "example": "You would want to be called this."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.png",
-                    "phrase": "What does the slang word Gacho mean?",
+                    "phrase": "Which is the slang term for bad?",
                     "answerOptions": [
-                        "Bad",
-                        "Pretty",
-                        "Tasty"
+                        "Chido",
+                        "¿Qué onda?",
+                        "Gacho"
                     ],
-                    "correctAnswer": "Bad",
+                    "correctAnswer": "Gacho",
                     "example": "Opposite of chido."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/09/14/11/35/beer-1669273__340.png",
-                    "phrase": "What does the slang word Cheve/Chela mean?",
+                    "phrase": "Which is the slang term for beer?",
                     "answerOptions": [
-                        "Pool",
-                        "Siblings",
-                        "Beer"
+                        "¡Aguas!",
+                        "Cheve/Chela",
+                        "¿Qué pedo?"
                     ],
-                    "correctAnswer": "Beer",
-                    "example": "A cold one."
+                    "correctAnswer": "Cheve/Chela",
+                    "example": "Or terms"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
-                    "phrase": "What does the slang word Aguas! mean?",
+                    "phrase": "Which is the slang term for watch out!",
                     "answerOptions": [
-                        "Watch out!",
-                        "Help me!",
-                        "Im scared!"
+                        "¡Aguas!",
+                        "Cheve",
+                        "Chela"
                     ],
-                    "correctAnswer": "Watch out!",
-                    "example": "Listen to the kids bro."
+                    "correctAnswer": "¡Aguas!",
+                    "example": "Exclamation!"
                 }
             ]
         },
-
         {
             "language": "French",
             "questions": [
@@ -657,10 +760,9 @@ module.exports = [
                         "Chez",
                         "Féca"
                     ],
-                    "correctAnswer":  "Féca",
+                    "correctAnswer": "Féca",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://www.clipartkey.com/mpngs/m/76-763534_silhouette-man-walking-free-picture-man-silhouette-png.png",
                     "phrase": "Which is the slang term for guy?",
@@ -669,10 +771,9 @@ module.exports = [
                         "Keum",
                         "Flic"
                     ],
-                    "correctAnswer":  "Keum",
+                    "correctAnswer": "Keum",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://4570book.info/wp-content/uploads/2020/02/rudeness-clipart-of-children-free-rude-girl-cliparts-download-free-clip-art-free-clip-children-rudeness-of-clipart-.jpg",
                     "phrase": "Which is the slang term for jerk?",
@@ -681,10 +782,9 @@ module.exports = [
                         "Mec",
                         "Homme"
                     ],
-                    "correctAnswer":  "Beuf",
+                    "correctAnswer": "Beuf",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
                     "phrase": "Which is the slang term for something that is shady",
@@ -693,10 +793,9 @@ module.exports = [
                         "Chelou",
                         "Fromage"
                     ],
-                    "correctAnswer":  "Chelou",
+                    "correctAnswer": "Chelou",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/06/06/17/05/model-1439909__480.jpg",
                     "phrase": "Which is the slang term for a beautiful woman?",
@@ -705,10 +804,9 @@ module.exports = [
                         "Femme",
                         "Fille"
                     ],
-                    "correctAnswer":  "Bombe",
+                    "correctAnswer": "Bombe",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/01/10/14/35/old-man-1969215__480.jpg",
                     "phrase": "Which is the slang term for an attractive man?",
@@ -717,10 +815,9 @@ module.exports = [
                         "Cravate",
                         "Beau Gosse"
                     ],
-                    "correctAnswer":  "Beau Gosse",
+                    "correctAnswer": "Beau Gosse",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.clipart.email/a3e1e6194491e4efe50e5dac6edafd73_business-lady-silhouette-at-getdrawingscom-free-for-personal-_1445-1920.jpeg",
                     "phrase": "Which is the slang term for a woman?",
@@ -729,10 +826,9 @@ module.exports = [
                         "Clavier",
                         "Meuf"
                     ],
-                    "correctAnswer":  "Meuf",
+                    "correctAnswer": "Meuf",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/09/13/07/58/paris-2744657_960_720.jpg",
                     "phrase": "Which is the slang term for the métro?",
@@ -741,10 +837,9 @@ module.exports = [
                         "Jeu",
                         "Oncle"
                     ],
-                    "correctAnswer":  "Tromé",
+                    "correctAnswer": "Tromé",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/smiling-multiethnic-friends-talking-looking-phone_23-2148222584.jpg",
                     "phrase": "Which is the slang term for thanks",
@@ -753,10 +848,9 @@ module.exports = [
                         "Cimer",
                         "Cahier"
                     ],
-                    "correctAnswer":  "Cimer",
+                    "correctAnswer": "Cimer",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://images.8tracks.com/cover/i/002/642/585/tumblr_static_adidas_house_party-9055.jpg?rect=128,0,768,768&q=98&fm=jpg&fit=max&w=640&h=640",
                     "phrase": "Which is the slang term for a party?",
@@ -765,12 +859,11 @@ module.exports = [
                         "Voyage",
                         "Teuf"
                     ],
-                    "correctAnswer":  "Teuf",
+                    "correctAnswer": "Teuf",
                     "example": ""
                 }
             ]
         },
-
         {
             "language": "German",
             "questions": [
@@ -782,10 +875,9 @@ module.exports = [
                         "etwas",
                         "Frau"
                     ],
-                    "correctAnswer":  "Prost!",
+                    "correctAnswer": "Prost!",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://blog.lingoda.com/wp-content/uploads/2020/01/bigstock-Young-People-Man-And-Woman-Gr-327730912-1024x532.jpg",
                     "phrase": "Which is the slang term for saying goodbye?",
@@ -794,10 +886,9 @@ module.exports = [
                         "Kalt",
                         "Mach's Gut!"
                     ],
-                    "correctAnswer":  "Mach's Gut!",
+                    "correctAnswer": "Mach's Gut!",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/smiling-friends-greeting-each-other-nature_23-2148179933.jpg",
                     "phrase": "Which is the slang term like dude?",
@@ -806,10 +897,9 @@ module.exports = [
                         "Alter",
                         "Kopf"
                     ],
-                    "correctAnswer":  "Alter",
+                    "correctAnswer": "Alter",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://thumbs.dreamstime.com/b/shrugging-european-woman-wearing-blue-shirt-doubt-doing-shrug-shrugging-european-woman-wearing-blue-shirt-doubt-doing-shrug-123692380.jpg",
                     "phrase": "Which is the slang term for oh well?",
@@ -818,10 +908,9 @@ module.exports = [
                         "Naja",
                         "Obst"
                     ],
-                    "correctAnswer":  "Naja",
+                    "correctAnswer": "Naja",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.theatlantic.com/thumbor/SITni909H72zFDpgAMJro76bKcY=/900x588/media/img/photo/2014/09/opening-weekend-of-oktoberfest-2014/o01_14560857/original.jpg",
                     "phrase": "Which is the slang term for being really drunk?",
@@ -830,10 +919,9 @@ module.exports = [
                         "Mittag",
                         "Breit"
                     ],
-                    "correctAnswer":  "Breit",
+                    "correctAnswer": "Breit",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://thumbs.dreamstime.com/b/arrogant-self-important-stuck-up-man-egoist-bold-napoleon-complex-short-syndrome-isolated-gray-background-human-emotion-79589967.jpg",
                     "phrase": "Which is the slang term for a know-it-all?",
@@ -842,10 +930,9 @@ module.exports = [
                         "Hemd",
                         "Fleisch"
                     ],
-                    "correctAnswer":  "Besserwisser",
+                    "correctAnswer": "Besserwisser",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.ramseysolutions.net/media/article-images/good-bad-cash-l.jpg",
                     "phrase": "Which is the slang term for cash?",
@@ -854,10 +941,9 @@ module.exports = [
                         "Kohle",
                         "Zahl"
                     ],
-                    "correctAnswer":  "Kohle",
+                    "correctAnswer": "Kohle",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/sad-woman-eating-pizza-holding-phone-laying-sofa-home-blue-tone_130111-269.jpg",
                     "phrase": "Which is the slang term for weight gained from emotional eating?",
@@ -866,10 +952,9 @@ module.exports = [
                         "Hund",
                         "Unterschied"
                     ],
-                    "correctAnswer":  "Kummerspeck",
+                    "correctAnswer": "Kummerspeck",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://cdn.shopify.com/s/files/1/0015/7594/4243/files/istockphoto-875230454-612x612_grande.jpg?v=1557423899",
                     "phrase": "Which is the slang term for a hangover?",
@@ -878,10 +963,9 @@ module.exports = [
                         "Kuchen",
                         "Blume"
                     ],
-                    "correctAnswer":  "Kater",
+                    "correctAnswer": "Kater",
                     "example": ""
                 },
-
                 {
                     "imageUrl": "https://s3.amazonaws.com/thumbnails.illustrationsource.com/huge.9.45562.JPG",
                     "phrase": "Which is the slang term for a very positive or negative exclamtion?",
@@ -890,12 +974,11 @@ module.exports = [
                         "Freund",
                         "Krass!"
                     ],
-                    "correctAnswer":  "Krass!",
+                    "correctAnswer": "Krass!",
                     "example": ""
                 }
             ]
         },
-
         {
             "language": "Navajo",
             "questions": [
@@ -918,7 +1001,7 @@ module.exports = [
                         "Tsxíiłgo bił oohsxał",
                         "Sáanii t'óó yitah yilwoł"
                     ],
-                    "correctAnswer":  "Tsxíiłgo bił oohsxał",
+                    "correctAnswer": "Tsxíiłgo bił oohsxał",
                     "example": ""
                 },
                 {
@@ -929,7 +1012,7 @@ module.exports = [
                         "Yich'i' yił pop",
                         "Sáanii t'óó yitah yilwoł"
                     ],
-                    "correctAnswer":  "Sáanii t'óó yitah yilwoł",
+                    "correctAnswer": "Sáanii t'óó yitah yilwoł",
                     "example": ""
                 },
                 {
@@ -940,7 +1023,7 @@ module.exports = [
                         "Yiik'ih dah sizí",
                         "Biyaa niséłt'i"
                     ],
-                    "correctAnswer":  "Bił diech'iish",
+                    "correctAnswer": "Bił diech'iish",
                     "example": ""
                 },
                 {
@@ -962,7 +1045,7 @@ module.exports = [
                         "Biyaa niséłt'i'",
                         "bił naak'ai'"
                     ],
-                    "correctAnswer":  "Dah naashch'aał",
+                    "correctAnswer": "Dah naashch'aał",
                     "example": ""
                 },
                 {
@@ -984,7 +1067,7 @@ module.exports = [
                         "bił naak'ai",
                         "Bił diech'iish"
                     ],
-                    "correctAnswer":  "Yich'i' yił pop",
+                    "correctAnswer": "Yich'i' yił pop",
                     "example": ""
                 },
                 {
@@ -995,7 +1078,7 @@ module.exports = [
                         "bił naak'ai'",
                         "Dah naashch'aał"
                     ],
-                    "correctAnswer":  "bił naak'ai'",
+                    "correctAnswer": "bił naak'ai'",
                     "example": ""
                 },
                 {
@@ -1006,9 +1089,9 @@ module.exports = [
                         "Bił diech'iish",
                         "ʼÁh nístsʼííd"
                     ],
-                    "correctAnswer":  "Yiik'ih dah sizí",
+                    "correctAnswer": "Yiik'ih dah sizí",
                     "example": ""
-                } 
+                }
             ]
         },
         {
@@ -1022,7 +1105,7 @@ module.exports = [
                         "Cartello",
                         "Figurati"
                     ],
-                    "correctAnswer":  "Figurati",
+                    "correctAnswer": "Figurati",
                     "example": ""
                 },
                 {
@@ -1033,7 +1116,7 @@ module.exports = [
                         "Collana",
                         "Bevanda"
                     ],
-                    "correctAnswer":  "Figo",
+                    "correctAnswer": "Figo",
                     "example": ""
                 },
                 {
@@ -1044,7 +1127,7 @@ module.exports = [
                         "Dai!",
                         "Scavo"
                     ],
-                    "correctAnswer":  "Dai!",
+                    "correctAnswer": "Dai!",
                     "example": ""
                 },
                 {
@@ -1055,7 +1138,7 @@ module.exports = [
                         "Testa",
                         "Boh!"
                     ],
-                    "correctAnswer":  "Boh!",
+                    "correctAnswer": "Boh!",
                     "example": ""
                 },
                 {
@@ -1066,7 +1149,7 @@ module.exports = [
                         "Soffio",
                         "Doccia"
                     ],
-                    "correctAnswer":  "In bocca al lupo!",
+                    "correctAnswer": "In bocca al lupo!",
                     "example": ""
                 },
                 {
@@ -1077,7 +1160,7 @@ module.exports = [
                         "Boh!",
                         "Dai!"
                     ],
-                    "correctAnswer":  "Crepi",
+                    "correctAnswer": "Crepi",
                     "example": ""
                 },
                 {
@@ -1088,7 +1171,7 @@ module.exports = [
                         "Che Schifo!",
                         "Palla"
                     ],
-                    "correctAnswer":  "Che Schifo!",
+                    "correctAnswer": "Che Schifo!",
                     "example": ""
                 },
                 {
@@ -1099,7 +1182,7 @@ module.exports = [
                         "Crepi",
                         "Cavalo!"
                     ],
-                    "correctAnswer":  "Cavalo!",
+                    "correctAnswer": "Cavalo!",
                     "example": ""
                 },
                 {
@@ -1110,7 +1193,7 @@ module.exports = [
                         "Cavallo",
                         "Magari"
                     ],
-                    "correctAnswer":  "Magari",
+                    "correctAnswer": "Magari",
                     "example": ""
                 },
                 {
@@ -1121,13 +1204,1275 @@ module.exports = [
                         "Chitarra",
                         "Scarpa"
                     ],
-                    "correctAnswer":  "Limonare",
+                    "correctAnswer": "Limonare",
                     "example": ""
-                } 
+                }
             ]
         }
+    ],
+    [
+        {
+            "language": "Spanish",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Shit",
+                    "answerOptions": [
+                        "mierda",
+                        "verga",
+                        "puto"
+                    ],
+                    "correctAnswer": "mierda",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Penis or fuck",
+                    "answerOptions": [
+                        "puto",
+                        "cagar",
+                        "verga"
+                    ],
+                    "correctAnswer": "verga",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Homosexual",
+                    "answerOptions": [
+                        "puto",
+                        "cagar",
+                        "mamon"
+                    ],
+                    "correctAnswer": "puto",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Idiot",
+                    "answerOptions": [
+                        "mamon",
+                        "pendejo",
+                        "hueva"
+                    ],
+                    "correctAnswer": "pendejo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Sex or someone annoying",
+                    "answerOptions": [
+                        "mamon",
+                        "fregon",
+                        "chingar"
+                    ],
+                    "correctAnswer": "chingar",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "To poop",
+                    "answerOptions": [
+                        "fregon",
+                        "cagar",
+                        "culo"
+                    ],
+                    "correctAnswer": "cagar",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Stuck up person",
+                    "answerOptions": [
+                        "mamon",
+                        "hueva",
+                        "pendejo"
+                    ],
+                    "correctAnswer": "mamon",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Ass",
+                    "answerOptions": [
+                        "chingar",
+                        "mierda",
+                        "culo"
+                    ],
+                    "correctAnswer": "culo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Lazy person",
+                    "answerOptions": [
+                        "hueva",
+                        "puto",
+                        "culo"
+                    ],
+                    "correctAnswer": "hueva",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "mamon",
+                        "chingar",
+                        "fregon"
+                    ],
+                    "correctAnswer": "fregon",
+                },
+            ]
+        },
+        {
+            "language": "Navajo",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                }
+            ]
+        },
+        {
+            "language": "French",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "I'm pissed off.",
+                    "answerOptions": [
+                        "Ça m'énerve",
+                        "Bordel",
+                        "Putain"
+                    ],
+                    "correctAnswer": "Ça m'énerve",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Shit",
+                    "answerOptions": [
+                        "Putain",
+                        "Tabernak",
+                        "Merde"
+                    ],
+                    "correctAnswer": "Merde",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Literally means whore, but is interchangeable as the word fuck.",
+                    "answerOptions": [
+                        "Enculé",
+                        "Putain",
+                        "Merde"
+                    ],
+                    "correctAnswer": "Putain",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Literally means brothel, it's simaler to the word fuck.",
+                    "answerOptions": [
+                        "Bordel",
+                        "J'en ai rien a foutre",
+                        "Ça me fait chier"
+                    ],
+                    "correctAnswer": "Bordel",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "(Quebec) This literally means the tabernacle, as a swear word it means fuck.",
+                    "answerOptions": [
+                        "Vert",
+                        "Roi",
+                        "Tabernak"
+                    ],
+                    "correctAnswer": "Tabernak",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "I'm so angry, it makes me shit",
+                    "answerOptions": [
+                        "Rouge",
+                        "homme",
+                        "Ça me fait chier"
+                    ],
+                    "correctAnswer": "Ça me fait chier",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Im so bored I'd rather shit.",
+                    "answerOptions": [
+                        "Je me fais chier",
+                        "Blanche",
+                        "Ça casse les couilles"
+                    ],
+                    "correctAnswer": "Je me fais chier",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "It breaks my balls",
+                    "answerOptions": [
+                        "Ça casse les couilles",
+                        "Ça me fait chier",
+                        "L'eau"
+                    ],
+                    "correctAnswer": "Ça casse les couilles",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "I don't give a fuck",
+                    "answerOptions": [
+                        "Tabernak",
+                        "J'en ai rien a foutre",
+                        "Ça m'énerve"
+                    ],
+                    "correctAnswer": "J'en ai rien a foutre",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Fuck Yourself",
+                    "answerOptions": [
+                        "Putain",
+                        "Merde",
+                        "Enculé"
+                    ],
+                    "correctAnswer": "Enculé",
+                }
+            ]
+        },
+        {
+            "language": "German",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Shit",
+                    "answerOptions": [
+                        "schlampe",
+                        "wichser",
+                        "scheiße"
+                    ],
+                    "correctAnswer": "scheiße",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Asshole",
+                    "answerOptions": [
+                        "arsch",
+                        "nutte",
+                        "arschloch"
+                    ],
+                    "correctAnswer": "arschloch",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Ass",
+                    "answerOptions": [
+                        "arsch",
+                        "arschloch",
+                        "nutte"
+                    ],
+                    "correctAnswer": "arsch",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Jerk off",
+                    "answerOptions": [
+                        "hurensohn",
+                        "wichser",
+                        "nutte"
+                    ],
+                    "correctAnswer": "wichser",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Slut",
+                    "answerOptions": [
+                        "fick dich",
+                        "scheiße",
+                        "schlampe"
+                    ],
+                    "correctAnswer": "schlampe",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Son of a bitch",
+                    "answerOptions": [
+                        "nutte",
+                        "hurensohn",
+                        "fick dich"
+                    ],
+                    "correctAnswer": "hurensohn",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Prostitute",
+                    "answerOptions": [
+                        "schampe",
+                        "ente",
+                        "nutte"
+                    ],
+                    "correctAnswer": "nutte",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Disgusting bastard",
+                    "answerOptions": [
+                        "ekelhafter bastard",
+                        "fick deine mutter",
+                        "arschloch"
+                    ],
+                    "correctAnswer": "ekelhafter bastard",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Fuck you",
+                    "answerOptions": [
+                        "hurensohn",
+                        "fick dich",
+                        "arsch"
+                    ],
+                    "correctAnswer": "fick dich",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Fuck your mother",
+                    "answerOptions": [
+                        "fick dich",
+                        "fünf",
+                        "fick deine mutter"
+                    ],
+                    "correctAnswer": "fick deine mutter",
+                }
+            ]
+        },
+        {
+            "language": "Italian",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Shit",
+                    "answerOptions": [
+                        "Merda",
+                        "Stronza",
+                        "Fregna"
+                    ],
+                    "correctAnswer": "Merda",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Dick, however this word is used as a general curse word.",
+                    "answerOptions": [
+                        "Coglione",
+                        "Stronza",
+                        "Cazzo"
+                    ],
+                    "correctAnswer": "Cazzo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Piece of shit",
+                    "answerOptions": [
+                        "Testa di cazzo",
+                        "Coglione",
+                        "Pezzo di merda"
+                    ],
+                    "correctAnswer": "Pezzo di merda",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Bitch",
+                    "answerOptions": [
+                        "Stronza",
+                        "Cacacazzo",
+                        "Figlio di puttana"
+                    ],
+                    "correctAnswer": "Stronza",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Son of a bitch",
+                    "answerOptions": [
+                        "Figlio di puttana",
+                        "Cacacazzo",
+                        "Testa di cazzo"
+                    ],
+                    "correctAnswer": "Figlio di puttana",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Pussy/ Oh shit(Rome).",
+                    "answerOptions": [
+                        "Coglione",
+                        "Vaffanculo",
+                        "Fregna"
+                    ],
+                    "correctAnswer": "Fregna",
 
-
-        
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "A big testical, slang for a dumb person.",
+                    "answerOptions": [
+                        "Testa di cazzo",
+                        "Coglione",
+                        "Vaffanculo"
+                    ],
+                    "correctAnswer": "Coglione",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Fuck you, fuck off...",
+                    "answerOptions": [
+                        "Cacacazzo",
+                        "Testa di cazzo",
+                        "Vaffanculo"
+                    ],
+                    "correctAnswer": "Vaffanculo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Bullshitting",
+                    "answerOptions": [
+                        "Cacacazzo",
+                        "Coglione",
+                        "Merda"
+                    ],
+                    "correctAnswer": "Cacacazzo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Dickhead",
+                    "answerOptions": [
+                        "Stronza",
+                        "Fregna",
+                        "Testa di cazzo"
+                    ],
+                    "correctAnswer": "Testa di cazzo",
+                }
+            ]
+        },
+        {
+            "language": "Portuguese",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Shit",
+                    "answerOptions": [
+                        "Fudeu",
+                        "Merda",
+                        "Cacête"
+                    ],
+                    "correctAnswer": "Merda",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Fuck, or penis",
+                    "answerOptions": [
+                        "Fudeu",
+                        "Deu Merda",
+                        "Caralho"
+                    ],
+                    "correctAnswer": "Caralho",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Dick",
+                    "answerOptions": [
+                        "Foda-se!",
+                        "Cacête",
+                        "Boceta"
+                    ],
+                    "correctAnswer": "Cacête",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Fuck",
+                    "answerOptions": [
+                        "Fudeu",
+                        "Boceta",
+                        "Filho da puta"
+                    ],
+                    "correctAnswer": "Fudeu",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Went to shit, bullshit",
+                    "answerOptions": [
+                        "Deu Merda",
+                        "Filho da puta",
+                        "Sua mãe"
+                    ],
+                    "correctAnswer": "Deu Merda",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Pussy",
+                    "answerOptions": [
+                        "Sua mãe",
+                        "Foda-se!",
+                        "Boceta"
+                    ],
+                    "correctAnswer": "Boceta",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Ass",
+                    "answerOptions": [
+                        "Fildo da puta",
+                        "Bunda",
+                        "Cacête"
+                    ],
+                    "correctAnswer": "Bunda",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Son of a bitch",
+                    "answerOptions": [
+                        "Sua mãe",
+                        "Boceta",
+                        "Filho da puta"
+                    ],
+                    "correctAnswer": "Filho da puta",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Your mother",
+                    "answerOptions": [
+                        "Sua mãe",
+                        "Deu Merda",
+                        "Foda-se!"
+                    ],
+                    "correctAnswer": "Sua mãe",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Fuck you",
+                    "answerOptions": [
+                        "Boceta",
+                        "Foda-se!",
+                        "Bunda"
+                    ],
+                    "correctAnswer": "Foda-se!",
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "language": "Spanish",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jp",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "el cuerpo",
+                        "la gente",
+                        "el hombre"
+                    ],
+                    "correctAnswer": "la gente",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "el cuerpo",
+                        "la cabeza",
+                        "el cuello"
+                    ],
+                    "correctAnswer": "el cuerpo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "el pecho",
+                        "la mujer",
+                        "el hombre"
+                    ],
+                    "correctAnswer": "el hombre",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "la cadera",
+                        "la mujer",
+                        "la cabeza"
+                    ],
+                    "correctAnswer": "la mujer",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "la cabeza",
+                        "la espinilla",
+                        "el cuello"
+                    ],
+                    "correctAnswer": "la cabeza",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "la espinilla",
+                        "el abdomen",
+                        "el cuello"
+                    ],
+                    "correctAnswer": "el cuello",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "el pecho",
+                        "la mujer",
+                        "la cadera"
+                    ],
+                    "correctAnswer": "el pecho",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "la gente",
+                        "el abdomen",
+                        "la mujer"
+                    ],
+                    "correctAnswer": "el abdomen",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "la cadera",
+                        "el cuello",
+                        "la cabeza"
+                    ],
+                    "correctAnswer": "la cadera",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "la gente",
+                        "el hombre",
+                        "la espinilla"
+                    ],
+                    "correctAnswer": "la espinilla",
+                }
+            ]
+        },
+        {
+            "language": "French",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "le ventre",
+                        "la hanche",
+                        "les gens"
+                    ],
+                    "correctAnswer": "les gens",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "l'homme",
+                        "la femme",
+                        "la poitrine"
+                    ],
+                    "correctAnswer": "l'homme",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "la tête",
+                        "le tibia",
+                        "la femme"
+                    ],
+                    "correctAnswer": "la femme",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "le cou",
+                        "le corps",
+                        "la poitrine"
+                    ],
+                    "correctAnswer": "le corps",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "la tête",
+                        "l'homme",
+                        "la hanche"
+                    ],
+                    "correctAnswer": "la tête",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "le cou",
+                        "le corps",
+                        "le ventre"
+                    ],
+                    "correctAnswer": "le cou",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "la femme",
+                        "la tibia",
+                        "la poitrine"
+                    ],
+                    "correctAnswer": "la poitrine",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "l'homme",
+                        "le ventre",
+                        "le tibia"
+                    ],
+                    "correctAnswer": "le ventre",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "les gens",
+                        "la tête",
+                        "la hanche"
+                    ],
+                    "correctAnswer": "la hanche",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "le tibia",
+                        "la poitrine",
+                        "le ventre"
+                    ],
+                    "correctAnswer": "le tibia",
+                }
+            ]
+        },
+        {
+            "language": "German",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "der Mann",
+                        "die Frau",
+                        "die Menschen"
+                    ],
+                    "correctAnswer": "der Menschen",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "der Mann",
+                        "die Frau",
+                        "der Kopf"
+                    ],
+                    "correctAnswer": "der Mann",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "der Hals",
+                        "die Frau",
+                        "die Brust"
+                    ],
+                    "correctAnswer": "die Frau",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "der Körper",
+                        "der Kopf",
+                        "der Bauch"
+                    ],
+                    "correctAnswer": "der Körper",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "die Brust",
+                        "die Hüfte",
+                        "der Kopf"
+                    ],
+                    "correctAnswer": "der Kopf",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "die Hüfte",
+                        "der Hals",
+                        "das Schienbein"
+                    ],
+                    "correctAnswer": "der Hals",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "der Bauch",
+                        "die Frau",
+                        "die Brust"
+                    ],
+                    "correctAnswer": "die brust",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "der Bauch",
+                        "der Kopf",
+                        "die Hüfte"
+                    ],
+                    "correctAnswer": "der Bauch",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "der Mann",
+                        "die Menschen",
+                        "die Hüfte"
+                    ],
+                    "correctAnswer": "die Hüfte",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "der Hals",
+                        "die Brust",
+                        "das Schienbein"
+                    ],
+                    "correctAnswer": "das Schienbein",
+                }
+            ]
+        },
+        {
+            "language": "Italian",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "le persone",
+                        "l'uomo",
+                        "la donna"
+                    ],
+                    "correctAnswer": "le persone",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "l'uomo",
+                        "le persone",
+                        "la donna"
+                    ],
+                    "correctAnswer": "l'uomo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "la donna",
+                        "il corpo",
+                        "il collo"
+                    ],
+                    "correctAnswer": "la donna",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "il torace",
+                        "la testa",
+                        "il corpo"
+                    ],
+                    "correctAnswer": "il corpo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "il torace",
+                        "la testa",
+                        "l'anca"
+                    ],
+                    "correctAnswer": "la testa",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "il collo",
+                        "lo stinco",
+                        "l'anca"
+                    ],
+                    "correctAnswer": "il collo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "l'addome",
+                        "il torace",
+                        "l'anca"
+                    ],
+                    "correctAnswer": "il torace",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "la testa",
+                        "l'addome",
+                        "il corpo"
+                    ],
+                    "correctAnswer": "l'addome",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "l'anca",
+                        "la donna",
+                        "le persone"
+                    ],
+                    "correctAnswer": "l'anca",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "il torace",
+                        "lo stinco",
+                        "il collo"
+                    ],
+                    "correctAnswer": "lo stinco",
+                }
+            ]
+        },
+        {
+            "language": "Portuguese",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "o povo",
+                        "a mulher",
+                        "o homem"
+                    ],
+                    "correctAnswer": "o povo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "o corpo",
+                        "a mulher",
+                        "o homem"
+                    ],
+                    "correctAnswer": "o homem",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "a mulher",
+                        "a cabeça",
+                        "o peito"
+                    ],
+                    "correctAnswer": "a mulher",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "a cabeça",
+                        "o corpo",
+                        "o pescoço"
+                    ],
+                    "correctAnswer": "o corpo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "o peito",
+                        "o pescoço",
+                        "a cabeça"
+                    ],
+                    "correctAnswer": "a cabeça",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "o abdômen",
+                        "o pescoço",
+                        "o quadril"
+                    ],
+                    "correctAnswer": "o pescoço",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "o peito",
+                        "o abdômen",
+                        "o pescoço"
+                    ],
+                    "correctAnswer": "o peito",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "o abdômen",
+                        "a canela",
+                        "o quadril"
+                    ],
+                    "correctAnswer": "o abdômen",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "o homem",
+                        "o quadril",
+                        "o peito"
+                    ],
+                    "correctAnswer": "o quadril",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "o quadril",
+                        "a canela",
+                        "o abdômen"
+                    ],
+                    "correctAnswer": "a canela",
+                }
+            ]
+        },
+        {
+            "language": "Navajo",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "correctAnswer": "",
+                }
+            ]
+        }
     ]
 ]

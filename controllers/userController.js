@@ -1,6 +1,7 @@
 const db = require("../models");
 const bcrypt = require('bcryptjs');
 
+
 // Defining methods (CRUD) for the UserController
 module.exports = {
     // user sign up
@@ -19,8 +20,9 @@ module.exports = {
                             password: hash
                         })
                             .then(dbUser => {
-                                res.status(201).json('Success!');
-                                res.json(dbUser);
+                                console.log(dbUser);
+                                // dbUser.password = undefined
+                                res.json(dbUser)
                             })
                             .catch(err => res.status(422).json({ err, message: "Username already exists." }));
                     }
@@ -28,71 +30,61 @@ module.exports = {
             }
         })
     },
-    // user login
-    findOne: function ({ body }, res) {
+    getUser: function ({ params }, res) {
+        console.log("params.id", params.id);
         db.User
-            .findOne({
-                username: body.username
-            })
+            .findOne({ _id: params.id })
             .then(dbUser => {
-                if (!dbUser) {
-                    return res.json(user);
-                } else {
-                    bcrypt.compare(body.password, dbUser.password, (err, result) => {
-                        if (result) {
-                            res.json({
-                                username: dbUser.username,
-                                id: dbUser._id,
-                                results: dbUser.results
-                            });
-                        } else {
-                            res.status(401).json({ message: 'Incorrect password. Try again!' });
-                        }
-                    })
-                }
+                dbUser.password = undefined
+                res.json(dbUser)
             })
-            .catch(err => {
-                console.log(err);
-                res.status(500).json(err.message);
-            });
-    },
-    findById: function ({ params }, res) {
-        db.User
-            .findById(params.id)
-            .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
-    // will be used if user wants to update their username/password
+    // update user's current language or existing lesson score (language AND lesson they've already practiced)
     update: function ({ params, body }, res) {
         console.log(params.id, body);
         db.User
             .findOneAndUpdate({ _id: params.id }, body, { new: true })
-            .then(dbUser => res.json(dbUser))
-            .catch(err => res.status(422).json(err));
-    },
-    // // used for storing user progress data
-    updateLesson: function ({ params, body }, res) {
-        console.log(params.id, body);
-        db.User
-            .findOneAndUpdate({ "results._id": params.lessonId }, { $push: { "results.$.lesson": body } })
             .then(dbUser => {
-                console.log(dbUser);
+                dbUser.password = undefined
                 res.json(dbUser)
             })
             .catch(err => res.status(422).json(err));
     },
-
+    // update user results (new language not previously practiced)
     updateResults: function ({ params, body }, res) {
-        console.log(params.id, body);
+        console.log(params.userId, body);
         db.User
-            .findOneAndUpdate({ _id: params.id }, { $push: { results: body } }, { new: true })
+            .findOneAndUpdate({ _id: params.userId }, { $push: { results: body } }, { new: true })
             .then(dbUser => {
-                console.log(dbUser);
+                dbUser.password = undefined
                 res.json(dbUser)
             })
             .catch(err => res.status(422).json(err));
     },
-    // will be used if user wants to delete their account
+    // update user results (language they've already practiced, new lesson)
+    updateLesson: function ({ params, body }, res) {
+        console.log("params.resultsId", params.resultsId, "body", body);
+        db.User
+            .findOneAndUpdate({ "results._id": params.resultsId }, { $push: { "results.$.lesson": body } }, { new: true })
+            .then(dbUser => {
+                dbUser.password = undefined
+                res.json(dbUser)
+            })
+            .catch(err => res.status(422).json(err));
+    },
+    updateExistingLesson: function ({ params, body }, res) {
+        console.log(params.userId, body);
+        const updateStr = "results." + body.resultsIndex + ".lesson." + body.lessonIndex;
+        db.User
+            .findOneAndUpdate({ _id: params.userId }, { [updateStr]: body.resultObject }, { new: true })
+            .then(dbUser => {
+                dbUser.password = undefined
+                res.json(dbUser)
+            })
+            .catch(err => res.status(422).json(err));
+    },
+    // delete user account
     remove: function ({ params }, res) {
         db.User
             .findById({ _id: params.id })

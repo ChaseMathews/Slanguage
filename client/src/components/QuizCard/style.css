@@ -21,7 +21,6 @@ margin-top: 10px;
 
 .choices{
     padding-top: 94px;
-    padding-left: 7rem;
     align-content: center;
     vertical-align: 10vh;
 }
@@ -33,13 +32,14 @@ margin-top: 10px;
     text-align: center;
 
 }
+
 .modal {
     align-content: center;
     margin-top: 12px;
     border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     font-family:'Raleway', sans-serif;
     font-weight: 500;
     background-color: white;

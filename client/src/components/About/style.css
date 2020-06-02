@@ -1,3 +1,63 @@
-.about{
-    
+.profImages{
+    vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: coral;
+}
+
+.profImages:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .team{
+      color: white;
+  }
+
+  .tooltip1,
+  .boxAppearance {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 280px;
+  background-color: rgb(110, 109, 109);
+  color:white;
+  text-align: center;
+  border-radius: 6px;
+  /* padding: 5px 10px; */
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  left: -31%;
+  
+}
+
+.tooltip1:hover .tooltiptext,
+.profImages:hover + .tooltip1 .tooltiptext,
+.boxAppearance .messageBox:hover + .tooltiptext {
+  visibility: visible;
+}
+
+.boxAppearance .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: Black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 3px;
+  /* opacity: .5; */
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 29%;
 }

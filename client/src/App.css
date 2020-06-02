@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+body{
+  background-image: url(http://mdbootstrap.com/img/Photos/Others/images/91.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.backgroundImage{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+}
+
+.bigPicture{
+  margin-top: 5px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -42,3 +62,15 @@
   
 } 
 
+.container{
+  margin-top: 50px;
+}
+
+.loading-icon {
+  animation: App-logo-spin 1s infinite linear;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-bottom: 3px solid purple;
+  border-left: 3px solid purple;
+}
