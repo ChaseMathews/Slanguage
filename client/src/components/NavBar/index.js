@@ -11,7 +11,7 @@ export default function NavBar() {
 
 
 
-  const { user, currentLang } = useContext(UserContext);
+  const { user, currentLang, setMessage } = useContext(UserContext);
 
   const { lang } = useParams();
 
@@ -22,6 +22,7 @@ export default function NavBar() {
   const [modal, setModal] = useState(false);
 
   const deleteAccount = () => {
+    setMessage("Welcome Back!");
     API.deleteUser(user._id)
       .then(() => {
         console.log('Successfully deleted!');
@@ -30,6 +31,7 @@ export default function NavBar() {
   }
 
   const signOut = () => {
+    setMessage("Welcome Back!");
     API.userLogOut()
       .then(() => {
         console.log("user logged out!")

@@ -11,7 +11,7 @@ import { UserContext } from '../../utils/Context';
 
 export default function SignUp() {
 
-    const { setUser } = useContext(UserContext);
+    const { setUser, setMessage } = useContext(UserContext);
 
     const [userObject, setUserObject] = useState({
         username: "",
@@ -45,17 +45,9 @@ export default function SignUp() {
                 password: userObject.password,
             })
                 .then(res => {
-                    console.log(res.data);
-                    API.findUser(
-                        {
-                            username: userObject.username,
-                            password: userObject.password
-                        }
-                    )
-                        .then(userObj => {
-                            setUser(userObj.data);
-                            history.push("/SelectLanguage");
-                        })
+                    setUser(res.data);
+                    setMessage("You've made an account! Sign in to get started.")
+                    history.push("/");
                 })
                 .catch(err => {
                     console.error(err);

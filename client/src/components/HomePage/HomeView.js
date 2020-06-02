@@ -16,7 +16,7 @@ const SlideRight = styled.div`animation: 2s ${keyframes`${slideInRight}`} 1`;
 
 export default function HomeView() {
 
-    const { setUser } = useContext(UserContext);
+    const { setUser, message, setMessage } = useContext(UserContext);
 
     const [userForm, setUserForm] = useState({
         username: "",
@@ -48,7 +48,12 @@ export default function HomeView() {
                     console.log(userObj.data);
                     localStorage.setItem("userId", userObj.data.id);
                     setUser(userObj.data);
-                    history.push("/SelectLanguage");
+                    if(message === "You've made an account! Sign in to get started." || !userObj.data.currentLanguage){
+                        history.push("/SelectLanguage");
+                    } else {
+                        history.push(`/DashboardCards/${userObj.data.currentLanguage}`);
+                        setMessage("Welcome Back!");
+                    }
                 })
                 .catch(err => {
                     console.log(err);

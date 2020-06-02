@@ -20,7 +20,8 @@ module.exports = {
                             password: hash
                         })
                             .then(dbUser => {
-                                dbUser.password = undefined
+                                console.log(dbUser);
+                                // dbUser.password = undefined
                                 res.json(dbUser)
                             })
                             .catch(err => res.status(422).json({ err, message: "Username already exists." }));
