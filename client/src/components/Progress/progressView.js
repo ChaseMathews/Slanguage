@@ -74,7 +74,9 @@ export default function ProgressView() {
                     key={lang}
                   />
                   <div className="tooltiptext" >
-                    Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link> to practice this language!
+                    Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link> 
+                    <br></br>
+                    to practice this language!
                   </div>
                 </ >
               ))}
