@@ -11,7 +11,7 @@ import { UserContext } from '../../utils/Context';
 
 export default function HomeView() {
 
-    const { setUser, message } = useContext(UserContext);
+    const { setUser, message, setMessage } = useContext(UserContext);
 
     const [userForm, setUserForm] = useState({
         username: "",
@@ -47,6 +47,7 @@ export default function HomeView() {
                         history.push("/SelectLanguage");
                     } else {
                         history.push(`/DashboardCards/${userObj.data.currentLanguage}`);
+                        setMessage("Welcome Back!");
                     }
                 })
                 .catch(err => {
