@@ -30,13 +30,19 @@ export default function About() {
                 <hr />
                 <Row>
                         <Col>
+                        
                             <Image className="profImages" src="https://avatars3.githubusercontent.com/u/57241476?s=460&u=c101a90ddf64df3a7298c4d59b451cabd0908c51&v=4" roundedCircle />
-                            <h4>Karen Sosa</h4>
+                            <div  className="tooltip1">
+                            <h4 >Karen Sosa</h4><span className="tooltiptext"><h3>Karen</h3><p>a little blurb about Karen.</p></span>
+                            </div>
                         </Col>
                     
                         <Col>
+
                             <Image className="profImages" src="https://avatars2.githubusercontent.com/u/56829409?s=460&u=515f9615a0fc438134947916b45c82f774c57e2f&v=4g" roundedCircle />
-                            <h4>Shannon Scirghio</h4>
+                            <div  className="tooltip1">
+                            <h4>Shannon Scirghio</h4><span className="tooltiptext"><h3>Shannon</h3><p>a little blurb about Shannon.</p></span>
+                            </div>
                         </Col>
                     
                         <Col>
