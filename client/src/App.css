@@ -49,3 +49,11 @@ body{
   
 } 
 
+.loading-icon {
+  animation: App-logo-spin 1s infinite linear;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-bottom: 3px solid purple;
+  border-left: 3px solid purple;
+}
