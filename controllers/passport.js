@@ -11,11 +11,11 @@ passport.use(new LocalStrategy(
             })
             .then(dbUser => {
                 if (!dbUser) {
-                    return done(null, false, dbUser);
+                    return done(null, false, { message: "Incorrect username. Try again!" });
                 } else {
                     bcrypt.compare(password, dbUser.password, (err, result) => {
                         if (result) {
-                            done(null, {
+                            return done(null, {
                                 username: dbUser.username,
                                 _id: dbUser._id,
                                 id: dbUser._id,
@@ -23,7 +23,7 @@ passport.use(new LocalStrategy(
                                 currentLanguage: dbUser.currentLanguage
                             });
                         } else {
-                            done(null, false, { message: 'Incorrect password. Try again!' });
+                            return done(null, false, { message: 'Incorrect password. Try again!' });
                         }
                     })
                 }
@@ -41,8 +41,19 @@ passport.serializeUser(function (user, done) {
 
 passport.deserializeUser(function (id, done) {
     db.User.findById(id, function (err, user) {
+        console.log('user', user);
         done(err, user);
     });
 });
+
+
+// passport.serializeUser(function (user, done) {
+//     done(null, user.id);
+// });
+
+// passport.deserializeUser(function (obj, done) {
+//     done(null, obj);
+// });
+
 
 module.exports = passport;

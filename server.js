@@ -13,6 +13,7 @@ app.use(session({ secret: "cats" }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(passport.session());
+// app.use(passport.session({ secret: 'secret', saveUninitialized: false, resave: false, cookie: { maxAge: 1000 } }))
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));

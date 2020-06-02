@@ -16,9 +16,7 @@ export default function CarouselFlags() {
 
     const updateUserCurrentLang = e => {
         e.preventDefault();
-        console.log(e.target.value);
         const { value } = e.target;
-        console.log(value);
 
         API.updateUser(user._id, { currentLanguage: value })
             .then(res => {

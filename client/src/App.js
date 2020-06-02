@@ -30,7 +30,7 @@ function App() {
       setLoading(true);
       API.getUserData(userId)
       .then(userData => {
-        console.log(userData.data);
+        console.log(userData);
         setUser(userData.data);
         setLoading(false);
       })
