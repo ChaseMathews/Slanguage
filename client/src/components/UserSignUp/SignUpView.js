@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Row, Col, Jumbotron, Card } from 'react-bootstrap';
+import { Row, Col, Container, Card } from 'react-bootstrap';
 import API from "../../utils/API";
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
@@ -11,7 +11,7 @@ import { UserContext } from '../../utils/Context';
 
 export default function SignUp() {
 
-    const { setUser } = useContext(UserContext);
+    const { setUser, setMessage } = useContext(UserContext);
 
     const [userObject, setUserObject] = useState({
         username: "",
@@ -45,17 +45,9 @@ export default function SignUp() {
                 password: userObject.password,
             })
                 .then(res => {
-                    console.log(res.data);
-                    API.findUser(
-                        {
-                            username: userObject.username,
-                            password: userObject.password
-                        }
-                    )
-                        .then(userObj => {
-                            setUser(userObj.data);
-                            history.push("/SelectLanguage");
-                        })
+                    setUser(res.data);
+                    setMessage("You've made an account! Sign in to get started.")
+                    history.push("/");
                 })
                 .catch(err => {
                     console.error(err);
@@ -66,13 +58,11 @@ export default function SignUp() {
 
 
     return (
-        <Jumbotron>
-
-            <hr></hr>
+        <Container>
             <Card.Body>
                 <Row>
-                    <Card>
-                        <Col md={{ size: 10, offset: 1 }} >
+                    <Card className="signupPage">
+                        <Col md={{ size: 8 }} >
                             <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
                         </Col>
                     </Card>
@@ -88,6 +78,6 @@ export default function SignUp() {
 
                 </Row>
             </Card.Body>
-        </Jumbotron>
+        </Container>
     );
 }

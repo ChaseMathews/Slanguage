@@ -6,12 +6,19 @@ h1{
     color: black;
 }
 
-
 .lang{
   text-align: center;
 }
 
-.logo{
-  width: 100px;
- 
+.presCardBody{
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.presCard{
+  background-color: linear-gradient;
+  margin: 20px;
+  border-color: transparent;
 }

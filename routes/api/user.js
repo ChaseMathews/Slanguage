@@ -4,8 +4,8 @@ const isAuthenticated = require("../../controllers/isAuthenticated");
 const passport = require("../../controllers/passport");
 
 // Matches with "/api/user"
-router.route("/")
-  .post(isAuthenticated, userController.create);
+router.route("/signup")
+  .post(userController.create);
 
 // Matches with "/api/user/login"
 router.route("/login")
