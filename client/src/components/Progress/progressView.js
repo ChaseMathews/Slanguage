@@ -15,11 +15,11 @@ export default function ProgressView() {
   const languages = ["Spanish", "French", "Italian", "German", "Navajo", "Portuguese"];
   const [show, setShow] = useState(false);
   const history = useHistory();
-  const [languageClicked, setLanguageClicked] = useState(user.currentLanguage);
-  const userDbResultArr = user.results;
-  const languagesPracticed = userDbResultArr.map(obj => obj.language);
-  const languagesNotPracticed = languages.filter(diff => !languagesPracticed.includes(diff));
-  const [resultObject] = user.results.filter(obj => obj.language === languageClicked);
+  const [languageClicked, setLanguageClicked] = useState(user ? user.currentLanguage : "");
+  const userDbResultArr = user ? user.results : "";
+  const languagesPracticed = user ? userDbResultArr.map(obj => obj.language) : "";
+  const languagesNotPracticed = user ? languages.filter(diff => !languagesPracticed.includes(diff)) : "";
+  const [resultObject] = user ? user.results.filter(obj => obj.language === languageClicked) : "";
 
   useEffect(() => {
     checkLanguages();
@@ -38,6 +38,7 @@ export default function ProgressView() {
 
 
   const goToDash = () => {
+    setShow(false);
     history.push(`/DashboardCards/${user.currentLanguage}`);
   }
 
