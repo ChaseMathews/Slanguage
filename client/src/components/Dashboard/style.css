@@ -3,13 +3,12 @@
   margin: 20px;
 }
 
-.dashboardBackground{
-  opacity: .75;
-  position: absolute;
-  size: cover;
-}
+/* .backgroundImage{
+  width: 100%;
+} */
 
 .jumbotron.grayBox{
+  margin-top: 5px;
   background-color: rgba(233, 236, 239, .55);
 }
 
@@ -46,14 +45,12 @@
 
 .card--2 .card__img, .card--2 .card__img--hover {
     background-image: url('https://www.picpedia.org/handwriting/images/code-of-practice.jpg');
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-4BDexyL2zbg%2FWLBUDTyAh8I%2FAAAAAAAAS2w%2FUm6YZsDyTwATYoe885Uownv_UXoKHOUZACLcB%2Fs320%2Fpre-test-intro.jpg&f=1&nofb=1');
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    
 }
 
 .card__like {
@@ -109,7 +106,7 @@ top: 0;
   
 }
 .cardz {
-  /* margin-right: 25px; */
+  margin-bottom: 10px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
     width: 100%;
@@ -141,8 +138,8 @@ border-bottom-right-radius: 12px;
 }
 
 .card__title {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    /* margin-top: 5px; */
+    /* margin-bottom: 10px; */
     font-family: 'Roboto Slab', serif;
 }
 
@@ -167,7 +164,6 @@ border-bottom-right-radius: 12px;
 }
 
 .greeting {
-  margin-top: 100px;
   border-radius: 12px;
   font-family:'Raleway', sans-serif;
   font-weight: 500;

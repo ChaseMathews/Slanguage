@@ -11,10 +11,7 @@ export default function LangCategory() {
 
     return (
         <Row>
-            <Col sm="1">
-                {lang && <img className="logo" src={"https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/" + lang.toLowerCase() + ".png"} />}
-            </Col>
-            <Col sm="10">
+            <Col>
                 <h1 className="lang">{title}</h1>
             </Col>
         </Row>

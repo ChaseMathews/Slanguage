@@ -14,32 +14,42 @@ const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
 function LessonMenu() {
     const { lang } = useParams();
-    console.log(lang);
+    // console.log(lang);
 
     return (
+        <>
+            <div className="backgroundImage" style={{
+                backgroundImage:
+                    `url(https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/${lang.toLowerCase()}.png
+  )`, backgroundSize: "100%"
+            }}>
+            </div>
         <Container>
-            <>
-                <LangCategory />
-            </>
+            <LangCategory />
             <hr />
-            <Col sm={{ span: 6, offset: 3 }}>
-                <Card className="justify-content-center text-center">
-                    <SlideDown>
-                        <CardGradient>
-                            <SlangCard />
-                        </CardGradient>
-                    </SlideDown>
+            <Card.Body className="presCardBody" >
+                <Card className="presCard" >
+                    <h2>Slang/Profanity</h2>
                 </Card>
-            </Col>
-            <hr />
-            <SlideDown>
-                <Row>
-                    <Col md={{ span: 8, offset: 2 }}>
-                        <LessonCards />
-                    </Col>
-                </Row>
-            </SlideDown>
+                <SlideDown>
+                    {/* <CardGradient> */}
+                    <SlangCard />
+                    {/* </CardGradient> */}
+                </SlideDown>
+
+                <Card className="presCard" >
+                    <h2>Other Categories</h2>
+                </Card>
+                <SlideDown>
+                    <Row>
+                        <Col>
+                            <LessonCards />
+                        </Col>
+                    </Row>
+                </SlideDown>
+            </Card.Body>
         </Container>
+        </ >
     )
 }
 
