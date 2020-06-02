@@ -4951,7 +4951,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "É delicioso/a",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         }
