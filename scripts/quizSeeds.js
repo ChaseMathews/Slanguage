@@ -639,113 +639,113 @@ module.exports = [
             "questions": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/11/21/12/13/man-540500__340.jpg",
-                    "phrase": "What does the slang word Güey mean?",
+                    "phrase": "Which is the slang term for dude?",
                     "answerOptions": [
-                        "Dude",
-                        "Mom",
-                        "Cousin"
+                        "Chido",
+                        "Güey",
+                        "Crudo"
                     ],
-                    "correctAnswer": "Dude",
-                    "example": "¿Qué onda güey?"
+                    "correctAnswer": "Güey",
+                    "example": "¿Sup dude?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/07/02/trust-4321881__340.jpg",
-                    "phrase": "What does the slang word Neta mean?",
+                    "phrase": "Which is the slang term for truth?",
                     "answerOptions": [
-                        "Beer",
-                        "Ugly",
-                        "Truth"
+                        "Cheve",
+                        "Chela",
+                        "Neta"
                     ],
-                    "correctAnswer": "Truth",
+                    "correctAnswer": "Neta",
                     "example": "Do you promise?"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/11/19/24/headache-2058476__340.png",
-                    "phrase": "What does the slang word Crudo mean?",
+                    "phrase": "Which is the slang term for hungover?",
                     "answerOptions": [
-                        "Poop",
-                        "Hungover",
+                        "Neta",
+                        "Crudo",
                         "Tacos"
                     ],
-                    "correctAnswer": "Hungover",
+                    "correctAnswer": "Crudo",
                     "example": "Last night was fun."
                 },
                 {
                     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
-                    "phrase": "What does the slang phrase ¿Qué onda? mean?",
+                    "phrase": "Which is the slang term for What's up?",
                     "answerOptions": [
-                        "What's up?",
-                        "Wanna get tacos?",
-                        "How's your mom?"
+                        "Que onda?",
+                        "Que chido?",
+                        "Que pedo?"
                     ],
-                    "correctAnswer": "What's up?",
+                    "correctAnswer": "Que onda?",
                     "example": "Greeting"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/20/15/35/thumb-422558__340.jpg",
-                    "phrase": "What does the slang word Órale mean?",
+                    "phrase": "Which is the slang term for agreed?",
                     "answerOptions": [
-                        "Car",
-                        "Agreed",
-                        "House"
+                        "Crudo",
+                        "Orale",
+                        "Chela"
                     ],
-                    "correctAnswer": "Agreed",
+                    "correctAnswer": "Orale",
                     "example": "Can also mean to hurry up."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
-                    "phrase": "What does the slang phrase ¿Qué pedo? mean?",
+                    "phrase": "Which is the slang term for what's your problem?",
                     "answerOptions": [
-                        "Wanna marry me?",
-                        "How old are you?",
-                        "What's your problem?"
+                        "Que pedo?",
+                        "Que onda?",
+                        "Que chido?"
                     ],
-                    "correctAnswer": "What's your problem?",
+                    "correctAnswer": "Que pedo?",
                     "example": "Fight!"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/11/11/15/52/young-man-2939344__340.jpg",
-                    "phrase": "What does the slang word Chido mean?",
+                    "phrase": "Which is the slang term for cool?",
                     "answerOptions": [
-                        "Beach",
-                        "Cool",
-                        "Horse"
+                        "Gacho",
+                        "Chido",
+                        "Cheve"
                     ],
-                    "correctAnswer": "Cool",
-                    "example": "Rhymes with tool."
+                    "correctAnswer": "Chido",
+                    "example": "You would want to be called this."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.png",
-                    "phrase": "What does the slang word Gacho mean?",
+                    "phrase": "Which is the slang term for bad?",
                     "answerOptions": [
-                        "Bad",
-                        "Pretty",
-                        "Tasty"
+                        "Chido ",
+                        "Que onda?",
+                        "Gacho"
                     ],
-                    "correctAnswer": "Bad",
+                    "correctAnswer": "Gacho",
                     "example": "Opposite of chido."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/09/14/11/35/beer-1669273__340.png",
-                    "phrase": "What does the slang word Cheve/Chela mean?",
+                    "phrase": "Which is the slang term for beer?",
                     "answerOptions": [
-                        "Pool",
-                        "Siblings",
-                        "Beer"
+                        "Aguas",
+                        "Cheve/Chela",
+                        "Que pedo?"
                     ],
-                    "correctAnswer": "Beer",
-                    "example": "A cold one."
+                    "correctAnswer": "Cheve/Chela",
+                    "example": "Or terms"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
-                    "phrase": "What does the slang word Aguas! mean?",
+                    "phrase": "Which is the slang term for watch out!",
                     "answerOptions": [
-                        "Watch out!",
-                        "Help me!",
-                        "Im scared!"
+                        "Aguas!",
+                        "Cheve",
+                        "Chela"
                     ],
-                    "correctAnswer": "Watch out!",
-                    "example": "Listen to the kids bro."
+                    "correctAnswer": "Aguas!",
+                    "example": "Exclamation!"
                 }
             ]
         },
