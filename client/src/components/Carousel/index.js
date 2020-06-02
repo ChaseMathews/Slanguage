@@ -16,15 +16,14 @@ export default function CarouselFlags() {
 
     const updateUserCurrentLang = e => {
         e.preventDefault();
-        console.log(e.target.value);
         const { value } = e.target;
-        console.log(value);
 
         API.updateUser(user._id, { currentLanguage: value })
             .then(res => {
                 console.log(res.data);
-                setCurrentLang(res.data.currentLanguage);
-                history.push(`/DashboardCards/${res.data.currentLanguage}`);
+                setUser(res.data);
+                setCurrentLang(value);
+                history.push(`/DashboardCards/${value}`);
             })
             .catch(err => console.log(err));
 

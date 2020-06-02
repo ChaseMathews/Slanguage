@@ -47,5 +47,8 @@ export default {
     updateExistingUserLesson: function(userId, data){
         console.log('data', data)
         return axios.put(`/api/user/existingLesson/${userId}`, data)
+    },
+    userLogOut: function(){
+        return axios.get(`/api/user/logout`)
     }
 }

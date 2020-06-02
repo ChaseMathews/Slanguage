@@ -10,6 +10,7 @@ export default function LanguageButton(props) {
       name={props.language}
       value={props.value}
       onClick={() => props.setLanguageClicked(props.language)}
+      // style={{margin: "10px"}}
     >
       {props.language}
 

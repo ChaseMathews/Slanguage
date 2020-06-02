@@ -45,6 +45,8 @@ export default function HomeView() {
                 }
             )
                 .then(userObj => {
+                    console.log(userObj.data);
+                    localStorage.setItem("userId", userObj.data.id);
                     setUser(userObj.data);
                     history.push("/SelectLanguage");
                 })
