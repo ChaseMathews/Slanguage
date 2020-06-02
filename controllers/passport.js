@@ -47,13 +47,4 @@ passport.deserializeUser(function (id, done) {
 });
 
 
-// passport.serializeUser(function (user, done) {
-//     done(null, user.id);
-// });
-
-// passport.deserializeUser(function (obj, done) {
-//     done(null, obj);
-// });
-
-
 module.exports = passport;
