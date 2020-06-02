@@ -22,6 +22,7 @@ export default function ProgressView() {
   // const [modal, setModal] = useState(false);
   // const [show, setShow] = useState(false);
   const history = useHistory();
+  const [ disableMessage, setDisableMessage ] = useState(false);
 
   
   const checkLanguages = () => {
@@ -74,7 +75,7 @@ export default function ProgressView() {
       <br></br>
       <h1 className="text-center">Check your Progress</h1>
       <Row>
-        <Col md={{ span: 6, offset: 4 }}>
+        <Col className="boxAppearance" md={{ span: 6, offset: 4 }}>
           {languageList.map(lang => (
             <LanguageButton
               language={lang}
@@ -88,22 +89,28 @@ export default function ProgressView() {
 
           {
             notPracticed.map(lang => (
-              <Tooltip
-                content={(
-                  <div>
-                    Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link> to practice this language!
-                  </div>
-                )}
-                direction="down"
-                // tipContentHover="true"
-                tagName="span">
+              // <Tooltip
+              //   content={(
+                  // <div>
+                  //   Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link> to practice this language!
+                  // </div>
+              //   )}
+              //   direction="down"
+              //   // tipContentHover="true"
+              //   tagName="span">
+              <>
                 <LanguageButton
+                  // setDisableMessage={setDisableMessage}
                   language={lang}
                   disabled={true}
                   value={lang}
                   key={lang}
                 />
-              </Tooltip>
+                 <div className="tooltiptext" >
+                    Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link> to practice this language!
+                  </div>
+                  </ >
+              // {/* // </Tooltip> */}
             ))}
         </Col>
       </Row>

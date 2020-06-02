@@ -17,25 +17,39 @@ function LessonMenu() {
     // console.log(lang);
 
     return (
+        <>
+            <div className="backgroundImage" style={{
+                backgroundImage:
+                    `url(https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/${lang.toLowerCase()}.png
+  )`, backgroundSize: "100%"
+            }}>
+            </div>
         <Container>
-                <LangCategory />
+            <LangCategory />
             <hr />
+            <Card.Body className="presCardBody" >
+                <Card className="presCard" >
+                    <h2>Slang/Profanity</h2>
+                </Card>
+                <SlideDown>
+                    {/* <CardGradient> */}
+                    <SlangCard />
+                    {/* </CardGradient> */}
+                </SlideDown>
 
-                    <SlideDown>
-                        {/* <CardGradient> */}
-                            <SlangCard />
-                        {/* </CardGradient> */}
-                    </SlideDown>
-
-            <hr />
-            <SlideDown>
-                <Row>
-                    <Col>
-                        <LessonCards />
-                    </Col>
-                </Row>
-            </SlideDown>
+                <Card className="presCard" >
+                    <h2>Other Categories</h2>
+                </Card>
+                <SlideDown>
+                    <Row>
+                        <Col>
+                            <LessonCards />
+                        </Col>
+                    </Row>
+                </SlideDown>
+            </Card.Body>
         </Container>
+        </ >
     )
 }
 
