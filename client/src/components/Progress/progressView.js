@@ -13,7 +13,7 @@ export default function ProgressView() {
 
   const [languageList, setLanguageList] = useState([]);
   const [notPracticed, setNotPracticed] = useState([]);
-  const languages = ["Spanish", "French", "Italian", "German", "Navajo"];
+  const languages = ["Spanish", "French", "Italian", "German", "Navajo", "Portuguese"];
   const [show, setShow] = useState(false);
   const history = useHistory();
   const [languageClicked, setLanguageClicked] = useState(user ? user.currentLanguage : "");

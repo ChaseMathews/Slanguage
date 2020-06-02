@@ -29,7 +29,7 @@ export default {
     },
     // Saves a user to the database
     signUpUser: function (user) {
-        return axios.post("/api/user/", user);
+        return axios.post("/api/user/signup", user);
     },
     // Update user current language or existing lesson score
     updateUser: function(id, data){

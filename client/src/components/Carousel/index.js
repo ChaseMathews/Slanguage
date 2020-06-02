@@ -22,8 +22,8 @@ export default function CarouselFlags() {
             .then(res => {
                 console.log(res.data);
                 setUser(res.data);
-                setCurrentLang(value);
-                history.push(`/DashboardCards/${value}`);
+                setCurrentLang(res.data.currentLanguage);
+                history.push(`/DashboardCards/${res.data.currentLanguage}`);
             })
             .catch(err => console.log(err));
 
