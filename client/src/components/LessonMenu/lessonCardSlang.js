@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from "react-router-dom";
-import { CardDeck, Card, Row, Button } from 'react-bootstrap';
+import { CardDeck, Card, Row, Button, Modal } from 'react-bootstrap';
 import CardGradient from '../CardGradient';
 
 
@@ -9,7 +9,11 @@ export default function SlangCard() {
     const { lang } = useParams();
     const { type } = useParams();
 
+
+
+
     return (
+
         <Row>
             <CardGradient>
                 <Card border='danger' style={{ width: '18rem' }}>
@@ -27,29 +31,26 @@ export default function SlangCard() {
             </CardGradient>
 
             <CardGradient>
-            <Card border='danger' style={{ width: '18rem' }}>
+                <Card border='danger' style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
-                <Card.Body>
-                    <Card.Title>Profanity</Card.Title>
-                    
-                    <Card.Text>
-                    {type === 'quiz' ? `Practice ` : `Learn `}  some swear words and phrases in <strong> {lang}</strong>!
+                    <Card.Body>
+                        <Card.Title>Profanity</Card.Title>
+
+                        <Card.Text>
+                            {type === 'quiz' ? `Practice ` : `Learn `}  some swear words and phrases in <strong> {lang}</strong>!
                     </Card.Text>
-                    <Link to={type === 'quiz' ? `/QuizCard/${lang}/profanity` : `/${lang}/presentation/profanity`}>
-                            <Button>Click Here!</Button>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/profanity` : `/${lang}/presentation/profanity`}>
+                            <Button>
+                                Click Here!
+                            </Button>
                         </Link>
-                </Card.Body>
+                    </Card.Body>
                 </Card>
-                </CardGradient >
+            </CardGradient >
         </Row >
 
-        
-
-           
-       
     )
 }
-
 
 
 
