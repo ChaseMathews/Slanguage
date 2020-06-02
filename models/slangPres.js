@@ -6,6 +6,9 @@ const slangPresSchema = new Schema(
       language: {
         type: String
       },
+      dialect: {
+        type: String
+      },
       content: {
         imageUrl: {
           type: String

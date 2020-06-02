@@ -14,7 +14,6 @@ export default function NavBar() {
   const { user, currentLang } = useContext(UserContext);
 
   const { lang } = useParams();
-  console.log("navbar", currentLang);
 
   const language = lang || currentLang
 
@@ -23,13 +22,21 @@ export default function NavBar() {
   const [modal, setModal] = useState(false);
 
   const deleteAccount = () => {
-    API.deleteUser(user.id)
+    API.deleteUser(user._id)
       .then(() => {
         console.log('Successfully deleted!');
         history.push("/");
       })
-
   }
+
+  const signOut = () => {
+    API.userLogOut()
+      .then(() => {
+        console.log("user logged out!")
+        localStorage.clear();
+      })
+  }
+
   const [show, setShow] = useState(true);
 
   return (
@@ -62,22 +69,27 @@ export default function NavBar() {
             />
           </Link>
         </Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-    <Link to={"/DashboardCards/" + language} className="navbartext">My Dashboard</Link>
-    <Link to="/About" className="navbartext">About</Link>
-      <Link to="/" className="navbartext">Sign Out</Link>
-    </Nav>
-    <Nav>
-      
-      <NavDropdown title="Account Settings" id="collasible-nav-dropdown" className="navbartext">
-        <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Link to={"/DashboardCards/" + language} className="navbartext">My Dashboard</Link>
+            <Link to="/About" className="navbartext">About</Link>
+            <Link
+              onClick={signOut}
+              to="/"
+              className="navbartext">
+              Sign Out
+            </Link>
+          </Nav>
+          <Nav>
 
-  </Navbar.Collapse>
-</Navbar>
+            <NavDropdown title="Account Settings" id="collasible-nav-dropdown" className="navbartext">
+              <NavDropdown.Item onClick={() => setModal(true)}>Delete account</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+
+        </Navbar.Collapse>
+      </Navbar>
     </>
   )
 }

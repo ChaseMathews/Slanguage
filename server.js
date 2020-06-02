@@ -1,9 +1,19 @@
 const express = require("express");
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const passport = require("passport");
+const session = require("express-session");
+const bodyParser = require("body-parser");
+
+// Passport
+app.use(express.static("public"));
+app.use(session({ secret: "cats" }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(passport.initialize());
+app.use(passport.session());
+// app.use(passport.session({ secret: 'secret', saveUninitialized: false, resave: false, cookie: { maxAge: 1000 } }))
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));

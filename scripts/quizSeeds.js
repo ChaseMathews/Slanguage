@@ -109,7 +109,7 @@ module.exports = [
             "language": "Navajo",
             "questions": [
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/La_RdIfupKPvPwHBm3DCwQ5qhyk985vH2Eo99LjQBiy0N18k78twAK4z1_ubftWQYN6s0hdDWZ2QgThsUYNMTAhSMSyW8yl8b3fexCkn",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
                     "answerOptions": [
                         "tseebíí",
                         "tsostsʼid",
@@ -119,7 +119,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/KgIK5q3bdyWEEi7iDViXpwNa4rcq7nTacGYnz0JBTZNsyE90wJRrlZcbwzlcTT3SGpdz21LHi3RMtRDT5woV4kXxHGsrkIAOES1MFKBg",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
                     "answerOptions": [
                         "táá'",
                         "neeznáá",
@@ -129,7 +129,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/w1cZ3asHCKrrWqYTU12Xh87wW9JScKtq5kNn4JH02tgeyg1kJbthasv72xccYososn6cPyQs2WQD9fLSlBqrF9mogjI3qdwJfsUK2HrT",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
                     "answerOptions": [
                         "dį́į́ʼ",
                         "náhástʼéí",
@@ -139,7 +139,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/XXa44tKsbe5BIgqR33BZZlQL4kGuF4AMmED9L3xWMVYG1jzCa6dFVxWW8uBthx4jQr0NHcYjdK_A7DSGbGyVrJFvR-NlDD4E-MDc9Njr",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
                     "answerOptions": [
                         "hastą́ą́",
                         "ashdla'",
@@ -149,7 +149,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/8dUNdfWbuIzYbOfmi8frXtYcYExK0mgkv6yT5FZ24W2kbebSxCSY81B41RYs8tPei-ZVUGZthbsyVFJSiR4wJhQ5qgQd5KL8BfZKeV4N",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
                     "answerOptions": [
                         "tseebíí",
                         "tʼááłáʼí",
@@ -159,7 +159,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/PXKejlEaBKsw1scP7XrRqdIDr55AP3jbvnPo2eLGfwbS44R3vGkOdlHD-Ngk7D-wMpIALqdk0pS_2oTs8sbFmIPoCqboPfAWvfl8-iwV",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
                     "answerOptions": [
                         "náhástʼéí",
                         "neeznáá",
@@ -169,7 +169,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/EPDgo1hqHiCljjfh4rQCYxmP4S-QcPoze51cA8ln8yuX1Yjcvk2xS7gzImOefmKJS7CdP0EcoXCmHyLp9c0ShX_L9apnSXiS5k1YxvKu",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
                     "answerOptions": [
                         "ashdla'",
                         "dį́į́ʼ",
@@ -179,7 +179,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/Cqt4xUwCw35h-L7WSIcWy73viHOWS9yi6KT_gDwQZlVOMT4ZuiSjls12d8P_bSfxK6n8hpwl53gfcy8AJY1f1CJLsmW9ytyGj-XUY5DE",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
                     "answerOptions": [
                         "hastą́ą́",
                         "dį́į́ʼ",
@@ -189,7 +189,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/MyjyB7iT4G_BGrkO7cuJh9PxSEw4STmLeUS1OwEFopj5Gw_M75JrvYWpofZq6AEjXu2zQreBjoS35OCkyEFVL_dxhojfPx9FqK6bQXs",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "answerOptions": [
                         "tʼááłáʼí",
                         "táá'",
@@ -199,7 +199,7 @@ module.exports = [
                     
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/jcJa9JNMUBA3D9PnA2wnSEk120g35uMcFKisVoF3_HzJBikyBVhRY8JTaDW1b1RBop2-Gk9J2RsBia52DG1IuuSGbvbldzoGFmzCL0nb",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
                     "answerOptions": [
                         "neeznáá",
                         "naaki",
@@ -416,7 +416,7 @@ module.exports = [
                         "acht",
                         "zehn"
                     ],
-                    "correctAnswer": "neuf",
+                    "correctAnswer": "neun",
                     
                 }
             ]
@@ -521,6 +521,111 @@ module.exports = [
                         "nove",
                         "otto",
                         "dieci"
+                    ],
+                    "correctAnswer": "nove",
+                    
+                }
+            ]
+        },
+        {
+            "language": "Portuguese",
+            "questions": [
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
+                    "answerOptions": [
+                        "quatro",
+                        "dois",
+                        "cinco"
+                    ],
+                    "correctAnswer": "dois",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
+                    "answerOptions": [
+                        "um",
+                        "três",
+                        "duas"
+                    ],
+                    "correctAnswer": "um",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
+                    "answerOptions": [
+                        "cinco",
+                        "quatro",
+                        "uma"
+                    ],
+                    "correctAnswer": "quatro",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
+                    "answerOptions": [
+                        "dois",
+                        "quatro",
+                        "três"
+                    ],
+                    "correctAnswer": "três",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
+                    "answerOptions": [
+                        "cinco",
+                        "três",
+                        "um"
+                    ],
+                    "correctAnswer": "cinco",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
+                    "answerOptions": [
+                        "nove",
+                        "seis",
+                        "oito"
+                    ],
+                    "correctAnswer": "oito",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
+                    "answerOptions": [
+                        "seis",
+                        "dez",
+                        "sete"
+                    ],
+                    "correctAnswer": "seis",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
+                    "answerOptions": [
+                        "sete",
+                        "nove",
+                        "dez"
+                    ],
+                    "correctAnswer": "dez",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
+                    "answerOptions": [
+                        "oito",
+                        "sete",
+                        "seis"
+                    ],
+                    "correctAnswer": "sete",
+                    
+                },
+                {
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
+                    "answerOptions": [
+                        "nove",
+                        "oito",
+                        "dez"
                     ],
                     "correctAnswer": "nove",
                     

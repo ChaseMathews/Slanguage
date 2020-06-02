@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const slangQuizSchema = new Schema(
     {
         language: { type: String, required: true },
+        dialect: { type: String },
         questions: [
             {
                 imageUrl: {
