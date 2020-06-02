@@ -7,7 +7,6 @@ export default ({ children }) => {
 
     const [user, setUser] = useState();
     const [currentLang, setCurrentLang] = useState();
-    const [loading, setLoading] = useState();
 
-    return <UserContext.Provider value={{ user, setUser, currentLang, setCurrentLang, loading, setLoading }}>{children}</UserContext.Provider>
+    return <UserContext.Provider value={{ user, setUser, currentLang, setCurrentLang }}>{children}</UserContext.Provider>
 }
