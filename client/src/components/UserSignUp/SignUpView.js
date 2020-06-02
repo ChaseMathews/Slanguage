@@ -15,7 +15,8 @@ export default function SignUp() {
 
     const [userObject, setUserObject] = useState({
         username: "",
-        password: ""
+        password: "",
+        confirmPassword: ""
     })
     const [error, setError] = useState("");
 
@@ -33,10 +34,12 @@ export default function SignUp() {
                 return "Please enter both a username and a password."
             } else if (userObject.password.length < 6) {
                 return "Password must be at least 6 characters!"
+            } else if (userObject.password !== userObject.confirmPassword) {
+                return ("Passwords don't match!")
             }
         });
 
-        if (userObject.username && userObject.password && userObject.password.length >= 6) {
+        if (userObject.username && userObject.password && userObject.password.length >= 6 && userObject.password === userObject.confirmPassword) {
             API.signUpUser({
                 username: userObject.username,
                 password: userObject.password,
@@ -50,7 +53,6 @@ export default function SignUp() {
                         }
                     )
                         .then(userObj => {
-                            console.log(userObj.data);
                             setUser(userObj.data);
                             history.push("/SelectLanguage");
                         })
@@ -63,28 +65,28 @@ export default function SignUp() {
     }
 
 
-return (
-    <Jumbotron>
-        
-        <hr></hr>
-        <Card.Body>
-        <Row>
-        <Card>
-        <Col md={{ size: 10, offset: 1 }} >
-                    <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
-                    </Col>
+    return (
+        <Jumbotron>
+
+            <hr></hr>
+            <Card.Body>
+                <Row>
+                    <Card>
+                        <Col md={{ size: 10, offset: 1 }} >
+                            <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
+                        </Col>
                     </Card>
-                <Col md="3">
-                    <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
-                        {error &&
-                            <span className='error'>{error}</span>
-                        }
-                        <br></br>
-                        <SignUpBtn handleFormSubmit={handleFormSubmit} />
-                    </SignUpForm>
-                </Col>
-                
-            </Row>
+                    <Col md="3">
+                        <SignUpForm handleFormSubmit={handleFormSubmit} userObject={userObject} handleInputChange={handleInputChange}>
+                            {error &&
+                                <span className='error'>{error}</span>
+                            }
+                            <br></br>
+                            <SignUpBtn handleFormSubmit={handleFormSubmit} />
+                        </SignUpForm>
+                    </Col>
+
+                </Row>
             </Card.Body>
         </Jumbotron>
     );

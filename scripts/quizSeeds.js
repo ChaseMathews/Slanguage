@@ -109,7 +109,7 @@ module.exports = [
             "language": "Navajo",
             "questions": [
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/La_RdIfupKPvPwHBm3DCwQ5qhyk985vH2Eo99LjQBiy0N18k78twAK4z1_ubftWQYN6s0hdDWZ2QgThsUYNMTAhSMSyW8yl8b3fexCkn",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png",
                     "answerOptions": [
                         "tseebíí",
                         "tsostsʼid",
@@ -119,7 +119,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/KgIK5q3bdyWEEi7iDViXpwNa4rcq7nTacGYnz0JBTZNsyE90wJRrlZcbwzlcTT3SGpdz21LHi3RMtRDT5woV4kXxHGsrkIAOES1MFKBg",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png",
                     "answerOptions": [
                         "táá'",
                         "neeznáá",
@@ -129,7 +129,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/w1cZ3asHCKrrWqYTU12Xh87wW9JScKtq5kNn4JH02tgeyg1kJbthasv72xccYososn6cPyQs2WQD9fLSlBqrF9mogjI3qdwJfsUK2HrT",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png",
                     "answerOptions": [
                         "dį́į́ʼ",
                         "náhástʼéí",
@@ -139,7 +139,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/XXa44tKsbe5BIgqR33BZZlQL4kGuF4AMmED9L3xWMVYG1jzCa6dFVxWW8uBthx4jQr0NHcYjdK_A7DSGbGyVrJFvR-NlDD4E-MDc9Njr",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png",
                     "answerOptions": [
                         "hastą́ą́",
                         "ashdla'",
@@ -149,7 +149,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/8dUNdfWbuIzYbOfmi8frXtYcYExK0mgkv6yT5FZ24W2kbebSxCSY81B41RYs8tPei-ZVUGZthbsyVFJSiR4wJhQ5qgQd5KL8BfZKeV4N",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png",
                     "answerOptions": [
                         "tseebíí",
                         "tʼááłáʼí",
@@ -159,7 +159,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/PXKejlEaBKsw1scP7XrRqdIDr55AP3jbvnPo2eLGfwbS44R3vGkOdlHD-Ngk7D-wMpIALqdk0pS_2oTs8sbFmIPoCqboPfAWvfl8-iwV",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png",
                     "answerOptions": [
                         "náhástʼéí",
                         "neeznáá",
@@ -169,7 +169,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh6.googleusercontent.com/EPDgo1hqHiCljjfh4rQCYxmP4S-QcPoze51cA8ln8yuX1Yjcvk2xS7gzImOefmKJS7CdP0EcoXCmHyLp9c0ShX_L9apnSXiS5k1YxvKu",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png",
                     "answerOptions": [
                         "ashdla'",
                         "dį́į́ʼ",
@@ -179,7 +179,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/Cqt4xUwCw35h-L7WSIcWy73viHOWS9yi6KT_gDwQZlVOMT4ZuiSjls12d8P_bSfxK6n8hpwl53gfcy8AJY1f1CJLsmW9ytyGj-XUY5DE",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png",
                     "answerOptions": [
                         "hastą́ą́",
                         "dį́į́ʼ",
@@ -189,7 +189,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh4.googleusercontent.com/MyjyB7iT4G_BGrkO7cuJh9PxSEw4STmLeUS1OwEFopj5Gw_M75JrvYWpofZq6AEjXu2zQreBjoS35OCkyEFVL_dxhojfPx9FqK6bQXs",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png",
                     "answerOptions": [
                         "tʼááłáʼí",
                         "táá'",
@@ -199,7 +199,7 @@ module.exports = [
 
                 },
                 {
-                    "imageUrl": "https://lh5.googleusercontent.com/jcJa9JNMUBA3D9PnA2wnSEk120g35uMcFKisVoF3_HzJBikyBVhRY8JTaDW1b1RBop2-Gk9J2RsBia52DG1IuuSGbvbldzoGFmzCL0nb",
+                    "imageUrl": "http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png",
                     "answerOptions": [
                         "neeznáá",
                         "naaki",
@@ -1215,114 +1215,104 @@ module.exports = [
             "language": "Spanish",
             "questions": [
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Shit",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "mierda",
+                        "verga",
+                        "puto"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "mierda",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Penis or fuck",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "puto",
+                        "cagar",
+                        "verga"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "verga",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Homosexual",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "puto",
+                        "cagar",
+                        "mamon"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "puto",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Idiot",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "mamon",
+                        "pendejo",
+                        "hueva"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "pendejo",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Sex or someone annoying",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "mamon",
+                        "fregon",
+                        "chingar"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "chingar",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "To poop",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "fregon",
+                        "cagar",
+                        "culo"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "cagar",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "phrase": "Stuck up person",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "mamon",
+                        "hueva",
+                        "pendejo"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "mamon",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "phrase": "Ass",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "chingar",
+                        "mierda",
+                        "culo"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "culo",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "phrase": "Lazy person",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "hueva",
+                        "puto",
+                        "culo"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "hueva",
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "mamon",
+                        "chingar",
+                        "fregon"
                     ],
-                    "correctAnswer": "",
-                    "example": ""
+                    "correctAnswer": "fregon",
                 },
             ]
         },
@@ -1330,7 +1320,7 @@ module.exports = [
             "language": "Navajo",
             "questions": [
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1338,10 +1328,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1349,10 +1338,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1360,10 +1348,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1371,10 +1358,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1382,10 +1368,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1393,10 +1378,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1404,10 +1388,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1415,10 +1398,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1426,10 +1408,9 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 },
                 {
-                    "imageUrl": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "",
                     "answerOptions": [
                         "",
@@ -1437,7 +1418,6 @@ module.exports = [
                         ""
                     ],
                     "correctAnswer": "",
-                    "example": ""
                 }
             ]
         },
@@ -1951,21 +1931,21 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
                     "phrase": "Hip",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "la cadera",
+                        "el cuello",
+                        "la cabeza"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "la cadera",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "la gente",
+                        "el hombre",
+                        "la espinilla"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "la espinilla",
                 }
             ]
         },
@@ -1973,104 +1953,104 @@ module.exports = [
             "language": "French",
             "questions": [
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "le ventre",
+                        "la hanche",
+                        "les gens"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "les gens",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "l'homme",
+                        "la femme",
+                        "la poitrine"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "l'homme",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "la tête",
+                        "le tibia",
+                        "la femme"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "la femme",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "le cou",
+                        "le corps",
+                        "la poitrine"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "le corps",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "la tête",
+                        "l'homme",
+                        "la hanche"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "la tête",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "le cou",
+                        "le corps",
+                        "le ventre"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "le cou",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "la femme",
+                        "la tibia",
+                        "la poitrine"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "la poitrine",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "l'homme",
+                        "le ventre",
+                        "le tibia"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "le ventre",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "les gens",
+                        "la tête",
+                        "la hanche"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "la hanche",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "le tibia",
+                        "la poitrine",
+                        "le ventre"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "le tibia",
                 }
             ]
         },
@@ -2078,104 +2058,104 @@ module.exports = [
             "language": "German",
             "questions": [
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Mann",
+                        "die Frau",
+                        "die Menschen"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "der Menschen",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Mann",
+                        "die Frau",
+                        "der Kopf"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "der Mann",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Hals",
+                        "die Frau",
+                        "die Brust"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "die Frau",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Körper",
+                        "der Kopf",
+                        "der Bauch"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "der Körper",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "die Brust",
+                        "die Hüfte",
+                        "der Kopf"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "der Kopf",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "die Hüfte",
+                        "der Hals",
+                        "das Schienbein"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "der Hals",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Bauch",
+                        "die Frau",
+                        "die Brust"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "die brust",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Bauch",
+                        "der Kopf",
+                        "die Hüfte"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "der Bauch",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Mann",
+                        "die Menschen",
+                        "die Hüfte"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "die Hüfte",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
                     "answerOptions": [
-                        "",
-                        "",
-                        ""
+                        "der Hals",
+                        "die Brust",
+                        "das Schienbein"
                     ],
-                    "correctAnswer": "",
+                    "correctAnswer": "das Schienbein",
                 }
             ]
         },
@@ -2183,8 +2163,218 @@ module.exports = [
             "language": "Italian",
             "questions": [
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "le persone",
+                        "l'uomo",
+                        "la donna"
+                    ],
+                    "correctAnswer": "le persone",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "l'uomo",
+                        "le persone",
+                        "la donna"
+                    ],
+                    "correctAnswer": "l'uomo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "la donna",
+                        "il corpo",
+                        "il collo"
+                    ],
+                    "correctAnswer": "la donna",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "il torace",
+                        "la testa",
+                        "il corpo"
+                    ],
+                    "correctAnswer": "il corpo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "il torace",
+                        "la testa",
+                        "l'anca"
+                    ],
+                    "correctAnswer": "la testa",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "il collo",
+                        "lo stinco",
+                        "l'anca"
+                    ],
+                    "correctAnswer": "il collo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "l'addome",
+                        "il torace",
+                        "l'anca"
+                    ],
+                    "correctAnswer": "il torace",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "la testa",
+                        "l'addome",
+                        "il corpo"
+                    ],
+                    "correctAnswer": "l'addome",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "l'anca",
+                        "la donna",
+                        "le persone"
+                    ],
+                    "correctAnswer": "l'anca",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "il torace",
+                        "lo stinco",
+                        "il collo"
+                    ],
+                    "correctAnswer": "lo stinco",
+                }
+            ]
+        },
+        {
+            "language": "Portuguese",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
+                    "answerOptions": [
+                        "o povo",
+                        "a mulher",
+                        "o homem"
+                    ],
+                    "correctAnswer": "o povo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
+                    "answerOptions": [
+                        "o corpo",
+                        "a mulher",
+                        "o homem"
+                    ],
+                    "correctAnswer": "o homem",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
+                    "answerOptions": [
+                        "a mulher",
+                        "a cabeça",
+                        "o peito"
+                    ],
+                    "correctAnswer": "a mulher",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
+                    "answerOptions": [
+                        "a cabeça",
+                        "o corpo",
+                        "o pescoço"
+                    ],
+                    "correctAnswer": "o corpo",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
+                    "answerOptions": [
+                        "o peito",
+                        "o pescoço",
+                        "a cabeça"
+                    ],
+                    "correctAnswer": "a cabeça",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
+                    "answerOptions": [
+                        "o abdômen",
+                        "o pescoço",
+                        "o quadril"
+                    ],
+                    "correctAnswer": "o pescoço",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
+                    "answerOptions": [
+                        "o peito",
+                        "o abdômen",
+                        "o pescoço"
+                    ],
+                    "correctAnswer": "o peito",
+                },
+                {
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
+                    "answerOptions": [
+                        "o abdômen",
+                        "a canela",
+                        "o quadril"
+                    ],
+                    "correctAnswer": "o abdômen",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
+                    "answerOptions": [
+                        "o homem",
+                        "o quadril",
+                        "o peito"
+                    ],
+                    "correctAnswer": "o quadril",
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
+                    "answerOptions": [
+                        "o quadril",
+                        "a canela",
+                        "o abdômen"
+                    ],
+                    "correctAnswer": "a canela",
+                }
+            ]
+        },
+        {
+            "language": "Navajo",
+            "questions": [
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776__480.jpg",
+                    "phrase": "People",
                     "answerOptions": [
                         "",
                         "",
@@ -2193,8 +2383,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/23/23/32/human-1411499__480.jpg",
+                    "phrase": "Man",
                     "answerOptions": [
                         "",
                         "",
@@ -2203,8 +2393,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2015/06/08/15/01/person-801823__480.jpg",
+                    "phrase": "Woman",
                     "answerOptions": [
                         "",
                         "",
@@ -2213,8 +2403,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/01/19/32/binary-2031149__480.png",
+                    "phrase": "Body",
                     "answerOptions": [
                         "",
                         "",
@@ -2223,8 +2413,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/06/18/07/people-5138558__480.png",
+                    "phrase": "Head",
                     "answerOptions": [
                         "",
                         "",
@@ -2233,8 +2423,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/19/00/18/africa-165200__480.jpg",
+                    "phrase": "Neck",
                     "answerOptions": [
                         "",
                         "",
@@ -2243,8 +2433,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/45/heartache-1846050__480.jpg",
+                    "phrase": "Chest",
                     "answerOptions": [
                         "",
                         "",
@@ -2253,8 +2443,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "ttps://cdn.pixabay.com/photo/2018/07/06/11/06/belly-3520191__480.jpg",
+                    "phrase": "Abdomen",
                     "answerOptions": [
                         "",
                         "",
@@ -2263,8 +2453,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/25/20/06/massage-2441817__480.jpg",
+                    "phrase": "Hip",
                     "answerOptions": [
                         "",
                         "",
@@ -2273,8 +2463,8 @@ module.exports = [
                     "correctAnswer": "",
                 },
                 {
-                    "imageUrl": "",
-                    "phrase": "",
+                    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/13/19/38/leg-33397__480.png",
+                    "phrase": "Shin",
                     "answerOptions": [
                         "",
                         "",
@@ -2283,235 +2473,6 @@ module.exports = [
                     "correctAnswer": "",
                 }
             ]
-        },
-        {
-                "language": "Portuguese",
-                "questions": [
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                ]
-            },
-            {
-                "language": "Navajo",
-                "questions": [
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-                        "example": ""
-                    },
-                    {
-                        "imageUrl": "",
-                        "phrase": "",
-                        "answerOptions": [
-                            "",
-                            "",
-                            ""
-                        ],
-                        "correctAnswer": "",
-                        "example": ""
-                    }
-                ]
-            }
+        }
     ]
 ]

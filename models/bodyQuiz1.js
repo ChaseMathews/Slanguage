@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const slangQuizSchema = new Schema(
+const bodyQuiz1Schema = new Schema(
     {
         language: { type: String, required: true },
-        dialect: { type: String },
         questions: [
             {
                 imageUrl: {
@@ -18,15 +17,12 @@ const slangQuizSchema = new Schema(
                 }],
                 correctAnswer: {
                     type: String
-                },
-                explanation: {
-                    type: String
                 }
             }
         ]
     }
 );
 
-const SlangQuiz = mongoose.model("SlangQuiz", slangQuizSchema);
+const BodyQuiz1 = mongoose.model("BodyQuiz1", bodyQuiz1Schema);
 
-module.exports = SlangQuiz;
+module.exports = BodyQuiz1;

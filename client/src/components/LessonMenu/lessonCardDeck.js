@@ -7,43 +7,7 @@ import CardGradient from '../CardGradient'
 
 export default function LessonCards() {
     const { lang } = useParams();
-
     const { type } = useParams();
-
-    let url = "";
-    let cardText = "";
-
-    if (type === "pres") {
-        cardText = "Learn";
-        if (lang === "Spanish") {
-            url = "/Spanish/presentation/"
-        } else if (lang === "Navajo") {
-            url = "/Navajo/presentation/"
-        } else if (lang === "French") {
-            url = "/French/presentation/"
-        } else if (lang === "German") {
-            url = "/German/presentation/"
-        } else if (lang === "Italian") {
-            url = "/Italian/presentation/"
-        } else if (lang === "Portuguese") {
-            url = "/Portuguese/presentation/"
-        }
-    } else if (type === "quiz") {
-        cardText = "Practice";
-        if (lang === "Spanish") {
-            url = "/QuizCard/Spanish/"
-        } else if (lang === "Navajo") {
-            url = "/QuizCard/Navajo/"
-        } else if (lang === "French") {
-            url = "/QuizCard/French/"
-        } else if (lang === "German") {
-            url = "/QuizCard/German/"
-        } else if (lang === "Italian") {
-            url = "/QuizCard/Italian/"
-        } else if (lang === "Portuguese") {
-            url = "/QuizCard/Portuguese/"
-        }
-    }
 
     return (
         <CardDeck>
@@ -55,9 +19,9 @@ export default function LessonCards() {
                         <Card.Body>
                             <Card.Title>Numbers</Card.Title>
                             <Card.Text className="card-text">
-                                {cardText} numbers 1 - 10!{' '}
+                            {type === 'quiz' ? `Practice ` : `Learn `} numbers 1 - 10!{' '}
                             </Card.Text>
-                            <Link to={url + "numbers"}><Button>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/numbers` : `/${lang}/presentation/numbers`}><Button>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -68,9 +32,9 @@ export default function LessonCards() {
                         <Card.Body>
                             <Card.Title>Basic Travel Phrases 1</Card.Title>
                             <Card.Text>
-                                Going on a trip? {cardText} some basic travel vocabulary!{' '}
+                                Going on a trip? {type === 'quiz' ? `Practice ` : `Learn `} some basic travel vocabulary!{' '}
                             </Card.Text>
-                            <Link to={url + "travel1"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel` : `/${lang}/presentation/travel`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -83,7 +47,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} some more basic travel vocabulary!{' '}
                             </Card.Text>
-                            <Link to={url + "travel2"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel2` : `/${lang}/presentation/travel2`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -96,7 +60,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} some more basic travel vocabulary!{' '}
                             </Card.Text>
-                            <Link to={url + "travel3"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel3` : `/${lang}/presentation/travel3`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -113,7 +77,7 @@ export default function LessonCards() {
                             <Card.Text className="card-text">
                                 {cardText} the human body!{' '}
                             </Card.Text>
-                            <Link to={url + "body1"}><Button>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/body1` : `/${lang}/presentation/body1`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -126,7 +90,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} the human body!{' '}
                             </Card.Text>
-                            <Link to={url + "body2"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/body2` : `/${lang}/presentation/body2`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -139,7 +103,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} the human body!{' '}
                             </Card.Text>
-                            <Link to={url + "body3"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/body3` : `/${lang}/presentation/body3`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -152,7 +116,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} the human body!{' '}
                             </Card.Text>
-                            <Link to={url + "body4"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/body4` : `/${lang}/presentation/body4`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -168,7 +132,7 @@ export default function LessonCards() {
                             <Card.Text className="card-text">
                                 {cardText} the days of the week!{' '}
                             </Card.Text>
-                            <Link to={url + "daysOfTheWeek"}><Button>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/daysOfTheWeek` : `/${lang}/presentation/daysOfTheWeek`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -181,7 +145,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} colors!{' '}
                             </Card.Text>
-                            <Link to={url + "colors"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/colors` : `/${lang}/presentation/colors`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -194,7 +158,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} to talk about the calendar!{' '}
                             </Card.Text>
-                            <Link to={url + "calandar"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/calendar` : `/${lang}/presentation/calendar`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>
@@ -207,7 +171,7 @@ export default function LessonCards() {
                             <Card.Text>
                                 {cardText} the seasons and skies!{' '}
                             </Card.Text>
-                            <Link to={url + "seasons"}><Button disabled>Click Here!</Button></Link>
+                            <Link to={type === 'quiz' ? `/QuizCard/${lang}/seasons` : `/${lang}/presentation/seasons`}><Button disabled>Click Here!</Button></Link>
                         </Card.Body>
                     </Card>
                 </CardGradient>

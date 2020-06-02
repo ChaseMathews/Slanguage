@@ -1,12 +1,9 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const slangPresSchema = new Schema(
+const travelPres1Schema = new Schema(
     {
       language: {
-        type: String
-      },
-      dialect: {
         type: String
       },
       content: {
@@ -27,6 +24,6 @@ const slangPresSchema = new Schema(
   )
   
 
-const SlangPres = mongoose.model("SlangPres", slangPresSchema);
+const TravelPres1 = mongoose.model("TravelPres1", travelPres1Schema);
 
-module.exports = SlangPres;
+module.exports = TravelPres1;
