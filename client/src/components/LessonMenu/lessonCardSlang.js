@@ -25,6 +25,27 @@ export default function SlangCard() {
                     </Card.Body>
                 </Card>
             </CardGradient>
-        </Row>
+
+            <CardGradient>
+            <Card border='danger' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="https://media.tenor.com/images/6dfc55ff0bca826199661c684548d3e1/tenor.gif" />
+                <Card.Body>
+                    <Card.Title>Profanity</Card.Title>
+                    
+                    <Card.Text>
+                    {type === 'quiz' ? `Practice ` : `Learn `}  some swear words and phrases in <strong> {lang}</strong>!
+                    </Card.Text>
+                    <Link to={type === 'quiz' ? `/QuizCard/${lang}/profanity` : `/${lang}/presentation/profanity`}>
+                            <Button>Click Here!</Button>
+                        </Link>
+                </Card.Body>
+                </Card>
+                </CardGradient >
+        </Row >
+
+        
+
+           
+       
     )
 }
