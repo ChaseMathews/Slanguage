@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Row, Col, Jumbotron, Card } from 'react-bootstrap';
+import { Row, Col, Container, Card } from 'react-bootstrap';
 import API from "../../utils/API";
 import SignUpForm from './SignUpForm';
 import SignUpBtn from './SignUpBtn';
@@ -58,13 +58,11 @@ export default function SignUp() {
 
 
     return (
-        <Jumbotron>
-
-            <hr></hr>
+        <Container>
             <Card.Body>
                 <Row>
-                    <Card>
-                        <Col md={{ size: 10, offset: 1 }} >
+                    <Card className="signupPage">
+                        <Col md={{ size: 8 }} >
                             <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slanguagelogoFinal-02.png" fluid />
                         </Col>
                     </Card>
@@ -80,6 +78,6 @@ export default function SignUp() {
 
                 </Row>
             </Card.Body>
-        </Jumbotron>
+        </Container>
     );
 }
