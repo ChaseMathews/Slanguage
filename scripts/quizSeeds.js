@@ -674,11 +674,11 @@ module.exports = [
                     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ92MAD9aHkyZM9x5CE6ww24JnI2oTP4iXWBdAy50LeS1hOawou&usqp=CAU",
                     "phrase": "Which is the slang term for What's up?",
                     "answerOptions": [
-                        "Que onda?",
-                        "Que chido?",
-                        "Que pedo?"
+                        "¿Qué onda?",
+                        "¿Qué chido?",
+                        "¿Qué pedo?"
                     ],
-                    "correctAnswer": "Que onda?",
+                    "correctAnswer": "¿Qué onda?",
                     "example": "Greeting"
                 },
                 {
@@ -686,21 +686,21 @@ module.exports = [
                     "phrase": "Which is the slang term for agreed?",
                     "answerOptions": [
                         "Crudo",
-                        "Orale",
+                        "Órale",
                         "Chela"
                     ],
-                    "correctAnswer": "Orale",
+                    "correctAnswer": "Órale",
                     "example": "Can also mean to hurry up."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/22/17/56/children-4073799__340.jpg",
                     "phrase": "Which is the slang term for what's your problem?",
                     "answerOptions": [
-                        "Que pedo?",
-                        "Que onda?",
-                        "Que chido?"
+                        "¿Qué pedo?",
+                        "¿Qué onda?",
+                        "¿Qué chido?"
                     ],
-                    "correctAnswer": "Que pedo?",
+                    "correctAnswer": "¿Qué pedo?",
                     "example": "Fight!"
                 },
                 {
@@ -718,8 +718,8 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/10/25/21/40/thumb-1006395__340.png",
                     "phrase": "Which is the slang term for bad?",
                     "answerOptions": [
-                        "Chido ",
-                        "Que onda?",
+                        "Chido",
+                        "¿Qué onda?",
                         "Gacho"
                     ],
                     "correctAnswer": "Gacho",
@@ -729,9 +729,9 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/09/14/11/35/beer-1669273__340.png",
                     "phrase": "Which is the slang term for beer?",
                     "answerOptions": [
-                        "Aguas",
+                        "¡Aguas!",
                         "Cheve/Chela",
-                        "Que pedo?"
+                        "¿Qué pedo?"
                     ],
                     "correctAnswer": "Cheve/Chela",
                     "example": "Or terms"
@@ -740,11 +740,11 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/16/00/error-150717__340.png",
                     "phrase": "Which is the slang term for watch out!",
                     "answerOptions": [
-                        "Aguas!",
+                        "¡Aguas!",
                         "Cheve",
                         "Chela"
                     ],
-                    "correctAnswer": "Aguas!",
+                    "correctAnswer": "¡Aguas!",
                     "example": "Exclamation!"
                 }
             ]
