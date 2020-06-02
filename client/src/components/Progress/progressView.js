@@ -3,7 +3,6 @@ import { Container, Row, Col, Button, CardDeck, Modal } from 'react-bootstrap';
 import ProgressCard from './progressCard';
 import LanguageButton from './progressButton';
 import { UserContext } from '../../utils/Context';
-import Tooltip from 'react-tooltip-lite';
 import { Link, useHistory } from 'react-router-dom';
 import "./style.css";
 
@@ -13,7 +12,7 @@ export default function ProgressView() {
   const { user } = useContext(UserContext);
   const [languageList, setLanguageList] = useState([]);
   const [notPracticed, setNotPracticed] = useState([]);
-  const languages = ["Spanish", "French", "Italian", "German", "Navajo"];
+  const languages = ["Spanish", "French", "Italian", "German", "Navajo", "Portuguese"];
   const [show, setShow] = useState(false);
   const history = useHistory();
   const [languageClicked, setLanguageClicked] = useState(user.currentLanguage);
@@ -39,13 +38,11 @@ export default function ProgressView() {
 
 
   const goToDash = () => {
-    setModal(false);
     history.push(`/DashboardCards/${user.currentLanguage}`);
   }
 
   const handleClose = () => {
     setShow(false);
-    setModal(false);
   };
 
 
