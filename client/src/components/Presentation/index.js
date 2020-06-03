@@ -21,7 +21,7 @@ export default function Presentation() {
     const { lang } = useParams();
     const { lesson } = useParams();
     const history = useHistory();
-    const { setCurrentLang, setComeFromPres, ageModal, setAgeModal } = useContext(UserContext);
+    const { setCurrentLang, setComeFromPres, ageModal, setAgeModal, modalPrem, setModalPrem } = useContext(UserContext);
     const [presContent, setPresContent] = useState();
     let [itemIndex, setItemIndex] = useState(0);
 
@@ -56,7 +56,9 @@ export default function Presentation() {
                 break;
             case 'travel3': loadTravelPres3Data();
                 break;
-            default: console.log("IDK")
+            default:
+                console.log("IDK");
+                // handleClose();
         }
     }, [])
 
@@ -203,6 +205,7 @@ export default function Presentation() {
     const goBackToLessons = () => {
         history.push(`/LessonMenu/pres/${lang}`);
         setAgeModal(false);
+        // setModalPrem(false)
     }
 
     const [show, setShow] = useState(true);
@@ -210,6 +213,7 @@ export default function Presentation() {
     const handleClose = () => {
         setShow(false);
         setAgeModal(false);
+        // setModalPrem(false);
     };
 
     return (
@@ -230,6 +234,17 @@ export default function Presentation() {
                     </Modal.Footer>
                 </Modal>
             }
+            {/* {modalPrem &&
+                <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
+                    <Modal.Header>
+                        <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to see this content.</Modal.Body>
+                    </Modal.Header>
+                    <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slangIconPlus.png" styles={{ height: "100px", width: "300px" }} fluid />
+                    <Modal.Footer>
+                        <Button variant="danger" onClick={goBackToLessons}><strong>Go Back</strong></Button>
+                    </Modal.Footer>
+                </Modal>
+            } */}
             {presContent &&
                 <Container>
                     <Row>
