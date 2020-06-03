@@ -27,7 +27,7 @@ export default function DashboardCard() {
             <>
                 <div className="backgroundImage" style={{
                     backgroundImage:
-                        `url(https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/${lang.toLowerCase()}.png)`, backgroundSize: "100%"
+                        `url(https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/${lang.toLowerCase()}.png)`
                 }}>
                 </div>
 
