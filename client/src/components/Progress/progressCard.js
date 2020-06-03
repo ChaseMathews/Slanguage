@@ -8,11 +8,11 @@ export default function ProgressCard(props) {
             <Card>
                 <Card.Img variant="top" src="" />
                 <Card.Body>
-                    <Card.Title>{props.lesson}</Card.Title>
+                    <Card.Title className="capital">{props.lesson}</Card.Title>
                     <Card.Text>
                         {props.score}/30 Points
                     </Card.Text>
-                    <Link to={`/${props.language}/presentation/${props.lesson}`}><Button>Review {props.lesson}</Button></Link>{' '}
+                    <Link to={`/${props.language}/presentation/${props.lesson}`}><Button className="capital">Review {props.lesson}</Button></Link>{' '}
                     <Link to={`/QuizCard/${props.language}/${props.lesson}`}><Button>Retake Quiz</Button></Link>{' '}
                 </Card.Body>
             </Card>

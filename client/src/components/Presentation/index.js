@@ -197,6 +197,7 @@ export default function Presentation() {
     const goToQuiz = () => {
         history.push(`/QuizCard/${lang}/${lesson}`);
         setComeFromPres(true);
+        setAgeModal(false);
     }
 
     const goBackToLessons = () => {
@@ -215,7 +216,7 @@ export default function Presentation() {
         <>
             {ageModal &&
                 <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-                    <Modal.Header closeButton>
+                    <Modal.Header>
                         <Modal.Body>
                             <p id="modalBody4"><strong>WARNING:</strong></p>
                             <p className="modalBody5">Your grandma would not approve of the following content due to explicit language.</p>
