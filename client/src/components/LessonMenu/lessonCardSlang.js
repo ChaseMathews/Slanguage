@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from "react-router-dom";
 import { CardDeck, Card, Row, Button, Col } from 'react-bootstrap';
 import CardGradient from '../CardGradient';
@@ -9,7 +9,11 @@ export default function SlangCard() {
     const { lang } = useParams();
     const { type } = useParams();
 
+
+
+
     return (
+
         <Row>
             
             <CardGradient className="slangGradientMargin">
@@ -36,18 +40,19 @@ export default function SlangCard() {
                     <Card.Text>
                     {type === 'quiz' ? `Practice ` : `Learn `}  some swear words and phrases in <strong> {lang}</strong>!
                     </Card.Text>
-                    <Link to={type === 'quiz' ? `/QuizCard/${lang}/profanity` : `/${lang}/presentation/profanity`}>
-                            <Button>Click Here!</Button>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/profanity` : `/${lang}/presentation/profanity`}>
+                            <Button>
+                                Click Here!
+                            </Button>
                         </Link>
-                </Card.Body>
+                    </Card.Body>
                 </Card>
                 </CardGradient >
                 
         </Row >
 
-        
-
-           
-       
     )
 }
+
+
+
