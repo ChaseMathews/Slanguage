@@ -9,8 +9,10 @@ import CardGradient from '../CardGradient';
 import LangCategory from "./lessonLangHeader";
 import SlangCard from "./lessonCardSlang";
 import { UserContext } from '../../utils/Context';
+import fadeIn from 'react-animations/lib/fade-in';
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
+const FadeInCard = styled.div`animation: 3s ${keyframes`${fadeIn}`} 1`;
 
 
 function LessonMenu() {
@@ -28,32 +30,34 @@ function LessonMenu() {
             <div className="backgroundImage" style={{
                 backgroundImage:
                     `url(https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/${lang.toLowerCase()}.png
-  )`, backgroundSize: "100%"
+  )`
             }}>
             </div>
             <Container>
                 <LangCategory />
                 <hr />
-                <Card.Body className="presCardBody" >
+                <Card.Body className="presCardBody text-center" >
                     <Card className="presCard" >
                         <h2>Slang/Profanity</h2>
                     </Card>
-                    <SlideDown>
-                        {/* <CardGradient> */}
+                    {/* <SlideDown> */}
+                    <FadeInCard>
                         <SlangCard />
-                        {/* </CardGradient> */}
-                    </SlideDown>
+                    </FadeInCard>
+                    {/* </SlideDown> */}
 
                     <Card className="presCard" >
                         <h2>Other Categories</h2>
                     </Card>
-                    <SlideDown>
+                    {/* <SlideDown> */}
+                    <FadeInCard>
                         <Row>
                             <Col>
                                 <LessonCards />
                             </Col>
                         </Row>
-                    </SlideDown>
+                    </FadeInCard>
+                    {/* </SlideDown> */}
                 </Card.Body>
             </Container>
         </ >

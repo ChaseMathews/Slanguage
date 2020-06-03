@@ -85,15 +85,15 @@ export default function CarouselFlags() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="https://cdn.pixabay.com/photo/2016/07/26/09/08/brazil-1542335__480.jpg"
-                            alt="Brazil flag"
-                        />
-                        <Carousel.Caption className="carouselText">
-                            <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="Portuguese" >Português <br /> <h5> (Brazilian Portuguese) </h5></Button>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/flags/resize/portuguese.png"
+                    alt="Brazil flag"
+                />
+                <Carousel.Caption className="carouselText">
+                    <Button className="button btnText" size="lg" variant="link" onClick={updateUserCurrentLang} value="Portuguese" >Português <br /> <h5> (Brazilian Portuguese) </h5></Button>
+                </Carousel.Caption>
+            </Carousel.Item>
         </Carousel>
 
     )

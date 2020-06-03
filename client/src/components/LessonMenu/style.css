@@ -20,10 +20,18 @@ h1{
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
+  border-color: transparent;
 }
 
 .presCard{
-  background-color: linear-gradient;
+  background-color: transparent;
+  background: rgba(0, 0, 0, .3);
+  /* background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)); */
   margin: 20px;
+  color: white;
   border-color: transparent;
+}
+
+.slangGradientMargin{
+  margin-right: 30px;
 }

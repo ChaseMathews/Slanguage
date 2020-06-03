@@ -232,52 +232,54 @@ export default function Presentation() {
             {presContent &&
                 <Container>
                     <Row>
-                        <Col xs={12} md={8}>
+                        <Col xs={{ span: 10, offset: 1 }}>
                             <LangCategory />
                         </Col>
-                        <Col xs={6} md={4}>
-                            <h2 className="range" >{itemIndex + 1}/10</h2>
+                        <Col xs={{ span: 2, offset: 5 }}>
+                            <h2>{itemIndex + 1}/10</h2>
                         </Col>
                     </Row>
                     <hr></hr>
-                    <Jumbotron className="justify-content-center text-center">
-                        {itemIndex > 0 &&
-                            <Button className="previousback" onClick={handlePresDataChangeBack}>
-                                {/* < FontAwesomeIcon icon={faAngleDoubleLeft} size="6x" />  */}
-                                Previous
-                                 </Button>
-                        }
+                    <Jumbotron className="justify-content-center text-center grayBox2">
+
 
                         <SlideDown>
                             <Row>
                                 <Col>
-                                    <CardGradient>
-                                        <Card className="myCard">
-                                            <Card.Img className="numberImage" variant="top" src={presContent[itemIndex].imageUrl} />
+                                    {/* <CardGradient> */}
+                                    <Card className="myCard">
+                                        <Card.Img className="numberImage" variant="top" src={presContent[itemIndex].imageUrl} />
 
-                                            <Card.Body className="justify-content-center text-center">
-                                                <Card.Title className="word"><h2>{presContent[itemIndex].targetWord}</h2></Card.Title>
-                                                <hr></hr>
-                                                <ReactAudioPlayer
-                                                    src={presContent[itemIndex].audioToPlay}
-                                                    controls
-                                                />
-                                                <div>
-                                                    <span className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</span>
-                                                </div>
-                                                <hr />
-                                                <UserAudio />
-                                            </Card.Body>
-                                        </Card>
-                                    </CardGradient>
+                                        <Card.Body>
+                                            <Card.Title className="word"><h2>{presContent[itemIndex].targetWord}</h2></Card.Title>
+                                            <hr></hr>
+                                            <ReactAudioPlayer
+                                                src={presContent[itemIndex].audioToPlay}
+                                                controls
+                                            />
+                                            <div>
+                                                <p className="words">{presContent[itemIndex].phonetic || presContent[itemIndex].explanation}</p>
+                                            </div>
+                                            <hr />
+                                            <UserAudio />
+                                            <hr />
+                                            {itemIndex > 0 &&
+                                                <Button className="previousback" onClick={handlePresDataChangeBack}>
+                                                    < FontAwesomeIcon icon={faAngleDoubleLeft} size="4x" />
+                                                    {/* Previous */}
+                                                </Button>
+                                            }
+                                            <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>
+                                                < FontAwesomeIcon icon={faAngleDoubleRight} size="4x" />
+                                                {/* Next */}
+                                            </Button>
+                                        </Card.Body>
+                                    </Card>
+                                    {/* </CardGradient> */}
+                                    {/* {itemIndex !== 9 ? "Next" : "Go to Quiz -->"} */}
                                 </Col>
                             </Row>
                         </SlideDown>
-                        <Button className="previousback" onClick={itemIndex !== 9 ? handlePresDataChange : goToQuiz}>
-                            {/* < FontAwesomeIcon icon={faAngleDoubleRight} size="6x" /> */}
-                            {itemIndex !== 9 ? "Next" : "Go to Quiz -->"}
-                        </Button>
-
                     </Jumbotron>
                 </Container>
             }
