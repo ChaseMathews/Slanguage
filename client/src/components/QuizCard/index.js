@@ -309,35 +309,32 @@ export default function QuizCard() {
             Score: {score}
           </Card>
           {/* } */}
-          <Jumbotron>
+          <Jumbotron className="justify-content-center text-center grayBox1" >
             <Card.Body>
               <Row>
-                <Card>
+                <Card className="cardNumber" >
                   <Col sm={lesson !== "numbers" ? 3 : 4}>
 
                     <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
 
                   </Col>
                 </Card>
+                <Card.Body className="text-center">
                 {lesson !== "numbers" ? (
-                  <Col sm={3}>
+                  <Col>
                     <div>
                       <h2>{quizContent[index].phrase}</h2>
                     </div>
-                    <br></br>
                     {hint &&
-                      <div>
+                      <div className="hint" >
                         HINT: {quizContent[index].example}
                       </div>
-
                     }
-
-
                   </Col>
                 ) : ""}
 
 
-                <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
+                <Col className="choices" sm={{span: lesson !== "numbers" ? 3 : 4, offset: 4}}>
                   <Button variant={btnVarient.button_1} id="quizButton1" size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
@@ -346,12 +343,14 @@ export default function QuizCard() {
 
                   <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
-
+<Row>
+  <Col md={{ span: 3, offset: 6 }}>
                   {
                     index !== 9 && disabled &&
                     <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                   }
-
+</Col>
+</Row>
                   {
                     modalEnd && disabled &&
                     <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
@@ -365,6 +364,7 @@ export default function QuizCard() {
                     </Modal>
                   }
                 </Col>
+                </Card.Body>
               </Row>
             </Card.Body>
           </Jumbotron>

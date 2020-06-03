@@ -2,6 +2,10 @@
 margin-top: 10px;
 } */
 
+.cardNumber{
+    margin-left: 15px;
+}
+
 .numberImage{
     display: block;
     margin-left: auto;
@@ -29,9 +33,10 @@ margin-top: 10px;
 }
 
 .choices{
-    padding-top: 94px;
-    align-content: center;
-    vertical-align: 10vh;
+    margin-top: 10px;
+    padding-top: 10px;
+    /* align-content: center; */
+    /* vertical-align: 10vh; */
 }
 
 .score{
@@ -39,8 +44,12 @@ margin-top: 10px;
     background-color: #5A0096;
     font-size: 30px;
     text-align: center;
-
 }
+
+/* .hint{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
 
 .modal {
     align-content: center;
@@ -60,6 +69,6 @@ margin-top: 10px;
 }
 
 .nextBtn {
-    margin-top: 5rem;
-    margin-left: 65%;
+    margin-top: 25px;
+    margin-left: 40%;
 }
