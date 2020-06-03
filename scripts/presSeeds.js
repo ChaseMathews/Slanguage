@@ -478,7 +478,7 @@ module.exports = [
                     "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
                     "targetWord": "A mí, plín",
                     "audioToPlay": "",
-                    "explanation": "A slightly vulgar way of saying \"I don't care.\"",
+                    "explanation": "A slightly vulgar way of saying \"I don't care.\""
                 },
                 {
                     "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
@@ -655,7 +655,7 @@ module.exports = [
                     "explanation": "To eat tapas. \"Tapas\" are a type of appetizer that’s specific to Spain."
                 }
             ]
-        },
+        },     
         {
             "language": "Navajo",
             "dialect": "",
@@ -759,7 +759,7 @@ module.exports = [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/01/10/14/35/old-man-1969215__480.jpg",
                     "targetWord": "Beau Gosse",
-                    "audioToPlay": "/audio/French/beau gosse.m4a",
+                    "audioToPlay": "/audio/French/beaugosse.m4a",
                     "explanation": "A hot guy, often abbreviated BG. "
                 },
                 {
@@ -801,7 +801,7 @@ module.exports = [
                 {
                     "imageUrl": "https://blog.lingoda.com/wp-content/uploads/2020/01/bigstock-Young-People-Man-And-Woman-Gr-327730912-1024x532.jpg",
                     "targetWord": "Mach’s Gut!",
-                    "audioToPlay": "/audio/German/machs gut.m4a",
+                    "audioToPlay": "/audio/German/machsgut.m4a",
                     "explanation": "A slang way to say goodbye."
                 },
                 {
@@ -885,7 +885,7 @@ module.exports = [
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/man-crossing-fingers-both-hands_1187-2913.jpg",
                     "targetWord": "In bocca al lupo!",
-                    "audioToPlay": "/audio/Italian/in bocca al lupo.m4a",
+                    "audioToPlay": "/audio/Italian/inboccaallupo.m4a",
                     "explanation": "Good luck. It literally means, in the mouth of the wolf."
                 },
                 {
@@ -991,67 +991,66 @@ module.exports = [
             "language": "Spanish",
             "dialect": "",
             "content": [
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Mierda",
-                            "audioToPlay": "",
-                            "explanation": "This word means shit"
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                            "targetWord": "Verga",
-                            "audioToPlay": "",
-                            "explanation": "This word means penis, but it is used in many ways. In an angry context it can mean fuck"
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                            "targetWord": "Puto",
-                            "audioToPlay": "",
-                            "explanation": "This word means homosexual in an offensive way."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Pendejo",
-                            "audioToPlay": "",
-                            "explanation": "This word is used to describe a person as stupid."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                            "targetWord": "Chingar",
-                            "audioToPlay": "",
-                            "explanation": "This word means to have sex but can also be used to describe something or someone as annoying"
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                            "targetWord": "Cagar",
-                            "audioToPlay": "",
-                            "explanation": "This word means to poop."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Mamon",
-                            "audioToPlay": "",
-                            "explanation": "This word is used to describe a stuck up person."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                            "targetWord": "Culo",
-                            "audioToPlay": "",
-                            "explanation": "This is a bad word for butt."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                            "targetWord": "Hueva",
-                            "audioToPlay": "",
-                            "explanation": "This word means lazy."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Fregon",
-                            "audioToPlay": "",
-                            "explanation": "This word can be used to describe anything or anyone as cool."
-                        },
-                
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Mierda",
+                    "audioToPlay": "",
+                    "explanation": "This word means shit"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Verga",
+                    "audioToPlay": "",
+                    "explanation": "This word means penis, but it is used in many ways. In an angry context it can mean fuck"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Puto",
+                    "audioToPlay": "",
+                    "explanation": "This word means homosexual in an offensive way."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Pendejo",
+                    "audioToPlay": "",
+                    "explanation": "This word is used to describe a person as stupid."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Chingar",
+                    "audioToPlay": "",
+                    "explanation": "This word means to have sex but can also be used to describe something or someone as annoying"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cagar",
+                    "audioToPlay": "",
+                    "explanation": "This word means to poop."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Mamon",
+                    "audioToPlay": "",
+                    "explanation": "This word is used to describe a stuck up person."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Culo",
+                    "audioToPlay": "",
+                    "explanation": "This is a bad word for butt."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Hueva",
+                    "audioToPlay": "",
+                    "explanation": "This word means lazy."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Fregon",
+                    "audioToPlay": "",
+                    "explanation": "This word can be used to describe anything or anyone as cool."
+                }
             ]
         },
         {
@@ -2237,78 +2236,66 @@ module.exports = [
         },
         {
             "language": "Portuguese",
-            "content": [
-                {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/11/35/ancient-1869218__480.jpg",
-                    "targetWord": "a nuca",
-                    "audioToPlay": " ",
-                    "explanation": " Nape"
-                },
-                {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/12/15/08/back-5163495__480.jpg",
-                    "targetWord": "o ombro",
-                    "audioToPlay": " ",
-                    "explanation": " Shoulder"
-                },
+            "content": [           
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/08/29/03/34/man-3639055__480.jpg",
                     "targetWord": "a parte de trás",
                     "audioToPlay": " ",
-                    "explanation": " Back"
+                    "explanation": "Back"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/02/03/22/20/man-1178221__480.jpg",
                     "targetWord": "a axila",
                     "audioToPlay": " ",
-                    "explanation": " Armpit"
+                    "explanation": "Armpit"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/01/29/15/25/tango-3116355__480.png",
                     "targetWord": "o pequeno de costas",
                     "audioToPlay": " ",
-                    "explanation": " Small of back"
+                    "explanation": "Small of back"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/19/23/56/thumb-422147__480.jpg",
                     "targetWord": "o braço",
                     "audioToPlay": " ",
-                    "explanation": " Arm"
+                    "explanation": "Arm"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/02/12/00/58/man-80638__480.jpg",
                     "targetWord": "o cotovelo",
                     "audioToPlay": " ",
-                    "explanation": " Elbow"
+                    "explanation": "Elbow"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/12/26/people-2564955__480.jpg",
                     "targetWord": "o pulso",
                     "audioToPlay": " ",
-                    "explanation": " Wrist"
+                    "explanation": "Wrist"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/04/23/00/45/hand-3342918__480.jpg",
                     "targetWord": "a mão",
                     "audioToPlay": " ",
-                    "explanation": " Hand"
+                    "explanation": "Hand"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/10/06/00/21/legg-2821615__480.jpg",
                     "targetWord": "o bezerro",
                     "audioToPlay": " ",
-                    "explanation": " Calf"
+                    "explanation": "Calf"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/31/20/11/shoes-4093923__480.jpg",
                     "targetWord": "o tornozelo",
                     "audioToPlay": " ",
-                    "explanation": " Ankle"
+                    "explanation": "Ankle"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/09/01/19/17/standing-on-your-head-2705218__480.jpg",
                     "targetWord": "o calcanhar",
                     "audioToPlay": " ",
-                    "explanation": " Heel"
+                    "explanation": "Heel"
                 }
             ]
         }
@@ -2768,7 +2755,7 @@ module.exports = [
                     "targetWord": "hier",
                     "audioToPlay": " ",
                     "explanation": "Yesterday"
-                },
+                }
             ]
         },
         {
@@ -2833,7 +2820,7 @@ module.exports = [
                     "targetWord": "gestern",
                     "audioToPlay": " ",
                     "explanation": "Yesterday"
-                },
+                }
             ]
         },
         {
@@ -2963,7 +2950,7 @@ module.exports = [
                     "targetWord": "ontem",
                     "audioToPlay": " ",
                     "explanation": "Yesterday"
-                },
+                }
             ]
         }
     ],
@@ -3007,14 +2994,12 @@ module.exports = [
                     "audioToPlay": " ",
                     "explanation": "Purple"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/02/21/05/17/cat-3169476__480.jpg",
                     "targetWord": "negro",
                     "audioToPlay": " ",
                     "explanation": "Black"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052__480.jpg",
                     "targetWord": "blanco",
@@ -3275,7 +3260,6 @@ module.exports = [
                     "audioToPlay": " ",
                     "explanation": "Black"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052__480.jpg",
                     "targetWord": "branco",
@@ -3293,7 +3277,7 @@ module.exports = [
                     "targetWord": "marrom",
                     "audioToPlay": " ",
                     "explanation": "Brown"
-                },
+                }
             ]
         }
     ],
@@ -3617,7 +3601,6 @@ module.exports = [
                     "audioToPlay": " ",
                     "explanation": "Date"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/07/10/17/52/fun-839863__480.jpg",
                     "targetWord": "o fim de semana",
@@ -4301,7 +4284,7 @@ module.exports = [
                     "targetWord": "Tudo bem",
                     "audioToPlay": " ",
                     "explanation": "That's fine"
-                },
+                }
             ]
         }
     ],
@@ -4582,7 +4565,6 @@ module.exports = [
             "language": "Portuguese",
             "content": [
                 {
-
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/04/23/17/06/seal-1347886__480.jpg",
                     "targetWord": "Olá",
                     "audioToPlay": " ",
@@ -4713,7 +4695,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "Está buenísimo/a",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4779,7 +4761,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "C'est délicieux",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4844,7 +4826,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "Es ist köstlich",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4909,7 +4891,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "È buonissimo",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4974,7 +4956,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "É delicioso/a",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         }

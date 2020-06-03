@@ -41,9 +41,7 @@ db.SlangPres
 
 db.ProfanityPres
   .remove({})
-  .then(() => {
-    db.ProfanityPres.collection.insertMany(presSeeds[2])
-  })
+  .then(() => db.ProfanityPres.collection.insertMany(presSeeds[2]))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
