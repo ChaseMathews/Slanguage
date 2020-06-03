@@ -38,7 +38,7 @@ export default function QuizCard() {
     } else if (lesson === "profanity") {
       loadProfanityQuiz();
       setModal(false);
-      setAgeModal(true);
+      setAgeModal(!comeFromPres);
     } else if (lesson === "body1") {
       loadBodyQuiz1();
       setModal(true);
@@ -250,7 +250,7 @@ export default function QuizCard() {
     <>
       {ageModal &&
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Body>
               <p id="modalBody4"><strong>WARNING:</strong></p>
               <p className="modalBody5">Your grandma would not approve of the following content due to explicit language.</p>
@@ -267,10 +267,10 @@ export default function QuizCard() {
 
       {modalPrem &&
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to take this quiz.</Modal.Body>
           </Modal.Header>
-          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" styles={{ height: "100px", width: "300px" }} fluid />
+          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slangIconPlus.png" styles={{ height: "100px", width: "300px" }} fluid />
           <Modal.Footer>
             {
               comeFromPres ?
@@ -286,7 +286,7 @@ export default function QuizCard() {
       {modal &&
 
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title id="modalBody">Ready to practice what you've learned in {lang} {lesson}?</Modal.Title>
           </Modal.Header>
           <Modal.Body id="modalBody">Correct answers= <strong>+3 points</strong></Modal.Body>
@@ -354,7 +354,7 @@ export default function QuizCard() {
                   {
                     modalEnd && disabled &&
                     <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-                      <Modal.Header closeButton>
+                      <Modal.Header>
                         <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
                       </Modal.Header>
                       <Modal.Footer>

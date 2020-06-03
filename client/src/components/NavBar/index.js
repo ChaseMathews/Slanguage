@@ -46,7 +46,7 @@ export default function NavBar() {
       {modal &&
 
         <Modal show={show} onHide={() => setShow(false)}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title>Delete Account?</Modal.Title>
           </Modal.Header>
           <Modal.Body>Are you sure you want to delete your account?</Modal.Body>

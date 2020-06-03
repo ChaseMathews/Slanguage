@@ -10,9 +10,13 @@ import { UserContext } from '../../utils/Context';
 
 export default function CarouselFlags() {
 
-    const { user, setUser, setCurrentLang } = useContext(UserContext);
+    const { user, setUser, currentLang, setCurrentLang } = useContext(UserContext);
 
     const history = useHistory();
+
+    useEffect(() => {
+        setCurrentLang(currentLang);
+    }, [])
 
     const updateUserCurrentLang = e => {
         e.preventDefault();
@@ -22,8 +26,8 @@ export default function CarouselFlags() {
             .then(res => {
                 console.log(res.data);
                 setUser(res.data);
-                setCurrentLang(res.data.currentLanguage);
-                history.push(`/DashboardCards/${res.data.currentLanguage}`);
+                setCurrentLang(value);
+                history.push(`/DashboardCards/${value}`);
             })
             .catch(err => console.log(err));
 
