@@ -8,7 +8,7 @@ import API from '../../utils/API';
 
 
 export default function DashboardCard() {
-    const { user, setUser, currentLang } = useContext(UserContext);
+    const { user, setUser, currentLang, setCurrentLang } = useContext(UserContext);
 
     const { lang } = useParams();
 
@@ -18,6 +18,8 @@ export default function DashboardCard() {
 
     useEffect(() => {
         setLoading(false);
+        setCurrentLang(language);
+        console.log(language);
     }, [])
 
 

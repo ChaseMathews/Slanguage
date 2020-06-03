@@ -3,18 +3,69 @@
 import axios from "axios";
 
 export default {
+
+    // PRES DATA
     getNumPresData: function(lang) {
         return axios.get("/api/presentation/numbers/" + lang);
     },
     getSlangPresData: function(lang) {
         return axios.get("/api/presentation/slang/" + lang);
     },
+    getBodyPres1Data: function(lang) {
+        return axios.get("/api/presentation/body1/" + lang);
+    },
+    getBodyPres2Data: function(lang) {
+        return axios.get("/api/presentation/body2/" + lang);
+    },
+    getBodyPres3Data: function(lang) {
+        return axios.get("/api/presentation/body3/" + lang);
+    },
+    getBodyPres4Data: function(lang) {
+        return axios.get("/api/presentation/body4/" + lang);
+    },
+    getCalendarPresData: function(lang) {
+        return axios.get("/api/presentation/calendar/" + lang);
+    },
+    getColorsPresData: function(lang) {
+        return axios.get("/api/presentation/colors/" + lang);
+    },
+    getDaysPresData: function(lang) {
+        return axios.get("/api/presentation/days/" + lang);
+    },
+    getProfanityPresData: function(lang) {
+        return axios.get("/api/presentation/profanity/" + lang);
+    },
+    getSeasonsPresData: function(lang) {
+        return axios.get("/api/presentation/seasons/" + lang);
+    },
+    getTravelPres1Data: function(lang) {
+        return axios.get("/api/presentation/travel1/" + lang);
+    },
+    getTravelPres2Data: function(lang) {
+        return axios.get("/api/presentation/travel2/" + lang);
+    },
+    getTravelPres3Data: function(lang) {
+        return axios.get("/api/presentation/travel3/" + lang);
+    },
+
+
+    //  QUIZ METHODS
     getNumQuizData: function (lang) {
         return axios.get("/api/quiz/numbers/" + lang);
     },
     getSlangQuizData: function (lang) {
         return axios.get("/api/quiz/slang/" + lang);
     },
+    getProfanityQuizData: function (lang) {
+        return axios.get("/api/quiz/profanity/" + lang);
+    },
+    getBodyQuiz1Data: function (lang) {
+        return axios.get("/api/quiz/body1/" + lang);
+    },
+    
+    
+    // USER METHODS
+    
     // // Gets the user with the given id
     getUserData: function (id) {
         return axios.get(`/api/user/${id}`);

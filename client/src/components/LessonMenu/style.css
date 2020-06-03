@@ -10,6 +10,11 @@ h1{
   text-align: center;
 }
 
+.langGerm{
+  text-align: center;
+  color: yellow;
+}
+
 .presCardBody{
   padding-top: 0px;
   padding-right: 50px;

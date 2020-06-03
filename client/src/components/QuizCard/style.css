@@ -15,6 +15,15 @@ margin-top: 10px;
     font-size: 30px;
 }
 
+#modalBody4{
+    font-size: 40px;
+    color: red;
+}
+
+.modalBody5{
+    font-size: 25px;
+}
+
 #modalTitle{
     font-size: 50px;
 }
