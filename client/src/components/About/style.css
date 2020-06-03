@@ -8,18 +8,26 @@
 }
 
 .profImages:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   }
 
-  .team{
-      color: white;
-  }
+.team{
+  color: white;
+}
 
   .tooltip1,
   .boxAppearance {
   position: relative;
   display: inline-block;
+}
+
+.teamLinks{
+  color: orangered;
+}
+
+.tooltiptext{
+  padding: 12px;
 }
 
 .tooltip1 .tooltiptext {
@@ -47,12 +55,14 @@
 
 .boxAppearance .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  transition-duration: 7s;
+  width: 320px;
   background-color: Black;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 3px 3px;
+  /* transition-delay: 2s; */
   /* opacity: .5; */
   
   /* Position the tooltip */

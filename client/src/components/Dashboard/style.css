@@ -3,9 +3,11 @@
   margin: 20px;
 }
 
-/* .backgroundImage{
-  width: 100%;
-} */
+.backgroundImage{
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 25%;
+}
 
 .jumbotron.grayBox{
   margin-top: 5px;
