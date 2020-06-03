@@ -15,15 +15,15 @@ export default function ProgressView() {
   const languages = ["Spanish", "French", "Italian", "German", "Navajo", "Portuguese"];
   const [show, setShow] = useState(false);
   const history = useHistory();
-  const [languageClicked, setLanguageClicked] = useState(user ? user.currentLanguage : "");
+  // const [languageClicked, setLanguageClicked] = useState("");
   const userDbResultArr = user ? user.results : "";
   const languagesPracticed = user ? userDbResultArr.map(obj => obj.language) : "";
   const languagesNotPracticed = user ? languages.filter(diff => !languagesPracticed.includes(diff)) : "";
-  const [resultObject] = user ? user.results.filter(obj => obj.language === languageClicked) : "";
-
+  
   useEffect(() => {
     checkLanguages();
-    setCurrentLang(user.currentLanguage);
+    setCurrentLang(user ? user.currentLanguage : "");
+    // setCurrentLang(user.currentLanguage);
   }, [])
 
   const checkLanguages = () => {
@@ -37,17 +37,19 @@ export default function ProgressView() {
     }
   }
 
-
+  
   const goToDash = () => {
     setShow(false);
     history.push(`/DashboardCards/${user.currentLanguage}`);
   }
-
+  
   const handleClose = () => {
     setShow(false);
   };
 
-
+  const [languageClicked, setLanguageClicked] = useState(languagesPracticed[0]);
+  const [resultObject] = user ? user.results.filter(obj => obj.language === languageClicked) : "";
+  
   return (
     <>
       <Container>
@@ -92,12 +94,12 @@ export default function ProgressView() {
         <Row>
           <Col>
             <CardDeck >
-              {resultObject ?
+              {languagesPracticed && user ?
                 resultObject.lesson.map(obj => (
 
                   <ProgressCard
                     language={languageClicked}
-                    lesson={obj.name.charAt(0).toUpperCase() + obj.name.slice(1)}
+                    lesson={obj.name}
                     score={obj.score}
                     key={obj.name}
                   />
@@ -109,7 +111,6 @@ export default function ProgressView() {
                   backdrop="static"
                   center
                   style={{ height: "50%", width: "75%", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
-                  closeButton
                 >
                   <Modal.Body id="modalBody">You haven't taken any practice quizzes yet! Go to My Dashboard to get started!</Modal.Body>
                   <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
