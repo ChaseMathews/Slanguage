@@ -478,7 +478,7 @@ module.exports = [
                     "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
                     "targetWord": "A mí, plín",
                     "audioToPlay": "",
-                    "explanation": "A slightly vulgar way of saying \"I don't care.\"",
+                    "explanation": "A slightly vulgar way of saying \"I don't care.\""
                 },
                 {
                     "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
@@ -1951,7 +1951,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/08/29/04/45/body-1627477__480.jpg",
                     "targetWord": "a cintura",
                     "audioToPlay": " ",
-                    "explanation": "Waist",
+                    "explanation": "Waist"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/11/35/ancient-1869218__480.jpg",
