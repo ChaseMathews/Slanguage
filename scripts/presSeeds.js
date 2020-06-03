@@ -478,7 +478,7 @@ module.exports = [
                     "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
                     "targetWord": "A mí, plín",
                     "audioToPlay": "",
-                    "explanation": "A slightly vulgar way of saying \"I don't care.\"",
+                    "explanation": "A slightly vulgar way of saying \"I don't care.\""
                 },
                 {
                     "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
@@ -531,61 +531,61 @@ module.exports = [
                 {
                     "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/575cd59611175.560d6dd950dcc.jpg",
                     "targetWord": "¡Che, boludo!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/boludo.m4a",
                     "explanation": "Two of the most common words you'll hear in Argentina. \"Che\" is loosely translated as \"hey,\" or a segue into a conversation. \"Boludo\" can mean anything from \"dude\" to \"idiot.\""
                 },
                 {
                     "imageUrl": "https://cdn.memegenerator.es/imagenes/memes/full/7/3/7038674.jpg",
                     "targetWord": "¿Cómo andás?",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/andas.m4a",
                     "explanation": "Used as \"what's up?\" or \"¿qué tal?\" (note the use of 'vos' instead of 'tú')"
                 },
                 {
                     "imageUrl": "https://yt3.ggpht.com/a/AGF-l79NPPz0jUuhQfPtEGW-7SUoNGnxLAxygp_kvQ=s900-c-k-c0xffffffff-no-rj-mo",
                     "targetWord": "Chabón/chabona",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/chabon.m4a",
                     "explanation": "Guy/girl or dude/dudette"
                 },
                 {
                     "imageUrl": "https://previews.123rf.com/images/noravector/noravector1710/noravector171000033/87490561-super-cool-comic-book-style-word-on-abstract-background-.jpg",
                     "targetWord": "Re copado",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/copado.m4a",
                     "explanation": "\"Re\" is used frequently to mean \"really/very.\" \"Copado\" means \"cool/awesome.\""
                 },
                 {
                     "imageUrl": "https://dobienews.scuc.txed.net/wp-content/uploads/2020/04/couch-900x629.jpg",
                     "targetWord": "Estar al pedo/estar en pedo",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/en-pedo.m4a",
                     "explanation": "Not doing anything. Literally \"being to the fart/being in fart.\""
                 },
                 {
                     "imageUrl": "https://www.santarosa.gob.ar/storage/2018/01/26219706_1740803469561847_2346210351052712346_n.jpg",
                     "targetWord": "Ponerse las pilas",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/pilas.m4a",
                     "explanation": "Literally \"to put your batteries in.\" Used as \"get some energy! / put in effort!\" It can be used to motivate someone to do something like get out of bed or go to a party: \"¡Ponete las pilas!\" (note the use of 'vos' instead of 'tú')"
                 },
                 {
                     "imageUrl": "https://previews.123rf.com/images/rukach/rukach1802/rukach180200115/95796784-pop-art-retro-style-comic-book-panel-with-girl-talking-nonsense-small-talk-chatter-in-speech-bubble-.jpg",
                     "targetWord": "Mandar fruta",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/fruta.m4a",
                     "explanation": "To blab on without making much sense. To speak nonsense."
                 },
                 {
                     "imageUrl": "https://www.inventorsdigest.com/wp-content/uploads/2018/01/lazy-sloth-1080x640.gif",
                     "targetWord": "Tener fiaca",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/fiaca.m4a",
                     "explanation": "Being too lazy to do something; probably not acceptable in the workplace."
                 },
                 {
                     "imageUrl": "https://i0.wp.com/edairynews.com/es/wp-content/uploads/2018/11/remando-en-dulce-de-leche.jpg?fit=750%2C360&ssl=1",
                     "targetWord": "Estar remando en dulce de leche",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/dulcedeleche.m4a",
                     "explanation": "Literally \"To be rowing in dulce de leche (a thick caramel-like substance).\" Use it to describe being in a situation that's hard to get out of."
                 },
                 {
                     "imageUrl": "https://www.attorneyatwork.com/wp-content/uploads/2018/11/Get-to-the-Point-770.jpg",
                     "targetWord": "Ir a los bifes",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/bifes.m4a",
                     "explanation": "Literally \"to go to the steaks,\" it's used to say \"get to the point!\""
                 }
             ]
@@ -597,131 +597,65 @@ module.exports = [
                 {
                     "imageUrl": "https://www.fluentu.com/blog/spanish/wp-content/uploads/sites/2/2015/05/spanish-slang2.jpg",
                     "targetWord": "Tío/Tía",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/tio-tia.m4a",
                     "explanation": "Literally means \"uncle/aunt.\" Use it as \"friend, pal, dude.\""
                 },
                 {
                     "imageUrl": "https://fortroubledteens.com/images/group-friends-hug-smile-happy.jpg",
                     "targetWord": "Chaval(a)",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/chaval.m4a",
                     "explanation": "Kid, youngster"
                 },
                 {
                     "imageUrl": "https://funkidsguide.com/wp-content/uploads/2018/12/Ned-Flanders-550x330.jpg",
                     "targetWord": "Ser majo/a",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/majo.m4a",
                     "explanation": "To be nice/friendly"
                 },
                 {
                     "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--H-dVVSIB--/c_crop,x_10,y_10/c_fit,w_1109/c_crop,g_north_west,h_1260,w_1260,x_-76,y_-94/co_rgb:c62b29,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_1260/fl_layer_apply,g_north_west,x_-76,y_-94/bo_0px_solid_white/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1525249428/production/designs/2647017_0.jpg",
                     "targetWord": "Vale",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/vale.m4a",
                     "explanation": "Literally means \"It's worth it.\" It's used VERY often to say \"Okay.\" Spaniards often like to say it in multiples: \"Vale, vale, vale.\""
                 },
                 {
                     "imageUrl": "https://image.slidesharecdn.com/howtosaycoolin13spanishspeakingcountries-150206102725-conversion-gate01/95/how-to-say-cool-in-13-spanish-speakng-countries-2-638.jpg?cb=1423219034",
                     "targetWord": "Guay",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/guay.m4a",
                     "explanation": "Cool/Great"
                 },
                 {
                     "imageUrl": "https://memegenerator.net/img/instances/59251756/hey-thats-really-cool.jpg",
                     "targetWord": "¡Eso mola mucho!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/mola.m4a",
                     "explanation": "That's really cool!"
                 },
                 {
                     "imageUrl": "https://memegenerator.net/img/instances/20788827.jpg",
                     "targetWord": "¡Qué chulo!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/chulo.m4a",
                     "explanation": "How lovely/cool!"
                 },
                 {
                     "imageUrl": "https://www.dailymoss.com/wp-content/uploads/2019/03/f52011768acad7db1fbcf2224a6fc3609b7c31e8450bffa783c0d3317b0b1724.png",
                     "targetWord": "Me importa un pimiento",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/pimiento.m4a",
                     "explanation": "Literally meaning \"It is as important as a pepper,\" use this to say \"I don't care.\""
                 },
                 {
                     "imageUrl": "https://i.imgflip.com/2022e8.jpg",
                     "targetWord": "Pijo/a",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/pijo.m4a",
                     "explanation": "Snob/bratty/spoiled. Think of Veruca Salt from Charlie and the Chocolate Factory."
                 },
                 {
                     "imageUrl": "https://blog.fuertehoteles.com/wp-content/uploads/2017/11/tapas.jpg",
                     "targetWord": "Tapear",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/tapear.m4a",
                     "explanation": "To eat tapas. \"Tapas\" are a type of appetizer that’s specific to Spain."
                 }
             ]
-        },
-        {
-            "language": "Spanish",
-            "dialect": "Colombian",
-            "content": [
-                {
-                    "imageUrl": "https://steemitimages.com/DQmQbki6acfNKT9cX3MWBxsxSTHEEk16PVeqyvGyCXSVu6i/friend.jpg",
-                    "targetWord": "Parce, Parcero/a",
-                    "audioToPlay": "",
-                    "explanation": "Use these to refer to a friend."
-                },
-                {
-                    "imageUrl": "https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/46643978_317010605805170_3565280338416500736_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=J-SnHyN74GAAX8EwHFM&_nc_ht=scontent.fphx1-1.fna&oh=71632f912d24e41a2944449ccfc792bc&oe=5EF345B2",
-                    "targetWord": "¡Qué chévere!",
-                    "audioToPlay": "",
-                    "explanation": "How cool/awesome!"
-                },
-                {
-                    "imageUrl": "https://revistas.elheraldo.co/sites/default/files/2017/03/30/evento/shutterstock_154934858_web_lives.jpg",
-                    "targetWord": "Rumbear",
-                    "audioToPlay": "",
-                    "explanation": "To go out partying. \"Rumba\" means \"party.\""
-                },
-                {
-                    "imageUrl": "https://thoughtcatalog.files.wordpress.com/2013/02/25friendslarge.jpg?w=584&h=388",
-                    "targetWord": "Parche",
-                    "audioToPlay": "",
-                    "explanation": "A group of friends getting together to do something. If you don't have much going on in your social life, you are \"desparchado,\" or without \"parche.\""
-                },
-                {
-                    "imageUrl": "https://www.liberaldictionary.com/wp-content/uploads/2018/11/thingy.png",
-                    "targetWord": "Vaina",
-                    "audioToPlay": "",
-                    "explanation": "Stuff/Thing(y)"
-                },
-                {
-                    "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--SXi-guyk--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1564295312/production/designs/5437911_0.jpg",
-                    "targetWord": "¡De una!",
-                    "audioToPlay": "",
-                    "explanation": "Yes, absolutely! / Let's do it!"
-                },
-                {
-                    "imageUrl": "https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/133/5/133-5-101P/The-Dude-Bruno-Morphet-Poster.jpg",
-                    "targetWord": "Man",
-                    "audioToPlay": "",
-                    "explanation": "Said in a Colombian accent, it's slang for a guy or a dude."
-                },
-                {
-                    "imageUrl": "https://memegenerator.net/img/instances/81284346.jpg",
-                    "targetWord": "¿Qué más?",
-                    "audioToPlay": "",
-                    "explanation": "Used within greetings, \"¡Hola! ¿Qué mas?\" literally means \"Hi! What else?\" But it's actually used as \"Hi! What's up?\" or \"Hi! How's it going?\""
-                },
-                {
-                    "imageUrl": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/10/Thumbs.Up_-503x300.jpg",
-                    "targetWord": "Bacano",
-                    "audioToPlay": "",
-                    "explanation": "Another word for \"chévere,\" or \"really good/cool!\""
-                },
-                {
-                    "imageUrl": "https://i.pinimg.com/originals/d8/b4/71/d8b47130d0d3763fccfacedf7196041f.jpg",
-                    "targetWord": "Guaro",
-                    "audioToPlay": "",
-                    "explanation": "Refers to Colombia's popular aniseed-flavored spirit drink \"aguardiente.\""
-                }
-            ]
-        },
+        },     
         {
             "language": "Navajo",
             "dialect": "",
@@ -825,7 +759,7 @@ module.exports = [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/01/10/14/35/old-man-1969215__480.jpg",
                     "targetWord": "Beau Gosse",
-                    "audioToPlay": "/audio/French/beau gosse.m4a",
+                    "audioToPlay": "/audio/French/beaugosse.m4a",
                     "explanation": "A hot guy, often abbreviated BG. "
                 },
                 {
@@ -867,7 +801,7 @@ module.exports = [
                 {
                     "imageUrl": "https://blog.lingoda.com/wp-content/uploads/2020/01/bigstock-Young-People-Man-And-Woman-Gr-327730912-1024x532.jpg",
                     "targetWord": "Mach’s Gut!",
-                    "audioToPlay": "/audio/German/machs gut.m4a",
+                    "audioToPlay": "/audio/German/machsgut.m4a",
                     "explanation": "A slang way to say goodbye."
                 },
                 {
@@ -951,7 +885,7 @@ module.exports = [
                 {
                     "imageUrl": "https://image.freepik.com/free-photo/man-crossing-fingers-both-hands_1187-2913.jpg",
                     "targetWord": "In bocca al lupo!",
-                    "audioToPlay": "/audio/Italian/in bocca al lupo.m4a",
+                    "audioToPlay": "/audio/Italian/inboccaallupo.m4a",
                     "explanation": "Good luck. It literally means, in the mouth of the wolf."
                 },
                 {
@@ -1055,72 +989,73 @@ module.exports = [
     [
         {
             "language": "Spanish",
+            "dialect": "",
             "content": [
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Mierda",
-                            "audioToPlay": "",
-                            "explanation": "This word means shit"
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                            "targetWord": "Verga",
-                            "audioToPlay": "",
-                            "explanation": "This word means penis, but it is used in many ways. In an angry context it can mean fuck"
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                            "targetWord": "Puto",
-                            "audioToPlay": "",
-                            "explanation": "This word means homosexual in an offensive way."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Pendejo",
-                            "audioToPlay": "",
-                            "explanation": "This word is used to describe a person as stupid."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                            "targetWord": "Chingar",
-                            "audioToPlay": "",
-                            "explanation": "This word means to have sex but can also be used to describe something or someone as annoying"
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                            "targetWord": "Cagar",
-                            "audioToPlay": "",
-                            "explanation": "This word means to poop."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Mamon",
-                            "audioToPlay": "",
-                            "explanation": "This word is used to describe a stuck up person."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
-                            "targetWord": "Culo",
-                            "audioToPlay": "",
-                            "explanation": "This is a bad word for butt."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
-                            "targetWord": "Hueva",
-                            "audioToPlay": "",
-                            "explanation": "This word means lazy."
-                        },
-                        {
-                            "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                            "targetWord": "Fregon",
-                            "audioToPlay": "",
-                            "explanation": "This word can be used to describe anything or anyone as cool."
-                        },
-                
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Mierda",
+                    "audioToPlay": "/audio/spanish/mierda.m4a",
+                    "explanation": "This word means shit"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Verga",
+                    "audioToPlay": "/audio/spanish/verga.m4a",
+                    "explanation": "This word means penis, but it is used in many ways. In an angry context it can mean fuck"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Puto",
+                    "audioToPlay": "/audio/spanish/puto.m4a",
+                    "explanation": "This word means homosexual in an offensive way."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Pendejo",
+                    "audioToPlay": "/audio/spanish/pendejo.m4a",
+                    "explanation": "This word is used to describe a person as stupid."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Chingar",
+                    "audioToPlay": "/audio/spanish/chingar.m4a",
+                    "explanation": "This word means to have sex but can also be used to describe something or someone as annoying"
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Cagar",
+                    "audioToPlay": "/audio/spanish/cagar.m4a",
+                    "explanation": "This word means to poop."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Mamon",
+                    "audioToPlay": "/audio/spanish/mamon.m4a",
+                    "explanation": "This word is used to describe a stuck up person."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
+                    "targetWord": "Culo",
+                    "audioToPlay": "/audio/spanish/culo.m4a",
+                    "explanation": "This is a bad word for butt."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
+                    "targetWord": "Hueva",
+                    "audioToPlay": "/audio/spanish/hueva.m4a",
+                    "explanation": "This word means lazy."
+                },
+                {
+                    "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
+                    "targetWord": "Fregon",
+                    "audioToPlay": "/audio/spanish/fregon.m4a",
+                    "explanation": "This word can be used to describe anything or anyone as cool."
+                }
             ]
         },
         {
             "language": "French",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -1186,6 +1121,7 @@ module.exports = [
         },
         {
             "language": "German",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
@@ -1251,6 +1187,7 @@ module.exports = [
         },
         {
             "language": "Italian",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
@@ -1316,6 +1253,7 @@ module.exports = [
         },
         {
             "language": "Portuguese",
+            "dialect": "",
             "content": [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
@@ -2298,78 +2236,66 @@ module.exports = [
         },
         {
             "language": "Portuguese",
-            "content": [
-                {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/11/35/ancient-1869218__480.jpg",
-                    "targetWord": "a nuca",
-                    "audioToPlay": " ",
-                    "explanation": " Nape"
-                },
-                {
-                    "imageUrl": "https://cdn.pixabay.com/photo/2020/05/12/15/08/back-5163495__480.jpg",
-                    "targetWord": "o ombro",
-                    "audioToPlay": " ",
-                    "explanation": " Shoulder"
-                },
+            "content": [           
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/08/29/03/34/man-3639055__480.jpg",
                     "targetWord": "a parte de trás",
                     "audioToPlay": " ",
-                    "explanation": " Back"
+                    "explanation": "Back"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/02/03/22/20/man-1178221__480.jpg",
                     "targetWord": "a axila",
                     "audioToPlay": " ",
-                    "explanation": " Armpit"
+                    "explanation": "Armpit"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/01/29/15/25/tango-3116355__480.png",
                     "targetWord": "o pequeno de costas",
                     "audioToPlay": " ",
-                    "explanation": " Small of back"
+                    "explanation": "Small of back"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/19/23/56/thumb-422147__480.jpg",
                     "targetWord": "o braço",
                     "audioToPlay": " ",
-                    "explanation": " Arm"
+                    "explanation": "Arm"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/02/12/00/58/man-80638__480.jpg",
                     "targetWord": "o cotovelo",
                     "audioToPlay": " ",
-                    "explanation": " Elbow"
+                    "explanation": "Elbow"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/12/26/people-2564955__480.jpg",
                     "targetWord": "o pulso",
                     "audioToPlay": " ",
-                    "explanation": " Wrist"
+                    "explanation": "Wrist"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/04/23/00/45/hand-3342918__480.jpg",
                     "targetWord": "a mão",
                     "audioToPlay": " ",
-                    "explanation": " Hand"
+                    "explanation": "Hand"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/10/06/00/21/legg-2821615__480.jpg",
                     "targetWord": "o bezerro",
                     "audioToPlay": " ",
-                    "explanation": " Calf"
+                    "explanation": "Calf"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/03/31/20/11/shoes-4093923__480.jpg",
                     "targetWord": "o tornozelo",
                     "audioToPlay": " ",
-                    "explanation": " Ankle"
+                    "explanation": "Ankle"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/09/01/19/17/standing-on-your-head-2705218__480.jpg",
                     "targetWord": "o calcanhar",
                     "audioToPlay": " ",
-                    "explanation": " Heel"
+                    "explanation": "Heel"
                 }
             ]
         }
@@ -2829,7 +2755,7 @@ module.exports = [
                     "targetWord": "hier",
                     "audioToPlay": " ",
                     "explanation": "Yesterday"
-                },
+                }
             ]
         },
         {
@@ -2894,7 +2820,7 @@ module.exports = [
                     "targetWord": "gestern",
                     "audioToPlay": " ",
                     "explanation": "Yesterday"
-                },
+                }
             ]
         },
         {
@@ -3024,7 +2950,7 @@ module.exports = [
                     "targetWord": "ontem",
                     "audioToPlay": " ",
                     "explanation": "Yesterday"
-                },
+                }
             ]
         }
     ],
@@ -3068,14 +2994,12 @@ module.exports = [
                     "audioToPlay": " ",
                     "explanation": "Purple"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/02/21/05/17/cat-3169476__480.jpg",
                     "targetWord": "negro",
                     "audioToPlay": " ",
                     "explanation": "Black"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052__480.jpg",
                     "targetWord": "blanco",
@@ -3336,7 +3260,6 @@ module.exports = [
                     "audioToPlay": " ",
                     "explanation": "Black"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052__480.jpg",
                     "targetWord": "branco",
@@ -3354,7 +3277,7 @@ module.exports = [
                     "targetWord": "marrom",
                     "audioToPlay": " ",
                     "explanation": "Brown"
-                },
+                }
             ]
         }
     ],
@@ -3678,7 +3601,6 @@ module.exports = [
                     "audioToPlay": " ",
                     "explanation": "Date"
                 },
-
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2015/07/10/17/52/fun-839863__480.jpg",
                     "targetWord": "o fim de semana",
@@ -4362,7 +4284,7 @@ module.exports = [
                     "targetWord": "Tudo bem",
                     "audioToPlay": " ",
                     "explanation": "That's fine"
-                },
+                }
             ]
         }
     ],
@@ -4643,7 +4565,6 @@ module.exports = [
             "language": "Portuguese",
             "content": [
                 {
-
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/04/23/17/06/seal-1347886__480.jpg",
                     "targetWord": "Olá",
                     "audioToPlay": " ",
@@ -4774,7 +4695,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "Está buenísimo/a",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4840,7 +4761,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "C'est délicieux",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4905,7 +4826,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "Es ist köstlich",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -4970,7 +4891,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "È buonissimo",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         },
@@ -5035,7 +4956,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2019/08/17/17/26/monkey-4412657__480.jpg",
                     "targetWord": "É delicioso/a",
                     "audioToPlay": " ",
-                    "explanation": "It's delicous"
+                    "explanation": "It's delicious"
                 }
             ]
         }

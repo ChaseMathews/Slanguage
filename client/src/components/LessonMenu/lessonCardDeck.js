@@ -31,7 +31,7 @@ export default function LessonCards() {
                         <Card.Text>
                             Going on a trip? {type === 'quiz' ? `Practice ` : `Learn `} some basic travel vocabulary!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel` : `/${lang}/presentation/travel`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel1` : `/${lang}/presentation/travel1`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -42,7 +42,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} some more basic travel vocabulary!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel2` : `/${lang}/presentation/travel2`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel2` : `/${lang}/presentation/travel2`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -53,7 +53,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} some more basic travel vocabulary!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel3` : `/${lang}/presentation/travel3`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/travel3` : `/${lang}/presentation/travel3`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
             </Row>
@@ -68,7 +68,7 @@ export default function LessonCards() {
                         <Card.Text className="card-text">
                             {type === 'quiz' ? `Practice ` : `Learn `} the human body!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body1` : `/${lang}/presentation/body1`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body1` : `/${lang}/presentation/body1`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -79,7 +79,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} the human body!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body2` : `/${lang}/presentation/body2`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body2` : `/${lang}/presentation/body2`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -90,7 +90,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} the human body!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body3` : `/${lang}/presentation/body3`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body3` : `/${lang}/presentation/body3`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -101,7 +101,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} the human body!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body4` : `/${lang}/presentation/body4`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/body4` : `/${lang}/presentation/body4`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
             </Row>
@@ -114,7 +114,7 @@ export default function LessonCards() {
                         <Card.Text className="card-text">
                             {type === 'quiz' ? `Practice ` : `Learn `} the days of the week!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/daysOfTheWeek` : `/${lang}/presentation/daysOfTheWeek`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/days` : `/${lang}/presentation/days`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -125,7 +125,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} colors!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/colors` : `/${lang}/presentation/colors`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/colors` : `/${lang}/presentation/colors`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -136,7 +136,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} to talk about the calendar!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/calendar` : `/${lang}/presentation/calendar`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/calendar` : `/${lang}/presentation/calendar`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
 
@@ -147,7 +147,7 @@ export default function LessonCards() {
                         <Card.Text>
                             {type === 'quiz' ? `Practice ` : `Learn `} the seasons and skies!{' '}
                         </Card.Text>
-                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/seasons` : `/${lang}/presentation/seasons`}><Button disabled>Click Here!</Button></Link>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/seasons` : `/${lang}/presentation/seasons`}><Button>Click Here!</Button></Link>
                     </Card.Body>
                 </Card>
             </Row>
