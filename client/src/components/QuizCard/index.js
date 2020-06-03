@@ -209,7 +209,7 @@ export default function QuizCard() {
     updateUserResults();
   }
 
-  const hints = quizContent[index].example != "";
+  
 
   const goToDash = () => {
     setModalEnd(false);
