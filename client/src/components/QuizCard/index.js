@@ -325,7 +325,7 @@ export default function QuizCard() {
                       <h2>{quizContent[index].phrase}</h2>
                     </div>
                     <br></br>
-                    {hint &&
+                    {hint && quizContent[index].example !== "" &&
                       <div>
                         HINT: {quizContent[index].example}
                       </div>
