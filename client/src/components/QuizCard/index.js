@@ -4,7 +4,6 @@ import { Card, Button, Container, Row, Col, Jumbotron, Modal, Image } from 'reac
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
 import { UserContext } from '../../utils/Context';
-import ReactAudioPlayer from 'react-audio-player';
 
 
 export default function QuizCard() {
@@ -179,10 +178,6 @@ export default function QuizCard() {
 
       setScore(score + 3)
       setDisabled(!disabled);
-      // <ReactAudioPlayer
-      //   src={"/audio/spanish/guey.m4a"}
-      //   autoPlay
-      // />
     } else {
       setBtnVarient({
         ...btnVarient,
