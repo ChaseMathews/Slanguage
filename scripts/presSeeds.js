@@ -465,61 +465,61 @@ module.exports = [
                 {
                     "imageUrl": "https://hrexach.files.wordpress.com/2018/11/cutepr.jpg?w=584",
                     "targetWord": "Boricua",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/boricua.m4a",
                     "explanation": "The local name for a Puerto Rican."
                 },
                 {
                     "imageUrl": "https://lh3.googleusercontent.com/proxy/kycl-glAFKjFiMhpuoPuJe2H5c0se9X2Lo45NSLV-Y_l6v0QkR1wN_dA7m839TGXPMUdAWQrHfkl6pHs6GLWVtksKDZKi_erIVVDSr1QJ2b2UJ5zFxoIy-hDXZxFoVkBRScFdoFidLWQNeA9jsJX923kSjzWZYHPowd354mxgdkRmYOtzKAt9mL0Vf2LKw8buCXnDKZFRE4iz_xV95QDok13f1Q19a6NfHLC_KtljpYTo7E",
                     "targetWord": "Corillo",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/corillo.m4a",
                     "explanation": "Refers to a group of friends"
                 },
                 {
                     "imageUrl": "https://cdn.dribbble.com/users/2408238/screenshots/7210912/image.png",
                     "targetWord": "A mí, plín",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/plin.m4a",
                     "explanation": "A slightly vulgar way of saying \"I don't care.\""
                 },
                 {
                     "imageUrl": "https://www.greatschools.org/gk/wp-content/uploads/2017/06/Teenager-hang-out-places.jpg",
                     "targetWord": "Janguear",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/jangear.m4a",
                     "explanation": "To hang out"
                 },
                 {
                     "imageUrl": "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/surfing-dog-photo-is-funner-or-funnest-a-real-word-5670-6d512231d0a52079b0c9fbf474f9a6c9@1x.jpg",
                     "targetWord": "Al garete",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/garete.m4a",
                     "explanation": "Really fun and crazy"
                 },
                 {
                     "imageUrl": "https://daily.jstor.org/wp-content/uploads/2017/12/traffic_jam_1050x700.jpg",
                     "targetWord": "Tapón",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/tapon.m4a",
                     "explanation": "Traffic"
                 },
                 {
                     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/A_mess_of_wires.jpg",
                     "targetWord": "Revolú",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/revolu.m4a",
                     "explanation": "A mess"
                 },
                 {
                     "imageUrl": "https://www.dictionary.com/e/wp-content/uploads/2017/11/words_for_gossip3.jpg",
                     "targetWord": "Bochinche",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/bochinche.m4a",
                     "explanation": "Gossip"
                 },
                 {
                     "imageUrl": "https://akm-img-a-in.tosshub.com/indiatoday/styles/photo_slider_753x543/public/images/photogallery/201404/13_042514045937.jpg?0MjddSYiAj2VlTBXq9A3vbEtGVE6ZI1F",
                     "targetWord": "Gato/Gata",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/gato.m4a",
                     "explanation": "Literally means cat. Used to refer to a very good-looking man/woman."
                 },
                 {
                     "imageUrl": "https://pics.me.me/thumb_weeeepaaaa-wepa-23611602.png",
                     "targetWord": "¡Wepa!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/puerto_rico_spanish/wepa.m4a",
                     "explanation": "An exclamation to express joy and utter happiness. Be sure to yell it nasally and hold the \"e\" and \"a\" for a long time."
                 }
             ]
