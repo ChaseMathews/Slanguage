@@ -270,7 +270,7 @@ export default function QuizCard() {
           <Modal.Header closeButton>
             <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to take this quiz.</Modal.Body>
           </Modal.Header>
-          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" styles={{ height: "100px", width: "300px" }} fluid />
+          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slangIconPlus.png" styles={{ height: "100px", width: "300px" }} fluid />
           <Modal.Footer>
             {
               comeFromPres ?
