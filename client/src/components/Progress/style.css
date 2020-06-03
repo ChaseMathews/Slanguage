@@ -19,3 +19,27 @@ border-bottom-right-radius: 12px;
 font-family:'Raleway', sans-serif;  
 box-shadow: 0 0 0 8px 0 rgba(0, 0, 0, 8);
 }
+
+
+
+
+#title{
+  color: red;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+  /* background-color: rgba(250, 252, 251, 0.55); */
+}
+
+
+
+
+    
+
+
+
+.capital {
+  text-transform: capitalize;
+}

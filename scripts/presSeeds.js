@@ -1956,7 +1956,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/08/29/04/45/body-1627477__480.jpg",
                     "targetWord": "a cintura",
                     "audioToPlay": " ",
-                    "explanation": "Waist",
+                    "explanation": "Waist"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/11/35/ancient-1869218__480.jpg",
