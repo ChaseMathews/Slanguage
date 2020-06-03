@@ -52,38 +52,41 @@ export default function ProgressView() {
     <>
       <Container>
         <br></br>
-        <h1 className="text-center">Check your Progress</h1>
-        <Row>
-          <Col className="boxAppearance" md={{ span: 6, offset: 4 }}>
-            {languageList.map(lang => (
-              <LanguageButton
-                language={lang}
-                disabled={false}
-                key={lang}
-                value={lang}
-                setLanguageClicked={setLanguageClicked}
-                variant={languageClicked === lang}
-              />
-            ))}
+        <h1 id="title" >Check your Progress</h1>
+       
+          <Row>
 
-            {
-              notPracticed.map(lang => (
-                <>
-                  <LanguageButton
-                    language={lang}
-                    disabled={true}
-                    value={lang}
-                    key={lang}
-                  />
-                  <div className="tooltiptext" >
-                    Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link> 
-                    <br></br>
+            <Col className="boxAppearance" md={{ span: 6, offset: 4 }}>
+              {languageList.map(lang => (
+                <LanguageButton
+                  language={lang}
+                  disabled={false}
+                  key={lang}
+                  value={lang}
+                  setLanguageClicked={setLanguageClicked}
+                  variant={languageClicked === lang}
+                />
+              ))}
+
+              {
+                notPracticed.map(lang => (
+                  <>
+                    <LanguageButton
+                      language={lang}
+                      disabled={true}
+                      value={lang}
+                      key={lang}
+                    />
+                    <div className="tooltiptext" >
+                      Go to <Link to={`/DashboardCards/${user.currentLanguage}`}>My Dashboard</Link>
+                      <br></br>
                     to practice this language!
                   </div>
-                </ >
-              ))}
-          </Col>
-        </Row>
+                  </ >
+                ))}
+            </Col>
+          </Row>
+        
         <br></br>
 
         <Row>
@@ -91,7 +94,7 @@ export default function ProgressView() {
             <CardDeck >
               {resultObject ?
                 resultObject.lesson.map(obj => (
-                  
+
                   <ProgressCard
                     language={languageClicked}
                     lesson={obj.name.charAt(0).toUpperCase() + obj.name.slice(1)}
@@ -115,6 +118,7 @@ export default function ProgressView() {
             </CardDeck>
           </Col>
         </Row>
+       
       </Container >
     </>
   )
