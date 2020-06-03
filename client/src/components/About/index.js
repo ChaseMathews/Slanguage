@@ -36,7 +36,7 @@ export default function About() {
                             <Image className="profImages" src="https://avatars3.githubusercontent.com/u/57241476?s=460&u=c101a90ddf64df3a7298c4d59b451cabd0908c51&v=4" roundedCircle />
                             <div  className="tooltip1">
                             <h4 >Karen Sosa</h4>
-                            <span className="tooltiptext"><h3></h3><p>a little blurb about Karen.</p></span>
+                            <span className="tooltiptext"><h3></h3><p>Karen is an immigrant from Sonora, Mexico with a background in technology. As a native (Mexican) spanish speaker she really enjoyed making this app with some of her favorite swear words and slang. Check out her other projects at <Link to="github.com/k-sosa">github.com/k-sosa</Link></p></span>
                             </div>
                         </Col>
                     
