@@ -531,61 +531,61 @@ module.exports = [
                 {
                     "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/575cd59611175.560d6dd950dcc.jpg",
                     "targetWord": "¡Che, boludo!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/boludo.m4a",
                     "explanation": "Two of the most common words you'll hear in Argentina. \"Che\" is loosely translated as \"hey,\" or a segue into a conversation. \"Boludo\" can mean anything from \"dude\" to \"idiot.\""
                 },
                 {
                     "imageUrl": "https://cdn.memegenerator.es/imagenes/memes/full/7/3/7038674.jpg",
                     "targetWord": "¿Cómo andás?",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/andas.m4a",
                     "explanation": "Used as \"what's up?\" or \"¿qué tal?\" (note the use of 'vos' instead of 'tú')"
                 },
                 {
                     "imageUrl": "https://yt3.ggpht.com/a/AGF-l79NPPz0jUuhQfPtEGW-7SUoNGnxLAxygp_kvQ=s900-c-k-c0xffffffff-no-rj-mo",
                     "targetWord": "Chabón/chabona",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/chabon.m4a",
                     "explanation": "Guy/girl or dude/dudette"
                 },
                 {
                     "imageUrl": "https://previews.123rf.com/images/noravector/noravector1710/noravector171000033/87490561-super-cool-comic-book-style-word-on-abstract-background-.jpg",
                     "targetWord": "Re copado",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/copado.m4a",
                     "explanation": "\"Re\" is used frequently to mean \"really/very.\" \"Copado\" means \"cool/awesome.\""
                 },
                 {
                     "imageUrl": "https://dobienews.scuc.txed.net/wp-content/uploads/2020/04/couch-900x629.jpg",
                     "targetWord": "Estar al pedo/estar en pedo",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/en-pedo.m4a",
                     "explanation": "Not doing anything. Literally \"being to the fart/being in fart.\""
                 },
                 {
                     "imageUrl": "https://www.santarosa.gob.ar/storage/2018/01/26219706_1740803469561847_2346210351052712346_n.jpg",
                     "targetWord": "Ponerse las pilas",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/pilas.m4a",
                     "explanation": "Literally \"to put your batteries in.\" Used as \"get some energy! / put in effort!\" It can be used to motivate someone to do something like get out of bed or go to a party: \"¡Ponete las pilas!\" (note the use of 'vos' instead of 'tú')"
                 },
                 {
                     "imageUrl": "https://previews.123rf.com/images/rukach/rukach1802/rukach180200115/95796784-pop-art-retro-style-comic-book-panel-with-girl-talking-nonsense-small-talk-chatter-in-speech-bubble-.jpg",
                     "targetWord": "Mandar fruta",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/fruta.m4a",
                     "explanation": "To blab on without making much sense. To speak nonsense."
                 },
                 {
                     "imageUrl": "https://www.inventorsdigest.com/wp-content/uploads/2018/01/lazy-sloth-1080x640.gif",
                     "targetWord": "Tener fiaca",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/fiaca.m4a",
                     "explanation": "Being too lazy to do something; probably not acceptable in the workplace."
                 },
                 {
                     "imageUrl": "https://i0.wp.com/edairynews.com/es/wp-content/uploads/2018/11/remando-en-dulce-de-leche.jpg?fit=750%2C360&ssl=1",
                     "targetWord": "Estar remando en dulce de leche",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/dulcedeleche.m4a",
                     "explanation": "Literally \"To be rowing in dulce de leche (a thick caramel-like substance).\" Use it to describe being in a situation that's hard to get out of."
                 },
                 {
                     "imageUrl": "https://www.attorneyatwork.com/wp-content/uploads/2018/11/Get-to-the-Point-770.jpg",
                     "targetWord": "Ir a los bifes",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/bifes.m4a",
                     "explanation": "Literally \"to go to the steaks,\" it's used to say \"get to the point!\""
                 }
             ]
@@ -597,61 +597,61 @@ module.exports = [
                 {
                     "imageUrl": "https://www.fluentu.com/blog/spanish/wp-content/uploads/sites/2/2015/05/spanish-slang2.jpg",
                     "targetWord": "Tío/Tía",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/tio-tia.m4a",
                     "explanation": "Literally means \"uncle/aunt.\" Use it as \"friend, pal, dude.\""
                 },
                 {
                     "imageUrl": "https://fortroubledteens.com/images/group-friends-hug-smile-happy.jpg",
                     "targetWord": "Chaval(a)",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/chaval.m4a",
                     "explanation": "Kid, youngster"
                 },
                 {
                     "imageUrl": "https://funkidsguide.com/wp-content/uploads/2018/12/Ned-Flanders-550x330.jpg",
                     "targetWord": "Ser majo/a",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/majo.m4a",
                     "explanation": "To be nice/friendly"
                 },
                 {
                     "imageUrl": "https://res.cloudinary.com/teepublic/image/private/s--H-dVVSIB--/c_crop,x_10,y_10/c_fit,w_1109/c_crop,g_north_west,h_1260,w_1260,x_-76,y_-94/co_rgb:c62b29,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_1260/fl_layer_apply,g_north_west,x_-76,y_-94/bo_0px_solid_white/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1525249428/production/designs/2647017_0.jpg",
                     "targetWord": "Vale",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/vale.m4a",
                     "explanation": "Literally means \"It's worth it.\" It's used VERY often to say \"Okay.\" Spaniards often like to say it in multiples: \"Vale, vale, vale.\""
                 },
                 {
                     "imageUrl": "https://image.slidesharecdn.com/howtosaycoolin13spanishspeakingcountries-150206102725-conversion-gate01/95/how-to-say-cool-in-13-spanish-speakng-countries-2-638.jpg?cb=1423219034",
                     "targetWord": "Guay",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/guay.m4a",
                     "explanation": "Cool/Great"
                 },
                 {
                     "imageUrl": "https://memegenerator.net/img/instances/59251756/hey-thats-really-cool.jpg",
                     "targetWord": "¡Eso mola mucho!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/mola.m4a",
                     "explanation": "That's really cool!"
                 },
                 {
                     "imageUrl": "https://memegenerator.net/img/instances/20788827.jpg",
                     "targetWord": "¡Qué chulo!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/chulo.m4a",
                     "explanation": "How lovely/cool!"
                 },
                 {
                     "imageUrl": "https://www.dailymoss.com/wp-content/uploads/2019/03/f52011768acad7db1fbcf2224a6fc3609b7c31e8450bffa783c0d3317b0b1724.png",
                     "targetWord": "Me importa un pimiento",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/pimiento.m4a",
                     "explanation": "Literally meaning \"It is as important as a pepper,\" use this to say \"I don't care.\""
                 },
                 {
                     "imageUrl": "https://i.imgflip.com/2022e8.jpg",
                     "targetWord": "Pijo/a",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/pijo.m4a",
                     "explanation": "Snob/bratty/spoiled. Think of Veruca Salt from Charlie and the Chocolate Factory."
                 },
                 {
                     "imageUrl": "https://blog.fuertehoteles.com/wp-content/uploads/2017/11/tapas.jpg",
                     "targetWord": "Tapear",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spain_spanish/tapear.m4a",
                     "explanation": "To eat tapas. \"Tapas\" are a type of appetizer that’s specific to Spain."
                 }
             ]
@@ -994,61 +994,61 @@ module.exports = [
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Mierda",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/mierda.m4a",
                     "explanation": "This word means shit"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "targetWord": "Verga",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/verga.m4a",
                     "explanation": "This word means penis, but it is used in many ways. In an angry context it can mean fuck"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Puto",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/puto.m4a",
                     "explanation": "This word means homosexual in an offensive way."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Pendejo",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/pendejo.m4a",
                     "explanation": "This word is used to describe a person as stupid."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "targetWord": "Chingar",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/chingar.m4a",
                     "explanation": "This word means to have sex but can also be used to describe something or someone as annoying"
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Cagar",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/cagar.m4a",
                     "explanation": "This word means to poop."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Mamon",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/mamon.m4a",
                     "explanation": "This word is used to describe a stuck up person."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "targetWord": "Culo",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/culo.m4a",
                     "explanation": "This is a bad word for butt."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "targetWord": "Hueva",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/hueva.m4a",
                     "explanation": "This word means lazy."
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "targetWord": "Fregon",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/spanish/fregon.m4a",
                     "explanation": "This word can be used to describe anything or anyone as cool."
                 }
             ]

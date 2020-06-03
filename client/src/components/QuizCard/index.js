@@ -209,6 +209,8 @@ export default function QuizCard() {
     updateUserResults();
   }
 
+  
+
   const goToDash = () => {
     setModalEnd(false);
     updateUserResults();
