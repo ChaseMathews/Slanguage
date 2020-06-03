@@ -1255,7 +1255,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "Idiot",
                     "answerOptions": [
-                        "mamon",
+                        "mamón",
                         "pendejo",
                         "hueva"
                     ],
@@ -1265,8 +1265,8 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
                     "phrase": "Sex or someone annoying",
                     "answerOptions": [
-                        "mamon",
-                        "fregon",
+                        "mamón",
+                        "fregón",
                         "chingar"
                     ],
                     "correctAnswer": "chingar",
@@ -1275,7 +1275,7 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2013/12/31/13/18/monkey-236861__480.jpg",
                     "phrase": "To poop",
                     "answerOptions": [
-                        "fregon",
+                        "fregón",
                         "cagar",
                         "culo"
                     ],
@@ -1285,11 +1285,11 @@ module.exports = [
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
                     "phrase": "Stuck up person",
                     "answerOptions": [
-                        "mamon",
+                        "mamón",
                         "hueva",
                         "pendejo"
                     ],
-                    "correctAnswer": "mamon",
+                    "correctAnswer": "mamón",
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2018/03/02/08/10/woman-3192523__480.jpg",
@@ -1313,13 +1313,13 @@ module.exports = [
                 },
                 {
                     "imageUrl": "https://cdn.pixabay.com/photo/2017/08/25/21/47/secret-2681508__480.jpg",
-                    "phrase": "",
+                    "phrase": "Cool",
                     "answerOptions": [
-                        "mamon",
+                        "mamón",
                         "chingar",
-                        "fregon"
+                        "fregón"
                     ],
-                    "correctAnswer": "fregon",
+                    "correctAnswer": "fregón",
                 },
             ]
         },
