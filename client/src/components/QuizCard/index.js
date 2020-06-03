@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import API from "../../utils/API"
-import { Card, Button, Container, Row, Col, Jumbotron, Modal } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Jumbotron, Modal, Image } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
 import { UserContext } from '../../utils/Context';
@@ -10,11 +10,12 @@ export default function QuizCard() {
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
 
-  const { user, setUser, currentLang } = useContext(UserContext);
+  const { user, setUser, currentLang, setCurrentLang, comeFromPres, setComeFromPres, ageModal, setAgeModal } = useContext(UserContext);
   const [score, setScore] = useState(0)
   const [disabled, setDisabled] = useState(false);
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState();
   const [modalEnd, setModalEnd] = useState(false);
+  const [modalPrem, setModalPrem] = useState(false);
   const [hint, setHint] = useState(false)
   const history = useHistory();
   const { lang, lesson } = useParams();
@@ -27,7 +28,24 @@ export default function QuizCard() {
 
 
   useEffect(() => {
-    lesson === "numbers" ? loadNumQuiz() : loadSlangQuiz();
+    setCurrentLang(language);
+    if (lesson === "numbers") {
+      loadNumQuiz();
+      setModal(true);
+    } else if (lesson === "slang") {
+      loadSlangQuiz();
+      setModal(true);
+    } else if (lesson === "profanity") {
+      loadProfanityQuiz();
+      setModal(false);
+      setAgeModal(true);
+    } else if (lesson === "body1") {
+      loadBodyQuiz1();
+      setModal(true);
+    } else {
+      setModal(false);
+      setModalPrem(true);
+    }
   }, []);
 
   function loadNumQuiz() {
@@ -47,6 +65,25 @@ export default function QuizCard() {
 
       .catch(err => console.log(err));
   };
+
+  function loadProfanityQuiz() {
+    API.getProfanityQuizData(lang)
+      .then(res => {
+        setQuizContent(res.data[0].questions)
+      })
+
+      .catch(err => console.log(err));
+  };
+
+  function loadBodyQuiz1() {
+    API.getBodyQuiz1Data(lang)
+      .then(res => {
+        setQuizContent(res.data[0].questions)
+      })
+
+      .catch(err => console.log(err));
+  };
+
 
   const btnsPrimary = () => {
     setBtnVarient({
@@ -180,32 +217,90 @@ export default function QuizCard() {
     history.push(`/DashboardCards/${language}`);
   }
 
+  const goBackToPres = () => {
+    setComeFromPres(false);
+    history.push(`/${lang}/presentation/${lesson}`);
+  }
+
+  const goBackToLessons = () => {
+    history.push(`/LessonMenu/quiz/${lang}`);
+    setAgeModal(false);
+  }
+
   const [show, setShow] = useState(true);
 
   const handleClose = () => {
     setShow(false);
-    setModal(false);
+    setAgeModal(false);
   };
+
+  const startQuiz = () => {
+    setModal(false);
+    setComeFromPres(false);
+    setAgeModal(false);
+  }
+
+  const continueAgeConf = () => {
+    setAgeModal(false);
+    setModal(true);
+  }
+
 
   return (
     <>
+      {ageModal &&
+        <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
+          <Modal.Header closeButton>
+            <Modal.Body>
+              <p id="modalBody4"><strong>WARNING:</strong></p>
+              <p className="modalBody5">Your grandma would not approve of the following content due to explicit language.</p>
+              <p className="modalBody5">Do you want to continue?</p>
+            </Modal.Body>
+          </Modal.Header>
+          <Image src="https://us.123rf.com/450wm/sevalv/sevalv1811/sevalv181100416/114143404-displeased-angry-elderly-mother-with-grey-hair-looking-from-under-forehead-with-irritated-expression.jpg?ver=6" styles={{ height: "50px" }} fluid />
+          <Modal.Footer>
+            <Button variant="primary" onClick={goBackToLessons}><strong>Go Back</strong></Button>
+            <Button variant="danger" onClick={continueAgeConf}><strong>Continue</strong></Button>
+          </Modal.Footer>
+        </Modal>
+      }
+
+      {modalPrem &&
+        <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
+          <Modal.Header closeButton>
+            <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to take this quiz.</Modal.Body>
+          </Modal.Header>
+          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" styles={{ height: "100px", width: "300px" }} fluid />
+          <Modal.Footer>
+            {
+              comeFromPres ?
+                <Button variant="danger" onClick={goBackToPres}><strong>Go Back</strong></Button>
+                :
+                <Button variant="danger" onClick={goBackToLessons}><strong>Back to Quizzes</strong></Button>
+            }
+            <Button variant="danger" disabled><strong>Update</strong></Button>
+          </Modal.Footer>
+        </Modal>
+      }
 
       {modal &&
 
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
           <Modal.Header closeButton>
-            <Modal.Title id="modalTitle">Ready to practice what you've learned?</Modal.Title>
+            <Modal.Title id="modalBody">Ready to practice what you've learned in {lang} {lesson}?</Modal.Title>
           </Modal.Header>
           <Modal.Body id="modalBody">Correct answers= <strong>+3 points</strong></Modal.Body>
           <Modal.Body id="modalBody2">Wrong answers= <strong>-1 point</strong></Modal.Body>
           <Modal.Body id="modalBody3">Good Luck!</Modal.Body>
 
           <Modal.Footer>
-            <Button variant="success" onClick={() => setModal(false)}><strong>Let's Do  This! --></strong></Button>
+            {comeFromPres &&
+              <Button variant="success" onClick={goBackToPres}><strong>Go Back</strong></Button>
+            }
+            <Button variant="success" onClick={startQuiz}><strong>Let's Do This! --></strong></Button>
           </Modal.Footer>
         </Modal>
       }
-
 
       {quizContent && !modal &&
         <Container>
