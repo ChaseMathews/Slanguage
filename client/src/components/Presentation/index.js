@@ -21,11 +21,12 @@ export default function Presentation() {
     const { lang } = useParams();
     const { lesson } = useParams();
     const history = useHistory();
-    const { setComeFromPres, ageModal, setAgeModal } = useContext(UserContext);
+    const { setCurrentLang, setComeFromPres, ageModal, setAgeModal } = useContext(UserContext);
     const [presContent, setPresContent] = useState();
     let [itemIndex, setItemIndex] = useState(0);
 
     useEffect(() => {
+        setCurrentLang(lang);
         switch (lesson) {
             case 'numbers': loadNumPresData();
                 break;

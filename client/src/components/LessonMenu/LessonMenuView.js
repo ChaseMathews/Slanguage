@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import LessonCards from './lessonCardDeck';
@@ -8,6 +8,7 @@ import "./style.css";
 import CardGradient from '../CardGradient';
 import LangCategory from "./lessonLangHeader";
 import SlangCard from "./lessonCardSlang";
+import { UserContext } from '../../utils/Context';
 
 const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 
@@ -15,6 +16,12 @@ const SlideDown = styled.div`animation: 2s ${keyframes`${slideInDown}`} 1`;
 function LessonMenu() {
     const { lang } = useParams();
     // console.log(lang);
+
+    const { setCurrentLang } = useContext(UserContext);
+
+    useEffect(() => {
+        setCurrentLang(lang);
+    }, []);
 
     return (
         <>
@@ -24,31 +31,31 @@ function LessonMenu() {
   )`, backgroundSize: "100%"
             }}>
             </div>
-        <Container>
-            <LangCategory />
-            <hr />
-            <Card.Body className="presCardBody" >
-                <Card className="presCard" >
-                    <h2>Slang/Profanity</h2>
-                </Card>
-                <SlideDown>
-                    {/* <CardGradient> */}
-                    <SlangCard />
-                    {/* </CardGradient> */}
-                </SlideDown>
+            <Container>
+                <LangCategory />
+                <hr />
+                <Card.Body className="presCardBody" >
+                    <Card className="presCard" >
+                        <h2>Slang/Profanity</h2>
+                    </Card>
+                    <SlideDown>
+                        {/* <CardGradient> */}
+                        <SlangCard />
+                        {/* </CardGradient> */}
+                    </SlideDown>
 
-                <Card className="presCard" >
-                    <h2>Other Categories</h2>
-                </Card>
-                <SlideDown>
-                    <Row>
-                        <Col>
-                            <LessonCards />
-                        </Col>
-                    </Row>
-                </SlideDown>
-            </Card.Body>
-        </Container>
+                    <Card className="presCard" >
+                        <h2>Other Categories</h2>
+                    </Card>
+                    <SlideDown>
+                        <Row>
+                            <Col>
+                                <LessonCards />
+                            </Col>
+                        </Row>
+                    </SlideDown>
+                </Card.Body>
+            </Container>
         </ >
     )
 }

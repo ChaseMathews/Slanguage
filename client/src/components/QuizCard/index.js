@@ -4,13 +4,14 @@ import { Card, Button, Container, Row, Col, Jumbotron, Modal, Image } from 'reac
 import { useParams, useHistory } from 'react-router-dom';
 import "./style.css";
 import { UserContext } from '../../utils/Context';
+import ReactAudioPlayer from 'react-audio-player';
 
 
 export default function QuizCard() {
   const [quizContent, setQuizContent] = useState()
   let [index, setIndex] = useState(0);
 
-  const { user, setUser, currentLang, comeFromPres, setComeFromPres, ageModal, setAgeModal } = useContext(UserContext);
+  const { user, setUser, currentLang, setCurrentLang, comeFromPres, setComeFromPres, ageModal, setAgeModal } = useContext(UserContext);
   const [score, setScore] = useState(0)
   const [disabled, setDisabled] = useState(false);
   const [modal, setModal] = useState();
@@ -28,6 +29,7 @@ export default function QuizCard() {
 
 
   useEffect(() => {
+    setCurrentLang(language);
     if (lesson === "numbers") {
       loadNumQuiz();
       setModal(true);
@@ -45,7 +47,6 @@ export default function QuizCard() {
       setModal(false);
       setModalPrem(true);
     }
-
   }, []);
 
   function loadNumQuiz() {
@@ -178,6 +179,10 @@ export default function QuizCard() {
 
       setScore(score + 3)
       setDisabled(!disabled);
+      // <ReactAudioPlayer
+      //   src={"/audio/spanish/guey.m4a"}
+      //   autoPlay
+      // />
     } else {
       setBtnVarient({
         ...btnVarient,
@@ -262,6 +267,7 @@ export default function QuizCard() {
           </Modal.Footer>
         </Modal>
       }
+
       {modalPrem &&
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
           <Modal.Header closeButton>
@@ -284,7 +290,7 @@ export default function QuizCard() {
 
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
           <Modal.Header closeButton>
-            <Modal.Title id="modalTitle">Ready to practice what you've learned in {lang} {lesson}?</Modal.Title>
+            <Modal.Title id="modalBody">Ready to practice what you've learned in {lang} {lesson}?</Modal.Title>
           </Modal.Header>
           <Modal.Body id="modalBody">Correct answers= <strong>+3 points</strong></Modal.Body>
           <Modal.Body id="modalBody2">Wrong answers= <strong>-1 point</strong></Modal.Body>
@@ -298,7 +304,6 @@ export default function QuizCard() {
           </Modal.Footer>
         </Modal>
       }
-
 
       {quizContent && !modal &&
         <Container>

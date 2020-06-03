@@ -9,7 +9,7 @@ import "./style.css";
 
 export default function ProgressView() {
 
-  const { user } = useContext(UserContext);
+  const { user, setCurrentLang } = useContext(UserContext);
   const [languageList, setLanguageList] = useState([]);
   const [notPracticed, setNotPracticed] = useState([]);
   const languages = ["Spanish", "French", "Italian", "German", "Navajo", "Portuguese"];
@@ -23,6 +23,7 @@ export default function ProgressView() {
 
   useEffect(() => {
     checkLanguages();
+    setCurrentLang(user.currentLanguage);
   }, [])
 
   const checkLanguages = () => {
