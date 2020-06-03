@@ -58,7 +58,7 @@ export default function ProgressView() {
        
           <Row>
 
-            <Col className="boxAppearance" md={{ span: 6, offset: 4 }}>
+            <Col className="boxAppearance" md={{ span: 6, offset: 3 }}>
               {languageList.map(lang => (
                 <LanguageButton
                   language={lang}
@@ -97,7 +97,7 @@ export default function ProgressView() {
               {languagesPracticed && user ?
                 resultObject.lesson.map(obj => (
 
-                  <ProgressCard
+                  <ProgressCard 
                     language={languageClicked}
                     lesson={obj.name}
                     score={obj.score}
