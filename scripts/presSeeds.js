@@ -531,61 +531,61 @@ module.exports = [
                 {
                     "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/575cd59611175.560d6dd950dcc.jpg",
                     "targetWord": "¡Che, boludo!",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/boludo.m4a",
                     "explanation": "Two of the most common words you'll hear in Argentina. \"Che\" is loosely translated as \"hey,\" or a segue into a conversation. \"Boludo\" can mean anything from \"dude\" to \"idiot.\""
                 },
                 {
                     "imageUrl": "https://cdn.memegenerator.es/imagenes/memes/full/7/3/7038674.jpg",
                     "targetWord": "¿Cómo andás?",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/andas.m4a",
                     "explanation": "Used as \"what's up?\" or \"¿qué tal?\" (note the use of 'vos' instead of 'tú')"
                 },
                 {
                     "imageUrl": "https://yt3.ggpht.com/a/AGF-l79NPPz0jUuhQfPtEGW-7SUoNGnxLAxygp_kvQ=s900-c-k-c0xffffffff-no-rj-mo",
                     "targetWord": "Chabón/chabona",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/chabon.m4a",
                     "explanation": "Guy/girl or dude/dudette"
                 },
                 {
                     "imageUrl": "https://previews.123rf.com/images/noravector/noravector1710/noravector171000033/87490561-super-cool-comic-book-style-word-on-abstract-background-.jpg",
                     "targetWord": "Re copado",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/copado.m4a",
                     "explanation": "\"Re\" is used frequently to mean \"really/very.\" \"Copado\" means \"cool/awesome.\""
                 },
                 {
                     "imageUrl": "https://dobienews.scuc.txed.net/wp-content/uploads/2020/04/couch-900x629.jpg",
                     "targetWord": "Estar al pedo/estar en pedo",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/en-pedo.m4a",
                     "explanation": "Not doing anything. Literally \"being to the fart/being in fart.\""
                 },
                 {
                     "imageUrl": "https://www.santarosa.gob.ar/storage/2018/01/26219706_1740803469561847_2346210351052712346_n.jpg",
                     "targetWord": "Ponerse las pilas",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/pilas.m4a",
                     "explanation": "Literally \"to put your batteries in.\" Used as \"get some energy! / put in effort!\" It can be used to motivate someone to do something like get out of bed or go to a party: \"¡Ponete las pilas!\" (note the use of 'vos' instead of 'tú')"
                 },
                 {
                     "imageUrl": "https://previews.123rf.com/images/rukach/rukach1802/rukach180200115/95796784-pop-art-retro-style-comic-book-panel-with-girl-talking-nonsense-small-talk-chatter-in-speech-bubble-.jpg",
                     "targetWord": "Mandar fruta",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/fruta.m4a",
                     "explanation": "To blab on without making much sense. To speak nonsense."
                 },
                 {
                     "imageUrl": "https://www.inventorsdigest.com/wp-content/uploads/2018/01/lazy-sloth-1080x640.gif",
                     "targetWord": "Tener fiaca",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/fiaca.m4a",
                     "explanation": "Being too lazy to do something; probably not acceptable in the workplace."
                 },
                 {
                     "imageUrl": "https://i0.wp.com/edairynews.com/es/wp-content/uploads/2018/11/remando-en-dulce-de-leche.jpg?fit=750%2C360&ssl=1",
                     "targetWord": "Estar remando en dulce de leche",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/dulcedeleche.m4a",
                     "explanation": "Literally \"To be rowing in dulce de leche (a thick caramel-like substance).\" Use it to describe being in a situation that's hard to get out of."
                 },
                 {
                     "imageUrl": "https://www.attorneyatwork.com/wp-content/uploads/2018/11/Get-to-the-Point-770.jpg",
                     "targetWord": "Ir a los bifes",
-                    "audioToPlay": "",
+                    "audioToPlay": "/audio/argentina_spanish/bifes.m4a",
                     "explanation": "Literally \"to go to the steaks,\" it's used to say \"get to the point!\""
                 }
             ]
