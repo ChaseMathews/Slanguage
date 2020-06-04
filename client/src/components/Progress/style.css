@@ -11,16 +11,19 @@
   flex-wrap: wrap;
 }
 
-.progress {
+/* .progress {
 border-top-left-radius: 12px;
 border-top-right-radius: 12px;
 border-bottom-left-radius: 12px;
 border-bottom-right-radius: 12px;
 font-family:'Raleway', sans-serif;  
 box-shadow: 0 0 0 8px 0 rgba(0, 0, 0, 8);
+} */
+
+.cardDeckMargin .card{
+  margin-bottom: 0px;
+  justify-content: center;
 }
-
-
 
 
 #title{
@@ -34,12 +37,7 @@ box-shadow: 0 0 0 8px 0 rgba(0, 0, 0, 8);
 }
 
 
-
-
-    
-
-
-
 .capital {
   text-transform: capitalize;
+  margin: 5px;
 }
