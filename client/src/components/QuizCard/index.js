@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import API from "../../utils/API"
+import API from "../../utils/API";
+import "./audio/SoundEffects";
 import { Card, Button, Container, Row, Col, Jumbotron, Modal, Image } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
+import ReactAudioPlayer from 'react-audio-player';
 import "./style.css";
 import { UserContext } from '../../utils/Context';
+
 
 
 export default function QuizCard() {
@@ -24,6 +27,10 @@ export default function QuizCard() {
     button_1: "primary",
     button_2: "primary",
     button_3: "primary"
+  });
+  const [soundEffects, setSoundEffects] = useState({
+    correct: "/audio/SoundEffects/Correct.m4a",
+    wrong: "/audio/SoundEffects/wrong.m4a"
   })
 
 
@@ -174,6 +181,9 @@ export default function QuizCard() {
       setBtnVarient({
         ...btnVarient,
         [name]: "success",
+        
+         
+       
       });
 
       setScore(score + 3)
@@ -182,6 +192,7 @@ export default function QuizCard() {
       setBtnVarient({
         ...btnVarient,
         [name]: "danger"
+       
       })
       setScore(score - 1)
       setHint(true)
@@ -190,13 +201,33 @@ export default function QuizCard() {
     if (index === 9 && quizContent[9].correctAnswer === value) {
       setBtnVarient({
         ...btnVarient,
-        [name]: "success",
+        [name]: "success"
       });
       setScore(score + 3)
       setDisabled(!disabled);
       setModalEnd(true);
     }
 
+  }
+
+  const sounds = e => {
+    e.preventDefault()
+
+    const { value } = e.target
+    const { name } = e.target
+
+    if (quizContent[index].correctAnswer === value) {
+      setSoundEffects({
+        ...soundEffects,
+        [name]: "correct",
+      });
+      setSoundEffects(correct)
+    } else {
+      setSoundEffects({
+        ...soundEffects,
+        [name]: "wrong"
+      })
+    }
   }
 
   const quizReset = () => {
@@ -209,7 +240,7 @@ export default function QuizCard() {
     updateUserResults();
   }
 
-  
+
 
   const goToDash = () => {
     setModalEnd(false);
@@ -320,57 +351,98 @@ export default function QuizCard() {
                   </Col>
                 </Card>
                 <Card.Body className="text-center">
-                {lesson !== "numbers" ? (
-                  <Col>
-                    <div>
-                      <h2>{quizContent[index].phrase}</h2>
-                    </div>
-                    {hint &&
-                      <div className="hint" >
-                        HINT: {quizContent[index].example}
+                  {lesson !== "numbers" ? (
+                    <Col>
+                      <div>
+                        <h2>{quizContent[index].phrase}</h2>
                       </div>
+                      {hint &&
+                        <div className="hint" >
+                          HINT: {quizContent[index].example}
+                        </div>
+                      }
+                    </Col>
+                  ) : ""}
+
+
+                  <Col className="choices" sm={{ span: lesson !== "numbers" ? 3 : 4, offset: 4 }}>
+                    
+                   
+                      <Button variant={btnVarient.button_1} id="quizButton1" size="lg" disabled={disabled} name="button_1" onClick={handleScore, sounds} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
+
+
+                      <Button variant={btnVarient.button_2} id="quizButton2" size="lg" disabled={disabled} name="button_2" onClick={handleScore, sounds} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
+
+
+                      <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore, sounds} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
+                    
+                  </Col>
+                </Card.Body>
+                <Row>
+                  <Col md={{ span: 3, offset: 6 }}>
+                    {
+                      index !== 9 && disabled &&
+                      <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                     }
                   </Col>
-                ) : ""}
-
-
-                <Col className="choices" sm={{span: lesson !== "numbers" ? 3 : 4, offset: 4}}>
-                  <Button variant={btnVarient.button_1} id="quizButton1" size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
-
-
-                  <Button variant={btnVarient.button_2} id="quizButton2" size="lg" disabled={disabled} name="button_2" onClick={handleScore} block value={quizContent[index].answerOptions[1]}>{quizContent[index].answerOptions[1]} </Button>
-
-
-                  <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
-
-<Row>
-  <Col md={{ span: 3, offset: 6 }}>
-                  {
-                    index !== 9 && disabled &&
-                    <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
-                  }
-</Col>
-</Row>
-                  {
-                    modalEnd && disabled &&
-                    <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-                      <Modal.Header>
-                        <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
-                      </Modal.Header>
-                      <Modal.Footer>
-                        <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
-                        <Button variant="danger" onClick={quizReset}><strong>Take Quiz Again</strong></Button>
-                      </Modal.Footer>
-                    </Modal>
-                  }
-                </Col>
-                </Card.Body>
+                </Row>
+                
+                {
+                  modalEnd && disabled &&
+                  <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
+                    <Modal.Header>
+                      <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Footer>
+                      <Button variant="danger" onClick={goToDash}><strong>Back to Dashboard</strong></Button>
+                      <Button variant="danger" onClick={quizReset}><strong>Take Quiz Again</strong></Button>
+                    </Modal.Footer>
+                  </Modal>
+                }
+                  </Col>
+            </Card.Body>
               </Row>
             </Card.Body>
           </Jumbotron>
-        </Container>
+        </Container >
       }
     </>
 
   )
 }
+
+
+
+
+// const useAudio = "/audio/SoundEffects/Correct.m4a" => {
+//   const [audio] = useState(new Audio("/audio/SoundEffects/Correct.m4a"));
+//   const [playing, setPlaying] = useState(false);
+
+//   const toggle = () => setPlaying(!playing);
+
+//   useEffect(() => {
+//       playing ? audio.play() : audio.pause();
+//     },
+//     [playing]
+//   );
+
+//   useEffect(() => {
+//     audio.addEventListener('ended', () => setPlaying(false));
+//     return () => {
+//       audio.removeEventListener('ended', () => setPlaying(false));
+//     };
+//   }, []);
+
+//   return [playing, toggle];
+// };
+// const Player = ({ url }) => {
+//   const [playing, toggle] = useAudio(url);
+
+//   return (
+//     <div>
+//       <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+//     </div>
+//   );
+// };
+
+// export default Player;
