@@ -2,11 +2,8 @@ import MicRecorder from 'mic-recorder-to-mp3';
 import React, { Component } from 'react';
 import { Row} from 'react-bootstrap';
 import "./style.css";
-
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
-
 class UserAudio extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -15,7 +12,6 @@ class UserAudio extends Component {
             isBlocked: false,
         }
     };
-
     componentDidMount() {
         navigator.getUserMedia({ audio: true },
             () => {
@@ -28,7 +24,6 @@ class UserAudio extends Component {
             },
         );
     }
-
     start = () => {
         if (this.state.isBlocked) {
             console.log('Permission Denied');
@@ -40,7 +35,6 @@ class UserAudio extends Component {
                 }).catch((e) => console.error(e));
         }
     };
-
     stop = () => {
         Mp3Recorder
             .stop()
@@ -50,18 +44,19 @@ class UserAudio extends Component {
                 this.setState({ blobURL, isRecording: false });
             }).catch((e) => console.log(e));
     };
-
     render() {
         return (
             <div>
                 <p className="youtry">Now you try! Click "Record."</p>
+                {!this.state.isRecording ?
                 <button className="recordbutton" onClick={this.start} disabled={this.state.isRecording}>
                     Record
                 </button>
+                :
                 <button className="stopbutton" onClick={this.stop} disabled={!this.state.isRecording}>
                     Stop
                 </button>
-
+            }
                 <Row>
                 <audio className="audio" src={this.state.blobURL} controls="controls" />
                 </Row>
@@ -69,5 +64,4 @@ class UserAudio extends Component {
         )
     }
 }
-
 export default UserAudio;
