@@ -24,6 +24,5 @@ export default function ProgressCard(props) {
                 </Card>
                 </CardGradient>
             </Row>
-        
     )
 }
