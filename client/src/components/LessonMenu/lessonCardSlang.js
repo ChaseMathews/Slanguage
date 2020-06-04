@@ -15,7 +15,7 @@ export default function SlangCard() {
     return (
 
         <Row>
-            
+
             <CardGradient className="slangGradientMargin">
                 <Card border='danger' style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="https://cdn.dribbble.com/users/2056807/screenshots/7815777/dope.gif" />
@@ -30,15 +30,30 @@ export default function SlangCard() {
                     </Card.Body>
                 </Card>
             </CardGradient>
-            
+
+            <CardGradient className="slangGradientMargin">
+                <Card border='danger' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="https://github.com/shanscirg/shanscirg.github.io/blob/master/slang2.gif?raw=true" />
+                    <Card.Body>
+                        <Card.Title>More Slang</Card.Title>
+                        <Card.Text>
+                            {type === 'quiz' ? `Practice ` : `Learn `} some slang words and phrases in <strong> {lang}</strong>!
+                        </Card.Text>
+                        <Link to={type === 'quiz' ? `/QuizCard/${lang}/slang2` : `/${lang}/presentation/slang2`}>
+                            <Button>Click Here!</Button>
+                        </Link>
+                    </Card.Body>
+                </Card>
+            </CardGradient>
+
             <CardGradient>
-            <Card border='danger' style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="https://img.buzzfeed.com/buzzfeed-static/static/2018-08/14/17/asset/buzzfeed-prod-web-01/anigif_sub-buzz-17012-1534280923-3.gif?downsize=600:*&output-format=auto&output-quality=auto" />
-                <Card.Body>
-                    <Card.Title>Profanity</Card.Title>
-                    
-                    <Card.Text>
-                    {type === 'quiz' ? `Practice ` : `Learn `}  some swear words and phrases in <strong> {lang}</strong>!
+                <Card border='danger' style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src="https://github.com/shanscirg/shanscirg.github.io/blob/master/profanity.gif?raw=true" />
+                    <Card.Body>
+                        <Card.Title>Profanity</Card.Title>
+
+                        <Card.Text>
+                            {type === 'quiz' ? `Practice ` : `Learn `}  some swear words and phrases in <strong> {lang}</strong>!
                     </Card.Text>
                         <Link to={type === 'quiz' ? `/QuizCard/${lang}/profanity` : `/${lang}/presentation/profanity`}>
                             <Button>
@@ -47,8 +62,8 @@ export default function SlangCard() {
                         </Link>
                     </Card.Body>
                 </Card>
-                </CardGradient >
-                
+            </CardGradient >
+
         </Row >
 
     )

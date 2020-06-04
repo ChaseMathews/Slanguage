@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import LessonCards from './lessonCardDeck';
@@ -20,6 +20,7 @@ function LessonMenu() {
     // console.log(lang);
 
     const { setCurrentLang } = useContext(UserContext);
+    const [showCards, setShowCards] = useState(false);
 
     useEffect(() => {
         setCurrentLang(lang);
@@ -46,14 +47,14 @@ function LessonMenu() {
                     </FadeInCard>
                     {/* </SlideDown> */}
 
-                    <Card className="presCard" >
-                        <h2>Other Categories</h2>
+                    <Card className="presCard2" >
+                    <h2 onClick={() => setShowCards(!showCards)}>{!showCards ? "Click for More Categories" : "Hide More Categories"}</h2>
                     </Card>
                     {/* <SlideDown> */}
                     <FadeInCard>
                         <Row>
                             <Col>
-                                <LessonCards />
+                                {showCards && <LessonCards />}
                             </Col>
                         </Row>
                     </FadeInCard>

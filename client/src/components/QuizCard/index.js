@@ -38,7 +38,7 @@ export default function QuizCard() {
     } else if (lesson === "profanity") {
       loadProfanityQuiz();
       setModal(false);
-      setAgeModal(true);
+      setAgeModal(!comeFromPres);
     } else if (lesson === "body1") {
       loadBodyQuiz1();
       setModal(true);
@@ -250,7 +250,7 @@ export default function QuizCard() {
     <>
       {ageModal &&
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Body>
               <p id="modalBody4"><strong>WARNING:</strong></p>
               <p className="modalBody5">Your grandma would not approve of the following content due to explicit language.</p>
@@ -267,10 +267,10 @@ export default function QuizCard() {
 
       {modalPrem &&
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to take this quiz.</Modal.Body>
           </Modal.Header>
-          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/logoSlanguage.jpg" styles={{ height: "100px", width: "300px" }} fluid />
+          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slangIconPlus.png" styles={{ height: "100px", width: "300px" }} fluid />
           <Modal.Footer>
             {
               comeFromPres ?
@@ -286,7 +286,7 @@ export default function QuizCard() {
       {modal &&
 
         <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title id="modalBody">Ready to practice what you've learned in {lang} {lesson}?</Modal.Title>
           </Modal.Header>
           <Modal.Body id="modalBody">Correct answers= <strong>+3 points</strong></Modal.Body>
@@ -302,6 +302,24 @@ export default function QuizCard() {
         </Modal>
       }
 
+{quizContent === undefined &&
+        <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
+          <Modal.Header>
+            <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to take this quiz.</Modal.Body>
+          </Modal.Header>
+          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slangIconPlus.png" styles={{ height: "100px", width: "300px" }} fluid />
+          <Modal.Footer>
+            {
+              comeFromPres ?
+                <Button variant="danger" onClick={goBackToPres}><strong>Go Back</strong></Button>
+                :
+                <Button variant="danger" onClick={goBackToLessons}><strong>Back to Quizzes</strong></Button>
+            }
+            <Button variant="danger" disabled><strong>Update</strong></Button>
+          </Modal.Footer>
+        </Modal>
+      }
+
       {quizContent && !modal &&
         <Container>
           {/* {index <= 9 && */}
@@ -309,35 +327,36 @@ export default function QuizCard() {
             Score: {score}
           </Card>
           {/* } */}
-          <Jumbotron>
+          <Jumbotron className="justify-content-center text-center grayBox1" >
             <Card.Body>
               <Row>
-                <Card>
+                <Card className="cardNumber" >
                   <Col sm={lesson !== "numbers" ? 3 : 4}>
 
                     <Card.Img className="numberImage" variant="top" src={quizContent[index].imageUrl} />
 
                   </Col>
                 </Card>
+                <Card.Body className="text-center quizQuestions">
                 {lesson !== "numbers" ? (
-                  <Col sm={3}>
+                  <Col>
                     <div>
                       <h2>{quizContent[index].phrase}</h2>
                     </div>
                     <br></br>
-                    {hint &&
+
+                    {!hint && quizContent[index].example === "" ?
+                    ""
+                    : 
                       <div>
                         HINT: {quizContent[index].example}
                       </div>
-
                     }
-
-
                   </Col>
                 ) : ""}
 
 
-                <Col className="choices" sm={lesson !== "numbers" ? 3 : 4}>
+                <Col className="choices" sm={{span: lesson !== "numbers" ? 3 : 4, offset: 4}}>
                   <Button variant={btnVarient.button_1} id="quizButton1" size="lg" disabled={disabled} name="button_1" onClick={handleScore} block value={quizContent[index].answerOptions[0]} > {quizContent[index].answerOptions[0]}  </Button>
 
 
@@ -346,16 +365,18 @@ export default function QuizCard() {
 
                   <Button variant={btnVarient.button_3} id="quizButton3" size="lg" disabled={disabled} name="button_3" onClick={handleScore} block value={quizContent[index].answerOptions[2]}> {quizContent[index].answerOptions[2]}</Button>
 
-
+<Row>
+  <Col md={{ span: 3, offset: 6 }}>
                   {
                     index !== 9 && disabled &&
                     <Button onClick={handleImageChange} variant="danger" disabled={!disabled} className="nextBtn" value="next" name="next">NEXT</Button>
                   }
-
+</Col>
+</Row>
                   {
                     modalEnd && disabled &&
                     <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
-                      <Modal.Header closeButton>
+                      <Modal.Header>
                         <Modal.Title id="modalTitle">Total Score: {score}!</Modal.Title>
                       </Modal.Header>
                       <Modal.Footer>
@@ -365,6 +386,7 @@ export default function QuizCard() {
                     </Modal>
                   }
                 </Col>
+                </Card.Body>
               </Row>
             </Card.Body>
           </Jumbotron>
