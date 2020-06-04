@@ -57,7 +57,7 @@ export default function Presentation() {
             case 'travel3': loadTravelPres3Data();
                 break;
             default:
-                console.log("IDK");
+                history.push('/Premium');
                 // handleClose();
         }
     }, [])

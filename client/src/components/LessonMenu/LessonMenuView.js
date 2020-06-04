@@ -48,7 +48,7 @@ function LessonMenu() {
                     {/* </SlideDown> */}
 
                     <Card className="presCard2" >
-                        <h2 onClick={() => setShowCards(!showCards)}>Click for More Categories</h2>
+                    <h2 onClick={() => setShowCards(!showCards)}>{!showCards ? "Click for More Categories" : "Hide More Categories"}</h2>
                     </Card>
                     {/* <SlideDown> */}
                     <FadeInCard>

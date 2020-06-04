@@ -302,6 +302,24 @@ export default function QuizCard() {
         </Modal>
       }
 
+{quizContent === undefined &&
+        <Modal show={show} onHide={handleClose} backdrop="static" center styles={{ overlay: { background: "#B3F1F8" } }}>
+          <Modal.Header>
+            <Modal.Body id="modalBody">Oops! Update to Slanguage Premium to take this quiz.</Modal.Body>
+          </Modal.Header>
+          <Image src="https://raw.githubusercontent.com/J-Navajo/Updated-Portfolio/master/assets/images/slangIconPlus.png" styles={{ height: "100px", width: "300px" }} fluid />
+          <Modal.Footer>
+            {
+              comeFromPres ?
+                <Button variant="danger" onClick={goBackToPres}><strong>Go Back</strong></Button>
+                :
+                <Button variant="danger" onClick={goBackToLessons}><strong>Back to Quizzes</strong></Button>
+            }
+            <Button variant="danger" disabled><strong>Update</strong></Button>
+          </Modal.Footer>
+        </Modal>
+      }
+
       {quizContent && !modal &&
         <Container>
           {/* {index <= 9 && */}
@@ -319,14 +337,17 @@ export default function QuizCard() {
 
                   </Col>
                 </Card>
-                <Card.Body className="text-center">
+                <Card.Body className="text-center quizQuestions">
                 {lesson !== "numbers" ? (
                   <Col>
                     <div>
                       <h2>{quizContent[index].phrase}</h2>
                     </div>
                     <br></br>
-                    {hint && quizContent[index].example !== "" &&
+
+                    {!hint && quizContent[index].example === "" ?
+                    ""
+                    : 
                       <div>
                         HINT: {quizContent[index].example}
                       </div>
